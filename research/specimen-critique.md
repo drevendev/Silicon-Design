@@ -1,8 +1,8 @@
-# The first specimens are still too generic
+# Critique of the original specimens
 
-Review date: **2 November 2026**. Trigger: maintainer feedback on the initial preview. The technical checks in [verification](../examples/VERIFICATION.md) remain valid within their scope. They did not evaluate whether the design had enough character. The initial presentation gave those checks too much weight.
+Original review date: **2 November 2026**. Trigger: maintainer feedback on the initial preview. Its technical checks did not evaluate whether the design had enough character. The initial presentation gave those checks too much weight.
 
-This is a design critique of the existing [HTML specimens](../examples/specimen.html) and [briefs](../examples/README.md), not a user study or a claim that a replacement has been built. The HTML has not been redesigned in this revision.
+This historical critique applies to the [original HTML at revision ee9afa4](https://github.com/drevendev/Silicon-Design/blob/ee9afa471e0cf8465aefe45715df4392c9ec11d2/examples/specimen.html). The [current gallery](../examples/README.md) implements a replacement; its [review](../examples/REVIEW.md) and [verification](../examples/VERIFICATION.md) record what changed. The observations below are retained rather than silently rewritten around the result.
 
 ## Field Notes
 
@@ -36,4 +36,4 @@ This is a design critique of the existing [HTML specimens](../examples/specimen.
 - Useful details that remain welcome after repeated use.
 - Separate conclusions about operation and character, with evidence and judgment labelled.
 
-This is a revision brief. Design and implementation remain open work; no new screenshots, recall tests or improved attachment are claimed.
+This brief led to the replacement gallery. Its new screenshots show implementation, not recall-test results or improved attachment.

@@ -17,7 +17,8 @@
 
 - [Типографика](docs/foundations/typography.md), [палитры](docs/foundations/color.md), [композиция](docs/foundations/layout.md), [взаимодействие](docs/foundations/interaction.md) и [доступность](docs/foundations/accessibility.md).
 - Пять [скиллов](README.md#skills): выбор направления, дизайн-система, реализация интерфейса, игровой UI и ревью. [Подключение](docs/adoption.md).
-- [Учебные примеры](examples/specimen.html), [честный разбор их слабостей](research/specimen-critique.md) и [заполненные дизайн-брифы](examples/README.md).
+- [Три переделанных примера и скриншоты](examples/README.md#preview): журнал городских наблюдений, рабочий стол ремонтной мастерской и вечер фонарщика. У каждого — свой сценарий и результат действия.
+- [Брифы](examples/README.md), [разбор новой версии](examples/REVIEW.md) и [исходная критика](research/specimen-critique.md).
 - [Наши практики](research/our-practice.md), [подробное извлечение принципов из десяти репозиториев](research/deep-read.md) и [реестр источников](research/sources.md).
 
 Градиенты, карточки, тёмная тема и стандартные шрифты допустимы, когда помогают продукту. Запреты не создают характер. Его нужно придумать, выразить в интерфейсе и проверить на реальном использовании.

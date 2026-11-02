@@ -14,11 +14,11 @@ Avoid invented maturity badges, ratings and efficacy claims. Source ideas need b
 
 ## Visual specimens
 
-The specimen wrapper is a quiet index: system sans, dark ink, visible links, broad outer spacing and numbered sections. It leaves room for three deliberately different inner product directions. Each has a separate filled brief and semantic palette. This wrapper is not the visual identity to impose on consuming projects.
+The gallery wrapper is a quiet switcher: system sans, visible links and one active world at a time. Query URLs identify each example; the inner experience owns its composition, imagery, controls and voice. Switching retains local state. The wrapper is not an identity to impose on consuming projects.
 
-Wide views juxtapose title and introduction. Narrow views stack content in reading order. Local links and native disclosures make the examples inspectable. One simple crafting interaction demonstrates truthful resource feedback; no backend or real game is implied.
+Field Notes connects a photographic plate, a numbered observation route and a reader's margin. Dispatch connects repair tickets, object drawings, an address decision, a cleared record and undo. Mosslight connects a painted world, a recipe, resource use and a lantern placed beside the bridge. Each has a filled brief and semantic palette; wide and narrow compositions are inspected separately.
 
-The initial specimens remain below the project's character ambition. Their [critique](research/specimen-critique.md) is part of the current design record. They illustrate mechanics and are not the visual benchmark for adopting products.
+The [original critique](research/specimen-critique.md) and [revision review](examples/REVIEW.md) show why the experiences changed. The resulting local prototypes demonstrate decisions, not proven attachment, production readiness or a universal design benchmark.
 
 ## Evidence and limits
 

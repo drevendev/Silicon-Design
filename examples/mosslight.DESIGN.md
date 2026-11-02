@@ -1,23 +1,33 @@
-# Mosslight — fictional crafting game
+# Mosslight — leave a way home
 
-## Context
+## Player, moment and feeling
 
-A player in a quiet workshop needs to decide whether to craft a lantern. This is a DOM-based teaching specimen with local resource changes; it is not a game runtime, economy model or save system.
+A lanternmaker has enough material for one useful thing at blue hour. The intended feeling is small care made visible: leave a light for the next person who crosses the footbridge. This is a short DOM-based scene, not a complete game or tested economy.
 
-## Direction
+## The recognizable idea
 
-A dark, tactile workshop: serif title, a geometric lantern silhouette, warm brass-colored emphasis and clear system-sans resource labels. Light suggests the purpose of the craft. The cost and available action remain more prominent than decorative lore.
+**The thing you make belongs in the world.** The empty hook is present before the decision. Crafting produces a lantern; hanging it puts that object on the hook and casts light over the stepping stones. The making book, world caption and journal describe the same change.
 
-A saturated loot-card treatment was considered; it would imply rarity and competition that the quiet craft loop does not support. The chosen direction gives up bright collectible signaling. It still needs runtime checks against actual scenes.
+A collectible-card inventory would suggest rarity and acquisition. An elaborate crafting tree would delay the consequence. This scene chooses one modest act with a visible destination, giving up replay depth. Another recipe, a larger glow or more resources would not by themselves establish a good game loop.
 
-## System and behavior
+## Visual grammar and voice
 
-- Surface `#182a25`, raised panel `#233b32`, text `#f2ead4`, supporting text `#c0ccb8`, brass `#e8bb69`.
-- Costs show `owned / required` with units. One demonstration craft consumes the fictional resources and reports completion; another attempt shows an explicit missing-resource state. Reset restores the local fixture.
-- Keyboard and pointer use native buttons; the resource update has a polite status announcement. The button's unavailable reason stays adjacent when disabled.
-- No decorative animation or audio is supplied. The lantern drawing is decorative and hidden from assistive technology.
-- The narrow layout stacks art and decision. Do not treat this as proof of controller focus, canvas access, safe areas, UI scale or scene contrast.
+- An original generated gouache forest sets the scene: moss-covered workshop, empty iron hook, footbridge and a path into the trees. The artwork is labelled generated in the wide scene; all views link to this fictional art record.
+- An HTML making book sits beneath the scene; costs and buttons remain text and native controls. A separate SVG lantern/light layer uses the same coordinate system and crop as the painting, so its placement follows responsive framing.
+- Midnight-blue world, paper recipe, muted pine and warm light support the action. [Palette data](palettes.json) covers declared opaque UI pairs; it cannot establish all text/scene combinations.
+- “A little less dark.” and “Someone will be glad of that.” describe the scale of the act. There is no rarity banner, reward shower or fabricated player achievement.
 
-## Evidence
+## States and behavior
 
-[Specimen](specimen.html), [palette data](palettes.json) and [verification](VERIFICATION.md). All quantities are explicitly fictional and reset on page reload.
+1. **Unmade:** the hook is empty; timber is 8 and resin is 3. The recipe costs 6 timber and 2 resin.
+2. **Crafted:** a single craft leaves 2 timber and 1 resin. The next action is hanging this lantern, not consuming another set of resources.
+3. **Lit:** the lantern appears on the hook; a warm pool reaches the path. The world description and journal update. The completed control is unavailable, with a nearby explanation that another craft would require 4 more timber and 1 more resin.
+4. **Begin again:** restores the unlit world and inventory, clears the journal and returns focus to crafting. Reload also resets the fictional scene.
+
+Buttons support pointer and keyboard. Phase changes have a polite text status. Light/filter transitions respect `prefers-reduced-motion`; no audio or continuous animation is needed. The transition itself is not required to understand success.
+
+## Evidence and remaining questions
+
+[Working specimen](specimen.html?example=mosslight), [review](REVIEW.md), [verification](VERIFICATION.md), [art provenance](assets/PROVENANCE.md).
+
+The illustration participates in the task now. Warmth and care are design judgments; player attachment is unmeasured. Controller navigation, a real game renderer, safe areas, UI scaling, saving, replenishment and a repeatable economy require separate implementation and tests.

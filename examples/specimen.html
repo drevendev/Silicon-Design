@@ -3,196 +3,172 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Silicon Design — decisions, made visible</title>
+  <meta name="color-scheme" content="light">
+  <title>Small worlds — Silicon Design specimens</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="specimen.css">
   <style>
-    * { box-sizing: border-box; }
-    html { color-scheme: light; }
-    body { margin: 0; background: #ffffff; color: #172b35; font-family: system-ui, sans-serif; line-height: 1.55; }
-    a { color: inherit; text-underline-offset: .22em; }
-    a:hover { text-decoration-thickness: .15em; }
-    button, summary { font: inherit; cursor: pointer; }
-    button { min-height: 44px; padding: .65rem 1.1rem; border: 1px solid currentColor; border-radius: 0; }
-    button:disabled { cursor: default; border-style: dashed; }
-    :focus-visible { outline: 3px solid currentColor; outline-offset: 5px; }
-    .skip { position: absolute; top: -10rem; left: 1rem; padding: .75rem; background: white; z-index: 2; }
-    .skip:focus { top: 1rem; }
-    .page-head, main, .page-foot { width: min(1180px, calc(100% - 64px)); margin-inline: auto; }
-    .page-head { padding-top: 32px; }
-    .masthead { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid #82909a; padding-bottom: 20px; }
-    .wordmark { font-weight: 750; letter-spacing: -.04em; font-size: 1.2rem; }
-    .edition { color: #4e606b; font-size: .875rem; }
-    .intro { display: grid; grid-template-columns: 1.25fr 1fr; gap: 4rem; align-items: end; margin: 66px 0 58px; }
-    h1 { font-size: clamp(2.5rem, 1.3rem + 3.5vw, 5rem); line-height: 1.02; letter-spacing: -.06em; margin: 0; max-width: 10ch; font-weight: 650; }
-    .intro p { max-width: 47ch; margin: 0; color: #4e606b; }
-    .jump { display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; margin-top: 1rem; }
-    .jump a { display: inline-flex; align-items: center; min-height: 44px; font-size: .875rem; }
-    .example { margin-bottom: 64px; scroll-margin-top: 24px; }
-    .example-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 12px; }
-    .example-head h2 { font-size: .875rem; letter-spacing: .06em; text-transform: uppercase; margin: 0; font-weight: 650; }
-    .example-head p { margin: 0; color: #4e606b; font-size: .875rem; }
-    .preview { padding: 38px 44px; overflow-wrap: anywhere; }
-    .preview h3, .preview h4, .preview p { margin-top: 0; }
-    .preview small { font-size: .875rem; }
-    .note { font-size: .875rem; color: #4e606b; max-width: 85ch; margin: 12px 0 0; }
-    .field { --surface: #f3eee4; --text: #232b29; --muted: #535e58; --accent: #8b3426; --border: #7e786c; background: var(--surface); color: var(--text); }
-    .field .journal-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; align-items: baseline; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
-    .journal-name { font-family: Georgia, serif; font-size: 1.8rem; letter-spacing: -.05em; }
-    .journal-head small { color: var(--muted); }
-    .story { display: grid; grid-template-columns: 130px 1fr; gap: 30px; padding: 38px 0 28px; }
-    .chapter { color: var(--accent); border-top: 4px solid currentColor; padding-top: 10px; }
-    .chapter strong { display: block; font-family: Georgia, serif; font-size: 5rem; line-height: 1; font-weight: normal; }
-    .chapter span { display: block; margin-top: .5rem; font-size: .875rem; }
-    .field h3 { max-width: 17ch; font: normal clamp(2.2rem, 1.2rem + 2.6vw, 4rem)/1.06 Georgia, serif; letter-spacing: -.045em; margin-bottom: 20px; }
-    .field .dek { max-width: 50ch; font-size: 1.0625rem; line-height: 1.7; color: var(--muted); }
-    .field .byline { font-size: .875rem; color: var(--muted); margin-bottom: 0; }
-    .field details { border-top: 1px solid var(--border); margin-left: 160px; }
-    .field summary { min-height: 48px; padding: .75rem 0; color: var(--accent); }
-    .field details p { max-width: 58ch; padding-top: .5rem; line-height: 1.7; }
-    .dispatch { --surface: #edf1f4; --raised: #ffffff; --text: #172b35; --muted: #4e606b; --accent: #9a3d0a; --border: #82909a; background: var(--surface); color: var(--text); }
-    .app-brand { font-weight: 750; letter-spacing: -.035em; display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem; border-bottom: 1px solid var(--border); padding-bottom: 18px; }
-    .app-brand small { color: var(--muted); font-weight: 400; letter-spacing: 0; }
-    .queue-head { display: flex; justify-content: space-between; gap: 2rem; align-items: end; padding: 28px 0 20px; }
-    .eyebrow { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; }
-    .queue-head .eyebrow { color: var(--accent); margin-bottom: 8px; }
-    .dispatch h3 { font-size: 2rem; line-height: 1.15; letter-spacing: -.04em; margin-bottom: 6px; }
-    .dispatch .queue-sub { color: var(--muted); margin: 0; font-size: .875rem; }
-    .queue-count { font-size: 3.5rem; line-height: 1; font-variant-numeric: tabular-nums; font-weight: 350; }
-    .case { background: var(--raised); border-top: 1px solid var(--border); }
-    .case:last-child { border-bottom: 1px solid var(--border); }
-    .case summary { display: grid; grid-template-columns: 65px minmax(0, 1fr) 115px 85px; gap: 14px; align-items: center; padding: 18px 16px; min-height: 74px; list-style: none; }
-    .case summary::-webkit-details-marker { display: none; }
-    .case summary:hover { text-decoration: underline; text-underline-offset: .2em; }
-    .case-id { color: var(--muted); font: .875rem/1.4 ui-monospace, monospace; }
-    .case-title { font-weight: 600; }
-    .case-status { color: var(--muted); font-size: .875rem; }
-    .case-action { color: var(--accent); font-size: .875rem; text-align: right; }
-    .case-content { border-top: 1px dashed var(--border); padding: 18px 16px; }
-    .case-content p { margin: 0; max-width: 70ch; }
-    .mosslight { --surface: #182a25; --raised: #233b32; --text: #f2ead4; --muted: #c0ccb8; --accent: #e8bb69; --border: #80957d; background: var(--surface); color: var(--text); }
-    .game-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .75rem; border-bottom: 1px solid var(--border); padding-bottom: 18px; }
-    .game-title { font: 1.7rem/1 Georgia, serif; letter-spacing: .03em; }
-    .game-head small { color: var(--muted); }
-    .craft { display: grid; grid-template-columns: .85fr 1.15fr; gap: 50px; align-items: center; padding-top: 30px; }
-    .lantern { width: min(100%, 270px); justify-self: center; color: var(--accent); }
-    .mosslight .eyebrow { color: var(--accent); margin-bottom: 10px; }
-    .mosslight h3 { font: normal 2.7rem/1.08 Georgia, serif; letter-spacing: -.03em; margin-bottom: 14px; }
-    .lore { color: var(--muted); max-width: 40ch; }
-    .costs { margin: 22px 0; padding: 4px 16px; background: var(--raised); border: 1px solid var(--border); }
-    .costs div { display: flex; justify-content: space-between; gap: 1rem; padding: 10px 0; }
-    .costs dt { color: var(--muted); }
-    .costs dd { margin: 0; font-variant-numeric: tabular-nums; white-space: nowrap; flex-shrink: 0; }
-    .game-actions { display: flex; flex-wrap: wrap; gap: 10px; }
-    #craft-button { color: var(--surface); background: var(--accent); border-color: var(--accent); }
-    #craft-button:focus-visible { outline-color: var(--accent); }
-    #craft-button:disabled { color: var(--text); background: var(--raised); border-color: var(--border); }
-    #reset-button { background: transparent; color: var(--text); }
-    #craft-status { color: var(--muted); margin: 16px 0 0; min-height: 3.2em; font-size: .875rem; }
-    .page-foot { border-top: 1px solid #82909a; padding: 24px 0 40px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; color: #4e606b; font-size: .875rem; }
-    @media (max-width: 760px) {
-      .page-head, main, .page-foot { width: calc(100% - 32px); }
-      .intro { grid-template-columns: 1fr; gap: 24px; margin: 38px 0; }
-      .intro h1 { max-width: 12ch; }
-      .preview { padding: 26px 24px; }
-      .story { grid-template-columns: 75px 1fr; gap: 20px; }
-      .chapter strong { font-size: 3.5rem; }
-      .field details { margin-left: 95px; }
-      .case summary { grid-template-columns: 60px minmax(0, 1fr); gap: 8px 12px; }
-      .case-status { grid-column: 2; }
-      .case-action { grid-column: 2; text-align: left; }
-      .craft { grid-template-columns: 1fr; gap: 10px; }
-      .lantern { width: 170px; }
-    }
-    @media (max-width: 430px) {
-      .preview { padding: 22px 18px; }
-      .story { grid-template-columns: 1fr; gap: 22px; padding-top: 26px; }
-      .chapter { display: flex; gap: 12px; align-items: baseline; }
-      .chapter strong { font-size: 2.5rem; }
-      .field details { margin-left: 0; }
-      .queue-head { gap: 14px; }
-      .queue-count { font-size: 2.5rem; }
-      .dispatch h3 { font-size: 1.7rem; }
-    }
+    .field { --surface: #f4f2eb; --raised: #fffef9; --text: #232c2c; --muted: #52615d; --accent: #a43327; --border: #7c8279; }
+    .dispatch { --surface: #e9e9df; --raised: #fdfdf7; --text: #242b25; --muted: #566057; --accent: #dce876; --border: #7d877a; --signal: #315b40; }
+    .mosslight { --surface: #172731; --raised: #f5ecd8; --text: #f4eddb; --muted: #c5d2d2; --accent: #f2c877; --border: #809795; --ink: #344138; }
   </style>
+  <script src="model.js" defer></script>
+  <script src="specimen.js" defer></script>
 </head>
 <body>
-  <a class="skip" href="#examples">Skip to examples</a>
-  <header class="page-head">
-    <div class="masthead"><span class="wordmark">Silicon Design</span><span class="edition">Working specimens / 01</span></div>
-    <div class="intro">
-      <h1>Decisions,<br>made visible.</h1>
-      <div><p>Three fictional products. Three different jobs. Shared principles become useful when they lead to specific choices.</p>
-        <nav class="jump" aria-label="Examples"><a href="#field-notes">01 / Website</a><a href="#dispatch">02 / App</a><a href="#mosslight">03 / Game UI</a></nav>
-      </div>
-    </div>
+  <a class="skip" href="#main">Skip to the specimen</a>
+  <header class="gallery-bar">
+    <a class="gallery-brand" href="../README.md"><span class="silicon-mark" aria-hidden="true">S.</span> Silicon Design <span class="gallery-edition">/ small worlds</span></a>
+    <nav class="example-nav" aria-label="Choose a specimen">
+      <a href="?example=field-notes" data-example="field-notes" aria-current="page"><span>01</span> Field Notes</a>
+      <a href="?example=dispatch" data-example="dispatch"><span>02</span> Dispatch</a>
+      <a href="?example=mosslight" data-example="mosslight"><span>03</span> Mosslight</a>
+    </nav>
   </header>
-  <main id="examples">
-    <section class="example" id="field-notes" aria-labelledby="field-label">
-      <div class="example-head"><h2 id="field-label">01 / A reading experience</h2><p>Composition follows the story.</p></div>
-      <div class="preview field">
-        <div class="journal-head"><span class="journal-name">Field Notes</span><small>An imagined journal of ordinary places</small></div>
-        <article class="story">
-          <div class="chapter"><strong>07</strong><span>Street observations</span></div>
-          <div><h3>A slower way to see the city.</h3><p class="dek">Between the station and the river, a familiar route becomes a small field study. Begin with the things you usually walk past.</p><p class="byline">Fictional essay · 6 minute reading example</p></div>
-        </article>
-        <details><summary>Read the sample opening</summary><p>The workshop window is open before the street is awake. A chair waits outside the door. Across the road, someone has painted the same gate for the third time this year. These are the details our fictional essay would follow.</p></details>
+  <main id="main">
+    <section class="example field" id="field-notes" aria-labelledby="field-heading">
+      <div class="field-masthead">
+        <div class="field-wordmark">field<span class="wordmark-plus" aria-hidden="true">✳</span><br>notes</div>
+        <p class="field-tagline">A small record<br>of ordinary places.</p>
+        <div class="field-issue"><span class="mono">WALK 07</span><span>An imagined walk</span><span>Three things worth noticing</span></div>
       </div>
-      <p class="note">Decision: a strong title and a chapter rhythm support choosing one essay. The excerpt is fictional. <a href="field-notes.DESIGN.md">Read the brief</a>.</p>
-    </section>
-    <section class="example" id="dispatch" aria-labelledby="dispatch-label">
-      <div class="example-head"><h2 id="dispatch-label">02 / An operational workspace</h2><p>Structure follows the next decision.</p></div>
-      <div class="preview dispatch">
-        <div class="app-brand"><span>dispatch /</span><small>Local specimen · no saved changes</small></div>
-        <div class="queue-head"><div><p class="eyebrow">Operations / Incoming</p><h3>Needs a decision</h3><p class="queue-sub">Review the blocking case first.</p></div><span class="queue-count" aria-label="3 cases">03</span></div>
-        <div class="cases">
-          <details class="case"><summary><span class="case-id">#1048</span><span class="case-title">Delivery address needs confirmation</span><span class="case-status">Blocking · Mina</span><span class="case-action">Inspect +</span></summary><div class="case-content"><p><strong>Next step:</strong> compare the order address with the customer's correction before releasing the parcel. This fictional case cannot be saved or sent.</p></div></details>
-          <details class="case"><summary><span class="case-id">#1047</span><span class="case-title">Replacement request for a damaged reading lamp</span><span class="case-status">Ready · Alex</span><span class="case-action">Inspect +</span></summary><div class="case-content"><p><strong>Next step:</strong> inspect the return note and the replacement policy. This is an expandable teaching record, without a connected order system.</p></div></details>
-          <details class="case"><summary><span class="case-id">#1046</span><span class="case-title">Invoice copy requested</span><span class="case-status">Waiting · You</span><span class="case-action">Inspect +</span></summary><div class="case-content"><p><strong>Waiting for:</strong> the corrected billing name. An unavailable action needs a discoverable reason; it should not look like a silent failure.</p></div></details>
-        </div>
-      </div>
-      <p class="note">Decision: aligned records expose work, status and ownership without a decorative metric wall. <a href="dispatch.DESIGN.md">Read the brief</a>.</p>
-    </section>
-    <section class="example" id="mosslight" aria-labelledby="mosslight-label">
-      <div class="example-head"><h2 id="mosslight-label">03 / A game-world decision</h2><p>Atmosphere supports the action.</p></div>
-      <div class="preview mosslight">
-        <div class="game-head"><span class="game-title">Mosslight</span><small>The workshop · fictional crafting demo</small></div>
-        <div class="craft">
-          <svg class="lantern" viewBox="0 0 260 300" fill="none" aria-hidden="true">
-            <path d="M35 258H225M57 270H203" stroke="currentColor" stroke-width="1"/>
-            <path d="M116 63V43C116 25 144 25 144 43V63M98 77H162L182 108H78L98 77Z" stroke="currentColor" stroke-width="3"/>
-            <path d="M83 109L93 237H167L177 109M105 111L111 234M155 111L149 234M89 239H171L179 251H81L89 239Z" stroke="currentColor" stroke-width="3"/>
-            <path d="M130 142C130 161 111 167 111 188C111 217 150 218 150 189C150 173 139 163 130 142Z" fill="currentColor"/>
-            <path d="M130 112V130M93 150L76 144M168 150L185 144M130 217V231" stroke="currentColor" stroke-width="2"/>
-          </svg>
-          <div><p class="eyebrow">Recipe / First light</p><h3>A lantern for the path.</h3><p class="lore">Carry a little warmth beyond the workshop. Inspect the cost before you make it.</p>
-            <dl class="costs"><div><dt>Timber · owned / needed</dt><dd><span id="timber">8</span> / 6</dd></div><div><dt>Resin · owned / needed</dt><dd><span id="resin">3</span> / 2</dd></div></dl>
-            <div class="game-actions"><button id="craft-button" type="button" aria-describedby="craft-status">Craft lantern · local demo</button><button id="reset-button" type="button">Reset demo</button></div>
-            <p id="craft-status" role="status" aria-live="polite">Enough materials. Fictional resources reset on reload.</p>
-            <noscript><p>Enable JavaScript for the local craft demonstration. The costs above are static example values.</p></noscript>
+      <div class="field-spread">
+        <figure class="field-plate">
+          <div class="photo-wrap">
+            <img src="assets/field-notes-alley.jpg" width="1122" height="1402" alt="An imagined alley: a blue shutter, a wooden chair outside a doorway, and plants beside a narrow water channel." fetchpriority="high">
+            <span class="plate-corner top-left" aria-hidden="true"></span><span class="plate-corner bottom-right" aria-hidden="true"></span>
+            <button class="photo-pin pin-one" data-stop="0" aria-label="Observation 1: the blue shutter" aria-pressed="true">01</button>
+            <button class="photo-pin pin-two" data-stop="1" aria-label="Observation 2: the waiting chair" aria-pressed="false">02</button>
+            <button class="photo-pin pin-three" data-stop="2" aria-label="Observation 3: the uninvited garden" aria-pressed="false">03</button>
+            <span class="photo-credit">Imagined place · generated photograph</span>
           </div>
+          <figcaption><span class="mono">PLATE 07 / SIDE STREET</span><span>Follow the small things.</span></figcaption>
+        </figure>
+        <div class="field-story">
+          <div class="field-story-label"><span class="red-dot" aria-hidden="true"></span> The city, after hours</div>
+          <h1 id="field-heading">AFTER<br><span>CLOSING.</span></h1>
+          <p class="field-deck">The shops have shut.<br>The street hasn’t.</p>
+          <div class="walk-route" aria-label="Observation route">
+            <button data-stop="0" aria-pressed="true"><span>01</span> Shutter</button><i aria-hidden="true"></i>
+            <button data-stop="1" aria-pressed="false"><span>02</span> Chair</button><i aria-hidden="true"></i>
+            <button data-stop="2" aria-pressed="false"><span>03</span> Waterline</button>
+          </div>
+          <article class="observation" aria-live="polite" aria-atomic="true">
+            <div class="observation-number mono" id="stop-number">OBSERVATION 01</div>
+            <h2 id="stop-title">A shutter wearing the weather.</h2>
+            <p id="stop-copy">Blue paint holds in the grooves. Rust gathers at the edges. The shop is closed, but its front keeps a record of every season it has stood through.</p>
+            <p class="margin-note" id="stop-prompt">Look at what time leaves behind.</p>
+          </article>
+          <div class="field-save-row"><button class="field-save" id="keep-stop" type="button"><span aria-hidden="true">＋</span> Keep this observation</button><span class="mono" id="kept-count">0 / 3 KEPT</span></div>
+          <p class="field-status" id="field-status" role="status">A field book begins with one thing you notice.</p>
+          <details class="field-own-note">
+            <summary>Add a note of your own</summary>
+            <form id="field-note-form" novalidate>
+              <label for="field-note">What caught your eye?</label>
+              <textarea id="field-note" rows="2" maxlength="300" placeholder="A small detail is enough."></textarea>
+              <p id="field-note-error" class="form-error" hidden>A word or two will do. Add your observation first.</p>
+              <button class="text-action" type="submit">Put it in the field book <span aria-hidden="true">↗</span></button>
+            </form>
+            <div id="field-own-saved" class="own-saved" hidden><span class="mono">YOUR MARGIN NOTE</span><p id="field-own-text"></p></div>
+          </details>
         </div>
       </div>
-      <p class="note">Decision: expressive materials surround plain costs and truthful feedback. This DOM specimen does not test a game's playfield or controller input. <a href="mosslight.DESIGN.md">Read the brief</a>.</p>
+      <div class="field-footer"><span>A walk is a way of paying attention.</span><span class="mono">LOCAL FIELD BOOK · RESETS ON RELOAD</span></div>
+    </section>
+
+    <section class="example dispatch" id="dispatch" aria-labelledby="dispatch-heading" hidden>
+      <div class="dispatch-masthead">
+        <div class="dispatch-wordmark"><span class="dispatch-symbol" aria-hidden="true">D↗</span> DISPATCH<span class="dispatch-sub">THE WORKSHOP DESK</span></div>
+        <div class="dispatch-shift"><span class="shift-dot" aria-hidden="true"></span> Bench open <span class="mono">/ SAMPLE WORKSHOP</span></div>
+        <button id="reset-workshop" class="dispatch-reset" type="button">Reset sample</button>
+      </div>
+      <div class="dispatch-layout">
+        <aside class="job-shelf" aria-label="Workshop jobs">
+          <div class="shelf-heading"><h2>On the bench</h2><span class="open-count"><span id="open-jobs">3</span> OPEN</span></div>
+          <button class="job-ticket" data-job="17" aria-pressed="true">
+            <span class="ticket-top"><span class="ticket-id mono">017</span><span class="ticket-status">NEEDS A DECISION</span></span>
+            <strong>Blue enamel lamp</strong><span class="ticket-owner">Address check · Mina</span><span class="ticket-line"><span>Delivery</span><span aria-hidden="true">↗</span></span>
+          </button>
+          <button class="job-ticket" data-job="18" aria-pressed="false">
+            <span class="ticket-top"><span class="ticket-id mono">018</span><span class="ticket-status">READY TO COLLECT</span></span>
+            <strong>Portable turntable</strong><span class="ticket-owner">New belt fitted · Alex</span><span class="ticket-line"><span>Collection</span><span aria-hidden="true">↗</span></span>
+          </button>
+          <button class="job-ticket" data-job="19" aria-pressed="false">
+            <span class="ticket-top"><span class="ticket-id mono">019</span><span class="ticket-status">WAITING FOR A PART</span></span>
+            <strong>Kitchen radio</strong><span class="ticket-owner">Replacement switch · You</span><span class="ticket-line"><span>On hold</span><span aria-hidden="true">—</span></span>
+          </button>
+          <div class="shelf-note"><span aria-hidden="true">⌁</span><p>Fix the thing.<br>Keep the story.</p><small>A repair is worth finishing properly.</small></div>
+        </aside>
+        <div class="work-order" id="work-order">
+          <header class="order-strip"><span class="mono" id="order-ref">WORK ORDER / 017</span><span id="order-owner">Checked by Mina</span><span class="order-punches" aria-hidden="true">● ●</span></header>
+          <div class="order-heading"><div><p class="mono order-kicker" id="order-kicker">REPAIR COMPLETE / DELIVERY ON HOLD</p><h1 id="dispatch-heading">The lamp is fixed.<br>The address isn’t.</h1></div><div class="repair-seal" aria-label="Repair checked"><span>BENCH</span><strong>✓</strong><span>CHECKED</span></div></div>
+          <div class="order-body">
+            <figure class="repair-drawing">
+              <svg viewBox="0 0 220 290" aria-hidden="true" fill="none"><g id="repair-object">
+                <path d="M22 252H198M110 232V191L68 124L118 68M110 191L146 130L118 68M68 124L82 119M146 130L133 128" stroke="currentColor" stroke-width="3"/>
+                <circle cx="110" cy="191" r="8" fill="var(--raised)" stroke="currentColor" stroke-width="2"/><circle cx="68" cy="124" r="6" fill="var(--raised)" stroke="currentColor" stroke-width="2"/>
+                <path d="M82 232Q110 216 138 232L151 246H69L82 232Z" fill="var(--surface)" stroke="currentColor" stroke-width="2"/>
+                <path d="M118 68L155 40L184 84L139 91Z" fill="#9bb6b8" stroke="currentColor" stroke-width="2"/><path d="M139 91Q158 103 184 84" stroke="currentColor" stroke-width="2"/>
+                <path d="M40 38V254M35 38H45M35 254H45M54 72H122M160 106L193 122M191 116V129" stroke="currentColor" stroke-width="1" stroke-dasharray="3 4"/>
+                </g><text x="30" y="164" transform="rotate(-90 30 164)" fill="currentColor" font-size="10" font-family="monospace">BENCH RECORD / NOT TO SCALE</text>
+              </svg>
+              <figcaption><span class="mono" id="item-label">BLUE ENAMEL / DESK LAMP</span><span id="repair-summary">Switch replaced.<br>Tested, cleaned, ready to go.</span></figcaption>
+            </figure>
+            <div class="order-decision">
+              <div id="address-decision">
+                <h2>Before it leaves the bench</h2>
+                <p class="decision-intro">One character makes a difference. Check the customer’s correction before printing the label.</p>
+                <blockquote class="customer-slip"><span class="mono">CUSTOMER’S NOTE</span><p>“Please send it to 18a, not 18. The door is beside the bakery.”</p></blockquote>
+                <form id="release-form" novalidate>
+                  <fieldset><legend>Which address goes on the label?</legend>
+                    <label class="address-option"><input type="radio" name="address" value="original"><span><small>Original order</small><strong>18 High Street</strong></span></label>
+                    <label class="address-option"><input type="radio" name="address" value="corrected"><span><small>Customer’s correction</small><strong>18a High Street</strong></span></label>
+                  </fieldset>
+                  <p id="dispatch-error" class="form-error" role="alert" hidden></p>
+                  <button class="release-button" type="submit">Confirm address &amp; release <span aria-hidden="true">↗</span></button>
+                </form>
+              </div>
+              <div id="collection-decision" hidden><h2>Ready for its next record.</h2><p class="decision-intro">The belt is fitted and playback checked. Mark this job collected when the customer takes it home.</p><div class="repair-note"><span class="mono">BENCH NOTE</span><p>New belt fitted. Speed checked at both settings. Old belt packed with the unit.</p></div><button id="collect-job" class="release-button" type="button">Mark collected <span aria-hidden="true">↗</span></button></div>
+              <div id="waiting-decision" hidden><h2>A small part. A necessary pause.</h2><p class="decision-intro">The matching replacement switch has not arrived. Keep the radio on the bench until it can be fitted and tested.</p><div class="repair-note"><span class="mono">PARTS NOTE</span><p>The current switch cuts out under load. The repair has not passed its final check.</p></div><button class="release-button" type="button" disabled aria-describedby="waiting-reason">Release to delivery</button><p id="waiting-reason">Unavailable: replacement switch and final test are still needed.</p></div>
+              <div id="order-receipt" hidden><div class="cleared-stamp">CLEARED<br><span id="cleared-ref">017 / TO DELIVERY</span></div><h2 id="receipt-title">A good repair, properly finished.</h2><p id="receipt-copy"></p><button id="undo-job" class="text-action" type="button">Undo this action</button></div>
+            </div>
+          </div>
+          <footer class="order-routing"><span class="mono">JOB ROUTE</span><span class="route-stage" id="routing-first">01 / Bench ✓</span><span aria-hidden="true">→</span><span class="route-stage" id="routing-last">02 / Address check</span><span class="mono route-end" id="order-status">ON HOLD</span></footer>
+          <p class="dispatch-status" id="dispatch-status" role="status">017 needs an address decision. Your place on the bench stays here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="example mosslight" id="mosslight" aria-labelledby="mosslight-heading" hidden>
+      <div class="game-scene" id="game-scene" data-phase="unmade">
+        <img class="world-image" src="assets/mosslight-world.jpg" width="1672" height="941" alt="A painted forest workshop at dusk, with a stepping-stone path, a footbridge and an empty lantern hook." loading="lazy">
+        <div class="world-shade" aria-hidden="true"></div>
+        <div class="game-topline"><div><p class="game-chapter">A LANTERNMAKER’S EVENING</p><h1 id="mosslight-heading">Mosslight</h1></div><button id="reset-game" class="game-reset" type="button">Begin again</button></div>
+        <div class="game-location"><span class="location-dot" aria-hidden="true"></span><span id="game-location">The workshop · blue hour</span></div>
+        <svg class="world-effects" viewBox="0 0 1672 941" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true">
+          <defs><radialGradient id="lantern-pool"><stop stop-color="#ffdc94" stop-opacity=".75"/><stop offset=".3" stop-color="#ffc35a" stop-opacity=".3"/><stop offset="1" stop-color="#ffc35a" stop-opacity="0"/></radialGradient></defs>
+          <g class="world-effects-light"><ellipse cx="980" cy="610" rx="340" ry="285" fill="url(#lantern-pool)"/>
+            <g transform="translate(942 419) scale(.8)" id="placed-lantern">
+              <path d="M28 22V12C28 1 52 1 52 12V22M22 25H58L67 43H13L22 25ZM18 43L23 109H57L62 43M25 110H55L65 122H15L25 110Z" stroke="#3b3023" stroke-width="4" fill="#dcb866"/>
+              <path d="M26 46H54L51 105H29L26 46Z" fill="#ffdc91"/><path d="M40 58C42 76 30 76 32 90C35 107 51 94 46 83L40 58Z" fill="#fff6c7"/>
+            </g>
+          </g>
+        </svg>
+        <div class="bridge-marker" id="bridge-marker"><span aria-hidden="true">✧</span><span id="bridge-marker-text">A little light would help.</span></div>
+        <div class="game-story"><span class="mono">EVENING 01</span><p id="world-caption">There is still a way home.<br>It just needs a light.</p></div>
+        <span class="art-credit">Original generated illustration</span>
+      </div>
+      <div class="craft-bench">
+        <div class="recipe-side"><span class="recipe-tab">THE MAKING BOOK</span><div class="recipe-heading"><span class="recipe-number">01</span><div><p class="mono">FIRST THINGS FIRST</p><h2 id="recipe-title">A light for the bridge.</h2></div></div><p id="recipe-copy">Six pieces of timber. Two drops of resin.<br>Enough to make the dark a little smaller.</p></div>
+        <div class="craft-controls"><div class="materials"><div><span class="material-icon" aria-hidden="true">▱</span><span>Timber <small>owned / needed</small></span><strong><span id="timber">8</span> / 6</strong></div><div><span class="material-icon resin-icon" aria-hidden="true">◒</span><span>Resin <small>owned / needed</small></span><strong><span id="resin">3</span> / 2</strong></div></div>
+          <div class="game-actions"><button id="craft-button" type="button">Make the lantern <span aria-hidden="true">↗</span></button><button id="hang-button" type="button" hidden>Hang it by the bridge <span aria-hidden="true">↗</span></button></div>
+          <p id="craft-status" role="status">The materials are here. Let’s make something useful.</p>
+        </div>
+      </div>
+      <div class="game-journal" id="game-journal" hidden><span aria-hidden="true">✧</span><div><strong>A light left for someone else.</strong><p>The bridge is lit. The path is open. That is enough for tonight.</p></div><span class="journal-entry mono">FIELD BOOK / 01</span></div>
     </section>
   </main>
-  <footer class="page-foot"><span>Original teaching specimens. All product content is fictional.</span><a href="../README.md">Explore the handbook</a></footer>
-  <script>
-    const craft = document.getElementById('craft-button');
-    const reset = document.getElementById('reset-button');
-    const status = document.getElementById('craft-status');
-    craft.addEventListener('click', () => {
-      document.getElementById('timber').textContent = '2';
-      document.getElementById('resin').textContent = '1';
-      status.textContent = 'Lantern crafted in this local demo. Another needs 4 more timber and 1 more resin. Reset to try again.';
-      craft.disabled = true;
-      reset.focus();
-    });
-    reset.addEventListener('click', () => {
-      document.getElementById('timber').textContent = '8';
-      document.getElementById('resin').textContent = '3';
-      status.textContent = 'Demo reset. Enough materials for one lantern; nothing is saved.';
-      craft.disabled = false;
-      craft.focus();
-    });
-  </script>
+  <footer class="gallery-footer"><p id="specimen-caption">01 / Field Notes — a route, a record, a reason to look closer.</p><div><span>Fictional local prototypes · changes reset on reload</span><a id="brief-link" href="field-notes.DESIGN.md">Design decisions ↗</a></div></footer>
+  <noscript><p class="noscript">These interactive specimens need JavaScript. Their source and design briefs remain available in this repository.</p></noscript>
 </body>
 </html>

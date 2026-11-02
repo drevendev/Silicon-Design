@@ -45,11 +45,15 @@ Each folder is a self-contained skill with a `SKILL.md`; no paid service, compon
 | [silicon-game-ui](skills/silicon-game-ui/SKILL.md) | HUDs, menus, inventory and game feedback | Readable play-state UI with input and scaling checks |
 | [silicon-design-review](skills/silicon-design-review/SKILL.md) | Reviewing an existing design or implementation | Prioritized findings with evidence and bounded fixes |
 
-## Examples, including what needs work
+## Three small worlds
 
-The [first specimens](examples/specimen.html) are three **fictional teaching examples** of layout and state mechanics. They remain too generic for the ambition above. The [critique](research/specimen-critique.md) names the gaps: a theme standing in for identity, a decorative motif that barely affects behavior, and insufficient attention to what makes repeated use rewarding.
+The [redesigned examples](examples/README.md) carry different ideas through actual local interactions:
 
-Their [briefs](examples/README.md) and [technical verification](examples/VERIFICATION.md) remain available to inspect. Passing those checks does not settle the design review. These examples are an open exercise, with a documented revision brief.
+- **Field Notes:** a photographed street becomes a route of observations and a personal field book.
+- **Dispatch:** a repair-workshop desk follows a lamp from an address correction to a cleared job, with undo.
+- **Mosslight:** a lanternmaker makes and hangs a light; the path through the forest changes.
+
+[See the browser captures and try the gallery](examples/README.md#preview). The [briefs](examples/README.md), [revision review](examples/REVIEW.md) and [performed checks](examples/VERIFICATION.md) explain the decisions and limits. These are fictional prototypes. The [original critique](research/specimen-critique.md) remains part of the record; recognizability and attachment still need audience testing.
 
 ## What belongs here
 
@@ -64,14 +68,15 @@ This is the initial handbook. The next step is to apply it to a real product and
 
 ## Check the repository
 
-With Python 3.11+ and no runtime dependencies:
+With Python 3.11+ and Node.js 20+, without installing dependencies:
 
 ```sh
 python tools/check.py
 python -m unittest discover -s tests -v
+node --test tests/specimen-model.test.cjs
 ```
 
-The check validates local Markdown destinations, skill metadata, source revisions and declared palette pairs. It does not judge visual quality, crawl external links, or certify accessibility. See [contributing](CONTRIBUTING.md) for manual review expectations.
+The handbook check validates local Markdown destinations, skill metadata, source revisions and declared palette pairs. Node tests cover the workshop and crafting state transitions. It does not judge visual quality, crawl external links, or certify accessibility. See [contributing](CONTRIBUTING.md) for manual review expectations.
 
 ## License
 

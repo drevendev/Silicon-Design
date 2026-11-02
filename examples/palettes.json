@@ -5,59 +5,164 @@
       "name": "field-notes",
       "css_scope": ".field",
       "roles": {
-        "surface": "#f3eee4",
-        "text": "#232b29",
-        "muted": "#535e58",
-        "accent": "#8b3426",
-        "border": "#7e786c"
+        "surface": "#f4f2eb",
+        "raised": "#fffef9",
+        "text": "#232c2c",
+        "muted": "#52615d",
+        "accent": "#a43327",
+        "border": "#7c8279"
       },
       "pairs": [
-        {"foreground": "text", "background": "surface", "minimum": 4.5, "usage": "body and titles"},
-        {"foreground": "muted", "background": "surface", "minimum": 4.5, "usage": "supporting text"},
-        {"foreground": "accent", "background": "surface", "minimum": 4.5, "usage": "links and chapter label"},
-        {"foreground": "border", "background": "surface", "minimum": 3, "usage": "disclosure boundary"}
+        {
+          "foreground": "text",
+          "background": "surface",
+          "minimum": 4.5,
+          "usage": "reading"
+        },
+        {
+          "foreground": "muted",
+          "background": "surface",
+          "minimum": 4.5,
+          "usage": "metadata"
+        },
+        {
+          "foreground": "accent",
+          "background": "surface",
+          "minimum": 4.5,
+          "usage": "observation and title"
+        },
+        {
+          "foreground": "raised",
+          "background": "accent",
+          "minimum": 4.5,
+          "usage": "selected route mark"
+        },
+        {
+          "foreground": "border",
+          "background": "surface",
+          "minimum": 3,
+          "usage": "control boundary"
+        },
+        {
+          "foreground": "raised",
+          "background": "text",
+          "minimum": 4.5,
+          "usage": "kept observation button"
+        }
       ]
     },
     {
       "name": "dispatch",
       "css_scope": ".dispatch",
       "roles": {
-        "surface": "#edf1f4",
-        "raised": "#ffffff",
-        "text": "#172b35",
-        "muted": "#4e606b",
-        "accent": "#9a3d0a",
-        "border": "#82909a"
+        "surface": "#e9e9df",
+        "raised": "#fdfdf7",
+        "text": "#242b25",
+        "muted": "#566057",
+        "accent": "#dce876",
+        "border": "#7d877a",
+        "signal": "#315b40"
       },
       "pairs": [
-        {"foreground": "text", "background": "raised", "minimum": 4.5, "usage": "record text"},
-        {"foreground": "text", "background": "surface", "minimum": 4.5, "usage": "queue heading"},
-        {"foreground": "muted", "background": "raised", "minimum": 4.5, "usage": "record metadata"},
-        {"foreground": "muted", "background": "surface", "minimum": 4.5, "usage": "queue metadata"},
-        {"foreground": "accent", "background": "raised", "minimum": 4.5, "usage": "priority and action"},
-        {"foreground": "accent", "background": "surface", "minimum": 4.5, "usage": "queue context"},
-        {"foreground": "border", "background": "raised", "minimum": 3, "usage": "record boundary"}
+        {
+          "foreground": "text",
+          "background": "raised",
+          "minimum": 4.5,
+          "usage": "work order"
+        },
+        {
+          "foreground": "text",
+          "background": "surface",
+          "minimum": 4.5,
+          "usage": "workshop"
+        },
+        {
+          "foreground": "text",
+          "background": "accent",
+          "minimum": 4.5,
+          "usage": "selected ticket"
+        },
+        {
+          "foreground": "muted",
+          "background": "raised",
+          "minimum": 4.5,
+          "usage": "order metadata"
+        },
+        {
+          "foreground": "muted",
+          "background": "surface",
+          "minimum": 4.5,
+          "usage": "shelf metadata"
+        },
+        {
+          "foreground": "accent",
+          "background": "text",
+          "minimum": 4.5,
+          "usage": "release action"
+        },
+        {
+          "foreground": "signal",
+          "background": "raised",
+          "minimum": 4.5,
+          "usage": "cleared stamp"
+        },
+        {
+          "foreground": "border",
+          "background": "raised",
+          "minimum": 3,
+          "usage": "control boundary"
+        }
       ]
     },
     {
       "name": "mosslight",
       "css_scope": ".mosslight",
       "roles": {
-        "surface": "#182a25",
-        "raised": "#233b32",
-        "text": "#f2ead4",
-        "muted": "#c0ccb8",
-        "accent": "#e8bb69",
-        "border": "#80957d"
+        "surface": "#172731",
+        "raised": "#f5ecd8",
+        "text": "#f4eddb",
+        "muted": "#c5d2d2",
+        "accent": "#f2c877",
+        "border": "#809795",
+        "ink": "#344138"
       },
       "pairs": [
-        {"foreground": "text", "background": "surface", "minimum": 4.5, "usage": "title and result"},
-        {"foreground": "text", "background": "raised", "minimum": 4.5, "usage": "resource costs"},
-        {"foreground": "muted", "background": "surface", "minimum": 4.5, "usage": "lore and disclosure"},
-        {"foreground": "muted", "background": "raised", "minimum": 4.5, "usage": "resource labels"},
-        {"foreground": "surface", "background": "accent", "minimum": 4.5, "usage": "primary button label"},
-        {"foreground": "accent", "background": "surface", "minimum": 3, "usage": "focus and lantern outline"},
-        {"foreground": "border", "background": "raised", "minimum": 3, "usage": "resource boundary"}
+        {
+          "foreground": "text",
+          "background": "surface",
+          "minimum": 4.5,
+          "usage": "scene labels on opaque backing"
+        },
+        {
+          "foreground": "muted",
+          "background": "surface",
+          "minimum": 4.5,
+          "usage": "journal text"
+        },
+        {
+          "foreground": "accent",
+          "background": "surface",
+          "minimum": 4.5,
+          "usage": "light cue"
+        },
+        {
+          "foreground": "ink",
+          "background": "raised",
+          "minimum": 4.5,
+          "usage": "recipe text"
+        },
+        {
+          "foreground": "raised",
+          "background": "ink",
+          "minimum": 4.5,
+          "usage": "craft action"
+        },
+        {
+          "foreground": "border",
+          "background": "surface",
+          "minimum": 3,
+          "usage": "scene control boundary"
+        }
       ]
     }
   ]
