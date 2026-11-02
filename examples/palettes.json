@@ -1,0 +1,64 @@
+{
+  "format": "silicon-specimen-palettes-1",
+  "palettes": [
+    {
+      "name": "field-notes",
+      "css_scope": ".field",
+      "roles": {
+        "surface": "#f3eee4",
+        "text": "#232b29",
+        "muted": "#535e58",
+        "accent": "#8b3426",
+        "border": "#7e786c"
+      },
+      "pairs": [
+        {"foreground": "text", "background": "surface", "minimum": 4.5, "usage": "body and titles"},
+        {"foreground": "muted", "background": "surface", "minimum": 4.5, "usage": "supporting text"},
+        {"foreground": "accent", "background": "surface", "minimum": 4.5, "usage": "links and chapter label"},
+        {"foreground": "border", "background": "surface", "minimum": 3, "usage": "disclosure boundary"}
+      ]
+    },
+    {
+      "name": "dispatch",
+      "css_scope": ".dispatch",
+      "roles": {
+        "surface": "#edf1f4",
+        "raised": "#ffffff",
+        "text": "#172b35",
+        "muted": "#4e606b",
+        "accent": "#9a3d0a",
+        "border": "#82909a"
+      },
+      "pairs": [
+        {"foreground": "text", "background": "raised", "minimum": 4.5, "usage": "record text"},
+        {"foreground": "text", "background": "surface", "minimum": 4.5, "usage": "queue heading"},
+        {"foreground": "muted", "background": "raised", "minimum": 4.5, "usage": "record metadata"},
+        {"foreground": "muted", "background": "surface", "minimum": 4.5, "usage": "queue metadata"},
+        {"foreground": "accent", "background": "raised", "minimum": 4.5, "usage": "priority and action"},
+        {"foreground": "accent", "background": "surface", "minimum": 4.5, "usage": "queue context"},
+        {"foreground": "border", "background": "raised", "minimum": 3, "usage": "record boundary"}
+      ]
+    },
+    {
+      "name": "mosslight",
+      "css_scope": ".mosslight",
+      "roles": {
+        "surface": "#182a25",
+        "raised": "#233b32",
+        "text": "#f2ead4",
+        "muted": "#c0ccb8",
+        "accent": "#e8bb69",
+        "border": "#80957d"
+      },
+      "pairs": [
+        {"foreground": "text", "background": "surface", "minimum": 4.5, "usage": "title and result"},
+        {"foreground": "text", "background": "raised", "minimum": 4.5, "usage": "resource costs"},
+        {"foreground": "muted", "background": "surface", "minimum": 4.5, "usage": "lore and disclosure"},
+        {"foreground": "muted", "background": "raised", "minimum": 4.5, "usage": "resource labels"},
+        {"foreground": "surface", "background": "accent", "minimum": 4.5, "usage": "primary button label"},
+        {"foreground": "accent", "background": "surface", "minimum": 3, "usage": "focus and lantern outline"},
+        {"foreground": "border", "background": "raised", "minimum": 3, "usage": "resource boundary"}
+      ]
+    }
+  ]
+}

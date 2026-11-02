@@ -1,0 +1,104 @@
+[
+  {
+    "repository": "mondaycom/vibe",
+    "revision": "f39a2f6e2d950adced82e9e975255399ac4f1541",
+    "reviewed_at": "2026-11-02",
+    "paths": [
+      "README.md"
+    ]
+  },
+  {
+    "repository": "drevendev/FrankenRepo",
+    "revision": "26da6d02e59df7a3374b529515423eecf8ac7086",
+    "reviewed_at": "2026-11-02",
+    "paths": [
+      "README.md"
+    ]
+  },
+  {
+    "repository": "ufira-ai/Vibma",
+    "revision": "cdadc728057c04c566b1e1ee8cc9ef1b1b3fe471",
+    "reviewed_at": "2026-11-02",
+    "paths": [
+      "README.md"
+    ]
+  },
+  {
+    "repository": "VoltAgent/awesome-design-md",
+    "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "reviewed_at": "2026-11-02",
+    "paths": [
+      "README.md"
+    ]
+  },
+  {
+    "repository": "nexu-io/open-design",
+    "revision": "5a0c47777975ddb91d09c1c16b423a3ef74bf572",
+    "reviewed_at": "2026-11-02",
+    "paths": [
+      "README.md"
+    ]
+  },
+  {
+    "repository": "donnemartin/system-design-primer",
+    "revision": "ae9bbd7b02d90b9866215de185217d33f39ab733",
+    "reviewed_at": "2026-11-02",
+    "paths": [
+      "README.md"
+    ]
+  },
+  {
+    "repository": "JCarterJohnson/vibecoded-design-tells",
+    "revision": "f7c4aefc2c797a66e55b49354a93917ab60d33ac",
+    "reviewed_at": "2026-11-02",
+    "paths": [
+      "README.md"
+    ]
+  },
+  {
+    "repository": "miqdadbadjuber/anti-slop",
+    "revision": "941b1532f9cc8ffde766bca5921d75257c9e5762",
+    "reviewed_at": "2026-11-02",
+    "paths": [
+      "README.md",
+      "skills/antislop-ui/SKILL.md"
+    ]
+  },
+  {
+    "repository": "primer/design",
+    "revision": "87f799f202ec95df15c99f473c9c0c803da8e6b3",
+    "reviewed_at": "2026-11-02",
+    "paths": [
+      "README.md",
+      "content/foundations/typography.mdx"
+    ]
+  },
+  {
+    "repository": "drevendev/IdleShop",
+    "revision": "a29ba05efdd3c1a1a0a3c3a34f361e5590953bc7",
+    "reviewed_at": "2026-11-02",
+    "paths": [
+      "README.md",
+      "docs/design/release-0.14/ui-wireframes.md"
+    ]
+  },
+  {
+    "repository": "drevendev/BeautifulRepo",
+    "revision": "a692491a7a973032d90545bc6f428ba6b77f706f",
+    "reviewed_at": "2026-11-02",
+    "paths": [
+      "README.md",
+      "examples/readme-visuals/DESIGN_INTENT.md"
+    ]
+  },
+  {
+    "repository": "ant-design/ant-design",
+    "revision": "ac2322ada3c1212793144c296d2429d7857576e4",
+    "reviewed_at": "2026-11-02",
+    "paths": [
+      "README.md",
+      "docs/spec/font.en-US.md",
+      "docs/spec/colors.en-US.md"
+    ]
+  }
+]
