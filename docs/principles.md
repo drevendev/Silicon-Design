@@ -1,32 +1,65 @@
 # Principles
 
-These are decision rules shared across our products. They leave room for expressive, quiet, dense, playful and unfamiliar visual languages. Accessibility requirements are identified in the [accessibility guide](foundations/accessibility.md); the remaining rules are our working conventions.
+A good interface can still be interchangeable. Our standard includes usefulness, access and honest behavior, together with a character that belongs to this product. The 24 principles below are working decision rules. They are not a recipe for affection or a style blacklist.
 
-| Principle | Consequence in a design | Review question |
-| --- | --- | --- |
-| Begin with the person's task | Put the information needed for the next decision where it can be found | Can the intended person explain what to do next? |
-| Give the product a point of view | Choose composition, type, imagery and voice together, with a reason tied to audience and context | Would replacing the logo leave a recognizable product? |
-| Design information before containers | Group by meaning, sequence and comparison; choose rows, text, tables or cards accordingly | Does the structure survive when visual decoration is removed? |
-| Make hierarchy selective | Use a clear dominant element in each decision area; let supporting material be quieter | Where does attention go first, and is that useful? |
-| Let content shape the layout | Use realistic labels, long names, quantities and images while designing | Does the layout work beyond the perfect sample? |
-| Build a system with intentional exceptions | Reuse semantic roles and interaction patterns; document exceptions that improve a real task | Is this variation informative, or accidental drift? |
-| Treat readability as a feature | Test actual scripts, reading distances, density and scaling | Can the important text be read comfortably in context? |
-| Use color and motion to communicate | Assign roles to status, emphasis, transition and feedback; retain non-color and low-motion cues | What meaning disappears when color or animation is removed? |
-| Design the whole interaction | Include waiting, empty, failed, disabled, successful and interrupted states | Can someone recover without guessing? |
-| Make expression earn its attention | Use illustration, texture, sound and unusual composition when they build meaning, recognition or delight | What does this detail add, and what does it cost? |
-| Show honest evidence | Use real outputs for product claims; label prototypes and invented examples | Can a reviewer trace the claim to the thing that was checked? |
-| Iterate on rendered behavior | Inspect the implementation, then change it using observed problems | What improved for the user after the last iteration? |
+Each has an implementation consequence and a review question. [Character & attachment](character.md) explains the expressive work; the [deeper source analysis](../research/deep-read.md) connects these principles to inspected material and separates borrowed methods from our synthesis. Accessibility requirements remain in the [accessibility guide](foundations/accessibility.md).
 
-## Resolving conflicts
+## Direction and identity
 
-Preserve the user's task, access and truthful feedback first. Then choose among valid expressions using brand fit, clarity, effort and implementation constraints. A memorable title treatment can coexist with restrained body typography. A dense table can coexist with generous space around its decisions.
+| ID | Principle | Consequence | Review question |
+| --- | --- | --- | --- |
+| P01 | Start with a person and a situation | Name the task, stakes and context before choosing a look | Whose day gets better, and at which moment? |
+| P02 | Give the product an emotional intention | Translate a desired feeling into composition, words and behavior | What should someone feel, and which choices cause that? |
+| P03 | Take a position | Choose a specific direction and state what it gives up | What would this product deliberately do differently from its peers? |
+| P04 | Draw from the product's own world | Use its material, subject, artifacts and vocabulary as design inputs | What could not be transplanted into an unrelated product unchanged? |
+| P05 | Establish a repeatable visual grammar | Carry a recognizable typographic, spatial, image or interaction idea across states | Does the identity survive beyond the hero and logo? |
+| P06 | Spend novelty where it matters | Keep familiar operations predictable and concentrate invention on meaningful moments | Is this memorable choice helping the product, or making the control harder to use? |
 
-Consistency means familiar behavior and coherent roles. It does not require a landing page, inventory and analytics screen to use the same density. Simplicity means removing needless work; sometimes it requires more visible information.
+## Composition and craft
 
-An exception should state its benefit, affected surface and verification. For example: “Inventory rows use compact spacing to compare quantities; touch actions retain larger hit areas and exact quantities remain available.” Avoid blanket exceptions such as “games do not need accessibility.”
+| ID | Principle | Consequence | Review question |
+| --- | --- | --- | --- |
+| P07 | Let content determine structure | Group by meaning, sequence and comparison before choosing containers | Does every section have a real reason to exist? |
+| P08 | Make hierarchy decisive | Create a clear major/minor relationship through size, space, position or restraint | Is attention selective enough to support the next decision? |
+| P09 | Compose a rhythm | Vary density and emphasis with the content while preserving useful repetition | Where does the experience accelerate, pause and resolve? |
+| P10 | Treat typography as a voice | Shape roles, measure, wrapping and scripts together; optically adjust the result | Does the type express the intended character while staying comfortable to read? |
+| P11 | Give color, depth and materials roles | Distinguish surfaces, action, status and expression; check real combinations | Which meaning does each treatment carry? |
+| P12 | Finish the small decisions | Refine crops, alignment, icon weight, punctuation, value formatting and state transitions | What reveals that someone has actually used and cared for this screen? |
 
-## Definition of a useful design decision
+## Behavior, care and repeated use
 
-Record the context, choice, rejected alternative, tradeoff and evidence. “Use an expressive serif” is incomplete. “Use a serif for the journal's article titles to distinguish long-form reading from navigation; keep navigation in the system sans; verify Cyrillic titles at 320 px” can be implemented and reviewed.
+| ID | Principle | Consequence | Review question |
+| --- | --- | --- | --- |
+| P13 | Make possibilities discoverable | Provide timely cues and clear action labels, including for direct manipulation | Can a new user discover what is possible without a guided tour? |
+| P14 | Preserve the person's context | Keep useful input, location and selection; edit near the object when appropriate | Can someone continue thinking about the task after a change? |
+| P15 | Respond immediately and truthfully | Acknowledge input, show real pending/completed states, and support recovery | Can the person distinguish received, processing, finished and failed? |
+| P16 | Use motion to connect cause and effect | Explain continuity or an important result; keep frequent transitions brief and interruptible | Does the movement help, and can the task continue without waiting for it? |
+| P17 | Keep a stable voice and an appropriate tone | Write specific language; adjust warmth and humor to the person's situation | Does the error sound like the same product taking the problem seriously? |
+| P18 | Design the empty, completed and returning experience | Distinguish a fresh start, no matches, finished work, missing access and failure | Does the interface understand why there is nothing here? |
+| P19 | Let people grow in competence | Place help in context, support efficient repetition, and respect dismissed guidance | Is the tenth visit better than repeating the first? |
+| P20 | Make delight respectful | Give recognition, relief or pleasure at a fitting moment, with control over repetition | Would someone still welcome this detail after using it often? |
 
-[Workflow](workflow.md) · [Our practice](../research/our-practice.md) · [Diagnostics](anti-generic.md)
+## Resilience and judgment
+
+| ID | Principle | Consequence | Review question |
+| --- | --- | --- | --- |
+| P21 | Build systems that adapt to real content | Use semantic roles, meaningful variants and bounded layouts; test long/localized content | Can the design stretch without becoming a pile of one-off fixes? |
+| P22 | Preserve access and informed choice | Keep the task operable and readable; make costs and consequences clear | Does expression support the person's agency, including in difficult states? |
+| P23 | Ground claims and respect time | Show real evidence, avoid artificial waits and inspect actual performance | Is the product earning trust through what it does? |
+| P24 | Review usefulness and character separately | Inspect rendered behavior and critique specificity, coherence and care | What works technically, and what is still forgettable? |
+
+## Resolve conflicts without erasing the product
+
+Preserve access, the person's task and truthful feedback. Choose among valid expressions using emotional intent, brand fit, clarity and implementation constraints. Reliability can express care; a distinctive detail can make a reliable product recognizable. Both deserve review.
+
+Consistency means stable meanings and behavior. It leaves room for a dense queue, an expressive introduction and a quiet completion state within one product. Simplicity removes needless effort; it does not require removing every trace of personality.
+
+Novelty has a cost. Spend it deliberately. A surprising composition may suit a discovery page; a surprising destructive-action control is much harder to justify. An ordinary confirmation does not need celebration. A risky choice needs neutral, explicit consequences rather than a visually favored answer.
+
+## Record a decision that can be challenged
+
+Include context, choice, alternative, tradeoff and inspection. “Warm and premium” cannot be implemented reliably. “Use the workshop's repair annotations as labels and progress marks, keep cost controls plain, and show an item's repaired state after the action” establishes a direction. It remains a hypothesis until the implementation and audience response are examined.
+
+Do not give a thin choice a grand explanation after the fact. “A serif expresses warmth” could describe thousands of unrelated products. Ask what the actual face, content, composition and behavior contribute here.
+
+[Workflow](workflow.md) · [Character & attachment](character.md) · [Diagnostics](anti-generic.md) · [Current specimen critique](../research/specimen-critique.md)

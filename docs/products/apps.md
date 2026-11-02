@@ -12,6 +12,8 @@ Organize the product around work people complete and information they compare. A
 
 Identity can live in composition, content voice, typography, selected assets and deliberate visual details while controls remain familiar. Reusing a mature component system is compatible with distinctive product design.
 
+Look for care in the work itself: preserving an unfinished comparison, making an exact value easy to inspect, or explaining why a case cannot progress. These are possible directions, not an automatic feature list. Distinguish completion from a first-use empty state. Let guidance recede as people become proficient, and use a calm, specific tone during failures. A tenth-visit walkthrough can reveal friction a first-screen critique misses.
+
 Review a full object-to-action flow, a failed action and recovery, keyboard navigation and the largest plausible content case. A polished empty dashboard is insufficient evidence.
 
 Example: [Dispatch brief](../../examples/dispatch.DESIGN.md). Relevant source families: [Vibe, Ant Design and Primer](../../research/sources.md).

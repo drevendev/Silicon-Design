@@ -14,6 +14,14 @@ A 4 CSS px base with steps such as 4, 8, 12, 16, 24, 32 and 48 can be a convenie
 
 Density follows task and input. A data tool may need compact rows to enable scanning; a reading site benefits from longer pauses. Compact visuals can retain generous hit areas. Avoid enlarging every app control until the primary work disappears below the fold.
 
+## Author the rhythm
+
+Repeat what teaches a stable relationship; vary what changes the information's role. A sequence may move from a dominant artifact to a close comparison to a quieter explanation. Use meaningful scale jumps, framing, crop and density to shape that progression. Identical padding and card treatment on every section can flatten it; random alternation can make it harder to follow.
+
+Create major/minor contrast decisively. Sometimes the useful move is reducing the weight of supporting content rather than enlarging the primary element again. For consequential choices, make consequences clear and keep the visual treatment neutral enough to support informed judgment.
+
+These ideas adapt [Ant contrast, Vibe spacing and OpenDesign editorial hierarchy](../../research/deep-read.md). Editorial composition is a contextual option: it does not require heavy or light display text, compulsory asymmetry, tiny captions, or fixed tracking for every product and script.
+
 ## Let the layout adapt
 
 Use content pressure to choose breakpoints. Decide which regions wrap, stack, collapse or scroll and retain a logical DOM reading order. Test intermediate widths and landscape, not only named phone and desktop sizes. Essential controls and explanations should not become hover-only on touch.

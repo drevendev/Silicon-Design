@@ -1,23 +1,37 @@
 # Silicon Design
 
-Design foundations and agent skills for products with a point of view.
+### AI can design. Make something worth loving.
 
-We build apps, websites and games. This handbook helps us give each product an identity, make its purpose clear, and verify that its interface works. Shared standards support different visual languages: a laboratory, a publishing site and an operations tool should feel different.
+AI already makes good interfaces. Too many of them feel interchangeable: familiar layouts, borrowed personalities, polished screens with nothing to get attached to.
 
-**Start with one real screen.** Write its audience and task, choose a visual direction, build with representative content, then inspect the result in a browser or game runtime. Record what you actually checked.
+**Silicon Design is a set of design principles and agent skills for giving apps, websites and games a character of their own.** We work on what makes a product recognizable and worth caring about: a clear point of view, a voice that fits, thoughtful behavior, and details that reward using it.
 
-[Русский вход](README.ru.md) · [Principles](docs/principles.md) · [Workflow](docs/workflow.md) · [Sources](research/sources.md)
+Use it with your coding agent to choose a direction, carry it through real interactions, and critique the result. The aim is a product someone would miss when it is gone.
+
+[Principles](docs/principles.md) · [Character & attachment](docs/character.md) · [Skills](#skills) · [Sources](research/sources.md) · [Парадная](README.ru.md)
+
+## What we are fixing
+
+| When AI settles for… | Work on… |
+| --- | --- |
+| A different logo on the same page | Composition and imagery rooted in this product's subject |
+| A fashionable palette doing all the branding | A visual grammar that carries across screens and states |
+| “Modern, clean, premium” | A specific feeling, expressed through visible decisions |
+| A delightful first visit followed by friction | Useful details, respectful defaults and a good tenth visit |
+| An interface that passes every static check | A working product with a character people can recognize |
+
+Removing clichés leaves space. The design work is deciding what belongs in it.
 
 ## Use it on a project
 
-1. Adapt the [DESIGN.md template](templates/DESIGN.md) in the product repository. For a small fix, use the existing direction and document only the changed decision.
+1. Choose the feeling and behavior the product should be remembered for using [Character & attachment](docs/character.md), then adapt the [DESIGN.md template](templates/DESIGN.md). For a small fix, preserve the existing direction.
 2. Read the relevant foundations: [typography](docs/foundations/typography.md), [color](docs/foundations/color.md), [layout](docs/foundations/layout.md), [interaction](docs/foundations/interaction.md), [accessibility](docs/foundations/accessibility.md).
 3. Pick the product context: [websites](docs/products/websites.md), [apps](docs/products/apps.md), [games](docs/products/games.md).
 4. Build and review a representative flow using the [review checklist](checklists/design-review.md). Save the result with the [review template](templates/REVIEW.md).
 
 An example instruction for an agent:
 
-> Use silicon-design-direction to propose a direction for this product. Keep the existing brand constraints. Implement one representative flow with silicon-interface-build, then use silicon-design-review. Show the rendered result and identify checks that remain unperformed.
+> Use silicon-design-direction to give this product a character of its own. Ground the choices in its audience and subject. Carry one recognizable idea through the main task, an empty state and a completed action. Implement that flow with silicon-interface-build, then use silicon-design-review to inspect both usability and character. Show the result and distinguish evidence from judgment.
 
 ## Skills
 
@@ -25,24 +39,25 @@ Each folder is a self-contained skill with a `SKILL.md`; no paid service, compon
 
 | Skill | Use it for | Concrete output |
 | --- | --- | --- |
-| [silicon-design-direction](skills/silicon-design-direction/SKILL.md) | Establishing or changing a product's identity | A justified direction and project DESIGN.md |
+| [silicon-design-direction](skills/silicon-design-direction/SKILL.md) | Establishing or changing a product's identity | Emotional intent, a recognizable idea and project DESIGN.md |
 | [silicon-design-system](skills/silicon-design-system/SKILL.md) | Typography, palettes, tokens and components | Semantic roles, tested color pairs, component states |
 | [silicon-interface-build](skills/silicon-interface-build/SKILL.md) | Implementing a website or application interface | A rendered, working representative flow |
 | [silicon-game-ui](skills/silicon-game-ui/SKILL.md) | HUDs, menus, inventory and game feedback | Readable play-state UI with input and scaling checks |
 | [silicon-design-review](skills/silicon-design-review/SKILL.md) | Reviewing an existing design or implementation | Prioritized findings with evidence and bounded fixes |
 
-## See the decisions
+## Examples, including what needs work
 
-Open [the local specimen](examples/specimen.html) in a browser. It contains three **fictional teaching examples**, built with system fonts and original HTML/CSS. The website has an editorial reading rhythm, the app organizes actionable records, and the game foregrounds a crafting decision. Their content and palettes have different jobs.
+The [first specimens](examples/specimen.html) are three **fictional teaching examples** of layout and state mechanics. They remain too generic for the ambition above. The [critique](research/specimen-critique.md) names the gaps: a theme standing in for identity, a decorative motif that barely affects behavior, and insufficient attention to what makes repeated use rewarding.
 
-The [filled briefs](examples/README.md) explain the tradeoffs. These are small specimens, not shipped products or proof that a redesign improved user outcomes. [Verification](examples/VERIFICATION.md) separates performed checks from future testing.
+Their [briefs](examples/README.md) and [technical verification](examples/VERIFICATION.md) remain available to inspect. Passing those checks does not settle the design review. These examples are an open exercise, with a documented revision brief.
 
 ## What belongs here
 
 - Principles with observable consequences, rather than a universal visual style.
+- [Character, voice and attachment](docs/character.md), including how a product feels after repeated use.
 - Foundations with starting values, exceptions and review procedures.
 - Reusable workflows and skills that preserve a product's own direction.
-- [Anti-generic diagnostics](docs/anti-generic.md), [our practice notes](research/our-practice.md), and a traceable [source register](research/sources.md).
+- [Anti-generic diagnostics](docs/anti-generic.md), [our practice notes](research/our-practice.md), a [deeper source analysis](research/deep-read.md), and a traceable [source register](research/sources.md).
 - Small examples that make decisions inspectable.
 
 This is the initial handbook. The next step is to apply it to a real product and retain the before/after evidence. See the [roadmap](ROADMAP.md).

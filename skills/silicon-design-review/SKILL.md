@@ -13,6 +13,10 @@ Exercise a representative task and a failure/recovery state. Inspect content ord
 
 Treat generic-looking patterns as diagnostic questions. Explain how an interchangeable hero, excessive containers or undifferentiated accents affect this product. A hue, font, component library, gradient or card is not a defect on its own. Preserve deliberate choices that work.
 
+Review operation and character separately. For character, inspect the emotional intention, subject-specific content, composition, image language, voice and behavior together. Follow the recognizable idea beyond the introduction into the task, a difficult state and completion where present. Identify exactly what remains interchangeable; do not accept a generic rationale such as “serif means warmth” as sufficient evidence of identity.
+
+Walk through repeated use. Check whether help, praise, motion or waiting now gets in the way; whether an empty view means completion, first use, no matches or failure; and whether tone respects the situation. A task-specific detail may express care through efficiency or clarity. No mascot, joke, animation or theme change is required.
+
 ## Report useful findings
 
 Each finding needs a specific observation and reproduction, user consequence, bounded correction, evidence and confidence. Separate confirmed defects from hypotheses and taste preferences. Prioritize:
@@ -29,6 +33,6 @@ For a review-only request, report findings without changing implementation. If f
 
 Record checks as checked, failed, untested or inapplicable, with supporting details. Distinguish palette math from rendered contrast, viewport resize from actual zoom, and visual captures from keyboard or screen-reader tests. If rendering is unavailable, say so and provide the useful source-level findings.
 
-Deliver the important findings first, link evidence, explain fixes and remaining limits, and give a scoped conclusion. A clean static check does not establish accessibility compliance or successful usability testing.
+Deliver the important findings first, link evidence, explain fixes and remaining limits, and give separate scoped conclusions about usefulness/access and character/care. The latter can remain weak while the former passes. Label aesthetic judgments and emotional-effect hypotheses; do not claim user affection, recall or improved retention without real observations. A clean static check does not establish accessibility compliance, successful usability testing or design quality.
 
 Optional depth: [review template](https://github.com/drevendev/Silicon-Design/blob/master/templates/REVIEW.md).

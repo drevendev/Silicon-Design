@@ -6,6 +6,8 @@ The first version contains principles, typography/color/layout/interaction/acces
 
 ## Next: apply it to a real product
 
+First, use the [specimen critique](research/specimen-critique.md) as a revision brief rather than treating the initial gallery as a design benchmark. Its technical checks remain scoped evidence; its character needs more work. The expanded [principles](docs/principles.md) and [character guide](docs/character.md) address what the first pass missed.
+
 1. Choose one representative flow from an existing product and capture its actual current implementation.
 2. Record a project-specific DESIGN.md and compare meaningful directions if identity is changing.
 3. Implement one selected direction without changing unrelated behavior.

@@ -11,4 +11,6 @@ Choose the visitor's journey before a hero pattern. A marketing site needs compr
 
 Review one first-visit journey through evidence to action, including navigation at a narrow width. A reading site also needs a long article with links, lists, figures and a long title. A large headline alone does not establish editorial quality.
 
+Choose a specific feeling and a visual idea grounded in the subject. Let images, typography and changing density shape the narrative. Carry the idea through reading and the real action's result, rather than spending all the personality on the hero. Write action labels that name what happens. Review [character](../character.md) separately from navigation, readability and loading behavior.
+
 Example: [Field Notes brief](../../examples/field-notes.DESIGN.md). Method source: [BeautifulRepo](../../research/our-practice.md), adapted from repository onboarding to visitor comprehension.

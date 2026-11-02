@@ -13,6 +13,8 @@ Identify genre, primary loop, target platforms, inputs, resolution, viewing dist
 
 Use expressive type and materials for world identity where helpful, with readable body text and quantities. Test actual scripts, long labels and scene backgrounds. Do not assume a static HUD image establishes runtime legibility.
 
+Specify the feeling appropriate to each moment: exploration, comparison, risk, recovery or completion. Carry a recognizable world idea through the task and its result. Let a visual response correspond to an actual game event when useful; a decorative illustration that never relates to state is only one part of the direction. Keep common actions efficient after repeated use and avoid replaying a celebration at every routine input.
+
 ## Preserve game truth
 
 For purchases and crafting, show effect, owned/required amounts, cost and the explicit reason an action is blocked. Preserve exact values or an accessible exact disclosure when compact formatting hides a decision. Distinguish zero, unknown and not applicable.
@@ -28,5 +30,7 @@ Check every supported input path: keyboard, controller, pointer or touch. Define
 Inspect a normal action, insufficient resources, empty/full inventory where relevant, interruptions, large quantities and long translations in the real runtime. Check changing backgrounds and target viewing conditions. Report untested platforms or input methods explicitly.
 
 Deliver the UI and state contracts, a working representative flow, captures where available and actual test coverage. If only a mockup was possible, label it as a mockup and identify the runtime questions it leaves open.
+
+Report character and coherence separately from resource correctness and operability. A coherent palette alone does not establish a distinctive game world, and a technical pass does not demonstrate player attachment.
 
 Optional depth: [Silicon Design game guide](https://github.com/drevendev/Silicon-Design/blob/master/docs/products/games.md).

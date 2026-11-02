@@ -1,5 +1,7 @@
 # Three directions, three jobs
 
+**Design review: open.** The maintainer found these initial specimens too generic. They illustrate layout and state mechanics; they do not yet meet the handbook's character ambition. Read the [specific critique and revision brief](../research/specimen-critique.md). The HTML is retained as the actual first attempt, without presenting a redesign as completed.
+
 Open [specimen.html](specimen.html) in a browser, or serve the repository root locally:
 
 ```sh

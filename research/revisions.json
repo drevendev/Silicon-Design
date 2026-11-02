@@ -4,8 +4,12 @@
     "revision": "f39a2f6e2d950adced82e9e975255399ac4f1541",
     "reviewed_at": "2026-11-02",
     "paths": [
-      "README.md"
-    ]
+      "README.md",
+      "packages/docs/src/pages/foundations/motion/motion.mdx",
+      "packages/docs/src/pages/foundations/spacing/Spacing.mdx",
+      "packages/docs/src/pages/foundations/ux-writing-handbook/ux-writing-handbook.mdx"
+    ],
+    "review_scope": "Selected design-relevant sections; see research/deep-read.md for extracts, transfers and boundaries."
   },
   {
     "repository": "drevendev/FrankenRepo",
@@ -20,40 +24,62 @@
     "revision": "cdadc728057c04c566b1e1ee8cc9ef1b1b3fe471",
     "reviewed_at": "2026-11-02",
     "paths": [
-      "README.md"
-    ]
+      "README.md",
+      "schema/guidelines/component-structure.md",
+      "schema/guidelines/responsive-designs.md",
+      "schema/guidelines/token-discipline.md",
+      "schema/guidelines/vibma-workflow.md"
+    ],
+    "review_scope": "Selected design-relevant sections; see research/deep-read.md for extracts, transfers and boundaries."
   },
   {
     "repository": "VoltAgent/awesome-design-md",
     "revision": "fcc70284932276d085f01ef9f83edde90b1258cb",
     "reviewed_at": "2026-11-02",
     "paths": [
-      "README.md"
-    ]
+      "README.md",
+      "design-md/airbnb/DESIGN.md",
+      "design-md/linear.app/DESIGN.md",
+      "design-md/nintendo-2001/DESIGN.md"
+    ],
+    "review_scope": "Selected design-relevant sections; see research/deep-read.md for extracts, transfers and boundaries."
   },
   {
     "repository": "nexu-io/open-design",
     "revision": "5a0c47777975ddb91d09c1c16b423a3ef74bf572",
     "reviewed_at": "2026-11-02",
     "paths": [
-      "README.md"
-    ]
+      "README.md",
+      "craft/animation-discipline.md",
+      "craft/anti-ai-slop.md",
+      "craft/typography-hierarchy-editorial.md",
+      "skills/creative-director/SKILL.md",
+      "skills/design-review/SKILL.md",
+      "skills/frontend-design/SKILL.md"
+    ],
+    "review_scope": "Selected design-relevant sections; see research/deep-read.md for extracts, transfers and boundaries."
   },
   {
     "repository": "donnemartin/system-design-primer",
     "revision": "ae9bbd7b02d90b9866215de185217d33f39ab733",
     "reviewed_at": "2026-11-02",
     "paths": [
-      "README.md"
-    ]
+      "README.md",
+      "solutions/system_design/sales_rank/README.md"
+    ],
+    "review_scope": "Selected design-relevant sections; see research/deep-read.md for extracts, transfers and boundaries."
   },
   {
     "repository": "JCarterJohnson/vibecoded-design-tells",
     "revision": "f7c4aefc2c797a66e55b49354a93917ab60d33ac",
     "reviewed_at": "2026-11-02",
     "paths": [
-      "README.md"
-    ]
+      "README.md",
+      "skill/references/choosing-a-look.md",
+      "skill/references/tells.md",
+      "unslop-ai-ui/DATA_AND_GRAPHS.md"
+    ],
+    "review_scope": "Selected design-relevant sections; see research/deep-read.md for extracts, transfers and boundaries."
   },
   {
     "repository": "miqdadbadjuber/anti-slop",
@@ -61,8 +87,13 @@
     "reviewed_at": "2026-11-02",
     "paths": [
       "README.md",
-      "skills/antislop-ui/SKILL.md"
-    ]
+      "rules/antislop.md",
+      "skills/antislop-copywriting/SKILL.md",
+      "skills/antislop-layoutmobile/SKILL.md",
+      "skills/antislop-ui/SKILL.md",
+      "skills/antislop/SKILL.md"
+    ],
+    "review_scope": "Selected design-relevant sections; see research/deep-read.md for extracts, transfers and boundaries."
   },
   {
     "repository": "primer/design",
@@ -70,8 +101,13 @@
     "reviewed_at": "2026-11-02",
     "paths": [
       "README.md",
-      "content/foundations/typography.mdx"
-    ]
+      "content/foundations/content.mdx",
+      "content/foundations/typography.mdx",
+      "content/ui-patterns/empty-states.mdx",
+      "content/ui-patterns/feature-onboarding.mdx",
+      "content/ui-patterns/progressive-disclosure.mdx"
+    ],
+    "review_scope": "Selected design-relevant sections; see research/deep-read.md for extracts, transfers and boundaries."
   },
   {
     "repository": "drevendev/IdleShop",
@@ -88,8 +124,12 @@
     "reviewed_at": "2026-11-02",
     "paths": [
       "README.md",
-      "examples/readme-visuals/DESIGN_INTENT.md"
-    ]
+      "examples/readme-visuals/DESIGN_INTENT.md",
+      "examples/readme-visuals/variants/playful-technical.md",
+      "guides/editorial-evidence.md",
+      "guides/readme-visuals.md"
+    ],
+    "review_scope": "Selected design-relevant sections; see research/deep-read.md for extracts, transfers and boundaries."
   },
   {
     "repository": "ant-design/ant-design",
@@ -97,8 +137,19 @@
     "reviewed_at": "2026-11-02",
     "paths": [
       "README.md",
+      "docs/spec/colors.en-US.md",
+      "docs/spec/contrast.en-US.md",
+      "docs/spec/direct.en-US.md",
       "docs/spec/font.en-US.md",
-      "docs/spec/colors.en-US.md"
-    ]
+      "docs/spec/invitation.en-US.md",
+      "docs/spec/lightweight.en-US.md",
+      "docs/spec/motion.en-US.md",
+      "docs/spec/reaction.en-US.md",
+      "docs/spec/repetition.en-US.md",
+      "docs/spec/stay.en-US.md",
+      "docs/spec/transition.en-US.md",
+      "docs/spec/values.en-US.md"
+    ],
+    "review_scope": "Selected design-relevant sections; see research/deep-read.md for extracts, transfers and boundaries."
   }
 ]

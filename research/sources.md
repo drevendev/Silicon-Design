@@ -2,6 +2,8 @@
 
 Reviewed on **2 November 2026**. This is a synthesis of selected documentation, not a comprehensive audit of these repositories or an endorsement of all their claims. [revisions.json](revisions.json) records the exact revisions and fetched paths. Links below preserve those revisions; project status is a dated observation.
 
+**Deeper pass:** [deep-read.md](deep-read.md) examines design-relevant sections from 42 rule, skill, pattern, brand-analysis and worked-example files across the ten requested repositories. It records the observations, proposed transfers, rejected prescriptions and mapping to our 24 principles. The table below retains the initial source overview; the deeper notes and expanded path register describe the fuller review. Fetching a file is not a claim that every section or linked upstream package was audited.
+
 ## Requested repositories
 
 | Source and inspected material | What informs Silicon Design | Boundary and destination |

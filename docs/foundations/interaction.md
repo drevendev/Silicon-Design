@@ -10,11 +10,29 @@ Use native semantic controls when possible. Keep persistent field labels, errors
 
 Preserve entered data after recoverable failures. Show whether an operation is pending or complete; prevent accidental duplicate commitments. Use confirmation when consequences merit it and consider undo for reversible operations. Do not add confirmation dialogs to every routine action.
 
+## Discovery, context and completion
+
+Make useful actions discoverable near the object they affect. Direct editing and contextual tools can reduce a detour, but need visible cues and keyboard/touch access. Preserve focus, useful selection and the working comparison when details open. Context preservation is the goal; a single page or overlay is only one possible implementation.
+
+Distinguish a new collection, no search matches, no pending work, missing access and failed loading. They need different explanations and next steps. A finished queue can acknowledge completion; a failed request must describe recovery. Do not send someone to an unrelated feature merely to fill an empty state.
+
+Place onboarding near the relevant feature. Keep it dismissible, bound its recurrence and avoid competing announcements. Support people as they become proficient: efficient repetition, discoverable shortcuts where appropriate, and detail available without turning each action into a tutorial.
+
+These decisions adapt [Ant interaction patterns and Primer empty-state/onboarding guidance](../../research/deep-read.md). They are product-sensitive patterns, not a requirement to add every mechanism to every interface.
+
+## Voice and tone
+
+Use consistent names for actions and results. Let the product's voice remain recognizable while tone follows the user's situation. An invitation can be light; a payment or failure needs precision and reassurance. Write errors around what happened, what remains intact and what to do next. Avoid blame, theatrical apology and humor that competes with recovery.
+
+Define examples of invitation, confirmation and failure in DESIGN.md. Inspect them in the interface, including repeated confirmations. Charming copy that hides the actual result is a state-design problem. See [Character & attachment](../character.md) and the [Vibe/Primer source analysis](../../research/deep-read.md).
+
 ## Motion and sound
 
 Motion can explain continuity, spatial movement, progress and causality. Define the trigger, purpose, affected element and reduced-motion alternative. A short transition around 120–240 ms is a possible UI starting point, not a rule for cinematic motion or game animation. Measure responsiveness in the real implementation.
 
 Do not let decorative motion obscure content or imitate genuine processing. Avoid repeated attention-grabbing loops around routine controls. Respect reduced-motion settings on the web and provide suitable runtime controls in games. Critical feedback must remain understandable with motion and sound disabled. Begin optional sound from a user action and provide useful volume/mute controls.
+
+Distinguish efficient feedback from an expressive event. A frequently used control should not repeatedly make someone wait for an entrance flourish. Let transitions explain where something went or which state changed; treat interruption and cancellation as part of the behavior. Keep exits unobtrusive when the removed content no longer needs attention. The [Vibe and Ant motion guidance](../../research/deep-read.md) informs this separation; their numerical timing scales are not universal settings.
 
 ## Image and icon language
 
@@ -26,4 +44,4 @@ For generated assets, describe their role, composition, crop, style constraints 
 
 ## Handoff
 
-A component is more than a picture. Include its content limits, state behavior, input methods, semantic role, theme mapping and responsive behavior. In a design canvas, use named components, deliberate auto-layout and token roles rather than piles of unstructured absolute-positioned shapes. [Vibma](../../research/sources.md) informed this structural emphasis; the workflow does not depend on installing it.
+A component is more than a picture. Include its content limits, state behavior, input methods, semantic role, theme mapping and responsive behavior. In a design canvas, use named components, deliberate auto-layout and token roles rather than piles of unstructured absolute-positioned shapes. Bound container width so long content can wrap, expose editable text through actual bindings, and model meaningful variant dimensions. Read back and inspect a result after changes; API success proves that a write happened. [Vibma's detailed guidance](../../research/deep-read.md) informed this structural emphasis; the workflow does not depend on installing it.

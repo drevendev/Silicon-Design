@@ -5,6 +5,7 @@ Template: replace bracketed prompts and remove sections that do not apply. Keep 
 ## Context and task
 
 - Audience, use environment and primary task: [specific people and situation].
+- Emotional intention: [who should feel what, at which moment, and why].
 - Product truth: [what exists; what is a prototype; relevant limitations].
 - Scope: [the flow or surfaces being designed].
 - Success: [observable task outcome; how to assess it].
@@ -13,9 +14,12 @@ Template: replace bracketed prompts and remove sections that do not apply. Keep 
 ## Direction and hierarchy
 
 - Character: [two or three qualities, expressed as concrete visual decisions].
+- Product material: [real artifacts, imagery, vocabulary or subject references that inform the direction].
+- Intensity, rhythm and motion: [how assertive, varied and animated the experience should be, tied to context].
 - First attention → supporting information → next action: [content order].
 - Composition: [alignment, density, rhythm, grouping and adaptation].
 - Distinctive element: [a product-specific detail and its purpose].
+- Recurring idea: [how an identifiable visual or behavioral idea appears in the primary task, a difficult state and a completed action].
 - Alternatives considered: [what changed between directions and why this one fits].
 - Tradeoff: [what this choice gives up].
 
@@ -37,6 +41,9 @@ Template: replace bracketed prompts and remove sections that do not apply. Keep 
 - Representative real content and stress cases: [long, empty, large, translated].
 - Important component states: [applicable default/focus/loading/error/etc.].
 - Recovery and unavailable actions: [feedback, reason, retry or undo].
+- Voice in use: [representative invitation, success and failure messages; tone boundaries].
+- Repeated use: [what becomes faster or quieter; help dismissal, recurrence and respect for existing work].
+- Moment of care: [a useful or expressive detail someone could appreciate; its repetition and access costs].
 - Responsive/input rules: [what wraps, stacks or scrolls; keyboard/touch/controller].
 - For games: [safe areas, UI scale, playfield, visibility/knowledge rules].
 
@@ -47,6 +54,7 @@ Template: replace bracketed prompts and remove sections that do not apply. Keep 
 - Captures and implementation: [paths or links when available].
 - Unresolved questions and accepted exceptions: [context, benefit, owner if relevant].
 - Review result: [link to actual report; do not claim checks in advance].
+- Character critique: [what makes it specific and coherent; what remains generic; observed audience response or an explicitly untested hypothesis].
 
 ## References
 

@@ -22,4 +22,19 @@ A familiar pattern can be excellent. The warning is an interchangeable compositi
 
 **Stress:** use long titles, zero results, failures, large values and a narrow viewport. A design that works only with ideal content is unfinished.
 
+## Beyond removing tells
+
+The absence of a cliché is not a positive direction. Inspect these additional failures:
+
+| Symptom | What to investigate | Useful next experiment |
+| --- | --- | --- |
+| A plausible explanation can justify every ordinary choice | Is the reason genuinely specific or written after the fact? | Compare the same argument against an unrelated product; gather better product material |
+| A recognizable hero leads to a generic interior | Has the visual idea become a grammar? | Carry it through the primary task and two different states |
+| The mascot or illustration never responds to the task | Does it express anything about the product's behavior? | Explore a meaningful state relationship; retain decoration only where it has a role |
+| A pleasant first visit becomes tedious repetition | Are tours, motion and praise serving the person now? | Review a tenth visit and remove recurring friction |
+| “No items” covers both completion and failure | Does the interface understand why content is absent? | Write and compose those states separately |
+| The agent reports tests as proof of taste | Which conclusion did the checks actually establish? | Report operation and character separately, with a design judgment supported by specific observations |
+
+See [Character & attachment](character.md) for the positive work and [our own specimen critique](../research/specimen-critique.md) for a concrete case where technical correctness was insufficient.
+
 The [source register](../research/sources.md) distinguishes anti-slop heuristics and online opinion from accessibility standards and direct usability evidence. A regex or “AI score” cannot establish visual quality.

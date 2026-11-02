@@ -33,6 +33,14 @@ Use weight, size, spacing and position to establish hierarchy before adding more
 
 For prices, counts and timestamps, choose alignment and precision according to the comparison. A compact number should preserve an accessible route to its exact value when the exact value changes a decision. Do not align numbers with spaces in markup.
 
+## Make the type direction specific
+
+A font category does not supply a complete voice. Compare actual letterforms and weights using the product's real vocabulary, then compose them with images, space and content. Decide whether hierarchy comes mainly from scale, weight, placement or the artifact itself. A modest title beside strong photography can be as intentional as a dramatic typographic opening.
+
+Inspect the actual headline breaks, punctuation spacing, icon baselines, numeric columns and short labels. Optical corrections are allowed when they improve the result; record reusable ones in component rules. Keep small secondary text readable instead of shrinking it to manufacture hierarchy.
+
+The [contrasting brand analyses and editorial guidance](../../research/deep-read.md) inform this approach. Their proprietary faces, historical sizes and script-specific tracking prescriptions are not general typography requirements.
+
 ## Verify
 
 Check narrow and wide layouts, 200% text enlargement, delayed or failed font loading, all supported scripts, and dark themes where present. Inspect real headings for awkward short last lines without forcing brittle line breaks. Game text also needs a test at target resolution and viewing distance.

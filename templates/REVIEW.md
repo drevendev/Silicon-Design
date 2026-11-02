@@ -10,6 +10,14 @@
 
 [What works, what blocks the task, and what the evidence allows us to conclude.]
 
+### Usefulness and access
+
+[Task completion, input, readable information, recovery and checked limits.]
+
+### Character and care
+
+[Specific choices in composition, imagery, voice and behavior. Does the identity survive beyond the introduction? What is still interchangeable? Does repeated use remain considerate? Label judgments and hypotheses; name actual audience observations only when they exist.]
+
 ## Findings
 
 | Priority | Observation and reproduction | User consequence | Proposed correction | Evidence / status |
@@ -23,6 +31,8 @@ Blocking prevents a key task, access or truthful feedback. Major materially harm
 | Check | Result: checked / failed / untested / inapplicable | Evidence or reason |
 | --- | --- | --- |
 | Primary flow and recovery | [result] | [details] |
+| Character across task, difficult state and completion | [result] | [concrete observations; design judgment] |
+| Returning use, tone and repeated interruptions | [result] | [walkthrough or actual observations] |
 | Content extremes and localization | [result] | [details] |
 | Narrow/wide or target resolutions | [result] | [details] |
 | Keyboard / touch / controller as supported | [result] | [details] |

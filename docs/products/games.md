@@ -20,6 +20,8 @@ Make focus visible on controller/keyboard paths and map navigation explicitly in
 
 Feedback should be immediate and truthful: an animation can celebrate an actual resource change but must not conceal an input failure. Offer reduced decorative motion, screen-shake adjustment and audio controls where relevant. Do not rely on sound or color alone for essential events.
 
+Connect world identity to what the player does and what changes afterward. An object, mark, sound or transition can help express a game's character when it belongs to the event. Keep comparisons and costs precise while expressive feedback fits the moment. Inspect frequently repeated actions; celebration should not become an input delay. Do not change gameplay or invent a world response outside the authorized implementation scope.
+
 ## Review in play
 
 Test a normal purchase, insufficient resources, a full or empty inventory, interruptions and resuming play. Check large quantities, translated labels, smallest supported UI scale and all supported input paths. Inspect the HUD over a changing playfield in runtime; a static image cannot establish that it works.

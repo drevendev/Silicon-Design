@@ -17,6 +17,8 @@ Implement one complete flow with an adverse state before spreading styling acros
 
 Establish coherent type, color and spacing roles. Use assets for a specific information or identity purpose, with suitable rights and text alternatives. Keep critical content independent of decorative motion and audio.
 
+Carry the chosen direction beyond the first screen into the task, an adverse state and a result where in scope. Include a product-specific detail in wording, visual relationships or behavior. Preserve context, explain why a collection is empty, and keep repeated actions efficient. Finish wrapping, optical alignment, crops, icon weight, units and feedback as a distinct craft pass. Do not add out-of-scope features merely to create a memorable moment.
+
 ## Inspect the result
 
 Open the actual implementation in a browser when available. Inspect narrow, intermediate and wide layouts, content extremes and supported themes/languages. Fix overflow, weak hierarchy, awkward wrapping and incomplete states before micro-polish.
@@ -24,6 +26,8 @@ Open the actual implementation in a browser when available. Inspect narrow, inte
 Exercise keyboard navigation, focus and a complete task/recovery path. Check relevant contrast pairs, text enlargement and reduced-motion behavior. Distinguish viewport resizing from actual browser zoom and screenshots from input testing. Run project checks appropriate to the change; do not add tests that merely repeat styling choices.
 
 If a browser/runtime is unavailable, perform useful source checks and explicitly report that rendered behavior remains unverified. Do not replace evidence with a claim that the UI looks correct.
+
+Assess operation and character separately. Point to what makes the result specific and coherent, inspect the interior as well as the introduction, and walk through repeated use for recurring interruptions. A passed build or contrast check does not answer these design questions. Treat emotional effects and memorability as hypotheses unless actual audience observations support them.
 
 Deliver the implemented flow, changed surfaces, rendered evidence where available, checks performed and remaining limits. Continue fixing observed issues within scope until the flow meets its criteria.
 

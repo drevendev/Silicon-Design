@@ -2,6 +2,8 @@
 
 Checked on **2 November 2026**. Scope: the initial fictional HTML specimens and declared palette data. This is not product usability or game-runtime testing.
 
+**Character review remains open.** Maintainer feedback found the specimens too generic. The [qualitative critique](../research/specimen-critique.md) explains why the checks below did not establish a distinctive or lovable product. No visual redesign is claimed in this documentation revision.
+
 ## Static verification
 
 Run `python tools/check.py` from the repository root to validate repository-owned Markdown destinations, required skill metadata, source revision records, declared sRGB contrast pairs and matching specimen CSS role values.

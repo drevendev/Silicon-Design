@@ -23,6 +23,8 @@ Keep source-of-truth tokens in the project's existing format. Do not claim DTCG 
 
 Build or update a representative specimen in the product's real environment. Include long content, values with units, an error and an unavailable action. Inspect the rendered result and check relevant input and scaling behavior.
 
+Carry the product's visual grammar through the system. Specify how a recognizable typographic, spatial, material or interaction idea applies to different states; avoid making every component equally expressive. The system should preserve character while allowing quiet task surfaces. When working in a design canvas, bound content width, expose editable text with actual bindings, and model meaningful variant dimensions. Inspect the result after mutation; a successful tool call proves that a write happened.
+
 Deliver token/type roles, component contracts, measured contrast pairs and evidence with untested areas. A collection of swatches is an intermediate artifact.
 
 Optional depth: [typography](https://github.com/drevendev/Silicon-Design/blob/master/docs/foundations/typography.md) and [color](https://github.com/drevendev/Silicon-Design/blob/master/docs/foundations/color.md).
