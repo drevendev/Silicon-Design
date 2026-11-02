@@ -2,7 +2,9 @@
 
 The first gallery changed palette and typography more than it changed the experience. This revision applies the handbook's direction, system, interface, game and review skills to the examples themselves: each has a specific subject, a recognizable action and a completed state.
 
-Open [specimen.html](specimen.html) or serve the repository root:
+**[Open the live gallery](https://drevendev.github.io/Silicon-Design/)** — no installation or local server needed. Choose Field Notes, Dispatch or Mosslight at the top.
+
+For local development, open [specimen.html](specimen.html) or serve the repository root:
 
 ```sh
 python -m http.server 8765 --bind 127.0.0.1
@@ -12,13 +14,19 @@ Visit [the local gallery](http://127.0.0.1:8765/examples/specimen.html), then us
 
 | Example | Character carried into use | Try it | Decisions |
 | --- | --- | --- | --- |
-| [Field Notes](specimen.html?example=field-notes) | A photographic walk becomes a personal field book | Select a numbered detail, keep an observation, write in the margin | [Brief](field-notes.DESIGN.md) |
-| [Dispatch](specimen.html?example=dispatch) | A repair-workshop desk gives objects a way back into use | Compare 18 with 18a, release the lamp, undo; inspect the waiting radio | [Brief](dispatch.DESIGN.md) |
-| [Mosslight](specimen.html?example=mosslight) | A lanternmaker leaves a little light for someone else | Make the lantern, hang it by the bridge, watch the path change | [Brief](mosslight.DESIGN.md) |
+| [Field Notes](https://drevendev.github.io/Silicon-Design/examples/specimen.html?example=field-notes) | A photographic walk becomes a personal field book | Select a numbered detail, keep an observation, write in the margin | [Brief](field-notes.DESIGN.md) |
+| [Dispatch](https://drevendev.github.io/Silicon-Design/examples/specimen.html?example=dispatch) | A repair-workshop desk gives objects a way back into use | Compare 18 with 18a, release the lamp, undo; inspect the waiting radio | [Brief](dispatch.DESIGN.md) |
+| [Mosslight](https://drevendev.github.io/Silicon-Design/examples/specimen.html?example=mosslight) | A lanternmaker leaves a little light for someone else | Make the lantern, hang it by the bridge, watch the path change | [Brief](mosslight.DESIGN.md) |
 
 All names, addresses, quantities and places are **fictional teaching material**. The photograph and forest painting were generated for this revision; see [prompts and provenance](assets/PROVENANCE.md). Dispatch's object drawings and the placed lantern are original SVG work in the source.
 
 Changes live in this page visit and survive switching examples. They reset on reload. Dispatch and Mosslight also offer explicit reset controls. There is no backend, shipping, actual collection, game save or claim of real field research.
+
+## Publishing
+
+GitHub Pages publishes the root of `master`. The root `index.html` redirects into `examples/specimen.html`, preserving example queries and fragments. `.nojekyll` keeps the existing HTML, scripts and image paths intact. Changes pushed to `master` are published automatically by GitHub's Pages build and deployment.
+
+The gallery's handbook and design-decision links point to their readable files on GitHub. The source remains in `examples/`; there is no second copy of the gallery to maintain.
 
 ## Preview
 

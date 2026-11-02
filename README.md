@@ -8,7 +8,7 @@ AI already makes good interfaces. Too many of them feel interchangeable: familia
 
 Use it with your coding agent to choose a direction, carry it through real interactions, and critique the result. The aim is a product someone would miss when it is gone.
 
-[Principles](docs/principles.md) · [Character & attachment](docs/character.md) · [Skills](#skills) · [Sources](research/sources.md) · [Парадная](README.ru.md)
+[Live gallery](https://drevendev.github.io/Silicon-Design/) · [Principles](docs/principles.md) · [Character & attachment](docs/character.md) · [Skills](#skills) · [Sources](research/sources.md) · [Парадная](README.ru.md)
 
 ## What we are fixing
 
@@ -47,13 +47,15 @@ Each folder is a self-contained skill with a `SKILL.md`; no paid service, compon
 
 ## Three small worlds
 
+**[Open the live gallery](https://drevendev.github.io/Silicon-Design/)** — try all three examples in your browser, with no setup.
+
 The [redesigned examples](examples/README.md) carry different ideas through actual local interactions:
 
 - **Field Notes:** a photographed street becomes a route of observations and a personal field book.
 - **Dispatch:** a repair-workshop desk follows a lamp from an address correction to a cleared job, with undo.
 - **Mosslight:** a lanternmaker makes and hangs a light; the path through the forest changes.
 
-[See the browser captures and try the gallery](examples/README.md#preview). The [briefs](examples/README.md), [revision review](examples/REVIEW.md) and [performed checks](examples/VERIFICATION.md) explain the decisions and limits. These are fictional prototypes. The [original critique](research/specimen-critique.md) remains part of the record; recognizability and attachment still need audience testing.
+[See the browser captures](examples/README.md#preview). The [briefs](examples/README.md), [revision review](examples/REVIEW.md) and [performed checks](examples/VERIFICATION.md) explain the decisions and limits. These are fictional prototypes. The [original critique](research/specimen-critique.md) remains part of the record; recognizability and attachment still need audience testing.
 
 ## What belongs here
 

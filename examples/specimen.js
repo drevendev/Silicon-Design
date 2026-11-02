@@ -16,7 +16,7 @@
       else link.removeAttribute('aria-current');
     });
     byId('specimen-caption').textContent = captions[name];
-    byId('brief-link').href = briefs[name];
+    byId('brief-link').href = 'https://github.com/drevendev/Silicon-Design/blob/master/examples/' + briefs[name];
     document.title = name === 'field-notes' ? 'Field Notes — After closing / Silicon Design' : name === 'dispatch' ? 'Dispatch — The workshop desk / Silicon Design' : 'Mosslight — A lanternmaker’s evening / Silicon Design';
   }
   document.querySelectorAll('[data-example]').forEach(function (link) {

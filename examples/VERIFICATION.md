@@ -33,6 +33,10 @@ Browser: Codex in-app Chromium on Windows. Checked CSS viewports: **1280 × 720*
 
 The temporary viewport override was reset after inspection.
 
+### Pages entry and navigation
+
+The publishing revision adds a root entry redirect and `.nojekyll`, while keeping the gallery files in `examples/`. Before deployment, the local root URL with `?example=dispatch#main` reached that exact example and retained the fragment. The changed handbook/brief links resolved to GitHub. The wide Dispatch and 390px Mosslight renders were inspected after the link change; the narrow page had no horizontal overflow. The temporary viewport was reset. Public deployment and HTTP availability are verified separately when publishing.
+
 ## Interactions performed in the browser
 
 ### Field Notes
