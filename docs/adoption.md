@@ -34,4 +34,6 @@ Inspect the rendered result and report actual checks and untested areas.
 
 ## Keep the feedback
 
+Share methods and reliable interaction mechanics while each product owns its character, content and state rules. Similar-looking screens alone do not justify a common UI runtime. Pin adopted guidance and record migration/rollback costs before proposing shared implementation. The [browser-game practice note](../research/platform-practice.md) records this boundary.
+
 After using the skills, save concrete failures and successful decisions. Propose handbook changes with the task, artifact, observed behavior and expected improvement. A single project's accent color should not become a global rule.

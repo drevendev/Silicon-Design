@@ -25,3 +25,11 @@ This application is future work. The fictional specimens are not its before/afte
 - A plugin or installer if maintaining copied skill folders becomes a demonstrated problem.
 
 No automatic redesigns, scheduled work, tool installation or cross-product migration is enabled by this repository.
+
+## Tracked practice follow-ups — 2 November 2026
+
+- [#1: interactive transition and recovery specimen](https://github.com/drevendev/Silicon-Design/issues/1).
+- [#2: matched real-product character and returning-use trial](https://github.com/drevendev/Silicon-Design/issues/2).
+- [#3: controlled material comparison with artifact and visual-state evidence](https://github.com/drevendev/Silicon-Design/issues/3).
+
+These are future deliverables from the [bounded practice contribution](research/platform-practice.md), not completed adoption or human-study results.

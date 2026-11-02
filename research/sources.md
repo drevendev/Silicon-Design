@@ -29,6 +29,8 @@ General composition and typography starting values in the handbook are Silicon D
 
 ## Reuse policy for this initial version
 
+The later [browser-game practice contribution](platform-practice.md), recorded on 2 November 2026, extends the original 24-principle synthesis with P25–P28. Its private source identities stay in the owner's private comparison record; public examples are newly authored fiction. This is separate from the ten-repository public deep read above. The public revision register no longer includes the previously linked private game.
+
 All handbook prose, skills, examples and checker implementation were authored for this repository. External code, skill bodies, templates, fonts, logos, screenshots, diagrams and harvested discussions are not bundled. External material is linked and its ideas are paraphrased with a stated boundary.
 
 Before a later contribution copies material, inspect the exact file's license and asset rights, retain required notices, and document the transfer. A link in this register does not relicense a source or its trademarks. Silicon Design's MIT license applies to its own original material.

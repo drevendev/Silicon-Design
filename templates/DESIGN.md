@@ -41,6 +41,9 @@ Template: replace bracketed prompts and remove sections that do not apply. Keep 
 - Representative real content and stress cases: [long, empty, large, translated].
 - Important component states: [applicable default/focus/loading/error/etc.].
 - Recovery and unavailable actions: [feedback, reason, retry or undo].
+- Consequential transitions: [draft/preview/commit, changed-condition refusal, required choices; source of authoritative facts].
+- Guidance and knowledge if applicable: [achievable actions, lasting progress/resume; disclosure rules across visible, semantic and search surfaces].
+- Feedback and recovery truth: [accepted event, interruption/repetition, reduced effects; what survived and what an export actually establishes].
 - Voice in use: [representative invitation, success and failure messages; tone boundaries].
 - Repeated use: [what becomes faster or quieter; help dismissal, recurrence and respect for existing work].
 - Moment of care: [a useful or expressive detail someone could appreciate; its repetition and access costs].

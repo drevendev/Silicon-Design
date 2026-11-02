@@ -16,13 +16,17 @@ The [README](https://github.com/drevendev/FrankenRepo/blob/26da6d02e59df7a3374b5
 
 **Evidence boundary:** this observation uses repository documentation and linked artifact descriptions. Silicon Design has not independently repeated FrankenRepo's runtime or user testing.
 
-## IdleShop: dense UI needs semantic precision
+## Private game authoring observation: dense UI needs semantic precision
 
-The [0.14 authoring wireframes](https://github.com/drevendev/IdleShop/blob/a29ba05efdd3c1a1a0a3c3a34f361e5590953bc7/docs/design/release-0.14/ui-wireframes.md) specify units on resolved values, owned/required costs, unavailable-action reasons, exact disclosure for compact numbers, and EN/RU input constraints. They distinguish signed values, unknown knowledge and exact zero. They also require presentation interactions to leave the economy untouched.
+An owner-provided authoring specification describes units on resolved values, owned/required costs, unavailable-action reasons, exact disclosure for compact numbers, and EN/RU input constraints. It distinguishes signed values, unknown knowledge and exact zero, and requires presentation interactions to leave the economy untouched. GitHub metadata verified the source as private on 2 November 2026; its code link is omitted and its source identity is retained only in the owner's private comparison record.
 
 **Transfer:** design around the decision a number supports. Keep details available without duplicating every explanation. Blocked actions need discoverable reasons; tooltip and accessibility text must respect knowledge rules.
 
 **Evidence boundary:** these are authoring specifications, not screenshots or proof that every described check passed in the shipped game.
+
+## Browser-game transitions and recovery
+
+The [bounded practice contribution](platform-practice.md) records further observations: previews versus commitments, achievable state-driven guidance, coherent knowledge boundaries, nonblocking accepted-event feedback, and recovery with honest transport outcomes. It maps each observation to P25–P28 or an existing principle and labels the evidence boundary. The [behavioral contracts](../docs/behavioral-contracts.md) give original fictional review situations.
 
 ## Shared working method
 

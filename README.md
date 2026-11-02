@@ -54,6 +54,7 @@ Their [briefs](examples/README.md) and [technical verification](examples/VERIFIC
 ## What belongs here
 
 - Principles with observable consequences, rather than a universal visual style.
+- [Behavioral contracts](docs/behavioral-contracts.md) for coherent facts, previews, action guidance, feedback and recovery, with a [bounded practice record](research/platform-practice.md).
 - [Character, voice and attachment](docs/character.md), including how a product feels after repeated use.
 - Foundations with starting values, exceptions and review procedures.
 - Reusable workflows and skills that preserve a product's own direction.

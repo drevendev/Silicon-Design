@@ -12,7 +12,9 @@ Use an expressive face for short world-building titles if desired; use a readabl
 
 For a purchase, show the effect, exact cost or accessible exact disclosure, owned/required amounts, and a plain reason it is unavailable. A deficit uses both text and color. Do not reveal hidden content through a tooltip, placeholder or accessible label before the game's knowledge rules allow it.
 
-Separate presentation changes from game balance. Compact formatting, help expansion, focus or hover must not change resources, coefficients, unlocks or progression. Keep zero, unknown and not-applicable values distinct. These conventions are informed by [IdleShop's authoring wireframes](../../research/our-practice.md), which are specifications rather than proof of shipped UI.
+Separate presentation changes from game balance. Compact formatting, help expansion, focus or hover must not change resources, coefficients, unlocks or progression. Keep zero, unknown and not-applicable values distinct. These conventions include [private authoring observations](../../research/our-practice.md), which are specifications rather than proof of shipped UI.
+
+Apply the [behavioral contracts](../behavioral-contracts.md) to consequential flows: distinguish a draft from commitment, check a stale preview against current game state, teach achievable actions using lasting completion evidence, and preserve useful work during recovery. Feed expressive effects from accepted outcomes; a repeated render or failed sound must not create a second reward or delay the next legal action. Games own these implementations and their save/knowledge rules.
 
 ## Input, motion and audio
 
