@@ -209,15 +209,6 @@
     "review_scope": "Selected design-relevant sections; see research/deep-read.md for extracts, transfers and boundaries."
   },
   {
-    "repository": "drevendev/IdleShop",
-    "revision": "a29ba05efdd3c1a1a0a3c3a34f361e5590953bc7",
-    "reviewed_at": "2026-11-02",
-    "paths": [
-      "README.md",
-      "docs/design/release-0.14/ui-wireframes.md"
-    ]
-  },
-  {
     "repository": "drevendev/BeautifulRepo",
     "revision": "a692491a7a973032d90545bc6f428ba6b77f706f",
     "reviewed_at": "2026-11-02",

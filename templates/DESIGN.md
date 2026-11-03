@@ -45,6 +45,9 @@ Template: replace bracketed prompts and remove sections that do not apply. Keep 
 - Important component states: [applicable default/focus/loading/error/etc.].
 - Component/asset/state sheet and second surface: [use-size proof of the grammar beyond the opening].
 - Recovery and unavailable actions: [feedback, reason, retry or undo].
+- Consequential transitions: [draft/preview/commit, changed-condition refusal, required choices; source of authoritative facts].
+- Guidance and knowledge if applicable: [achievable actions, lasting progress/resume; disclosure rules across visible, semantic and search surfaces].
+- Feedback and recovery truth: [accepted event, interruption/repetition, reduced effects; what survived and what an export actually establishes].
 - Voice in use: [representative invitation, success and failure messages; tone boundaries].
 - Repeated use: [what becomes faster or quieter; help dismissal, recurrence and respect for existing work].
 - Ordinary second workflow, interruption and return: [actual contract and persistence boundary, including reload].

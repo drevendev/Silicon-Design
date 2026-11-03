@@ -33,6 +33,9 @@ Blocking prevents a key task, access or truthful feedback. Major materially harm
 | Check | Result: checked / failed / untested / inapplicable | Evidence or reason |
 | --- | --- | --- |
 | Primary flow and recovery | [result] | [details] |
+| Draft/preview/cancel, changed conditions and required choices | [result] | [authoritative outcomes; useful work retained] |
+| Cross-surface facts, knowledge and action-guidance resume | [result] | [actual transitions or inapplicable reason] |
+| Repeated/interrupted feedback and recovery transport | [result] | [accepted results and observable success only] |
 | Character across task, difficult state and completion | [result] | [concrete observations; design judgment] |
 | Returning use, tone and repeated interruptions | [result] | [walkthrough or actual observations] |
 | Content extremes and localization | [result] | [details] |
