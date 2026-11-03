@@ -17,6 +17,10 @@ Specify the feeling appropriate to each moment: exploration, comparison, risk, r
 
 Retain a small world/UI asset sheet at actual display size, plus the normal, difficult and completed states. Compare painted edges, lighting, perspective and material across scenery, interactable objects, inventory and menus. Inspect the placed object in its actual scene; palette agreement alone cannot hide a flat icon pasted onto a painted world. Extend the grammar to a second surface already justified by the game, such as the making journal.
 
+Check each materially different surface/theme with resolved foregrounds, especially owned/required quantities and action labels. A light folio must not inherit the dark scene's light ink; keep overlay text roles local to the painting. Validate those actual pairs, not only a palette table.
+
+Preserve a direction's play priority after reflow. If one option is a workbench, inspect where making becomes reachable at the target narrow size and whether necessary labels remain readable. Another option may deliberately prioritize exploration. Do not shrink action labels to inscription size to make the artwork feel dominant, or make every option the same scene-first phone stack. Treat exact sizes and action positions as contextual evidence, not a universal above-fold rule.
+
 ## Preserve game truth
 
 For purchases and crafting, show effect, owned/required amounts, cost and the explicit reason an action is blocked. Preserve exact values or an accessible exact disclosure when compact formatting hides a decision. Distinguish zero, unknown and not applicable.

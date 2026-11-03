@@ -1,0 +1,6 @@
+# Mosslight — supplied direction
+
+Audience/moment: a player quietly making something useful at dusk. Intended feeling: small care, a light left for the next traveller.
+Identity: the supplied painted forest/workshop, worn wood, iron, resin and local warm light. Vocabulary: make / hang / bridge / timber / resin / making journal. The hook is the destination; the scene's change is the result. The world should remain dominant enough to feel inhabited while exact costs/actions stay readable.
+Visual language: keep the opaque painted material coherent across scene, placed result and surrounding UI. Choose type, composition and UI materials that belong to the world. Distinct directions may organize attention and operation differently; no fixed layout/font/palette is supplied. Keep repeated actions efficient; no mandatory celebration, artificial wait or forced help detour. Motion may connect cause and effect with a reduced-motion alternative.
+Truth/constraints: a fictional local browser scene, not a native game or save system. Supplied images are original generated art; use the completed painting at the real lit phase. Preserve exact costs and progression. Journal interruption, insufficient fixture, completion, repetition/reset and narrow/wide layouts are in scope.

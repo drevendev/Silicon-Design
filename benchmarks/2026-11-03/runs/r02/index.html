@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dispatch | Workshop handovers</title>
+<link rel="stylesheet" href="styles.css">
+<script src="state.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#workspace">Skip to work order</a>
+<div class="demo" aria-label="Prototype controls">
+  <span>Fictional teaching prototype</span>
+  <div class="demo-controls"><span>Direction</span><button data-testid="direction-a" data-direction="a">A <span>Split bench</span></button><button data-testid="direction-b" data-direction="b">B <span>Work sheet</span></button><button data-testid="direction-c" data-direction="c">C <span>Register</span></button><label for="fixture">QA fixture</label><select id="fixture"><option value="initial">Initial</option><option value="secondary">Secondary</option><option value="error">Error</option><option value="complete">Complete</option></select></div>
+</div>
+<div id="app"><p class="loading" role="status">Opening local workshop records…</p></div>
+<noscript>This local prototype needs JavaScript to manage workshop handovers.</noscript>
+</body>
+</html>

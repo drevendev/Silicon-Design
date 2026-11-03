@@ -17,6 +17,8 @@ Assign semantic surface, foreground, action, status, boundary and focus roles. M
 
 Measure actual foreground/background pairs, including relevant state combinations and transparency. For web text use WCAG's 4.5:1 ordinary-text and 3:1 qualifying-large-text thresholds; evaluate meaningful non-text cues against the applicable 3:1 requirement and exceptions. Compare unrounded ratios. Pair status colors with text or shape. Report tested combinations rather than declaring a whole product compliant.
 
+Cover materially different themes/directions with a small component/role matrix. Inspect resolved ink, inherited ancestor backgrounds, quantities, action labels and overlays in the implementation; a passing swatch list does not establish those combinations. When a paper variant replaces a dark surface, map its foreground roles too, while keeping image-overlay ink local. Source calculations cannot verify unresolved CSS inheritance; mark that gap when rendering is unavailable.
+
 ## Components and implementation
 
 Define a compact spacing, shape and elevation vocabulary from content relationships. Cover applicable default, hover, focus, pressed, selected, disabled-with-reason, loading, empty, error and success states for important components. Include content limits, responsive behavior and keyboard/touch expectations.

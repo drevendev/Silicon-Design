@@ -1,0 +1,176 @@
+{
+  "id": "2026-11-03-matched-01",
+  "status": "frozen-before-generation",
+  "silicon_revision": "053649a8f3c74f0c3325dce92bb813a711dcae91",
+  "anti_revision": "941b1532f9cc8ffde766bca5921d75257c9e5762",
+  "model": "identically inherited parent model; no override",
+  "reasoning_effort": "identically inherited parent setting; no override",
+  "service_tier": "default",
+  "cli_version": "0.146.1",
+  "wall_limit_seconds": 600,
+  "concurrency": 3,
+  "per_brief_runs": 1,
+  "sampling_seed": null,
+  "sampling_temperature": null,
+  "token_cap": null,
+  "image_generation_budget": 0,
+  "browsers_during_generation": false,
+  "external_network_during_generation": false,
+  "viewport_targets": [
+    [
+      1280,
+      900
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "order_note": "Predeclared counterbalanced order: Silicon first in operate/experience, Anti first in read. Not a randomized multi-seed study.",
+  "reviewer_blinding": "Generation contexts fresh; primary operator knows conditions. Anonymous gallery display is not a blinded human study.",
+  "runs": [
+    {
+      "id": "r01",
+      "brief": "operate",
+      "condition": "silicon",
+      "input_sha256": {
+        "assets/lamp.svg": "abd194107c8eabcc3bba002eedd421580cffaece6de1f5a56510c94cd7a29ea5",
+        "assets/radio.svg": "d2ff0b6d990ff7cf94b10222397edb6fa4b45a160b58098702da41b7f96343fe",
+        "assets/turntable.svg": "a84929b5fcf5b1d33bd08a2cdfe7f64cd1d97ba2cf3259aa7c8d057138876757",
+        "brief.md": "ca349b29fdb0654ac2a3e54d22dd7b50a8b0950c74a92bdfeb95c3ae5ffd698d",
+        "DESIGN.md": "5ca01f115d2c15ebb4224b66a7e80fa8aad4fabf3d6b20ffad29a76e31689443",
+        "fixture.json": "46a8b27259112b0ad8d06dc0686cea18bc75f453186d9227e236939a95a241c2",
+        "prompt.txt": "1a2bc774db90331c8c7b6c7b6f39e50247a8bf51b5be7eea6b9ea04d59e88ebc",
+        "skills/silicon-design-direction/SKILL.md": "1548e014a71fa70c8499a0662e750621664df76a7365b6fd67757b6e254ca7f7",
+        "skills/silicon-design-review/SKILL.md": "63e2f72da98f81612500b3d2e625740ee046f1e955e170448953ddb99995c28b",
+        "skills/silicon-design-system/SKILL.md": "2366c98410136fec3d15e70c5e39dc7c40335c3d6e4d6e4b700d7d458821c1c1",
+        "skills/silicon-game-ui/SKILL.md": "dc550a2b83a6f95d7a3b3523136d354bba12de375ddba5a4e759c6e278b07c6a",
+        "skills/silicon-interface-build/SKILL.md": "344c22ca1f2b34e77b5cecbeb14b4c18a92d861a742e4e1bddcf34aaa08e0ede",
+        "state.js": "21b54d7b13971ed47e934e3dc6b312ce41893a1faae4cde2a5794d7dc3a7363b"
+      },
+      "skill_bytes": 22920,
+      "images_attached": []
+    },
+    {
+      "id": "r02",
+      "brief": "operate",
+      "condition": "anti",
+      "input_sha256": {
+        "assets/lamp.svg": "abd194107c8eabcc3bba002eedd421580cffaece6de1f5a56510c94cd7a29ea5",
+        "assets/radio.svg": "d2ff0b6d990ff7cf94b10222397edb6fa4b45a160b58098702da41b7f96343fe",
+        "assets/turntable.svg": "a84929b5fcf5b1d33bd08a2cdfe7f64cd1d97ba2cf3259aa7c8d057138876757",
+        "brief.md": "ca349b29fdb0654ac2a3e54d22dd7b50a8b0950c74a92bdfeb95c3ae5ffd698d",
+        "DESIGN.md": "5ca01f115d2c15ebb4224b66a7e80fa8aad4fabf3d6b20ffad29a76e31689443",
+        "fixture.json": "46a8b27259112b0ad8d06dc0686cea18bc75f453186d9227e236939a95a241c2",
+        "prompt.txt": "1a2bc774db90331c8c7b6c7b6f39e50247a8bf51b5be7eea6b9ea04d59e88ebc",
+        "skills/antislop/SKILL.md": "30bc532fb59d4c77a301dfdd5ab9f495f098f1085f31e09b3064078ba39a7b01",
+        "skills/antislop-copywriting/SKILL.md": "2434a6fb0603dea1e62d4c1968382def47af779bd0e43b2130edd49df41ba444",
+        "skills/antislop-human/SKILL.md": "49421878e0c014fa03deea8dcfbfcfae526a8423a43bb517ebfa3ef2cb4a80ef",
+        "skills/antislop-layoutmobile/SKILL.md": "8613395a5109f637837f5c24f0ce5e58a96df1c2567a9f7666fcaecc47ff39cd",
+        "skills/antislop-ui/SKILL.md": "e8cb54f3d436de9253e0e66e0a31b18be80b6054d67b3ad50a4f61fb9f4557f2",
+        "state.js": "21b54d7b13971ed47e934e3dc6b312ce41893a1faae4cde2a5794d7dc3a7363b"
+      },
+      "skill_bytes": 140591,
+      "images_attached": []
+    },
+    {
+      "id": "r03",
+      "brief": "read",
+      "condition": "anti",
+      "input_sha256": {
+        "assets/field-notes-alley.jpg": "474e49c8301247764b2529030088a4cbec3d1b0b41c7779aea29a7e70f171db8",
+        "brief.md": "febfd083aadd24ff58f576730df7644b0a37e798fd390c83275924ea3eaa83f6",
+        "DESIGN.md": "01d5ec2e439b14fc7ac8bc3ed6bc5d1109938077f6ba66ad0f63b0cd1506acdc",
+        "fixture.json": "95ed47b04f1eb33f5dbd89ff67d5ea3a75314df7431ebba979c72ba8ab7b330d",
+        "prompt.txt": "1a2bc774db90331c8c7b6c7b6f39e50247a8bf51b5be7eea6b9ea04d59e88ebc",
+        "skills/antislop/SKILL.md": "30bc532fb59d4c77a301dfdd5ab9f495f098f1085f31e09b3064078ba39a7b01",
+        "skills/antislop-copywriting/SKILL.md": "2434a6fb0603dea1e62d4c1968382def47af779bd0e43b2130edd49df41ba444",
+        "skills/antislop-human/SKILL.md": "49421878e0c014fa03deea8dcfbfcfae526a8423a43bb517ebfa3ef2cb4a80ef",
+        "skills/antislop-layoutmobile/SKILL.md": "8613395a5109f637837f5c24f0ce5e58a96df1c2567a9f7666fcaecc47ff39cd",
+        "skills/antislop-ui/SKILL.md": "e8cb54f3d436de9253e0e66e0a31b18be80b6054d67b3ad50a4f61fb9f4557f2",
+        "state.js": "7cf67424799717e6d0682c2680f96291d9de5a620ecadebfa04af304dd550714"
+      },
+      "skill_bytes": 140591,
+      "images_attached": [
+        "assets/field-notes-alley.jpg"
+      ]
+    },
+    {
+      "id": "r04",
+      "brief": "read",
+      "condition": "silicon",
+      "input_sha256": {
+        "assets/field-notes-alley.jpg": "474e49c8301247764b2529030088a4cbec3d1b0b41c7779aea29a7e70f171db8",
+        "brief.md": "febfd083aadd24ff58f576730df7644b0a37e798fd390c83275924ea3eaa83f6",
+        "DESIGN.md": "01d5ec2e439b14fc7ac8bc3ed6bc5d1109938077f6ba66ad0f63b0cd1506acdc",
+        "fixture.json": "95ed47b04f1eb33f5dbd89ff67d5ea3a75314df7431ebba979c72ba8ab7b330d",
+        "prompt.txt": "1a2bc774db90331c8c7b6c7b6f39e50247a8bf51b5be7eea6b9ea04d59e88ebc",
+        "skills/silicon-design-direction/SKILL.md": "1548e014a71fa70c8499a0662e750621664df76a7365b6fd67757b6e254ca7f7",
+        "skills/silicon-design-review/SKILL.md": "63e2f72da98f81612500b3d2e625740ee046f1e955e170448953ddb99995c28b",
+        "skills/silicon-design-system/SKILL.md": "2366c98410136fec3d15e70c5e39dc7c40335c3d6e4d6e4b700d7d458821c1c1",
+        "skills/silicon-game-ui/SKILL.md": "dc550a2b83a6f95d7a3b3523136d354bba12de375ddba5a4e759c6e278b07c6a",
+        "skills/silicon-interface-build/SKILL.md": "344c22ca1f2b34e77b5cecbeb14b4c18a92d861a742e4e1bddcf34aaa08e0ede",
+        "state.js": "7cf67424799717e6d0682c2680f96291d9de5a620ecadebfa04af304dd550714"
+      },
+      "skill_bytes": 22920,
+      "images_attached": [
+        "assets/field-notes-alley.jpg"
+      ]
+    },
+    {
+      "id": "r05",
+      "brief": "experience",
+      "condition": "silicon",
+      "input_sha256": {
+        "assets/mosslight-world-lit.jpg": "a728e47edcc031105fdcfd0bd43871d2bcc3d909ef8880a6dcc4b3fce66757f3",
+        "assets/mosslight-world.jpg": "e27beaa14ae29e2aed08bee16da12c3b305dc7daa34e790a5d944056f3185ac0",
+        "brief.md": "88c42064d1192a742c7deeb6e84b93f8268778d65d0c4af5b42a4d4ab80fbe5d",
+        "DESIGN.md": "c13f12965b747dc02cb29f8bc9385116ed90531b35f59c8ea66dc2cec2528d3c",
+        "fixture.json": "a6f4ffda87f9daaabd18b00afb7be40f62c7d8e80b18f18c718300eabae900c2",
+        "prompt.txt": "1a2bc774db90331c8c7b6c7b6f39e50247a8bf51b5be7eea6b9ea04d59e88ebc",
+        "skills/silicon-design-direction/SKILL.md": "1548e014a71fa70c8499a0662e750621664df76a7365b6fd67757b6e254ca7f7",
+        "skills/silicon-design-review/SKILL.md": "63e2f72da98f81612500b3d2e625740ee046f1e955e170448953ddb99995c28b",
+        "skills/silicon-design-system/SKILL.md": "2366c98410136fec3d15e70c5e39dc7c40335c3d6e4d6e4b700d7d458821c1c1",
+        "skills/silicon-game-ui/SKILL.md": "dc550a2b83a6f95d7a3b3523136d354bba12de375ddba5a4e759c6e278b07c6a",
+        "skills/silicon-interface-build/SKILL.md": "344c22ca1f2b34e77b5cecbeb14b4c18a92d861a742e4e1bddcf34aaa08e0ede",
+        "state.js": "21b54d7b13971ed47e934e3dc6b312ce41893a1faae4cde2a5794d7dc3a7363b"
+      },
+      "skill_bytes": 22920,
+      "images_attached": [
+        "assets/mosslight-world.jpg",
+        "assets/mosslight-world-lit.jpg"
+      ]
+    },
+    {
+      "id": "r06",
+      "brief": "experience",
+      "condition": "anti",
+      "input_sha256": {
+        "assets/mosslight-world-lit.jpg": "a728e47edcc031105fdcfd0bd43871d2bcc3d909ef8880a6dcc4b3fce66757f3",
+        "assets/mosslight-world.jpg": "e27beaa14ae29e2aed08bee16da12c3b305dc7daa34e790a5d944056f3185ac0",
+        "brief.md": "88c42064d1192a742c7deeb6e84b93f8268778d65d0c4af5b42a4d4ab80fbe5d",
+        "DESIGN.md": "c13f12965b747dc02cb29f8bc9385116ed90531b35f59c8ea66dc2cec2528d3c",
+        "fixture.json": "a6f4ffda87f9daaabd18b00afb7be40f62c7d8e80b18f18c718300eabae900c2",
+        "prompt.txt": "1a2bc774db90331c8c7b6c7b6f39e50247a8bf51b5be7eea6b9ea04d59e88ebc",
+        "skills/antislop/SKILL.md": "30bc532fb59d4c77a301dfdd5ab9f495f098f1085f31e09b3064078ba39a7b01",
+        "skills/antislop-copywriting/SKILL.md": "2434a6fb0603dea1e62d4c1968382def47af779bd0e43b2130edd49df41ba444",
+        "skills/antislop-human/SKILL.md": "49421878e0c014fa03deea8dcfbfcfae526a8423a43bb517ebfa3ef2cb4a80ef",
+        "skills/antislop-layoutmobile/SKILL.md": "8613395a5109f637837f5c24f0ce5e58a96df1c2567a9f7666fcaecc47ff39cd",
+        "skills/antislop-ui/SKILL.md": "e8cb54f3d436de9253e0e66e0a31b18be80b6054d67b3ad50a4f61fb9f4557f2",
+        "state.js": "21b54d7b13971ed47e934e3dc6b312ce41893a1faae4cde2a5794d7dc3a7363b"
+      },
+      "skill_bytes": 140591,
+      "images_attached": [
+        "assets/mosslight-world.jpg",
+        "assets/mosslight-world-lit.jpg"
+      ]
+    }
+  ],
+  "packet_revision": 3,
+  "packet_note": "Skill folders normalized to name/SKILL.md before any generation; input bytes unchanged.",
+  "engine": "collaboration.spawn_agent",
+  "context": "fork_turns=none; no conversation history",
+  "token_usage": "not exposed by the collaboration interface",
+  "infra_failures": "Six CLI requests rejected unsupported gpt-6.1-sol before any generation; retained privately, not design outputs.",
+  "budget_enforcement": "Coordinator interrupts any candidate still running at 600 seconds; actual elapsed time recorded."
+}

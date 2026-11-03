@@ -21,6 +21,8 @@ When direction is open, explore two or three materially different compositions. 
 
 For substantive open-direction work, deliver retained rendered alternatives, not only prose names. Hold the brief, words, capabilities, fixture state, asset pool and viewport constant. For each, identify the dominant object, reading model, attention sequence and tradeoff. Keep rejected candidates inspectable. If rendering is unavailable, label the alternatives as proposals and leave the comparison unverified.
 
+Use the contact sheet to challenge the options before polishing each one. Name the first thing noticed, first useful action and next transition in each. Repeat the comparison at the intended narrow size: three distinct desktop arrangements may all become the same image-first stack. A direction described as a workbench should actually prioritize work there. Preserve meaningful differences in priority without forcing every surface's action above the fold.
+
 Write a small subject inventory: output, vocabulary, constraints, artifacts and rituals, with supplied versus invented material marked. Test specificity against the nearest same-category product. Category atmosphere alone is weak differentiation. References from other disciplines can broaden the search; name the relationship learned rather than collecting fashionable styles.
 
 For each useful option, explain audience fit, distinctive decisions, a rejected alternative and a tradeoff. Use references to analyze relationships and methods, without copying a brand identity. Familiar controls, gradients, system fonts and cards are allowed when they serve the product.
@@ -28,6 +30,8 @@ For each useful option, explain audience fit, distinctive decisions, a rejected 
 Describe the intended intensity, compositional rhythm and motion in context. Choose a recognizable idea and show how it changes appropriately across the main task, a difficult state and completion. It may live in type, imagery, composition, language or behavior. A new palette, named aesthetic or decorative mascot alone does not establish a direction.
 
 Include sample invitation, success and failure copy, plus a useful detail for repeated use. Keep the voice stable and tone appropriate to the situation. Put novelty where it adds recognition or meaning; keep familiar controls easy to operate. Do not add product features, persistence or onboarding outside the requested scope to satisfy this exercise.
+
+Make a short inventory of requested capabilities and real editable fields. Express care through those operations; do not invent a notes field merely to demonstrate input preservation or a second workflow. Spend exploration effort on alternatives before multiplying delivery documents and self-check counts.
 
 Select against the brief. For authorized exploratory work, proceed with a clearly stated provisional choice if the user has not specified one. Do not turn routine reversible work into an approval sequence.
 

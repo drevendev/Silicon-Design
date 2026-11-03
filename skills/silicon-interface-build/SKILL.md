@@ -21,6 +21,8 @@ Carry the chosen direction beyond the first screen into the task, an adverse sta
 
 Retain evidence of the complete journey and a second ordinary workflow where the brief contains one. Exercise interruption and return, and check the declared reload/persistence boundary. A blank-note error is useful evidence, but does not cover an interrupted task or a second workflow. Keep a secondary surface such as an empty/populated collection in the same visual grammar.
 
+Exercise undo/removal from the secondary surface, including its last item. Choose the useful destination after the object disappears: restore the edited object or focus a meaningful remaining control. In a real browser verify that the focused node is connected, visible and reveals the restored task. A DOM stub recording a focus() request cannot establish that result. Preserve the actual task's fields rather than adding an unrelated editable feature to demonstrate context retention.
+
 ## Inspect the result
 
 Open the actual implementation in a browser when available. Inspect narrow, intermediate and wide layouts, content extremes and supported themes/languages. Fix overflow, weak hierarchy, awkward wrapping and incomplete states before micro-polish.

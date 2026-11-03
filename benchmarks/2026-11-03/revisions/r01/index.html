@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Dispatch — workshop handovers</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data.js"></script>
+  <script defer src="state.js"></script>
+  <script defer src="model.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to work record</a>
+  <div class="demo-bar">
+    <span>Fictional teaching material <span class="demo-divider">/</span> visit-only prototype</span>
+    <label>QA fixture <select id="fixture" aria-label="QA fixture"><option value="initial">Initial</option><option value="secondary">Secondary · empty handovers</option><option value="error">Error · original address</option><option value="complete">Complete · two handovers</option></select></label>
+  </div>
+  <header class="masthead">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">D/</span><div><strong>Dispatch</strong><span>THE WORKSHOP HANDOVER BOOK</span></div></div>
+    <nav class="surface-nav" aria-label="Workshop views">
+      <button data-action="bench" data-testid="close-handovers">Bench <span data-testid="open-count" id="open-count">3</span></button>
+      <button data-action="handovers" data-testid="open-handovers">Handovers <span data-testid="handover-count" id="handover-count">0</span></button>
+    </nav>
+  </header>
+  <div class="direction-bar"><span id="direction-caption">A / Bench ledger</span><nav aria-label="Design directions"><button data-direction="a" data-testid="direction-a">A <span>Ledger</span></button><button data-direction="b" data-testid="direction-b">B <span>Object desk</span></button><button data-direction="c" data-testid="direction-c">C <span>Register</span></button></nav><button class="reset" data-action="reset" data-testid="reset">Reset visit</button></div>
+  <div id="app"></div>
+  <footer class="site-footer"><span>Records stay in this visit. Switching views keeps your work; reset or reload restores the selected fixture.</span><span>No actual delivery, collection, printing or external verification.</span></footer>
+</body>
+</html>

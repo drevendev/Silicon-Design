@@ -10,10 +10,10 @@ Each has an implementation consequence and a review question. [Character & attac
 | --- | --- | --- | --- |
 | P01 | Start with a person and a situation | Name the task, stakes and context before choosing a look | Whose day gets better, and at which moment? |
 | P02 | Give the product an emotional intention | Translate a desired feeling into composition, words and behavior | What should someone feel, and which choices cause that? |
-| P03 | Take a position | For an open direction, retain rendered alternatives of the same brief, content and state; select by task and tradeoff | Can we see different decisions, rather than read different aesthetic names? |
+| P03 | Take a position | Retain same-brief alternatives and compare their attention/action sequence at wide and narrow sizes | Do the choices stay meaningfully different where people use them, rather than collapse into the same stack? |
 | P04 | Draw from the product's own world | Inventory its actual output, vocabulary, constraints, artifacts and rituals; test against its nearest category peer | Could another street journal, workshop or game use this unchanged? |
 | P05 | Establish a repeatable visual grammar | Show type, components and assets together at use size, through a difficult state and a second meaningful surface | Does the identity survive beyond the hero and logo, without an asset looking pasted in? |
-| P06 | Spend novelty where it matters | Keep familiar operations predictable and concentrate invention on meaningful moments | Is this memorable choice helping the product, or making the control harder to use? |
+| P06 | Spend novelty where it matters | Express character through the requested work; keep a capability inventory before adding interactions | Does the detail improve an existing task, or invent a feature to make the design seem caring? |
 
 ## Composition and craft
 
@@ -23,7 +23,7 @@ Each has an implementation consequence and a review question. [Character & attac
 | P08 | Make hierarchy decisive | Create a clear major/minor relationship through size, space, position or restraint | Is attention selective enough to support the next decision? |
 | P09 | Compose a rhythm | Vary density and emphasis with the content while preserving useful repetition | Where does the experience accelerate, pause and resolve? |
 | P10 | Treat typography as a voice | Separate decision-critical information from decoration; shape reading, operating and experience roles at their actual size | Are addresses, costs and actions readable without borrowing hierarchy from tiny labels? |
-| P11 | Give color, depth and materials roles | Distinguish surfaces, action, status and expression; check real combinations | Which meaning does each treatment carry? |
+| P11 | Give color, depth and materials roles | Inspect actual component pairs across materially different themes/directions, including inherited and overlay roles | Does a light surface still inherit light ink, despite passing swatch tests? |
 | P12 | Finish the small decisions | Refine crops, alignment, icon weight, punctuation, value formatting and state transitions | What reveals that someone has actually used and cared for this screen? |
 
 ## Behavior, care and repeated use
@@ -31,7 +31,7 @@ Each has an implementation consequence and a review question. [Character & attac
 | ID | Principle | Consequence | Review question |
 | --- | --- | --- | --- |
 | P13 | Make possibilities discoverable | Provide timely cues and clear action labels, including for direct manipulation | Can a new user discover what is possible without a guided tour? |
-| P14 | Preserve the person's context | Keep useful input, location and selection; edit near the object when appropriate | Can someone continue thinking about the task after a change? |
+| P14 | Preserve the person's context | Keep useful input/selection; when an object disappears, restore a useful surface and real visible focus | Can someone continue after undoing the last record from a secondary view? |
 | P15 | Respond immediately and truthfully | Acknowledge input, show real pending/completed states, and support recovery | Can the person distinguish received, processing, finished and failed? |
 | P16 | Use motion to connect cause and effect | Explain continuity or an important result; keep frequent transitions brief and interruptible | Does the movement help, and can the task continue without waiting for it? |
 | P17 | Keep a stable voice and an appropriate tone | Write specific language; adjust warmth and humor to the person's situation | Does the error sound like the same product taking the problem seriously? |
@@ -69,5 +69,7 @@ For a substantial new direction, keep the subject inventory, two or three render
 Inspect the whole artifact: reading order, lower sections, ordinary work, recovery and return. Distinguish geometric fidelity (positions and sizes), interpretive fidelity (content and intended relationships) and design judgment (whether those choices are good). A close screenshot match can still preserve a poor decision.
 
 These are Silicon Design working conventions from [issue #8](https://github.com/drevendev/Silicon-Design/issues/8), demonstrated in the [same-brief trial](../examples/field-notes-directions.html). They are not new accessibility standards. Our first comparative target is [Anti Slop](../research/benchmark.md); superiority remains unproven until matched results and human review exist.
+
+The [first matched trial](../benchmarks/2026-11-03/PROTOCOL.md) added narrower corrections: compare alternatives on phones too; inspect resolved theme inheritance; exercise last-item undo from the actual secondary surface; and keep character within the requested capabilities. Source-test counts are not browser evidence. These are responses to observed cases, not new universal style bans or a claim of comparative superiority.
 
 [Workflow](workflow.md) · [Character & attachment](character.md) · [Diagnostics](anti-generic.md) · [Current specimen critique](../research/specimen-critique.md)

@@ -14,6 +14,8 @@ Preserve entered data after recoverable failures. Show whether an operation is p
 
 Make useful actions discoverable near the object they affect. Direct editing and contextual tools can reduce a detour, but need visible cues and keyboard/touch access. Preserve focus, useful selection and the working comparison when details open. Context preservation is the goal; a single page or overlay is only one possible implementation.
 
+Test the moment a record disappears from a secondary view, including undo of its last item. Restore a useful object/surface or a meaningful remaining focus target. In a real browser check the focused node and visibility after rendering; a stub recording a focus call cannot prove that context survived. Preserve actual task inputs instead of adding a new editable field merely to demonstrate care.
+
 Distinguish a new collection, no search matches, no pending work, missing access and failed loading. They need different explanations and next steps. A finished queue can acknowledge completion; a failed request must describe recovery. Do not send someone to an unrelated feature merely to fill an empty state.
 
 Place onboarding near the relevant feature. Keep it dismissible, bound its recurrence and avoid competing announcements. Support people as they become proficient: efficient repetition, discoverable shortcuts where appropriate, and detail available without turning each action into a tutorial.

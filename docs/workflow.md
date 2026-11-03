@@ -47,3 +47,7 @@ Fix observed structural problems before polishing tiny details. Change one coher
 Use the [review template](../templates/REVIEW.md) to distinguish checked, failed, untested and inapplicable items. Link implementation and captures, describe remaining risks, and record exceptions. Never promote a mockup to a shipped result or a browser-width check to a real 400% zoom test.
 
 After real use, record confusing interactions and useful exceptions. Update a shared rule only when the observation generalizes beyond that one screen.
+
+## Lessons from the first matched trial
+
+The [retained comparison](../benchmarks/2026-11-03/RESULTS.md) exposed gaps that source checks missed. Compare direction priority after narrow reflow, measure resolved theme roles, and exercise last-item recovery from its actual secondary surface. Keep requested capabilities fixed; adding an editable field is not a substitute for care in the real task. Repair copies remain separate from frozen benchmark outputs, with additional feedback disclosed.

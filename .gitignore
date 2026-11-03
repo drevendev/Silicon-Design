@@ -2,3 +2,9 @@ __pycache__/
 *.pyc
 .DS_Store
 .test-*/
+
+# Raw benchmark screenshots are retained in the local lab; publish JPEG evidence.
+benchmarks/2026-11-03/captures/*.png
+benchmarks/2026-11-03/captures/operate-pair.jpg
+benchmarks/2026-11-03/captures/r??-?-wide.jpg
+benchmarks/2026-11-03/captures/r??-?-phone.jpg

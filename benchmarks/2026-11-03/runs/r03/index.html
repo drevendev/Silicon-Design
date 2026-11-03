@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f1eadf">
+  <title>Field Notes | After closing.</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="state.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to observations</a>
+  <div class="demo-bar"><span>Fictional teaching prototype</span><div class="demo-controls"><span id="fixture-label">QA fixture: initial</span><nav aria-label="Design directions"><button data-testid="direction-a" data-direction="a">A<span> / Reading plate</span></button><button data-testid="direction-b" data-direction="b">B<span> / Index</span></button><button data-testid="direction-c" data-direction="c">C<span> / Looking glass</span></button></nav></div></div>
+  <header class="site-header"><p class="wordmark">Field Notes<span aria-hidden="true">.</span></p><p class="header-middle">An ordinary street, looked at closely.</p><button class="book-button" data-testid="open-book" id="open-book">Field book <span class="count" data-testid="kept-count" aria-label="Kept observations">0</span></button></header>
+  <main id="main" tabindex="-1">
+    <section id="street" aria-label="Street observations">
+      <div class="opening"><h1>After closing.</h1><p>A shutter, a chair, a little water. Three ways into an ordinary street.</p></div>
+      <div class="street-layout">
+        <figure class="street-photo"><div class="photo-stage"><img id="hero-photo" src="assets/field-notes-alley.jpg" width="1122" height="1402" fetchpriority="high" alt="An imagined narrow street: a weathered blue shutter, a wooden chair beside a doorway, and plants beside a small waterline."><div id="spatial-stops" class="spatial-stops"></div></div><figcaption><span>An imagined place.</span><span>Generated photograph</span></figcaption></figure>
+        <div id="reader" class="reader"></div>
+      </div>
+      <div class="street-bottom"><p class="look-again">There is time<br><em>to look again.</em></p><div id="street-margin"></div></div>
+    </section>
+    <section id="book" hidden aria-label="Your field book">
+      <div class="book-heading"><div><p class="section-label">A record of your noticing</p><h1>Your field book.</h1></div><button class="text-button" data-testid="close-book" id="close-book">Back to the street <span aria-hidden="true">↗</span></button></div>
+      <div class="book-spread"><div class="book-entries"><div class="entries-heading"><h2>Kept observations</h2><span id="book-count"></span></div><div id="entries"></div></div><aside id="book-margin"></aside></div>
+    </section>
+  </main>
+  <footer><span>Authored fictional observations and a generated photograph.</span><span>Kept entries and notes last for this visit only. Reload clears them.</span></footer>
+  <div class="sr-only" role="status" aria-live="polite" id="status"></div>
+</body>
+</html>

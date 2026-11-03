@@ -28,6 +28,8 @@ The [specimen palettes](../../examples/palettes.json) declare tested pairs for t
 
 Create a dark theme by remapping surface, foreground, border and state roles. Simple inversion rarely preserves hierarchy. Check selected, hover, pressed, loading, focus and error combinations independently. Support a system preference or a deliberate theme choice when the product calls for it; do not add a theme switch merely to satisfy a style checklist.
 
+Inspect the resolved component colors for every materially different theme or direction. In the [matched trial](../../benchmarks/2026-11-03/PROTOCOL.md), a light folio inherited light text from the dark root despite passing declared palette calculations. Its body copy and owned quantities were almost invisible. Remap the foreground at the scope that actually supplies it; keep image-overlay roles local. A variable change or a successful CSS write is not evidence that the browser's computed color changed.
+
 For errors and resource deficits, combine color with a label, icon shape, pattern or explicit amount. Reserve visual intensity for decisions that need it. A warning should not look more urgent than a destructive action unless its consequences justify it.
 
 Primary reference for role separation: [Ant Design color system](https://github.com/ant-design/ant-design/blob/ac2322ada3c1212793144c296d2429d7857576e4/docs/spec/colors.en-US.md). For token interchange, [DTCG Format 2025.10](https://www.designtokens.org/tr/2025.10/format/) is a Community Group report, not a W3C Recommendation. Our palette JSON is a small custom teaching format, not a DTCG implementation.

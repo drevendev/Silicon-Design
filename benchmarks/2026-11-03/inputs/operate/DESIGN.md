@@ -1,0 +1,6 @@
+# Dispatch — supplied direction
+
+Audience/moment: a workshop operator finishing a repair's final handover while other objects remain on the bench. Intended feeling: competence and care for the object and its owner.
+Identity: practical, grounded in repair records and object-specific notes. Vocabulary: work order / bench / address correction / collection / handover. The critical distinction is repaired versus actually handed over. Drawings identify objects; they should support the decision.
+Visual language: choose an operating density that makes jobs, reasons and actual address values easy to compare. Establish a recognizable grammar from workshop records, annotations and repaired objects. Choose palette/type/materials; none are fixed. The task is a working tool, not a repair-service marketing landing page. Expressiveness belongs where it helps orientation and closure; frequent work stays efficient.
+Truth/constraints: fictional local records, no actual shipment/collection/printing or external verification. The same three jobs/drawings/actions in every direction. Missing/wrong address, blocked radio, collection, receipt/undo and empty/populated handovers are in scope. Switching and reload have explicit local boundaries.

@@ -1,0 +1,84 @@
+{
+  "packaged_invocation_diagnostics": [
+    {
+      "run": "r01",
+      "exit": 0,
+      "stdout": "73 source/VM/model assertions passed. This is not a browser or layout test.\n",
+      "stderr": ""
+    },
+    {
+      "run": "r02",
+      "exit": 1,
+      "stdout": "",
+      "stderr": "sh (C:\\MyProjects\\Codex\\Landings\\Silicon-Design\\benchmarks\\2026-11-03\\runs\\r02\\check.cjs:37:54)\n    at Object.<anonymous> (C:\\MyProjects\\Codex\\Landings\\Silicon-Design\\benchmarks\\2026-11-03\\runs\\r02\\check.cjs:38:44)\n    at Module._compile (node:internal/modules/cjs/loader:1872:14)\n    at Object..js (node:internal/modules/cjs/loader:2003:10)\n    at Module.load (node:internal/modules/cjs/loader:1594:32)\n    at Module._load (node:internal/modules/cjs/loader:1396:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5) {\n  errno: -4058,\n  code: 'ENOENT',\n  syscall: 'open',\n  path: 'C:\\\\MyProjects\\\\Codex\\\\Landings\\\\Silicon-Design\\\\benchmarks\\\\2026-11-03\\\\runs\\\\assets\\\\lamp.svg'\n}\n\nNode.js v24.19.0\n"
+    },
+    {
+      "run": "r03",
+      "exit": 0,
+      "stdout": "15 fixture/interaction scenarios passed in the Node minimal-DOM harness. Browser rendering, native events, focus behavior and layout are untested.\ndark accent: 5.330:1\ndark button: 6.080:1\ninput boundary: 4.050:1\nExact fixture content, local references and CSS brace check passed.\n",
+      "stderr": ""
+    },
+    {
+      "run": "r04",
+      "exit": 0,
+      "stdout": "134 source/state/markup checks passed. This DOM stub is not a browser or layout test.\nA reading: 11.14:1\nA supporting: 5.69:1\nA prompt / focus: 5.70:1\nA action: 8.97:1\nB reading: 9.73:1\nB prompt: 6.59:1\nB action: 7.64:1\nC reading: 10.30:1\nC prompt: 5.90:1\nC action: 8.66:1\n142 total assertions passed, plus 10 palette contrast comparisons.\n",
+      "stderr": ""
+    },
+    {
+      "run": "r05",
+      "exit": 1,
+      "stdout": "",
+      "stderr": "ects\\Codex\\Landings\\Silicon-Design\\benchmarks\\2026-11-03\\runs\\r05\\check.cjs:117:68)\n    at Object.<anonymous> (C:\\MyProjects\\Codex\\Landings\\Silicon-Design\\benchmarks\\2026-11-03\\runs\\r05\\check.cjs:119:44)\n    at Module._compile (node:internal/modules/cjs/loader:1872:14)\n    at Object..js (node:internal/modules/cjs/loader:2003:10)\n    at Module.load (node:internal/modules/cjs/loader:1594:32)\n    at Module._load (node:internal/modules/cjs/loader:1396:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5) {\n  errno: -4058,\n  code: 'ENOENT',\n  syscall: 'open',\n  path: 'C:\\\\MyProjects\\\\Codex\\\\Landings\\\\Silicon-Design\\\\benchmarks\\\\2026-11-03\\\\runs\\\\assets\\\\mosslight-world.jpg'\n}\n\nNode.js v24.19.0\n"
+    },
+    {
+      "run": "r06",
+      "exit": 1,
+      "stdout": "",
+      "stderr": "jects\\Codex\\Landings\\Silicon-Design\\benchmarks\\2026-11-03\\runs\\r06\\check.cjs:58:56)\n    at Object.<anonymous> (C:\\MyProjects\\Codex\\Landings\\Silicon-Design\\benchmarks\\2026-11-03\\runs\\r06\\check.cjs:59:119)\n    at Module._compile (node:internal/modules/cjs/loader:1872:14)\n    at Object..js (node:internal/modules/cjs/loader:2003:10)\n    at Module.load (node:internal/modules/cjs/loader:1594:32)\n    at Module._load (node:internal/modules/cjs/loader:1396:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5) {\n  errno: -4058,\n  code: 'ENOENT',\n  syscall: 'open',\n  path: 'C:\\\\MyProjects\\\\Codex\\\\Landings\\\\Silicon-Design\\\\benchmarks\\\\2026-11-03\\\\runs\\\\assets\\\\mosslight-world.jpg'\n}\n\nNode.js v24.19.0\n"
+    }
+  ],
+  "original_input_output_workspace": [
+    {
+      "run": "r01",
+      "exit": 0,
+      "stdout": "73 source/VM/model assertions passed. This is not a browser or layout test.\n",
+      "stderr": ""
+    },
+    {
+      "run": "r02",
+      "exit": 0,
+      "stdout": "Contrast #263e3c/#f6f3e9: 10.30:1\nContrast #263e3c/#fffdf6: 11.23:1\nContrast #59645d/#f6f3e9: 5.55:1\nContrast #59645d/#fffdf6: 6.06:1\nContrast #46514b/#e6e6dd: 6.59:1\nContrast #fffdf6/#9e3f26: 6.46:1\nContrast #fffdf6/#7b301d: 9.04:1\nContrast #89341f/#f8e9de: 6.88:1\nContrast #40564a/#e8ede4: 6.67:1\nContrast #713e2c/#f8f0e5: 7.66:1\nContrast #5c6259/#e1e2d9: 4.81:1\nContrast #263e3c/#dde5da: 8.87:1\nContrast #fffdf6/#3f5450: 7.95:1\n153 assertions passed. VM event simulation, not browser testing.\n",
+      "stderr": ""
+    },
+    {
+      "run": "r03",
+      "exit": 0,
+      "stdout": "15 fixture/interaction scenarios passed in the Node minimal-DOM harness. Browser rendering, native events, focus behavior and layout are untested.\ndark accent: 5.330:1\ndark button: 6.080:1\ninput boundary: 4.050:1\nExact fixture content, local references and CSS brace check passed.\n",
+      "stderr": ""
+    },
+    {
+      "run": "r04",
+      "exit": 1,
+      "stdout": "",
+      "stderr": "node:fs:484\n    return binding.readFileUtf8(path, stringToFlags(options.flag));\n                   ^\n\nError: ENOENT: no such file or directory, open 'C:\\MyProjects\\Codex\\Landings\\silicon-benchmark-2026-11-03\\runs\\r04\\app.js'\n    at Object.readFileSync (node:fs:484:20)\n    at harness (C:\\MyProjects\\Codex\\Landings\\silicon-benchmark-2026-11-03\\runs\\r04\\output\\check.cjs:15:24)\n    at Object.<anonymous> (C:\\MyProjects\\Codex\\Landings\\silicon-benchmark-2026-11-03\\runs\\r04\\output\\check.cjs:18:10)\n    at Module._compile (node:internal/modules/cjs/loader:1872:14)\n    at Object..js (node:internal/modules/cjs/loader:2003:10)\n    at Module.load (node:internal/modules/cjs/loader:1594:32)\n    at Module._load (node:internal/modules/cjs/loader:1396:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47 {\n  errno: -4058,\n  code: 'ENOENT',\n  syscall: 'open',\n  path: 'C:\\\\MyProjects\\\\Codex\\\\Landings\\\\silicon-benchmark-2026-11-03\\\\runs\\\\r04\\\\app.js'\n}\n\nNode.js v24.19.0\n"
+    },
+    {
+      "run": "r05",
+      "exit": 0,
+      "stdout": "PASS: 197 source/model/DOM-adapter assertions. No browser, visual, keyboard, or screen-reader checks performed.\nWorkbench body: 11.10:1 (solid CSS pair only)\nWorkbench supporting: 7.27:1 (solid CSS pair only)\nPrimary action: 8.21:1 (solid CSS pair only)\nDisabled action: 5.25:1 (solid CSS pair only)\nJournal body: 9.99:1 (solid CSS pair only)\nJournal supporting: 5.84:1 (solid CSS pair only)\nFolio supporting: 5.04:1 (solid CSS pair only)\nFolio action: 7.05:1 (solid CSS pair only)\nPrototype metadata: 9.90:1 (solid CSS pair only)\n",
+      "stderr": ""
+    },
+    {
+      "run": "r06",
+      "exit": 0,
+      "stdout": "PASS: all three directions, all four fixtures, progression guards, exact resource use, journal interruption, completion, reset focus intent, fixture change, direction retention, static local references and unchanged copied inputs.\nText contrast #ede5cd on #1d2824: 12.08:1\nText contrast #c0c5b7 on #1d2824: 8.62:1\nText contrast #c0c5b7 on #15201d: 9.48:1\nText contrast #a3aa9b on #15201d: 6.99:1\nText contrast #253025 on #e9b66a: 7.44:1\nText contrast #29382f on #e8dfc6: 9.29:1\nText contrast #4c5b49 on #e8dfc6: 5.45:1\nText contrast #f4edd9 on #344a39: 8.22:1\nText contrast #59634f on #e8dfc6: 4.76:1\nBrowser layout, native dialog behavior, assistive technology and pointer/keyboard interaction are UNTESTED.\n",
+      "stderr": ""
+    }
+  ],
+  "corrected_r04_output_working_directory": {
+    "cwd": "runs/r04/output",
+    "exit": 0,
+    "stdout": "134 source/state/markup checks passed. This DOM stub is not a browser or layout test.\nA reading: 11.14:1\nA supporting: 5.69:1\nA prompt / focus: 5.70:1\nA action: 8.97:1\nB reading: 9.73:1\nB prompt: 6.59:1\nB action: 7.64:1\nC reading: 10.30:1\nC prompt: 5.90:1\nC action: 8.66:1\n142 total assertions passed, plus 10 palette contrast comparisons.\n",
+    "stderr": ""
+  }
+}

@@ -14,7 +14,7 @@ Use it with your coding agent to choose a direction, carry it through real inter
 
 **Selected gallery direction: Street atlas.** The contact sheet and reading room remain available to compare.
 
-Our first benchmark target is **better and more varied output than Anti Slop**. The [matched-trial protocol](research/benchmark.md) defines how to test that; a comparative win is not established yet.
+**[Silicon Design × Anti Slop — live comparison](https://drevendev.github.io/Silicon-Design/benchmarks/2026-11-03/)**: six fresh-context runs on three identical briefs, with all alternatives retained. The [first results](benchmarks/2026-11-03/RESULTS.md) show where Silicon loses and what changed in the principles and all five skills. Our target remains better and more varied output; this trial did not establish a win.
 
 ## What we are fixing
 
@@ -88,4 +88,4 @@ The handbook check validates local Markdown destinations, skill metadata, source
 
 ## License
 
-[MIT](LICENSE) for original material in this repository. Referenced projects, brands, fonts and assets retain their own rights. The initial handbook synthesizes ideas; it does not bundle source code, brand assets, harvested discussions or third-party skills.
+[MIT](LICENSE) for original material in this repository. Referenced projects, brands, fonts and assets retain their own rights. The handbook synthesizes ideas; third-party skill bodies and installers are not bundled. The benchmark retains newly generated prototype outputs under both conditions, with pinned input provenance and original shared assets.

@@ -40,3 +40,7 @@ General composition and typography starting values in the handbook are Silicon D
 All handbook prose, skills, examples and checker implementation were authored for this repository. External code, skill bodies, templates, fonts, logos, screenshots, diagrams and harvested discussions are not bundled. External material is linked and its ideas are paraphrased with a stated boundary.
 
 Before a later contribution copies material, inspect the exact file's license and asset rights, retain required notices, and document the transfer. A link in this register does not relicense a source or its trademarks. Silicon Design's MIT license applies to its own original material.
+
+## First matched trial evidence
+
+The [3 November 2026 trial](../benchmarks/2026-11-03/RESULTS.md) pins Silicon and Anti Slop inputs, retains all six generated artifacts and separates operator observations from judgment. It supplies the evidence for the narrow theme/reflow/recovery/scope changes in the skills. [WCAG 2.2 contrast minimum](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html) supplies the text contrast thresholds; font-size preference and fold placement remain contextual judgments. No third-party skill bodies are redistributed.

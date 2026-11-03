@@ -1,0 +1,37 @@
+window.DISPATCH_FIXTURE = {
+  "product": "Dispatch",
+  "fictional": true,
+  "jobs": [
+    {
+      "id": 17,
+      "title": "Blue enamel lamp",
+      "owner": "Mina",
+      "status": "address",
+      "repair": "Switch replaced. Tested, cleaned, ready to go.",
+      "customer_note": "Please send it to 18a, not 18. The door is beside the bakery.",
+      "original_address": "18 High Street",
+      "corrected_address": "18a High Street",
+      "action": "Confirm address & release"
+    },
+    {
+      "id": 18,
+      "title": "Portable turntable",
+      "owner": "Alex",
+      "status": "ready",
+      "repair": "New belt fitted. Speed checked at both settings. Old belt packed with the unit.",
+      "action": "Mark collected"
+    },
+    {
+      "id": 19,
+      "title": "Kitchen radio",
+      "owner": "You",
+      "status": "waiting",
+      "repair": "The current switch cuts out under load. The replacement switch and final test are still needed.",
+      "action": "Release to delivery"
+    }
+  ],
+  "initial_selected": 17,
+  "initial_open_count": 3,
+  "initial_handover_count": 0
+}
+;

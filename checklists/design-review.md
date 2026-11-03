@@ -31,3 +31,6 @@ Use this as a prompt for inspection, not a score. Record evidence and applicabil
 - [ ] A second ordinary task, interruption/return and declared reload boundary were exercised where in scope.
 - [ ] Visual findings name a selector/region, expected correction and recapture, marked resolved/partial/unresolved.
 - [ ] Comparative quality/diversity claims have matched artifacts and scoped human evidence; otherwise they remain targets.
+- [ ] Alternatives retain their intended attention/action priority at the narrow target; materially different themes have actual component/foreground coverage.
+- [ ] Last-item undo/removal from a secondary surface restores a useful context and real visible focus; source harness counts are reported separately.
+- [ ] Character details stay within the requested capability and editable-field inventory.

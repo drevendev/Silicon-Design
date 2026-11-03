@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1d2824">
+  <title>Mosslight | A light for the bridge.</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="state.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-direction="a">
+  <a class="skip" href="#scene">Skip to the scene</a>
+  <header class="masthead">
+    <span class="wordmark">Mosslight<span class="wordmark-rule" aria-hidden="true"></span></span>
+    <span class="setting">The lanternmaker at dusk</span>
+    <button class="journal-link" data-testid="open-journal" aria-haspopup="dialog">Making journal <span aria-hidden="true">▤</span></button>
+  </header>
+  <main id="scene" data-phase="unmade" tabindex="-1">
+    <section id="lead" class="lead">
+      <div class="place">Beside the footbridge</div>
+      <h1>A light for the bridge.</h1>
+      <p class="intro">Six pieces of timber. Two drops of resin. Enough to make the dark a little smaller.</p>
+    </section>
+    <figure id="world" class="world">
+      <div class="painting">
+        <img id="world-image" src="assets/mosslight-world.jpg" width="1672" height="941" fetchpriority="high" alt="A lanternmaker's forest workshop at dusk. An empty iron hook stands beside the footbridge.">
+        <span class="scene-coordinate">The footbridge</span>
+      </div>
+      <figcaption><span id="scene-caption">The iron hook is empty. A little work before nightfall.</span><span class="painting-label">A scene at dusk</span></figcaption>
+    </figure>
+    <section id="bench" class="bench" aria-labelledby="bench-title">
+      <div class="bench-heading"><span class="chapter">Tonight's work</span><h2 id="bench-title">One lantern.</h2><p id="bench-copy">Make it at the bench, then hang it beside the bridge.</p></div>
+      <div class="supplies">
+        <h3>On the bench</h3>
+        <dl class="inventory"><div><dt>Timber</dt><dd><span data-testid="timber" id="timber">8</span><span class="unit">pieces</span></dd></div><div><dt>Resin</dt><dd><span data-testid="resin" id="resin">3</span><span class="unit">drops</span></dd></div></dl>
+      </div>
+      <div class="steps" aria-label="Lantern making">
+        <section class="step" id="make-step"><div class="step-copy"><span class="step-number">01</span><div><h3>Make the lantern</h3><p>Uses 6 timber + 2 resin</p></div><span class="step-state" id="made-label">Not made</span></div><button class="action" data-testid="make">Make lantern</button></section>
+        <section class="step" id="hang-step"><div class="step-copy"><span class="step-number">02</span><div><h3>Hang by the bridge</h3><p>No extra resources</p></div><span class="step-state" id="hung-label">Not hung</span></div><button class="action" data-testid="hang" disabled>Hang lantern</button></section>
+      </div>
+      <div class="feedback" data-testid="game-status" role="status" aria-live="polite" aria-atomic="true"><strong id="status-title">The bridge is waiting.</strong><p id="status-copy">You have enough timber and resin to make one lantern.</p></div>
+      <button class="reset" data-testid="reset">Reset scene</button>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Fictional teaching material. Changes last only for this visit. Reload starts the selected fixture again.</p>
+    <div class="demo-controls">
+      <nav aria-label="Design directions" class="directions"><span>View</span><button data-testid="direction-a" data-direction="a" aria-pressed="true">A<span> · Bridge</span></button><button data-testid="direction-b" data-direction="b" aria-pressed="false">B<span> · Bench</span></button><button data-testid="direction-c" data-direction="c" aria-pressed="false">C<span> · Field book</span></button></nav>
+      <div class="fixture-control"><label for="fixture">QA fixture</label><select id="fixture"><option value="initial">Initial</option><option value="secondary">Secondary: crafted + journal</option><option value="error">Error: insufficient resources</option><option value="complete">Complete: lit + journal</option></select></div>
+    </div>
+  </footer>
+  <dialog id="journal" aria-labelledby="journal-title">
+    <header class="journal-header"><span>Mosslight / Making journal</span><button id="close-journal" autofocus>Close journal</button></header>
+    <div class="journal-paper">
+      <span class="chapter">Beside the footbridge</span>
+      <h2 id="journal-title">The work of this visit.</h2>
+      <p class="journal-intro">One lantern for the empty iron hook. Here is where things stand.</p>
+      <ol class="journal-events">
+        <li><span class="entry-mark" id="make-mark">01</span><div><h3>Make the lantern <span id="journal-made">Not made</span></h3><p id="journal-make-copy">Still to make. Making uses exactly 6 timber and 2 resin.</p></div></li>
+        <li><span class="entry-mark" id="hang-mark">02</span><div><h3>Hang by the bridge <span id="journal-hung">Not hung</span></h3><p id="journal-hang-copy">Make the lantern first. Hanging uses no extra resources.</p></div></li>
+      </ol>
+      <section class="ledger" aria-labelledby="ledger-title"><h3 id="ledger-title">Materials</h3><table><thead><tr><th scope="col">This visit</th><th scope="col">Timber</th><th scope="col">Resin</th></tr></thead><tbody><tr><th scope="row">At the start</th><td id="start-timber">8</td><td id="start-resin">3</td></tr><tr><th scope="row">Used to make</th><td id="used-timber">0</td><td id="used-resin">0</td></tr><tr><th scope="row">Remaining</th><td id="journal-timber">8</td><td id="journal-resin">3</td></tr></tbody></table><p>Hanging costs 0 timber and 0 resin.</p></section>
+      <p class="journal-boundary">This journal lasts only for this visit. Opening or closing it keeps your work as it is. Reload starts the selected fixture again; Reset scene returns to 8 timber and 3 resin.</p>
+      <button id="return-scene" class="return-scene">Return to the bridge</button>
+    </div>
+  </dialog>
+</body>
+</html>

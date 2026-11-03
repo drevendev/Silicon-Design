@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#172520">
+  <title>Mosslight — A light for the bridge.</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="state.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-direction="a">
+  <aside class="demo-bar" aria-label="Prototype controls">
+    <span>Fictional teaching scene <span class="demo-divider">/</span> <span id="fixture-label">Initial fixture</span></span>
+    <div class="demo-controls">
+      <label class="fixture-control">QA fixture <select id="fixture"><option value="initial">Initial</option><option value="secondary">Secondary · made / journal open</option><option value="error">Error · insufficient materials</option><option value="complete">Complete · bridge lit</option></select></label>
+      <nav class="directions" aria-label="Design direction">
+        <a href="?direction=a" data-testid="direction-a" data-direction-link="a" title="Overlook — recommended">A <span>Overlook</span></a>
+        <a href="?direction=b" data-testid="direction-b" data-direction-link="b" title="Workbench">B <span>Workbench</span></a>
+        <a href="?direction=c" data-testid="direction-c" data-direction-link="c" title="Field folio">C <span>Folio</span></a>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="site-frame">
+    <header class="masthead">
+      <a class="wordmark" href="#bridge" aria-label="Mosslight, the bridge"><svg viewBox="0 0 28 36" aria-hidden="true"><path d="M9 10V7a5 5 0 0 1 10 0v3M6 13h16l2 17H4l2-17Zm0 0 8-5 8 5M14 13v17M7 34h14"/><path class="flame" d="M14 17c-5 7-2 10 0 10s5-3 0-10Z"/></svg>Mosslight</a>
+      <span class="masthead-place">The lanternmaker’s evening</span>
+      <a class="journal-link" href="#journal" data-open-journal>Making journal <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <nav class="chapter-nav" aria-label="Folio chapters"><a href="#bridge">01 · The bridge</a><a href="#bench">02 · The making</a><a href="#journal" data-open-journal>03 · The journal</a></nav>
+
+    <main class="experience">
+      <section class="invitation" aria-labelledby="page-title">
+        <p class="eyebrow">At dusk · beside the footbridge</p>
+        <h1 id="page-title">A light for<br>the bridge.</h1>
+        <p class="intro-copy">Six pieces of timber. Two drops of resin. Enough to make the dark a little smaller.</p>
+        <div class="invitation-rule" aria-hidden="true"><span></span>✦<span></span></div>
+      </section>
+
+      <figure class="scene" id="bridge" data-phase="unmade" aria-label="The footbridge scene, unmade">
+        <img id="world" src="assets/mosslight-world.jpg" width="1672" height="941" alt="A forest workshop at dusk beside a footbridge, with an empty iron hook waiting for a lantern.">
+        <figcaption><span class="scene-place">The footbridge</span><span id="scene-caption">An empty iron hook waits beside the path.</span><span class="phase-tag" id="phase-tag">Unmade</span></figcaption>
+      </figure>
+
+      <section class="bench" id="bench" aria-labelledby="bench-title">
+        <div class="bench-heading"><p class="eyebrow">On the workbench</p><h2 id="bench-title">One lantern.<br>A little care.</h2></div>
+        <div class="materials" aria-label="Materials available">
+          <div class="material"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="m7 24 20-12 8 5-20 12-8-5Zm0 0v6l8 5 20-12v-6M15 29v6M12 22l8 5M19 18l8 5"/></svg><div><span class="material-label">Timber</span><div><output data-testid="timber" id="timber">8</output><span class="required"> / 6 needed</span></div></div></div>
+          <div class="material"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 5C16 13 9 19 9 26a11 11 0 0 0 22 0C31 19 24 13 20 5Z"/><path d="M15 25a6 6 0 0 0 6 7"/></svg><div><span class="material-label">Resin</span><div><output data-testid="resin" id="resin">3</output><span class="required"> / 2 needed</span></div></div></div>
+        </div>
+        <div class="workflow">
+          <section class="step" id="make-step"><span class="step-number" aria-hidden="true">01</span><div class="step-content"><h3>Make the lantern</h3><p>Use 6 timber and 2 resin, once.</p><button class="primary-action" id="make" data-testid="make" aria-describedby="game-status">Make lantern <span aria-hidden="true">→</span></button><span class="step-state" id="make-state">Ready at the workbench</span></div></section>
+          <section class="step" id="hang-step"><span class="step-number" aria-hidden="true">02</span><div class="step-content"><h3>Hang by the bridge</h3><p>The iron hook. No extra materials.</p><button class="secondary-action" id="hang" data-testid="hang" aria-describedby="game-status" disabled>Hang lantern <span aria-hidden="true">↗</span></button><span class="step-state" id="hang-state">Make the lantern first</span></div></section>
+        </div>
+        <div class="feedback" id="feedback"><span class="status-mark" aria-hidden="true">✦</span><div><h3 id="completion-title" hidden>A light left for someone else.</h3><p data-testid="game-status" id="game-status" role="status" aria-live="polite" aria-atomic="true">Ready to make. Making leaves 2 timber and 1 resin.</p><p id="completion-copy" hidden>The bridge is lit. The path is open. That is enough for tonight.</p></div></div>
+        <div class="bench-footer"><span>One lantern for this bridge.</span><button class="reset" data-testid="reset" id="reset"><span aria-hidden="true">↺</span> Begin again</button></div>
+      </section>
+
+      <details class="journal" id="journal">
+        <summary data-testid="open-journal"><span class="journal-symbol" aria-hidden="true">≡</span><span>Making journal<small>A record of this evening</small></span><span id="journal-summary">Not yet made</span><span class="journal-chevron" aria-hidden="true">+</span></summary>
+        <div class="journal-pages">
+          <header class="journal-heading"><p class="eyebrow">The lanternmaker’s record</p><h2>Small work,<br>left in the world.</h2><p>A lantern for the empty iron hook beside the footbridge.</p></header>
+          <ol class="journal-records"><li><span class="record-number">01</span><div><h3 id="record-made-title">Not yet made</h3><p id="record-made">Making will use 6 timber and 2 resin. No materials have been spent.</p></div></li><li><span class="record-number">02</span><div><h3 id="record-hung-title">Not yet hung</h3><p id="record-hung">Make the lantern before taking it to the bridge. Hanging uses no extra materials.</p></div></li></ol>
+          <div class="ledger"><h3>Materials ledger</h3><table><caption class="sr-only">Exact resource consequences for this visit</caption><thead><tr><th scope="col">This visit</th><th scope="col">Timber</th><th scope="col">Resin</th></tr></thead><tbody><tr><th scope="row">At the start</th><td id="start-timber">8</td><td id="start-resin">3</td></tr><tr><th scope="row">Used to make</th><td id="used-timber">0</td><td id="used-resin">0</td></tr><tr class="ledger-total"><th scope="row">Remaining</th><td id="left-timber">8</td><td id="left-resin">3</td></tr></tbody></table><p>Making costs 6 timber / 2 resin, exactly once. Hanging costs 0 timber / 0 resin.</p></div>
+          <p class="journal-boundary">This journal belongs to this visit only. Opening or closing it changes no materials or progress. Reloading starts the selected QA fixture again; Begin again restores 8 timber and 3 resin.</p>
+          <button class="close-journal" id="close-journal">Close journal <span aria-hidden="true">↑</span></button>
+        </div>
+      </details>
+    </main>
+    <footer class="site-footer"><span>Mosslight · fictional teaching material</span><p>Only for this visit. No save system. Reload starts the selected fixture again.</p><span class="footer-mark" aria-hidden="true">✦</span></footer>
+  </div>
+</body>
+</html>

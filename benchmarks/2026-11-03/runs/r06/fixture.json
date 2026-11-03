@@ -1,0 +1,22 @@
+{
+  "product": "Mosslight",
+  "fictional": true,
+  "title": "A light for the bridge.",
+  "initial": {
+    "timber": 8,
+    "resin": 3,
+    "phase": "unmade"
+  },
+  "cost": {
+    "timber": 6,
+    "resin": 2
+  },
+  "insufficient_fixture": {
+    "timber": 4,
+    "resin": 1,
+    "phase": "unmade"
+  },
+  "intro": "Six pieces of timber. Two drops of resin. Enough to make the dark a little smaller.",
+  "completion": "A light left for someone else.",
+  "completion_copy": "The bridge is lit. The path is open. That is enough for tonight."
+}

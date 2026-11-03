@@ -132,10 +132,12 @@ def check_revisions(root):
 class LocalHTMLLinks(HTMLParser):
     def __init__(self):
         super().__init__()
-        self.links, self.ids = [], set()
+        self.links, self.ids, self.scripts = [], set(), []
 
     def handle_starttag(self, tag, attrs):
         attributes = dict(attrs)
+        if tag == 'script' and attributes.get('src'):
+            self.scripts.append(attributes['src'])
         if 'id' in attributes:
             self.ids.add(attributes['id'])
         for key in ('href', 'src'):
@@ -148,6 +150,17 @@ def check_html(root):
     for path in sorted(root.rglob('*.html')):
         parsed = LocalHTMLLinks()
         parsed.feed(path.read_text(encoding='utf-8'))
+        # A bounded source check also recognizes literal HTML ids in directly
+        # loaded local JS templates. This does not prove that rendering executes.
+        for script in parsed.scripts:
+            try:
+                source = local_destination(root, path, script)
+                if source is not None and source.is_file() and source.suffix in ('.js', '.mjs'):
+                    markup = LocalHTMLLinks()
+                    markup.feed(source.read_text(encoding='utf-8'))
+                    parsed.ids.update(markup.ids)
+            except ValueError:
+                pass  # The script URL is reported by the ordinary link check.
         for destination in parsed.links:
             try:
                 target = local_destination(root, path, destination)

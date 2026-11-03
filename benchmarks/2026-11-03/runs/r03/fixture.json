@@ -1,0 +1,36 @@
+{
+  "product": "Field Notes",
+  "title": "After closing.",
+  "fictional": true,
+  "intro": "A shutter, a chair, a little water. Three ways into an ordinary street.",
+  "observations": [
+    {
+      "id": 0,
+      "name": "Shutter",
+      "title": "A shutter wearing the weather.",
+      "copy": "Blue paint holds in the grooves. Rust gathers at the edges. The shop is closed, but its front keeps a record of every season it has stood through.",
+      "prompt": "Look at what time leaves behind."
+    },
+    {
+      "id": 1,
+      "name": "Chair",
+      "title": "A chair keeping the doorway.",
+      "copy": "Nobody is sitting here. Still, the chair turns a threshold into a place to stay. A small invitation, left out after the shop has closed.",
+      "prompt": "Notice the things that make room for someone."
+    },
+    {
+      "id": 2,
+      "name": "Waterline",
+      "title": "A garden with no address.",
+      "copy": "A little water follows the edge of the street. A plant has found the crack beside it. No pot, no sign, no permission: just enough room to grow.",
+      "prompt": "Follow the water. See what follows it."
+    }
+  ],
+  "initial": {
+    "selected": 0,
+    "kept": [],
+    "draft": "",
+    "note": ""
+  },
+  "note_limit": 300
+}

@@ -8,6 +8,7 @@ Template: replace bracketed prompts and remove sections that do not apply. Keep 
 - Emotional intention: [who should feel what, at which moment, and why].
 - Product truth: [what exists; what is a prototype; relevant limitations].
 - Scope: [the flow or surfaces being designed].
+- Requested capability/field inventory: [existing actions and editable inputs; which additions are explicitly out of scope].
 - Success: [observable task outcome; how to assess it].
 - Constraints: [platforms, languages, brand, existing components, assets, time].
 
@@ -23,6 +24,7 @@ Template: replace bracketed prompts and remove sections that do not apply. Keep 
 - Recurring idea: [how an identifiable visual or behavioral idea appears in the primary task, a difficult state and a completed action].
 - Alternatives considered: [what changed between directions and why this one fits].
 - Retained alternatives: [rendered links/captures; same brief, words, capabilities, assets, state and viewport; dominant object and reading model of each].
+- Narrow-size distinction: [first attention, first useful action and next transition; which differences survive reflow].
 - Nearest category peer: [what would remain specific if names and logo were removed].
 - Tradeoff: [what this choice gives up].
 

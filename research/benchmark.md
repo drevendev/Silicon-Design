@@ -1,12 +1,12 @@
 # First benchmark: Anti Slop
 
-Our first target is to produce **better and more varied results than Anti Slop**. This is an objective, not a result. The Field Notes directions demonstrate variation within our own brief; no matched Anti Slop generation or blinded audience trial has been run here.
+Our first target is to produce **better and more varied results than Anti Slop**. This is an objective, not a result. The [first matched generation trial](../benchmarks/2026-11-03/RESULTS.md) is now complete, with [live original artifacts side by side](https://drevendev.github.io/Silicon-Design/benchmarks/2026-11-03/). It found concrete Silicon losses and did not establish superiority. A blinded audience trial has not been run.
 
 Comparator reviewed on 2026-11-03: [miqdadbadjuber/anti-slop at 941b153](https://github.com/miqdadbadjuber/anti-slop/tree/941b1532f9cc8ffde766bca5921d75257c9e5762). Read: README, core skill, UI skill and mobile-layout skill, selected sections. Its own README distinguishes the filter from direction supplied by DESIGN.md. Use **Anti Slop + an equally informative DESIGN.md** as the main baseline; handicapping it with no direction would answer the wrong question. Record exact loaded files. Do not install a package or run a foreign installer to read the sources.
 
 ## Matched run packet
 
-Use fresh contexts for each condition. Keep model/version, sampling settings, runtime/tools, image access, source fixture, target viewports, revision and time/token budget the same. Record actual values rather than claiming unspecified settings were controlled. If a condition requires extra skill dependencies, list them and charge their use to its budget. Randomize condition order. Save prompts, outputs, costs, failures and rejected candidates, not only the best screenshot.
+Use fresh contexts for each condition. Keep model/version, sampling settings, runtime/tools, image access, source fixture, target viewports, revision and time/token budget the same. Record actual values rather than claiming unspecified settings were controlled. If a condition requires extra skill dependencies, list them and charge their use to its budget. Randomize condition order for repeated trials, or predeclare counterbalancing and its limitations for a small pilot. Save prompts, outputs, costs, failures and rejected candidates, not only the best screenshot.
 
 Run three briefs, each with three retained directions and one chosen working slice:
 
@@ -32,6 +32,8 @@ Promote “beats Anti Slop” only when matched artifacts and the scoped human r
 
 - [Field Notes: three working directions](../examples/field-notes-directions.html), retained under one fixture and shared field-book model.
 - [Applied research and boundaries](issue-8-application.md).
-- Baseline generation: **not run**. Fresh-context independence and budget matching: **not established**. Blinded human comparison: **not run**. Superiority: **unproven**.
+- [First trial, 2026-11-03](../benchmarks/2026-11-03/RESULTS.md): six fresh-context agents, one per brief/condition; identical non-skill inputs, inherited settings and 600-second allowance; exact model/sampling/token billing unavailable. All 18 directions retained.
+- [Losses and scoped repairs](../benchmarks/2026-11-03/RESULTS.md): theme inheritance, last-record recovery, phone task priority and shared scope drift informed all five skills. Repairs received extra operator feedback; original outputs remain frozen.
+- Blinded human comparison: **not run**. Superiority: **unproven**.
 
-Do not substitute a hand-authored imitation of Anti Slop for a baseline. The protocol is ready to execute in a dedicated matched trial; this implementation session has already seen both sources and is not an independent condition.
+Do not substitute a hand-authored imitation of Anti Slop for a baseline. The trial used separate fresh generation contexts; the operator and subsequent repairs were not independent or blinded. Revised skills require a new matched run before claiming a generation improvement.

@@ -63,6 +63,23 @@ class CheckTests(unittest.TestCase):
         self.write('research/revisions.json', json.dumps([record, record]))
         self.assertIn('duplicate', check.check_revisions(self.root)[0])
 
+    def test_literal_template_fragment_in_direct_local_script(self):
+        self.write('page.html', '<a href="#work">Skip</a><script src="app.js"></script>')
+        self.write('app.js', 'const view = `<main id="work">Record</main>`;')
+        self.assertEqual(check.check_html(self.root), [])
+
+    def test_unloaded_script_does_not_hide_missing_fragment(self):
+        self.write('page.html', '<a href="#work">Skip</a><script src="other.js"></script>')
+        self.write('app.js', 'const view = `<main id="work">Record</main>`;')
+        self.write('other.js', '// no template')
+        self.assertIn('missing fragment #work', check.check_html(self.root)[0])
+
+    def test_script_escape_and_missing_fragment_remain_reported(self):
+        self.write('page.html', '<a href="#absent">Skip</a><script src="../outside.js"></script>')
+        issues = check.check_html(self.root)
+        self.assertEqual(len(issues), 2)
+        self.assertTrue(any('escapes repository' in issue for issue in issues))
+
     def test_palette_failure_and_css_drift(self):
         data = {'format': 'silicon-specimen-palettes-1', 'palettes': [{
             'name': 'sample', 'css_scope': '.sample', 'roles': {'text': '#777777', 'surface': '#ffffff'},

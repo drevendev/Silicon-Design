@@ -37,6 +37,8 @@ Record checks as checked, failed, untested or inapplicable, with supporting deta
 
 Review retained same-brief alternatives when exploration was in scope. Different products or different palettes alone cannot establish diversity. Inspect the entire artifact, a second meaningful surface and ordinary/repeated/returning work; identify the persistence boundary. Classify necessary versus decorative small text. For a benchmark claim, inspect matched baseline artifacts and human preference/task evidence; leave superiority unproven when those runs are absent.
 
+Compare the alternatives' priorities at narrow as well as wide sizes. Inspect resolved theme/foreground roles and last-item undo from the secondary surface. Report a source harness's assertion count separately from native input, focus and rendering evidence. If an automated step assumes the wrong control (for example a modal opener instead of its visible close button), correct the test path and retain the diagnostic; do not score that mistake as a product failure.
+
 Deliver the important findings first, link evidence, explain fixes and remaining limits, and give separate scoped conclusions about usefulness/access and character/care. The latter can remain weak while the former passes. Label aesthetic judgments and emotional-effect hypotheses; do not claim user affection, recall or improved retention without real observations. A clean static check does not establish accessibility compliance, successful usability testing or design quality.
 
 Optional depth: [review template](https://github.com/drevendev/Silicon-Design/blob/master/templates/REVIEW.md).

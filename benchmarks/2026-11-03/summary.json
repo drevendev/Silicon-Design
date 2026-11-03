@@ -1,0 +1,30 @@
+{
+  "cases": {
+    "read": {
+      "summary": [
+        "No operational advantage found in the exercised tasks. Anti C adds spatial selection on the photograph; Silicon has no demonstrated diversity lead.",
+        "Both retain working field books and note/error recovery. One operator review, conditions known."
+      ]
+    },
+    "operate": {
+      "summary": [
+        "Silicon loses context after undoing the only handover: it stays in an empty book. Anti returns to the restored job. Both originally lose useful actual focus.",
+        "Both complete the checked release/collection/blocked-radio contracts. Original outputs remain frozen."
+      ],
+      "revision": {
+        "href": "revisions/r01/index.html",
+        "label": "Try the separately repaired Silicon version (extra operator feedback) ↗"
+      }
+    },
+    "experience": {
+      "summary": [
+        "Silicon C has near-invisible inherited ink on paper: measured 1.0353:1 for necessary text. Anti C avoids that failure.",
+        "Anti Workbench B preserves work-first order on the phone; Silicon B originally puts the action below the scene. No diversity victory established."
+      ],
+      "revision": {
+        "href": "revisions/r05/index.html?direction=c",
+        "label": "Try the separately repaired Silicon version (extra operator feedback) ↗"
+      }
+    }
+  }
+}

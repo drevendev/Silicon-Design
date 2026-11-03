@@ -1,0 +1,192 @@
+{
+  "id": "2026-11-03-matched-01",
+  "input_manifest": "input-manifest.json",
+  "protocol": "PROTOCOL.md",
+  "runs": [
+    {
+      "id": "r01",
+      "brief": "operate",
+      "condition": "silicon",
+      "skill_bytes": 22920,
+      "original_output_sha256": {
+        "app.js": "5e8adf42373a4fe029253c23b795e17917cd374914bf4d6dc545926ba77b3c20",
+        "check.cjs": "7920ae8ec22817589a6ef5cb56ccd510cec84ab537919df40c485cf913f5cdbf",
+        "data.js": "60713eedfd34cfcac3177ad2fe76856e7167402e228af0ab668940ed72a95629",
+        "DESIGN.md": "dab223502d1fcf805dc74f8409e8933f04562acac577a140ac8cad4fbfa148fc",
+        "fixture.json": "46a8b27259112b0ad8d06dc0686cea18bc75f453186d9227e236939a95a241c2",
+        "index.html": "5ff53325acc849e5480dfb9f8f6db83f43f7705905cd1a0e2bd4ab4aa51547f4",
+        "model.js": "6f845302a78815fbb31a465740f9513bfe0a37509e0c9811211c24de961b1752",
+        "RUN.md": "70a60fb956a4d9897f48946529a013bdc7cddaa6b59781066d66a4ad3baf43af",
+        "state.js": "21b54d7b13971ed47e934e3dc6b312ce41893a1faae4cde2a5794d7dc3a7363b",
+        "styles.css": "a292d19cc0ebaec3d72004766150752be4e6bae3dac6dcab940f262bcf9d2b6b",
+        "assets/lamp.svg": "abd194107c8eabcc3bba002eedd421580cffaece6de1f5a56510c94cd7a29ea5",
+        "assets/radio.svg": "d2ff0b6d990ff7cf94b10222397edb6fa4b45a160b58098702da41b7f96343fe",
+        "assets/turntable.svg": "a84929b5fcf5b1d33bd08a2cdfe7f64cd1d97ba2cf3259aa7c8d057138876757"
+      },
+      "output_bytes": 69754,
+      "publication_matches_frozen_output": true,
+      "status": "completed-retained",
+      "exact_worker_latency_seconds": null,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "id": "r02",
+      "brief": "operate",
+      "condition": "anti",
+      "skill_bytes": 140591,
+      "original_output_sha256": {
+        "app.js": "5b94e8709bfee569d5aa045260e46e02ef2532388ec1efba79824c52eedcf6fc",
+        "check.cjs": "3a6e2bc9b63ca0ab8e06638eb4918f8578cb5577a2576eaa453a5e35512f0b42",
+        "fixture.json": "46a8b27259112b0ad8d06dc0686cea18bc75f453186d9227e236939a95a241c2",
+        "index.html": "40c14a95d1418d28914d11cd0c79a14b76cbcb93d2a169b7f96e55799bf1cb47",
+        "RUN.md": "eb6e735bed1adf01a7280fab23a163c839649b2e5e725f54a6cb7a1ff9a63be7",
+        "state.js": "21b54d7b13971ed47e934e3dc6b312ce41893a1faae4cde2a5794d7dc3a7363b",
+        "styles.css": "ba6a000b31bcb33197ab7694e2ecba8ff7c99eb9890d6ddad9d8635a0d739422",
+        "assets/lamp.svg": "abd194107c8eabcc3bba002eedd421580cffaece6de1f5a56510c94cd7a29ea5",
+        "assets/radio.svg": "d2ff0b6d990ff7cf94b10222397edb6fa4b45a160b58098702da41b7f96343fe",
+        "assets/turntable.svg": "a84929b5fcf5b1d33bd08a2cdfe7f64cd1d97ba2cf3259aa7c8d057138876757"
+      },
+      "output_bytes": 53026,
+      "publication_matches_frozen_output": true,
+      "status": "completed-retained",
+      "exact_worker_latency_seconds": null,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "id": "r03",
+      "brief": "read",
+      "condition": "anti",
+      "skill_bytes": 140591,
+      "original_output_sha256": {
+        "app.js": "8c6d32d250a6c264f00fd7fdcb23ae0fc7049ab85c4ce2868b5a86b05b602134",
+        "check.cjs": "39b8d6e129ec4745dbb14036a45eb33688566d0e218dde1ae9cc6b5f2a1df61e",
+        "fixture.json": "95ed47b04f1eb33f5dbd89ff67d5ea3a75314df7431ebba979c72ba8ab7b330d",
+        "index.html": "cbd66cbb2f046ccc2c28d7b05d5266fe2734e9a91b3417d24e697875809344ab",
+        "RUN.md": "190c2942aea634e96b43f36257efeca6f3c72956aa8fe93686819c4b22182cb2",
+        "state.js": "7cf67424799717e6d0682c2680f96291d9de5a620ecadebfa04af304dd550714",
+        "style.css": "d720021b68a7c26c81e5c081a79d8e409ec2e5d41c7d51b807ec5d1340ccf3e2",
+        "assets/field-notes-alley.jpg": "474e49c8301247764b2529030088a4cbec3d1b0b41c7779aea29a7e70f171db8"
+      },
+      "output_bytes": 457433,
+      "publication_matches_frozen_output": true,
+      "status": "runnable-retained-with-terminal-capacity-error",
+      "exact_worker_latency_seconds": null,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "id": "r04",
+      "brief": "read",
+      "condition": "silicon",
+      "skill_bytes": 22920,
+      "original_output_sha256": {
+        "app.js": "f438350ecf2bfd9cd37da61c68e21c35100414cd4d313edf9cae2a990b409eee",
+        "check.cjs": "9df7bde73cfa03ae104484c324f3ce1e34c719c3fe2786d01c4d40a531137367",
+        "DESIGN.md": "774d944565e42793830ca3570bd85db9788fac1d4af690f2f1c64b60ce2f0786",
+        "fixture.json": "95ed47b04f1eb33f5dbd89ff67d5ea3a75314df7431ebba979c72ba8ab7b330d",
+        "index.html": "470229eea5b4e9913465cda0a37b840e0562cb3391bd779e5ec5813a618fcf50",
+        "RUN.md": "7a429869520f6b15874c0e900d6338bd5a48467a72968cd4fe1ec4737f1ffeb4",
+        "session.js": "a09a382b5d81defae4c328661e623141d39b5d404e951b67f8aa435346487bc1",
+        "state.js": "7cf67424799717e6d0682c2680f96291d9de5a620ecadebfa04af304dd550714",
+        "styles.css": "df24e998241fa6801cf1ef2d5665c0c26e65412de63550b090650e3dc037ad46",
+        "assets/field-notes-alley.jpg": "474e49c8301247764b2529030088a4cbec3d1b0b41c7779aea29a7e70f171db8"
+      },
+      "output_bytes": 463379,
+      "publication_matches_frozen_output": true,
+      "status": "completed-retained",
+      "exact_worker_latency_seconds": null,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "id": "r05",
+      "brief": "experience",
+      "condition": "silicon",
+      "skill_bytes": 22920,
+      "original_output_sha256": {
+        "app.js": "9e257066c1918e2d8d212ac17f3ac1ed382816f137e8ebd36150332e342fa66b",
+        "check.cjs": "35cdae77bdd02829504e2b5db823584043bb559c2f15a6e46bd29fb7e1a55092",
+        "DESIGN.md": "77db066d49c110ccc26af2a390fbdc3f2f449dedc7d3b14b6882d2713f0b0820",
+        "fixture.json": "a6f4ffda87f9daaabd18b00afb7be40f62c7d8e80b18f18c718300eabae900c2",
+        "index.html": "5a73e7f56fa5578e8fcc053f83eac08f114b2ac0dd3443c19dfb0134622a38c3",
+        "RUN.md": "2b42f5622b0158b6bc9d9901e84bccb883f15f01c48e5169495b1ff85595b4cb",
+        "state.js": "21b54d7b13971ed47e934e3dc6b312ce41893a1faae4cde2a5794d7dc3a7363b",
+        "style.css": "b9b6768558b479f004623019e63023ced4882ed29b68bf3a0d3ee18c4e9dfda7",
+        "assets/mosslight-world-lit.jpg": "a728e47edcc031105fdcfd0bd43871d2bcc3d909ef8880a6dcc4b3fce66757f3",
+        "assets/mosslight-world.jpg": "e27beaa14ae29e2aed08bee16da12c3b305dc7daa34e790a5d944056f3185ac0"
+      },
+      "output_bytes": 825707,
+      "publication_matches_frozen_output": true,
+      "status": "completed-retained",
+      "exact_worker_latency_seconds": null,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "id": "r06",
+      "brief": "experience",
+      "condition": "anti",
+      "skill_bytes": 140591,
+      "original_output_sha256": {
+        "app.js": "816014531f75163acb00798b9b27c16f08ba5f8b95a35bf2a0ab53e1496e6af2",
+        "check.cjs": "ccf0185a561baa063e7e4fbca735f43c13dbb3dfc43d3cb3d4b5cef428603590",
+        "fixture.json": "a6f4ffda87f9daaabd18b00afb7be40f62c7d8e80b18f18c718300eabae900c2",
+        "index.html": "edcedd1a72e99ca0d2dba9cfbdede6934ce0d74c2dfd3dddb1234afab83ebfad",
+        "RUN.md": "c6cb135ba71afcb83da6f49576971f90b516c8535e5f1a73c3caba1debd84952",
+        "state.js": "21b54d7b13971ed47e934e3dc6b312ce41893a1faae4cde2a5794d7dc3a7363b",
+        "style.css": "512c003a02c6910cbeb4355988360357346b4a2ea1cfec9696407acf0a74d5a5",
+        "assets/mosslight-world-lit.jpg": "a728e47edcc031105fdcfd0bd43871d2bcc3d909ef8880a6dcc4b3fce66757f3",
+        "assets/mosslight-world.jpg": "e27beaa14ae29e2aed08bee16da12c3b305dc7daa34e790a5d944056f3185ac0"
+      },
+      "output_bytes": 811758,
+      "publication_matches_frozen_output": true,
+      "status": "completed-retained",
+      "exact_worker_latency_seconds": null,
+      "token_usage": null,
+      "cost": null
+    }
+  ],
+  "coordinator_observations": {
+    "r01-r03": {
+      "dispatch_window_start_utc": "2026-11-03T17:26:35Z",
+      "deadline_utc": "2026-11-03T17:36:35Z",
+      "note": "Coordinator window, not exact worker latency; final messages observed separately."
+    },
+    "r02_finished_observed_utc": "2026-11-03T17:33:58.059671+00:00",
+    "r04_dispatch_recorded_utc": "2026-11-03T17:33:58.059685+00:00",
+    "r01_finished_observed_utc": "2026-11-03T17:35:36.907479+00:00",
+    "r03_terminal": "model-capacity error after agent reported runnable implementation and source checks; retain actual artifacts",
+    "r05_dispatch_recorded_utc": "2026-11-03T17:35:36.907494+00:00",
+    "r06_dispatch_recorded_utc": "2026-11-03T17:35:50.576050+00:00",
+    "all_terminal_observed_utc": "2026-11-03T17:45:24.664494+00:00",
+    "r03_artifact_status": "Complete RUN.md and runnable artifacts retained despite terminal model-capacity error"
+  },
+  "engine": "collaboration.spawn_agent; fresh fork_turns=none; identical inherited settings; no override",
+  "runtime_limits": {
+    "wall_allowance_seconds": 600,
+    "max_concurrent_workers": 3,
+    "complete_generation_tool_trace_exposed": false,
+    "exact_served_model": null,
+    "sampling_seed": null,
+    "sampling_temperature": null,
+    "token_cap": null,
+    "token_billing": null
+  },
+  "timing_note": "Coordinator windows/terminal observations only, not exact worker latency. All six were terminal by their applicable allowance. No token or cost comparison is possible.",
+  "pre_generation_infrastructure_failures": {
+    "count": 6,
+    "engine": "Codex CLI 0.146.1",
+    "reason": "gpt-6.1-sol rejected as unsupported for ChatGPT account before generation",
+    "design_outputs": 0,
+    "private_logs_retained": true
+  },
+  "review": "One unblinded operator. No independent human study. Post-trial revisions have extra feedback, outside matched budget.",
+  "source_snapshots": {
+    "silicon": "https://github.com/drevendev/Silicon-Design/tree/053649a8f3c74f0c3325dce92bb813a711dcae91/skills",
+    "anti": "https://github.com/miqdadbadjuber/anti-slop/tree/941b1532f9cc8ffde766bca5921d75257c9e5762",
+    "third_party_skill_bodies_republished": false
+  },
+  "capture_processing": "Browser viewport screenshots; JPEG quality 88; contact sheets use identical scaling and labels. No retouching. Unrecompressed browser JPEG screenshots retained privately; staging filenames may end in .png."
+}

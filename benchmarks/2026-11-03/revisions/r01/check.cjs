@@ -1,0 +1,61 @@
+const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict'),path=require('path');
+const dir=__dirname, fixture=JSON.parse(fs.readFileSync(path.join(dir,'fixture.json'),'utf8').replace(/^\uFEFF/,''));
+let checks=0;
+function check(condition,message){assert.ok(condition,message);checks++;}
+function run(name='initial',direction='a'){
+  const elements={}; const events={};
+  const dirs=['a','b','c'].map(d=>({dataset:{direction:d},setAttribute(){}}));
+  const nav=['bench','handovers'].map(a=>({dataset:{action:a},setAttribute(){}}));
+  const document={getElementById(id){return elements[id]??=( {textContent:'',innerHTML:'',value:''});},querySelectorAll(s){return s==='[data-direction]'?dirs:nav;},querySelector(){return {focus(){}};},addEventListener(type,fn){events[type]=fn;},body:{dataset:{}}};
+  const location={href:`http://localhost/index.html?fixture=${name}&direction=${direction}`,search:`?fixture=${name}&direction=${direction}`,assign(url){this.href=url;}};
+  const context=vm.createContext({document,location,URL,URLSearchParams,console,history:{replaceState(_a,_b,url){location.href=url.href;location.search=url.search;}}});
+  context.window=context;
+  for(const file of ['data.js','state.js','model.js','app.js'])vm.runInContext(fs.readFileSync(path.join(dir,file),'utf8'),context,{filename:file});
+  const click=(action,id)=>events.click({target:{closest(){return {dataset:{action,id:String(id)},disabled:false};}}});
+  const choose=value=>events.change({target:{name:'address',value}});
+  const switchDirection=d=>events.click({target:{closest(){return {dataset:{direction:d},disabled:false};}}});
+  return {document,elements,events,click,choose,switchDirection,html:()=>elements.app.innerHTML};
+}
+for(const direction of ['a','b','c']){
+  const app=run('initial',direction);
+  check(app.html().includes('Blue enamel lamp'),'initial lamp');
+  check(app.elements['open-count'].textContent===3,'initial open count');
+  app.click('finish',17);
+  check(app.html().includes('Choose an address before releasing'),'missing address error');
+  check(app.elements['open-count'].textContent===3,'missing address does not clear');
+  app.choose('original');app.click('finish',17);
+  check(app.html().includes('The customer corrected this to 18a.'),'original correction error');
+  check(app.elements['handover-count'].textContent===0,'original no receipt');
+  app.choose('corrected');
+  app.events.input({target:{dataset:{note:'17'},value:'<img src=x onerror=alert(1)> & note'}});
+  app.click('job',18);app.switchDirection(direction==='a'?'b':'a');app.click('job',17);
+  check(app.html().includes('value="corrected" data-testid="address-corrected" checked'),'correction survives interruption');
+  check(app.html().includes('&lt;img src=x onerror=alert(1)&gt; &amp; note'),'note escaped in editor');
+  app.click('finish',17);
+  check(app.elements['open-count'].textContent===2&&app.elements['handover-count'].textContent===1,'only lamp clears');
+  check(app.html().includes('Actual delivery address')&&app.html().includes('18a High Street'),'actual address in receipt');
+  check(app.html().includes('&lt;img src=x onerror=alert(1)&gt; &amp; note'),'note escaped in receipt');
+  app.click('job',18);
+  check(app.html().includes('data-testid="collect"')&&app.html().includes('Old belt packed with the unit.'),'distinct collection and note');
+  app.click('finish',18);app.click('job',19);
+  check(app.elements['open-count'].textContent===1&&app.elements['handover-count'].textContent===2,'two ready jobs clear');
+  check(app.html().includes('disabled data-testid="release"')&&app.html().includes('The replacement switch and final test are still needed.'),'radio visibly blocked');
+  app.click('handovers');
+  check(app.html().includes('data-testid="record-17"')&&app.html().includes('data-testid="record-18"'),'completed records derived');
+  check(app.html().includes('Kitchen radio remains waiting'),'remaining radio message');
+  app.click('record',17);check(app.html().includes('18a High Street'),'open record');
+  app.click('undo',17);
+  check(app.elements['open-count'].textContent===2&&app.elements['handover-count'].textContent===1,'record undo counts');
+  check(!app.html().includes('data-testid="record-17"'),'undone record removed');
+  app.click('bench');app.click('job',17);
+  check(app.html().includes('value="corrected" data-testid="address-corrected" checked'),'undo retains correction');
+  app.click('reset');check(app.elements['open-count'].textContent===3&&app.elements['handover-count'].textContent===0,'reset restores fixture');
+}
+const secondary=run('secondary');check(secondary.html().includes('NO HANDOVERS YET')&&!secondary.html().includes('data-testid="record-17"'),'secondary truly empty');
+const error=run('error');check(error.html().includes('data-testid="operation-error"')&&error.elements['open-count'].textContent===3,'error fixture unchanged lamp');
+const complete=run('complete');check(complete.html().includes('data-testid="record-17"')&&complete.html().includes('data-testid="record-18"')&&complete.elements['open-count'].textContent===1,'complete fixture');
+const model=require('./model.js').create(fixture,'initial');check(!model.finish(19)&&model.counts().open===3,'contract blocks radio even if invoked');
+model.chooseAddress('corrected');check(model.finish(17),'model finishes corrected lamp');check(!model.finish(17)&&model.counts().handovers===1,'duplicate release blocked');
+const css=fs.readFileSync(path.join(dir,'styles.css'),'utf8');check(css.includes('@media(max-width:720px)')&&css.includes('prefers-reduced-motion'),'responsive and motion source rules');
+for(const f of ['lamp.svg','turntable.svg','radio.svg'])check(fs.existsSync(path.join(dir,'assets',f)),'asset present '+f);
+console.log(`${checks} source/VM/model assertions passed. This is not a browser or layout test.`);

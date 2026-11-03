@@ -18,7 +18,7 @@ This application is future work. The fictional specimens are not its before/afte
 
 ## Expand when usage justifies it
 
-- Real agent trials for each skill, retaining inputs, output and observed failures.
+- Repeat the [first matched agent trial](benchmarks/2026-11-03/RESULTS.md) with revised skills, multiple samples and independent human assessment. The first six runs are complete; a comparative win is unproven.
 - More theme and localization specimens, including long Cyrillic content.
 - Native app and controller-runtime examples with actual device checks.
 - A token interchange/export layer if multiple products need it.
