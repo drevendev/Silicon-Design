@@ -14,7 +14,7 @@ Same photograph, three exact observation texts, select/keep/remove, margin note 
 | B · Contact sheet | Three details to compare and collect | [Contact sheet](field-notes-directions.html?direction=contact) |
 | C · Reading room | A continuous material with marginal keeps | [Reading room](field-notes-directions.html?direction=reading) |
 
-All alternatives remain available. A is a provisional default, not an audience-tested winner. [Decisions and tradeoffs](field-notes.DESIGN.md).
+**A · Street atlas is the selected gallery direction.** All alternatives remain available. The choice is recorded separately from unrun audience testing. [Decisions and tradeoffs](field-notes.DESIGN.md).
 
 ## Operate and experience
 

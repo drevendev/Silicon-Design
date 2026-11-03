@@ -18,7 +18,7 @@ The nearest peer is another illustrated street journal. A photograph and a serif
 | [B · Contact sheet](field-notes-directions.html?direction=contact) | Three details together → compare → collect | Dense wide view; long phone sequence. Frame heights follow shutter/chair/waterline framing. |
 | [C · Reading room](field-notes-directions.html?direction=reading) | Full photograph → continuous prose → pause in the margin | Author's sequence and larger body type; quieter controls and more scrolling. |
 
-A is a provisional gallery entry, not a user-validated winner. B/C remain working alternatives.
+A · Street atlas was selected for the main gallery on 2026-11-03 after the three working alternatives were shown. B/C remain available for comparison. This direction choice is not an audience usability, attachment or benchmark result.
 
 ## Grammar and behavior
 

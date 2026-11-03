@@ -12,6 +12,8 @@ Use it with your coding agent to choose a direction, carry it through real inter
 
 **[One street, three working directions](https://drevendev.github.io/Silicon-Design/examples/field-notes-directions.html)** — explore an atlas, compare a contact sheet, or read a continuous journal with the same photograph, observations and field book. See the [applied findings from #8](research/issue-8-application.md).
 
+**Selected gallery direction: Street atlas.** The contact sheet and reading room remain available to compare.
+
 Our first benchmark target is **better and more varied output than Anti Slop**. The [matched-trial protocol](research/benchmark.md) defines how to test that; a comparative win is not established yet.
 
 ## What we are fixing
