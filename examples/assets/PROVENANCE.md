@@ -2,7 +2,19 @@
 
 Generated on **2 November 2026** with the built-in `image_gen` tool, default mode. These are fictional places made for these examples, not photographs of real field work or third-party reference images. No external source image was supplied.
 
-The original PNG outputs were converted to JPEG at quality 88 using Windows System.Drawing, without visual edits. The local HTML applies responsive crops. The Mosslight lantern and light are separate original SVG/HTML layers; the unlit background itself does not change files.
+The original PNG outputs were converted to JPEG at quality 88 using Windows System.Drawing, without visual edits. The local HTML applies responsive crops. On 3 November the flat SVG placed lantern was replaced with a painted completed-scene edit, documented below.
+
+## Painted completed state, 2026-11-03
+
+`mosslight-world-lit.jpg` is an original built-in ImageGen edit of `mosslight-world.jpg`, inspected against the original and saved with System.Drawing as JPEG quality 88 without retouching/compositing. The generated PNG remains in the generation output. At the actual `lit` phase the application crossfades the complete scene. No third-party artwork is bundled. Slight brush-detail drift remains; no exact pixel-preservation claim is made.
+
+Final edit prompt:
+
+```text
+Use case: precise-object-edit. Edit target: the supplied Mosslight forest illustration. Create the completed game state by adding ONE small lit handmade lantern hanging from the existing curled iron hook at image coordinates around x970 y425 on this 1672x941 image. The hook is just to the right of the tall iron post near the center, above the bridge approach. Lantern should hang by a narrow loop from the END of that hook, with its body centered around x970,y480, overall height about 115 image pixels. Match the existing opaque gouache/oil painted brushwork, irregular painted edges, muted dusk colors, convincing thin dark iron frame, translucent amber resin panels and a small soft warm flame. Add restrained local warm light to the adjacent stones immediately below; preserve dusk and forest mood. Keep the exact scene, camera, dimensions, bridge, buildings, trees, path, empty sky, all other objects and their placement unchanged. No text, no UI, no additional lanterns, no flat vector outlines, no lens flare. This is an edited gameplay background, not a new composition. Preserve image bounds/aspect ratio.
+```
+
+Field Notes' three directions reuse the same original photograph with CSS crops. No new image generation or retouching was used for that comparison.
 
 | Asset | Dimensions | Use |
 | --- | --- | --- |

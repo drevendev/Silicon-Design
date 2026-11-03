@@ -10,6 +10,7 @@
   var briefs = { 'field-notes': 'field-notes.DESIGN.md', dispatch: 'dispatch.DESIGN.md', mosslight: 'mosslight.DESIGN.md' };
   function showExample(name) {
     if (!captions[name]) name = 'field-notes';
+    if (name === 'field-notes') { location.replace('field-notes-directions.html?direction=atlas'); return; }
     document.querySelectorAll('.example').forEach(function (section) { section.hidden = section.id !== name; });
     document.querySelectorAll('[data-example]').forEach(function (link) {
       if (link.dataset.example === name) link.setAttribute('aria-current', 'page');
@@ -30,47 +31,17 @@
   window.addEventListener('popstate', function () { showExample(new URLSearchParams(location.search).get('example')); });
   showExample(new URLSearchParams(location.search).get('example'));
 
-  var stops = [
-    { title: 'A shutter wearing the weather.', copy: 'Blue paint holds in the grooves. Rust gathers at the edges. The shop is closed, but its front keeps a record of every season it has stood through.', prompt: 'Look at what time leaves behind.' },
-    { title: 'A chair keeping the doorway.', copy: 'Nobody is sitting here. Still, the chair turns a threshold into a place to stay. A small invitation, left out after the shop has closed.', prompt: 'Notice the things that make room for someone.' },
-    { title: 'A garden with no address.', copy: 'A little water follows the edge of the street. A plant has found the crack beside it. No pot, no sign, no permission: just enough room to grow.', prompt: 'Follow the water. See what follows it.' }
-  ];
-  var selectedStop = 0;
-  var kept = new Set();
-  function renderStop() {
-    var stop = stops[selectedStop];
-    byId('stop-number').textContent = 'OBSERVATION 0' + (selectedStop + 1);
-    byId('stop-title').textContent = stop.title;
-    byId('stop-copy').textContent = stop.copy;
-    byId('stop-prompt').textContent = stop.prompt;
-    document.querySelectorAll('[data-stop]').forEach(function (button) { button.setAttribute('aria-pressed', Number(button.dataset.stop) === selectedStop ? 'true' : 'false'); });
-    byId('keep-stop').setAttribute('aria-pressed', kept.has(selectedStop) ? 'true' : 'false');
-    byId('keep-stop').textContent = kept.has(selectedStop) ? '✓ Kept in your field book' : '＋ Keep this observation';
-    byId('kept-count').textContent = kept.size + ' / 3 KEPT';
-  }
-  document.querySelectorAll('[data-stop]').forEach(function (button) {
-    button.addEventListener('click', function () { selectedStop = Number(button.dataset.stop); renderStop(); });
-  });
-  byId('keep-stop').addEventListener('click', function () {
-    if (kept.has(selectedStop)) { kept.delete(selectedStop); byId('field-status').textContent = 'Removed from this visit’s field book. You can keep it again.'; }
-    else { kept.add(selectedStop); byId('field-status').textContent = kept.size === 3 ? 'Three small things kept. A street, remembered a little differently.' : 'Observation 0' + (selectedStop + 1) + ' kept. There is always something else to notice.'; }
-    renderStop();
-  });
-  byId('field-note-form').addEventListener('submit', function (event) {
-    event.preventDefault();
-    var note = byId('field-note').value.trim();
-    byId('field-note-error').hidden = Boolean(note);
-    byId('field-note').setAttribute('aria-invalid', note ? 'false' : 'true');
-    if (!note) { byId('field-note').setAttribute('aria-describedby', 'field-note-error'); byId('field-note').focus(); return; }
-    byId('field-note').removeAttribute('aria-describedby');
-    byId('field-own-text').textContent = note;
-    byId('field-own-saved').hidden = false;
-    byId('field-status').textContent = 'Your margin note is in this visit’s field book. You can keep editing it.';
-  });
-  renderStop();
-
   var jobs = model.createWorkshop();
   var selectedJob = 17;
+  function workshopView(handovers) {
+    byId('bench-surface').hidden = handovers; byId('handover-record').hidden = !handovers;
+    byId('bench-view').setAttribute('aria-pressed', String(!handovers)); byId('handover-view').setAttribute('aria-pressed', String(handovers));
+  }
+  byId('bench-view').addEventListener('click', function () { workshopView(false); });
+  byId('handover-view').addEventListener('click', function () { workshopView(true); });
+  byId('handover-entries').addEventListener('click', function (event) {
+    var button = event.target.closest('[data-record]'); if (!button) return; selectedJob = Number(button.dataset.record); renderWorkshop(); workshopView(false); byId('undo-job').focus();
+  });
   var lampDrawing = byId('repair-object').innerHTML;
   var drawings = {
     17: lampDrawing,
@@ -85,6 +56,11 @@
   function renderWorkshop(message) {
     var job = jobs.find(function (item) { return item.id === selectedJob; });
     var item = details[selectedJob];
+    var completed = jobs.filter(function (entry) { return entry.status === 'done'; });
+    var ready = jobs.filter(function (entry) { return entry.status === 'ready' || entry.status === 'address'; }).length;
+    byId('handover-count').textContent = completed.length;
+    byId('ready-queue').textContent = ready ? ready + (ready === 1 ? ' repair needs' : ' repairs need') + ' a handover. One is waiting for a part.' : 'All ready jobs handed over. The radio still needs its switch and final test.';
+    byId('handover-entries').innerHTML = completed.length ? completed.map(function (entry) { return '<button class="handover-row" data-record="' + entry.id + '"><span>0' + entry.id + '</span><strong>' + entry.title + '</strong><span>' + (entry.id === 17 ? 'Delivery · 18a High Street' : 'Collected · belt replaced') + '</span><span>Open record →</span></button>'; }).join('') : '<p class="handover-empty">No handovers yet. Repairs appear here after you release or collect them. The work bench is ready when you are.</p>';
     byId('open-jobs').textContent = jobs.filter(function (entry) { return entry.status !== 'done'; }).length;
     document.querySelectorAll('[data-job]').forEach(function (button) {
       var entry = jobs.find(function (record) { return record.id === Number(button.dataset.job); });
@@ -126,11 +102,14 @@
   byId('release-form').addEventListener('submit', function (event) { event.preventDefault(); var choice = document.querySelector('input[name=address]:checked'); finishCurrent(choice ? choice.value : null); });
   byId('collect-job').addEventListener('click', function () { finishCurrent(null); });
   byId('undo-job').addEventListener('click', function () { jobs = model.undoJob(jobs, selectedJob); renderWorkshop('Action undone. Job 0' + selectedJob + ' is back on the bench; your address choice is retained.'); if (selectedJob === 17) document.querySelector('input[value=corrected]').focus(); else byId('collect-job').focus(); });
-  byId('reset-workshop').addEventListener('click', function () { jobs = model.createWorkshop(); selectedJob = 17; byId('release-form').reset(); byId('dispatch-error').hidden = true; renderWorkshop('The sample workshop is reset. All three jobs are back on the bench.'); });
+  byId('reset-workshop').addEventListener('click', function () { jobs = model.createWorkshop(); selectedJob = 17; byId('release-form').reset(); byId('dispatch-error').hidden = true; workshopView(false); renderWorkshop('The sample workshop is reset. All three jobs are back on the bench.'); });
   renderWorkshop();
 
   var game = model.createGame();
   function renderGame() {
+    byId('journal-made').textContent = game.phase === 'unmade' ? 'Not made yet · costs 6 timber and 2 resin' : 'Made · 6 timber and 2 resin used';
+    byId('journal-hung').textContent = game.phase === 'lit' ? 'Hung by the bridge · no extra materials used' : 'Not hung yet · hanging uses no extra materials';
+    byId('journal-progress').textContent = game.phase === 'unmade' ? 'The hook is empty. The materials are on your bench.' : game.phase === 'crafted' ? 'A lantern is ready for the bridge. You can close this book and hang it when you are ready.' : 'Your lantern is hanging from the iron hook. A small pool of light catches the path below.';
     byId('timber').textContent = game.timber;
     byId('resin').textContent = game.resin;
     byId('game-scene').dataset.phase = game.phase;
@@ -157,7 +136,7 @@
       byId('recipe-title').textContent = 'A little less dark.';
       byId('recipe-copy').textContent = 'Your lantern is by the bridge now. The stones are easier to see. Someone will be glad of that.';
       byId('craft-button').textContent = 'Lantern placed · path open';
-      byId('craft-status').textContent = 'Another lantern needs 4 more timber and 1 more resin. Begin again to replay this small scene.';
+      byId('craft-status').textContent = '2 timber and 1 resin remain. This bridge already has its lantern. Begin again to replay the scene.';
       byId('game-location').textContent = 'The footbridge · a way home';
       byId('world-caption').textContent = 'A light for the next person who comes this way.';
       byId('bridge-marker-text').textContent = 'The way is lit.';

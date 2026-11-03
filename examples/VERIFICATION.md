@@ -1,73 +1,44 @@
-# Specimen verification
+# Specimen verification — 3 November 2026
 
-Checked on **2 November 2026**. Scope: the redesigned fictional HTML/CSS/JavaScript prototypes and their declared palette data. This record separates technical observations from the [character review](REVIEW.md).
+Scope: three same-brief Field Notes directions and revised Dispatch/Mosslight browser prototypes. Windows, in-app Chromium browser, Python 3.14.7, Node.js 24.19.0. This is implementation verification, not a usability study or accessibility certification.
 
-## Static and model checks
+## Offline checks
 
 ```sh
 python tools/check.py
 python -m unittest discover -s tests -v
 node --check examples/specimen.js
-node --test tests/specimen-model.test.cjs
+node --check examples/field-notes-data.js
+node --check examples/field-notes-directions.js
+node --test tests/specimen-model.test.cjs tests/field-notes.test.js
 ```
 
-Local results on Windows, Python 3.14.7 and Node.js 24.19.0:
+Repository contracts pass: local Markdown/HTML links, five skill names/descriptions/frontmatter, pinned sources and 20 declared palette pairs. Lowest declared ratio: 3.52:1 for a boundary with a 3:1 threshold; declared text pairs pass 4.5:1. Nine checker tests and nine behavior tests pass (seven workshop/game, two field-book).
 
-- Repository check passed: local Markdown destinations, required skill metadata, source revision records, declared sRGB pairs and specimen role values.
-- **20 declared contrast pairs** passed. The lowest declared ratio was **3.52:1**, for a boundary role with a 3:1 threshold. All declared text pairs met their 4.5:1 thresholds.
-- **Nine checker tests** and **seven specimen model tests** passed. The latter cover address validation, independent jobs, blocked/duplicate completion, undo, resource consumption, crafting preconditions and hanging without extra consumption.
-- The interaction script passed Node's syntax check. The gallery requires no installed runtime dependencies.
+Additional opaque text/background pairs calculated with the same luminance function: ink/paper 12.770, muted/paper 6.009, red/paper 6.084, contact kept accent/ink 9.408, contact supporting text/ink 8.989, raised/Dispatch ink 14.213, bench scope/Dispatch ink 10.256. These cover named combinations, not every rendered pixel or the complete interface.
 
-Palette checks cover declared opaque pairs and the inline semantic roles. They do not inspect every raw CSS color, image background, translucent layer, text size or rendered state. Skill metadata checks do not establish skill effectiveness.
+Host skill-creator quick_validate.py could not run because its Python environment lacks PyYAML. The repository's own independent skill-metadata checks passed for all five skills. No package was installed merely for that duplicate check.
 
-## Browser rendering
+## Actual browser work
 
-Browser: Codex in-app Chromium on Windows. Checked CSS viewports: **1280 × 720**, **390 × 844**, **320 × 800** and **768 × 900**. These are emulated sizes, not physical-device coverage.
+| Scope | Checked |
+| --- | --- |
+| Field Notes, wide | Atlas, contact sheet and reading room rendered at 1280×900; one photo, same three observation texts and capabilities. Actual screenshot bytes are 1265×889, as returned by the browser capture. |
+| Field Notes, narrow | 390×844 atlas/selected observation/book, contact/reading reflow; no page-wide horizontal overflow in observed states. Diagram selection scrolls to the observation on a phone. |
+| Field book | Fresh empty view; select chair, keep, populated view; empty-note error/focus; Cyrillic and literal markup-like note; save/edit; saved note/draft retained across direction/book switching. Reload clears the visit. |
+| Dispatch, wide/narrow | 1280×720 and 390×844: work-order rows, actual address values/actions, empty/populated handovers. Missing/original address rejected, corrected 18a clears only lamp; collection clears turntable; open record/undo restores lamp and selected correction; waiting radio lacks checked seal and remains blocked. Reset restores fixtures. |
+| Mosslight, wide/narrow | 1280×720 and 390×844: painted base/completed images loaded; make 8/3 → 2/1; open/close journal while crafted; hang leaves 2/1; completed lantern aligns with the hook. Gallery switching retains phase. Reset restores 8/3 and making action. |
+| Repetition | Duplicate craft/finish and blocked transitions covered by model tests; in browser, completed action is unavailable. No extra celebration or wait on journal opening. |
+| Inputs | Pointer interactions; focused textarea on error, corrected radio after undo, hanging action after make. A limited keyboard pass is recorded below; no full keyboard or screen-reader audit. |
 
-- All three examples were visually inspected at wide and narrow sizes. The intermediate 768px layout was also inspected.
-- DOM page geometry showed no horizontal overflow in those checks. At 768px an oversized Field Notes heading exceeded its story column despite fitting the page; its fluid size was corrected and the column was rechecked.
-- Narrow job tags, long dispatch headings, image crops, game resource quantities and the bridge hook remained visible. Mosslight's title was reduced fluidly at the smallest width to leave room beside reset.
-- The placed lantern and light use the painting's coordinate system and matching crop. The lit state was inspected at wide and phone widths after its transition settled.
-- Service labels were increased to a 10px minimum. Primary prose is larger; actual text enlargement and reader comfort remain separate checks.
-- Three unaltered wide viewport screenshots are saved in [previews](README.md#preview). They show a portion of each scrollable page, not a full-page capture. No browser warning/error entries were observed in the local gallery log during the checked session.
+Limited keyboard pass: at 390×844, selecting an atlas mark focuses/reveals the article; Tab advances to its keep control. Space activated a reading-room keep, which appeared in the field book; reloading that populated book returned it to zero. This does not constitute a complete keyboard audit.
 
-The temporary viewport override was reset after inspection.
+The complete DOM/copy order and lower book/journal surfaces were inspected. Pixel-matched reference reconstruction was not the task. Screenshots are evidence of those states, not a whole-artifact preference result.
 
-### Pages entry and navigation
+## Untested and limits
 
-The publishing revision adds a root entry redirect and `.nojekyll`, while keeping the gallery files in `examples/`. Before deployment, the local root URL with `?example=dispatch#main` reached that exact example and retained the fragment. The changed handbook/brief links resolved to GitHub. The wide Dispatch and 390px Mosslight renders were inspected after the link change; the narrow page had no horizontal overflow. The temporary viewport was reset. Public deployment and HTTP availability are verified separately when publishing.
+Actual browser zoom/text-only enlargement, OS high contrast, live reduced-motion media emulation, screen readers, native game runtime/controller/touch hardware, EN/RU full-interface localization and real-audience response remain untested in this revision. Reduced-motion CSS disables the image transition; that is source inspection, not an emulated preference test. CSS viewport resizing is not physical-device testing.
 
-## Interactions performed in the browser
+There is no backend, saved account, persistent game, shipping or printing integration. Fictional content is explicitly labelled. The completed painting has slight generated brush-detail drift. No matched Anti Slop baseline or blinded preference trial has run; see [protocol](../research/benchmark.md).
 
-### Field Notes
-
-- Changed the observation using the route; the image mark and reading panel synchronized.
-- Kept all three observations with Enter and saw the distinct completion message. Removed one and observed the count return to two.
-- Submitted an empty margin note, saw its inline error and focus move to the textarea. Submitted Cyrillic text and saw that exact text in the saved margin, with the draft retained and invalid state cleared.
-- Switched examples and returned: the selected observation and kept count remained.
-
-### Dispatch
-
-- Submitted without an address, then with the original address. Both produced the relevant inline error and left the open count unchanged.
-- Released job 017 using the corrected address: open jobs changed from three to two; the job, headline, route and receipt changed; focus moved to Undo.
-- Used Undo: the count returned to three and the corrected radio selection remained.
-- Selected job 018 and marked collection: its receipt appeared and the count changed independently. Reset restored the three fixtures.
-- Selected job 019: release was disabled, its missing-part reason was visible, the checked seal was hidden and its bench stage was not marked complete.
-
-### Mosslight
-
-- Enter on Make changed inventory from 8/3 to 2/1 and focused Hang.
-- Enter on Hang placed the lantern, lit the stones, updated the world description and journal, and focused Begin again. Inventory stayed 2/1.
-- Begin again restored the unlit phase and 8/3 inventory, hid completion and focused Make.
-- The two-step craft/hang interaction was also exercised at phone width.
-
-These are bounded pointer/keyboard and local DOM-state checks. They are not screen-reader announcement tests or exhaustive tab-order coverage. No real shipment, collection, user note storage or game save occurs.
-
-## Not performed
-
-- Audience research, recall tests, attachment measures or real-product before/after task outcomes.
-- Screen-reader trials, physical-device/cross-browser coverage, 200% text enlargement or 400% browser zoom.
-- Runtime reduced-motion emulation: the CSS disables transitions for that preference, but only its source was checked.
-- Controller navigation, a real game renderer, safe areas, UI scaling, persistence or repeatable economy testing.
-
-See the [briefs](README.md) for product-specific tradeoffs and [art provenance](assets/PROVENANCE.md) for the fictional assets.
+[State sheet](STATE-SHEET.md) · [Located visual findings](REVIEW.md).

@@ -1,0 +1,419 @@
+{
+  "reviewed_at": "2026-11-03",
+  "receiving_revision": "d646538693462ecdbf589dde53b6ed892423ace8",
+  "repositories": [
+    {
+      "repo": "anthropics/skills",
+      "sha": "ca45fc496a3436251f191354091d557da31c15b5",
+      "tree": "3b83fb7a7255ef97c3ce8657bd0a3a4d667bd7be",
+      "stars": 186859,
+      "reviewed_sections": [
+        [
+          "skills/frontend-design/SKILL.md",
+          [
+            [
+              7,
+              77
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "sha": "9fadc41729c38fd47d7ae622b501558653f9d2e9",
+      "tree": "e0cfae77c42ef79a0d3b16de3bace11c684f6872",
+      "stars": 100710,
+      "license": "Apache-2.0",
+      "reviewed_sections": [
+        [
+          ".agents/skills/impeccable/reference/new-work.md",
+          [
+            [
+              1,
+              43
+            ],
+            [
+              63,
+              93
+            ]
+          ]
+        ],
+        [
+          ".agents/skills/impeccable/reference/critique.md",
+          [
+            [
+              1,
+              17
+            ],
+            [
+              150,
+              174
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "repo": "Leonxlnx/taste-skill",
+      "sha": "12af471f627f866411b4bd785b19646d3672784c",
+      "tree": "db698c9093437ee7daea871f70b48d06a838038e",
+      "stars": 108931,
+      "license": "MIT",
+      "reviewed_sections": [
+        [
+          "skills/taste-skill/SKILL.md",
+          [
+            [
+              72,
+              225
+            ]
+          ]
+        ],
+        [
+          "skills/taste-skill/references/critique.md",
+          [
+            [
+              16,
+              76
+            ],
+            [
+              139,
+              183
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "sha": "713eef51b04efc98d6fa565323b495f7c9c89fd4",
+      "tree": "606af9408baaaa61d727a3cec386d259e88a1681",
+      "stars": 144404,
+      "license": "MIT",
+      "reviewed_sections": [
+        [
+          ".claude/skills/ui-ux-pro-max/SKILL.md",
+          [
+            [
+              16,
+              35
+            ],
+            [
+              49,
+              135
+            ],
+            [
+              215,
+              218
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "repo": "google-labs-code/stitch-skills",
+      "sha": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "tree": "fafa8b0aa429f5ee39ab1903c30df7eec08e5f1e",
+      "stars": 8666,
+      "license": "Apache-2.0",
+      "reviewed_sections": [
+        [
+          "plugins/stitch-utilities/skills/design-md/SKILL.md",
+          [
+            [
+              64,
+              119
+            ],
+            [
+              150,
+              173
+            ]
+          ]
+        ],
+        [
+          "plugins/stitch-utilities/skills/stitch-loop/SKILL.md",
+          [
+            [
+              35,
+              78
+            ],
+            [
+              100,
+              151
+            ],
+            [
+              240,
+              255
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "sha": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "tree": "339e66e210e08989967e7d992ce3906313165f77",
+      "stars": 33430,
+      "reviewed_sections": [
+        [
+          "skills/web-design-guidelines/SKILL.md",
+          [
+            [
+              1,
+              40
+            ]
+          ]
+        ],
+        [
+          "skills/composition-patterns/SKILL.md",
+          [
+            [
+              15,
+              89
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "repo": "superdesigndev/superdesign",
+      "sha": "49e2b9dd9615c6dae936b326b1ddb85d4f1d6f19",
+      "tree": "a508ae2d49d128d4509d94cfc254ba3c77c5de01",
+      "stars": 7576,
+      "license": "NOASSERTION",
+      "reviewed_sections": [
+        [
+          "README.md",
+          [
+            [
+              1,
+              110
+            ]
+          ]
+        ],
+        [
+          "system-prompt.txt",
+          [
+            [
+              1,
+              27
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "repo": "benjitaylor/agentation",
+      "sha": "0e3236eb1a0f5577852ab7bb5121f5dd46d42f1d",
+      "tree": "3e5a169b44d99c9bf497422b116046d41fdf01bc",
+      "stars": 5232,
+      "license": "NOASSERTION",
+      "reviewed_sections": [
+        [
+          "README.md",
+          [
+            [
+              1,
+              82
+            ]
+          ]
+        ],
+        [
+          "package/src/components/design-mode/output.ts",
+          [
+            [
+              1,
+              115
+            ],
+            [
+              160,
+              225
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "repo": "abi/screenshot-to-code",
+      "sha": "a8139779f7c5ae231b7f2a86fa7f83ddc5f7badc",
+      "tree": "80eb783e273c2ff02afa795e7dea6ce1ff08896c",
+      "stars": 80992,
+      "license": "MIT",
+      "reviewed_sections": [
+        [
+          "backend/prompts/system_prompt.py",
+          [
+            [
+              1,
+              28
+            ],
+            [
+              86,
+              96
+            ]
+          ]
+        ],
+        [
+          "design-docs/commits-and-variants.md",
+          [
+            [
+              1,
+              49
+            ],
+            [
+              60,
+              86
+            ],
+            [
+              182,
+              235
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "repo": "tldraw/make-real",
+      "sha": "928c4c4176fbe84fef4e4c3573e325d12cddbe4d",
+      "tree": "89c8ef31322467d8cec34acdae44b61b6c1deef5",
+      "stars": 5415,
+      "reviewed_sections": [
+        [
+          "README.md",
+          [
+            [
+              1,
+              10
+            ]
+          ]
+        ],
+        [
+          "app/prompt.ts",
+          [
+            [
+              64,
+              104
+            ],
+            [
+              175,
+              213
+            ]
+          ]
+        ],
+        [
+          "prompts/openai-system-prompt.md",
+          [
+            [
+              1,
+              24
+            ]
+          ]
+        ]
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "A1",
+      "title": "Good from Afar, But Far from Good: AI Prototyping in Real Design Contexts",
+      "url": "https://www.nngroup.com/articles/ai-prototyping/",
+      "publication": "Nielsen Norman Group",
+      "authors": "Huei-Hsin Wang and Megan Brown",
+      "date": "2025-10-24",
+      "reviewed": "2026-08-19",
+      "kind": "Practitioner evaluation of a real NN/G profile-page project",
+      "scope": "Evaluation method; prompt specificity and visual artifacts; hierarchy/grouping failures; pattern mismatch; prototype limits."
+    },
+    {
+      "id": "A2",
+      "title": "AI Design Tools Are Marginally Better: Status Update",
+      "url": "https://www.nngroup.com/articles/ai-design-tools-update-2/",
+      "publication": "Nielsen Norman Group",
+      "authors": "Megan Brown, Caleb Sponheim and Taylor Dykes",
+      "date": "2025-05-09",
+      "kind": "Practitioner/tool evaluation, 6-minute article",
+      "scope": "Narrow tasks; design-system integration; limited variation; methodology and dated tool coverage."
+    },
+    {
+      "id": "A3",
+      "title": "The Future-Proof Designer",
+      "url": "https://www.nngroup.com/articles/future-proof-designer/",
+      "publication": "Nielsen Norman Group",
+      "authors": "Sara Paul",
+      "date": "2025-06-06",
+      "kind": "Seven-expert panel synthesis, 7-minute article",
+      "scope": "Systems thinking; outcomes; data judgment; bounded changes instead of feature/output volume."
+    },
+    {
+      "id": "A4",
+      "title": "Prompting Is A Design Act: How To Brief, Guide And Iterate With AI",
+      "url": "https://www.smashingmagazine.com/2025/08/prompting-design-act-brief-guide-iterate-ai/",
+      "publication": "Smashing Magazine",
+      "authors": "Lyndon Cerejo",
+      "date": "2025-08-29",
+      "kind": "21-minute worked tutorial",
+      "scope": "Creative brief and context; WIRE/FRAME; reusable prompt components; iterative critique and the data-validation disclaimer."
+    },
+    {
+      "id": "A5",
+      "title": "A Week In The Life Of An AI-Augmented Designer",
+      "url": "https://www.smashingmagazine.com/2025/08/week-in-life-ai-augmented-designer/",
+      "publication": "Smashing Magazine",
+      "authors": "Lyndon Cerejo",
+      "date": "2025-08-22",
+      "kind": "24-minute fictional composite walkthrough with real tools/prompts",
+      "scope": "Understand/sketch/decide/prototype/test; partial output; simulated-user feedback and hallucinated research conclusions; explicit fictional protagonist."
+    },
+    {
+      "id": "A6",
+      "title": "The Bull And Bear Case For Digital Design In The Age Of AI",
+      "url": "https://www.smashingmagazine.com/2026/07/bull-and-bear-case-digital-design-age-ai/",
+      "publication": "Smashing Magazine",
+      "authors": "Andy Budd",
+      "date": "2026-07-29",
+      "kind": "12-minute editorial analysis",
+      "scope": "Making a critique concrete; product judgment; the danger of plausible polished output; tradeoffs and actual outcomes."
+    },
+    {
+      "id": "A7",
+      "title": "Designing With Uncertainty: How AI Supercharges Probabilistic Thinking",
+      "url": "https://www.smashingmagazine.com/2026/06/designing-uncertainty-how-ai-supercharges-probabilistic-thinking/",
+      "publication": "Smashing Magazine",
+      "authors": "Pratik Joglekar",
+      "date": "2026-06-16",
+      "kind": "19-minute analytical tutorial",
+      "scope": "Hypotheses and uncertainty; limitations of simulation; review/override; resilience; critically assessed suggested probability scores."
+    },
+    {
+      "id": "A8",
+      "title": "Elizabeth Goodspeed on the importance of taste – and how to acquire it",
+      "url": "https://www.itsnicethat.com/articles/elizabeth-goodspeed-column-taste-technology-art-280224",
+      "publication": "It's Nice That",
+      "authors": "Elizabeth Goodspeed",
+      "date": "2024-02-28",
+      "kind": "Long-form opinion essay",
+      "scope": "Creative ambition; references outside one's discipline; curation versus discernment; personal specificity rather than trend collection."
+    },
+    {
+      "id": "A9",
+      "title": "Dropbox’s head designer is an AI optimist",
+      "url": "https://www.fastcompany.com/91453581/dropbox-shannon-butler",
+      "publication": "Fast Company",
+      "authors": "Doreen Lorenzo interviewing Shannon Butler",
+      "date": "2025-12-10",
+      "kind": "Extended design-leadership interview",
+      "scope": "Brand/research context in daily work; customer-facing human review; human-first outcomes; the interview's self-report limits."
+    },
+    {
+      "id": "A10",
+      "title": "The biggest brand trends coming in 2026",
+      "url": "https://www.fastcompany.com/91462141/the-biggest-brand-trends-coming-in-2026",
+      "publication": "Fast Company",
+      "authors": "Mark Wilson; contributions from multiple design leaders",
+      "date": "2026-01-09",
+      "kind": "Multi-author design/AI trend feature",
+      "scope": "Craft; category sameness; deliberate differentiation; taste and positioning. Trends are contextual opinions, not UI requirements."
+    }
+  ]
+}

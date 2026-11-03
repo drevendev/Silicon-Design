@@ -19,6 +19,10 @@ Name an emotional intention for a specific person and moment. Translate it into 
 
 When direction is open, explore two or three materially different compositions. Change hierarchy, density, type, image language or rhythm; do more than exchange accent colors. With an established brand, one consistent direction may suffice. Scale exploration to the assignment.
 
+For substantive open-direction work, deliver retained rendered alternatives, not only prose names. Hold the brief, words, capabilities, fixture state, asset pool and viewport constant. For each, identify the dominant object, reading model, attention sequence and tradeoff. Keep rejected candidates inspectable. If rendering is unavailable, label the alternatives as proposals and leave the comparison unverified.
+
+Write a small subject inventory: output, vocabulary, constraints, artifacts and rituals, with supplied versus invented material marked. Test specificity against the nearest same-category product. Category atmosphere alone is weak differentiation. References from other disciplines can broaden the search; name the relationship learned rather than collecting fashionable styles.
+
 For each useful option, explain audience fit, distinctive decisions, a rejected alternative and a tradeoff. Use references to analyze relationships and methods, without copying a brand identity. Familiar controls, gradients, system fonts and cards are allowed when they serve the product.
 
 Describe the intended intensity, compositional rhythm and motion in context. Choose a recognizable idea and show how it changes appropriately across the main task, a difficult state and completion. It may live in type, imagery, composition, language or behavior. A new palette, named aesthetic or decorative mascot alone does not establish a direction.
@@ -36,5 +40,7 @@ Check the direction against realistic text, translated labels where relevant, na
 State whether the result is a written direction, a rendered prototype or an implemented product. Do not invent user outcomes, recall tests or successful checks.
 
 Deliver the selected direction, emotional intention, cross-state idea, rationale and tradeoff, the document location and the representative slice to implement next. Keep the handoff concise and explicitly separate proposals from observed results.
+
+The handoff includes the inventory, retained alternatives and a small proof of how the chosen grammar extends to a second surface. For comparative claims, require matched briefs and independent human assessment; neither self-scores nor different products establish superiority. These artifacts scale down for a bounded correction and never create a new approval requirement.
 
 Optional depth: [Silicon Design workflow](https://github.com/drevendev/Silicon-Design/blob/master/docs/workflow.md). The skill is usable without that reference.

@@ -11,6 +11,8 @@ Build the smallest system that supports the actual product. Inspect its DESIGN.m
 
 Test type with actual body copy, the longest title, numbers and supported scripts. Check required weights, fallback behavior, loading and licenses. Define reading, UI, title, supporting and numeric roles as needed, including size, weight, line height and intended use. Test wrapping and text enlargement; a mathematical scale alone is insufficient.
 
+Identify decision-critical text separately from supporting metadata and decoration. Inspect addresses, quantities, costs, errors and primary actions at actual size. Reading, operating and play surfaces can have different densities within one system. Do not shrink necessary labels to create display contrast or claim a WCAG failure from font size alone.
+
 Assign semantic surface, foreground, action, status, boundary and focus roles. Map existing primitives to those roles and map components to semantic roles. Specify theme mappings only for themes in scope. Avoid treating one attractive palette as a universal product skin.
 
 Measure actual foreground/background pairs, including relevant state combinations and transparency. For web text use WCAG's 4.5:1 ordinary-text and 3:1 qualifying-large-text thresholds; evaluate meaningful non-text cues against the applicable 3:1 requirement and exceptions. Compare unrounded ratios. Pair status colors with text or shape. Report tested combinations rather than declaring a whole product compliant.
@@ -22,6 +24,8 @@ Define a compact spacing, shape and elevation vocabulary from content relationsh
 Keep source-of-truth tokens in the project's existing format. Do not claim DTCG compatibility unless the chosen representation is validated against that format. If generating CSS or another platform export, identify its source and avoid hand-maintained duplicate values without an explicit reason.
 
 Build or update a representative specimen in the product's real environment. Include long content, values with units, an error and an unavailable action. Inspect the rendered result and check relevant input and scaling behavior.
+
+Retain a compact component/asset/state sheet at use size, with selectors or source paths. Show the important controls, type roles and artwork together; inspect edge treatment, stroke weight, lighting, perspective and material as well as colors. Extend the grammar to a second meaningful surface. A beautiful painting with a visibly unrelated inventory icon is a coherence finding even when every contrast pair passes.
 
 Carry the product's visual grammar through the system. Specify how a recognizable typographic, spatial, material or interaction idea applies to different states; avoid making every component equally expressive. The system should preserve character while allowing quiet task surfaces. When working in a design canvas, bound content width, expose editable text with actual bindings, and model meaningful variant dimensions. Inspect the result after mutation; a successful tool call proves that a write happened.
 

@@ -1,41 +1,54 @@
-# Three small worlds
+# Three small worlds, three ways into one street
 
-The first gallery changed palette and typography more than it changed the experience. This revision applies the handbook's direction, system, interface, game and review skills to the examples themselves: each has a specific subject, a recognizable action and a completed state.
+**[Live gallery](https://drevendev.github.io/Silicon-Design/)** · **[Field Notes direction comparison](https://drevendev.github.io/Silicon-Design/examples/field-notes-directions.html)**
 
-**[Open the live gallery](https://drevendev.github.io/Silicon-Design/)** — no installation or local server needed. Choose Field Notes, Dispatch or Mosslight at the top.
+[Issue #8](https://github.com/drevendev/Silicon-Design/issues/8) showed why category styling was insufficient. The [application notes](../research/issue-8-application.md) connect research to revised principles, all five skills and these prototypes.
 
-For local development, open [specimen.html](specimen.html) or serve the repository root:
+## One brief, three working alternatives
+
+Same photograph, three exact observation texts, select/keep/remove, margin note and field book. Supporting invitation copy and framing adapt to each reading model. Same local state contract and shared model; differences are inspectable structures.
+
+| Direction | Read it as | Try |
+| --- | --- | --- |
+| A · Street atlas | A place to explore, one observation at a time | [Atlas](field-notes-directions.html?direction=atlas) |
+| B · Contact sheet | Three details to compare and collect | [Contact sheet](field-notes-directions.html?direction=contact) |
+| C · Reading room | A continuous material with marginal keeps | [Reading room](field-notes-directions.html?direction=reading) |
+
+All alternatives remain available. A is a provisional default, not an audience-tested winner. [Decisions and tradeoffs](field-notes.DESIGN.md).
+
+## Operate and experience
+
+- [Dispatch](specimen.html?example=dispatch): a stable dark bench and readable work order. Resolve 18 versus 18a, release, collect the turntable, inspect real handover records and undo. The radio remains blocked for its stated reason. [Brief](dispatch.DESIGN.md).
+- [Mosslight](specimen.html?example=mosslight): a painted scene beside a making book. Make a lantern, open/close its journal, hang it from the hook. The completed object is painted into the world. [Brief](mosslight.DESIGN.md).
+
+All names, places, addresses and quantities are **fictional teaching material**. Images were generated for these examples; [prompts and provenance](assets/PROVENANCE.md). Object line drawings are original source SVG.
+
+State lasts within each page visit. Field Notes retains it across its directions/book; Dispatch/Mosslight across their shared gallery page. Navigating to a different page or reloading starts a new visit. Explicit reset controls restore workshop/game fixtures. No backend, actual shipping, collection, account or game-save service is implied.
+
+## Local development and publishing
+
+Serve the repository root:
 
 ```sh
 python -m http.server 8765 --bind 127.0.0.1
 ```
 
-Visit [the local gallery](http://127.0.0.1:8765/examples/specimen.html), then use the three links at the top. Stop the server with Ctrl+C. Images and scripts are local; no external fonts, libraries, account or service are required. Direct example URLs also work with `?example=field-notes`, `?example=dispatch` and `?example=mosslight`.
+Open [local directions](http://127.0.0.1:8765/examples/field-notes-directions.html) or [local workshop](http://127.0.0.1:8765/examples/specimen.html?example=dispatch). Stop with Ctrl+C. Images/scripts are local; no external font, library or account is required.
 
-| Example | Character carried into use | Try it | Decisions |
-| --- | --- | --- | --- |
-| [Field Notes](https://drevendev.github.io/Silicon-Design/examples/specimen.html?example=field-notes) | A photographic walk becomes a personal field book | Select a numbered detail, keep an observation, write in the margin | [Brief](field-notes.DESIGN.md) |
-| [Dispatch](https://drevendev.github.io/Silicon-Design/examples/specimen.html?example=dispatch) | A repair-workshop desk gives objects a way back into use | Compare 18 with 18a, release the lamp, undo; inspect the waiting radio | [Brief](dispatch.DESIGN.md) |
-| [Mosslight](https://drevendev.github.io/Silicon-Design/examples/specimen.html?example=mosslight) | A lanternmaker leaves a little light for someone else | Make the lantern, hang it by the bridge, watch the path change | [Brief](mosslight.DESIGN.md) |
-
-All names, addresses, quantities and places are **fictional teaching material**. The photograph and forest painting were generated for this revision; see [prompts and provenance](assets/PROVENANCE.md). Dispatch's object drawings and the placed lantern are original SVG work in the source.
-
-Changes live in this page visit and survive switching examples. They reset on reload. Dispatch and Mosslight also offer explicit reset controls. There is no backend, shipping, actual collection, game save or claim of real field research.
-
-## Publishing
-
-GitHub Pages publishes the root of `master`. The root `index.html` redirects into `examples/specimen.html`, preserving example queries and fragments. `.nojekyll` keeps the existing HTML, scripts and image paths intact. Changes pushed to `master` are published automatically by GitHub's Pages build and deployment.
-
-The gallery's handbook and design-decision links point to their readable files on GitHub. The source remains in `examples/`; there is no second copy of the gallery to maintain.
+GitHub Pages publishes master/root. Root index.html preserves query/fragment into specimen.html; its Field Notes route opens the direction comparison. Existing Dispatch/Mosslight deep links remain usable. No second source copy or generated build is maintained.
 
 ## Preview
 
-These are browser captures of the implemented page, not generated interface mockups. The Mosslight capture shows the completed action.
+Real browser captures of the implementation:
 
-![Field Notes: the photograph, numbered route and reader's observation](previews/field-notes.jpg)
+![Street atlas](previews/field-notes-atlas.jpg)
 
-![Dispatch: job tags, the repaired lamp and an address decision](previews/dispatch.jpg)
+![Contact sheet](previews/field-notes-contact.jpg)
 
-![Mosslight: the placed lantern lights the path by the bridge](previews/mosslight.jpg)
+![Reading room](previews/field-notes-reading.jpg)
 
-[Review of this revision](REVIEW.md) · [Performed checks and limits](VERIFICATION.md) · [Original critique](../research/specimen-critique.md)
+![Dispatch](previews/dispatch.jpg)
+
+![Mosslight completed](previews/mosslight.jpg)
+
+[Use-size/state sheet](STATE-SHEET.md) · [Review](REVIEW.md) · [Checks and limits](VERIFICATION.md) · [Anti Slop benchmark target](../research/benchmark.md). A comparative victory and reader attachment remain untested.

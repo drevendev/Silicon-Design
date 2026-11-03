@@ -10,6 +10,10 @@ Use it with your coding agent to choose a direction, carry it through real inter
 
 [Live gallery](https://drevendev.github.io/Silicon-Design/) · [Principles](docs/principles.md) · [Character & attachment](docs/character.md) · [Skills](#skills) · [Sources](research/sources.md) · [Парадная](README.ru.md)
 
+**[One street, three working directions](https://drevendev.github.io/Silicon-Design/examples/field-notes-directions.html)** — explore an atlas, compare a contact sheet, or read a continuous journal with the same photograph, observations and field book. See the [applied findings from #8](research/issue-8-application.md).
+
+Our first benchmark target is **better and more varied output than Anti Slop**. The [matched-trial protocol](research/benchmark.md) defines how to test that; a comparative win is not established yet.
+
 ## What we are fixing
 
 | When AI settles for… | Work on… |
@@ -39,11 +43,11 @@ Each folder is a self-contained skill with a `SKILL.md`; no paid service, compon
 
 | Skill | Use it for | Concrete output |
 | --- | --- | --- |
-| [silicon-design-direction](skills/silicon-design-direction/SKILL.md) | Establishing or changing a product's identity | Emotional intent, a recognizable idea and project DESIGN.md |
-| [silicon-design-system](skills/silicon-design-system/SKILL.md) | Typography, palettes, tokens and components | Semantic roles, tested color pairs, component states |
-| [silicon-interface-build](skills/silicon-interface-build/SKILL.md) | Implementing a website or application interface | A rendered, working representative flow |
-| [silicon-game-ui](skills/silicon-game-ui/SKILL.md) | HUDs, menus, inventory and game feedback | Readable play-state UI with input and scaling checks |
-| [silicon-design-review](skills/silicon-design-review/SKILL.md) | Reviewing an existing design or implementation | Prioritized findings with evidence and bounded fixes |
+| [silicon-design-direction](skills/silicon-design-direction/SKILL.md) | Establishing or changing identity | Subject inventory, retained same-brief alternatives, DESIGN.md |
+| [silicon-design-system](skills/silicon-design-system/SKILL.md) | Typography, tokens and components | Semantic roles, measured pairs, use-size component/asset/state sheet |
+| [silicon-interface-build](skills/silicon-interface-build/SKILL.md) | Implementing a site or app | Complete/adverse/ordinary flows, second surface and rendered evidence |
+| [silicon-game-ui](skills/silicon-game-ui/SKILL.md) | Game interfaces and feedback | Coherent world/state proof, truthful costs and repeated-input checks |
+| [silicon-design-review](skills/silicon-design-review/SKILL.md) | Reviewing implementation | Located findings, expected correction and recapture |
 
 ## Three small worlds
 

@@ -27,53 +27,9 @@
   </header>
   <main id="main">
     <section class="example field" id="field-notes" aria-labelledby="field-heading">
-      <div class="field-masthead">
-        <div class="field-wordmark">field<span class="wordmark-plus" aria-hidden="true">✳</span><br>notes</div>
-        <p class="field-tagline">A small record<br>of ordinary places.</p>
-        <div class="field-issue"><span class="mono">WALK 07</span><span>An imagined walk</span><span>Three things worth noticing</span></div>
-      </div>
-      <div class="field-spread">
-        <figure class="field-plate">
-          <div class="photo-wrap">
-            <img src="assets/field-notes-alley.jpg" width="1122" height="1402" alt="An imagined alley: a blue shutter, a wooden chair outside a doorway, and plants beside a narrow water channel." fetchpriority="high">
-            <span class="plate-corner top-left" aria-hidden="true"></span><span class="plate-corner bottom-right" aria-hidden="true"></span>
-            <button class="photo-pin pin-one" data-stop="0" aria-label="Observation 1: the blue shutter" aria-pressed="true">01</button>
-            <button class="photo-pin pin-two" data-stop="1" aria-label="Observation 2: the waiting chair" aria-pressed="false">02</button>
-            <button class="photo-pin pin-three" data-stop="2" aria-label="Observation 3: the uninvited garden" aria-pressed="false">03</button>
-            <span class="photo-credit">Imagined place · generated photograph</span>
-          </div>
-          <figcaption><span class="mono">PLATE 07 / SIDE STREET</span><span>Follow the small things.</span></figcaption>
-        </figure>
-        <div class="field-story">
-          <div class="field-story-label"><span class="red-dot" aria-hidden="true"></span> The city, after hours</div>
-          <h1 id="field-heading">AFTER<br><span>CLOSING.</span></h1>
-          <p class="field-deck">The shops have shut.<br>The street hasn’t.</p>
-          <div class="walk-route" aria-label="Observation route">
-            <button data-stop="0" aria-pressed="true"><span>01</span> Shutter</button><i aria-hidden="true"></i>
-            <button data-stop="1" aria-pressed="false"><span>02</span> Chair</button><i aria-hidden="true"></i>
-            <button data-stop="2" aria-pressed="false"><span>03</span> Waterline</button>
-          </div>
-          <article class="observation" aria-live="polite" aria-atomic="true">
-            <div class="observation-number mono" id="stop-number">OBSERVATION 01</div>
-            <h2 id="stop-title">A shutter wearing the weather.</h2>
-            <p id="stop-copy">Blue paint holds in the grooves. Rust gathers at the edges. The shop is closed, but its front keeps a record of every season it has stood through.</p>
-            <p class="margin-note" id="stop-prompt">Look at what time leaves behind.</p>
-          </article>
-          <div class="field-save-row"><button class="field-save" id="keep-stop" type="button"><span aria-hidden="true">＋</span> Keep this observation</button><span class="mono" id="kept-count">0 / 3 KEPT</span></div>
-          <p class="field-status" id="field-status" role="status">A field book begins with one thing you notice.</p>
-          <details class="field-own-note">
-            <summary>Add a note of your own</summary>
-            <form id="field-note-form" novalidate>
-              <label for="field-note">What caught your eye?</label>
-              <textarea id="field-note" rows="2" maxlength="300" placeholder="A small detail is enough."></textarea>
-              <p id="field-note-error" class="form-error" hidden>A word or two will do. Add your observation first.</p>
-              <button class="text-action" type="submit">Put it in the field book <span aria-hidden="true">↗</span></button>
-            </form>
-            <div id="field-own-saved" class="own-saved" hidden><span class="mono">YOUR MARGIN NOTE</span><p id="field-own-text"></p></div>
-          </details>
-        </div>
-      </div>
-      <div class="field-footer"><span>A walk is a way of paying attention.</span><span class="mono">LOCAL FIELD BOOK · RESETS ON RELOAD</span></div>
+      <h1 id="field-heading">Field Notes / After closing</h1>
+      <p>One street, three working directions: explore a street atlas, compare a contact sheet, or read a continuous journal.</p>
+      <p><a href="field-notes-directions.html">Open the Field Notes directions →</a></p>
     </section>
 
     <section class="example dispatch" id="dispatch" aria-labelledby="dispatch-heading" hidden>
@@ -82,7 +38,9 @@
         <div class="dispatch-shift"><span class="shift-dot" aria-hidden="true"></span> Bench open <span class="mono">/ SAMPLE WORKSHOP</span></div>
         <button id="reset-workshop" class="dispatch-reset" type="button">Reset sample</button>
       </div>
-      <div class="dispatch-layout">
+      <nav class="workshop-views" aria-label="Workshop surfaces"><button id="bench-view" aria-pressed="true">Work bench</button><button id="handover-view" aria-pressed="false">Handovers <span id="handover-count">0</span></button><p id="ready-queue">Two repairs need a handover. One is waiting for a part.</p></nav>
+      <section id="handover-record" class="handover-record" hidden aria-label="Handovers this visit"><h2>Out of the workshop.</h2><p>Completed handovers in this visit. Open a record to inspect it or undo.</p><div id="handover-entries"></div></section>
+      <div class="dispatch-layout" id="bench-surface">
         <aside class="job-shelf" aria-label="Workshop jobs">
           <div class="shelf-heading"><h2>On the bench</h2><span class="open-count"><span id="open-jobs">3</span> OPEN</span></div>
           <button class="job-ticket" data-job="17" aria-pressed="true">
@@ -97,7 +55,7 @@
             <span class="ticket-top"><span class="ticket-id mono">019</span><span class="ticket-status">WAITING FOR A PART</span></span>
             <strong>Kitchen radio</strong><span class="ticket-owner">Replacement switch · You</span><span class="ticket-line"><span>On hold</span><span aria-hidden="true">—</span></span>
           </button>
-          <div class="shelf-note"><span aria-hidden="true">⌁</span><p>Fix the thing.<br>Keep the story.</p><small>A repair is worth finishing properly.</small></div>
+          <p class="bench-scope">Three sample jobs. Edits stay here when you switch work orders; reloading starts a fresh bench.</p>
         </aside>
         <div class="work-order" id="work-order">
           <header class="order-strip"><span class="mono" id="order-ref">WORK ORDER / 017</span><span id="order-owner">Checked by Mina</span><span class="order-punches" aria-hidden="true">● ●</span></header>
@@ -143,29 +101,22 @@
       <div class="game-scene" id="game-scene" data-phase="unmade">
         <img class="world-image" src="assets/mosslight-world.jpg" width="1672" height="941" alt="A painted forest workshop at dusk, with a stepping-stone path, a footbridge and an empty lantern hook." loading="lazy">
         <div class="world-shade" aria-hidden="true"></div>
-        <div class="game-topline"><div><p class="game-chapter">A LANTERNMAKER’S EVENING</p><h1 id="mosslight-heading">Mosslight</h1></div><button id="reset-game" class="game-reset" type="button">Begin again</button></div>
+        <div class="game-topline"><div><p class="game-chapter">A lanternmaker’s evening</p><h1 id="mosslight-heading">Mosslight</h1></div><button id="reset-game" class="game-reset" type="button">Begin again</button></div>
         <div class="game-location"><span class="location-dot" aria-hidden="true"></span><span id="game-location">The workshop · blue hour</span></div>
-        <svg class="world-effects" viewBox="0 0 1672 941" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true">
-          <defs><radialGradient id="lantern-pool"><stop stop-color="#ffdc94" stop-opacity=".75"/><stop offset=".3" stop-color="#ffc35a" stop-opacity=".3"/><stop offset="1" stop-color="#ffc35a" stop-opacity="0"/></radialGradient></defs>
-          <g class="world-effects-light"><ellipse cx="980" cy="610" rx="340" ry="285" fill="url(#lantern-pool)"/>
-            <g transform="translate(942 419) scale(.8)" id="placed-lantern">
-              <path d="M28 22V12C28 1 52 1 52 12V22M22 25H58L67 43H13L22 25ZM18 43L23 109H57L62 43M25 110H55L65 122H15L25 110Z" stroke="#3b3023" stroke-width="4" fill="#dcb866"/>
-              <path d="M26 46H54L51 105H29L26 46Z" fill="#ffdc91"/><path d="M40 58C42 76 30 76 32 90C35 107 51 94 46 83L40 58Z" fill="#fff6c7"/>
-            </g>
-          </g>
-        </svg>
+        <img class="world-complete" src="assets/mosslight-world-lit.jpg" width="1672" height="941" alt="" aria-hidden="true" loading="lazy">
         <div class="bridge-marker" id="bridge-marker"><span aria-hidden="true">✧</span><span id="bridge-marker-text">A little light would help.</span></div>
-        <div class="game-story"><span class="mono">EVENING 01</span><p id="world-caption">There is still a way home.<br>It just needs a light.</p></div>
+        <div class="game-story"><span class="mono">The bridge path</span><p id="world-caption">There is still a way home.<br>It just needs a light.</p></div>
         <span class="art-credit">Original generated illustration</span>
       </div>
       <div class="craft-bench">
-        <div class="recipe-side"><span class="recipe-tab">THE MAKING BOOK</span><div class="recipe-heading"><span class="recipe-number">01</span><div><p class="mono">FIRST THINGS FIRST</p><h2 id="recipe-title">A light for the bridge.</h2></div></div><p id="recipe-copy">Six pieces of timber. Two drops of resin.<br>Enough to make the dark a little smaller.</p></div>
+        <div class="recipe-side"><span class="recipe-tab">The making book</span><div class="recipe-heading"><span class="recipe-number" aria-hidden="true">⌁</span><div><p class="mono">Leave a light for the next traveller</p><h2 id="recipe-title">A light for the bridge.</h2></div></div><p id="recipe-copy">Six pieces of timber. Two drops of resin.<br>Enough to make the dark a little smaller.</p></div>
         <div class="craft-controls"><div class="materials"><div><span class="material-icon" aria-hidden="true">▱</span><span>Timber <small>owned / needed</small></span><strong><span id="timber">8</span> / 6</strong></div><div><span class="material-icon resin-icon" aria-hidden="true">◒</span><span>Resin <small>owned / needed</small></span><strong><span id="resin">3</span> / 2</strong></div></div>
           <div class="game-actions"><button id="craft-button" type="button">Make the lantern <span aria-hidden="true">↗</span></button><button id="hang-button" type="button" hidden>Hang it by the bridge <span aria-hidden="true">↗</span></button></div>
           <p id="craft-status" role="status">The materials are here. Let’s make something useful.</p>
         </div>
       </div>
-      <div class="game-journal" id="game-journal" hidden><span aria-hidden="true">✧</span><div><strong>A light left for someone else.</strong><p>The bridge is lit. The path is open. That is enough for tonight.</p></div><span class="journal-entry mono">FIELD BOOK / 01</span></div>
+      <details class="making-journal"><summary>Your making journal</summary><div class="journal-spread"><div><h2>A light for the bridge</h2><p>Make → hang → leave the path lit.</p><p id="journal-progress">The hook is empty. The materials are on your bench.</p></div><ol><li id="journal-made">Not made yet · costs 6 timber and 2 resin</li><li id="journal-hung">Not hung yet · hanging uses no extra materials</li></ol><p>This small scene lasts for this visit. Switching gallery examples keeps it; reloading or “Begin again” starts a new evening.</p></div></details>
+      <div class="game-journal" id="game-journal" hidden><span aria-hidden="true">✧</span><div><strong>A light left for someone else.</strong><p>The bridge is lit. The path is open. That is enough for tonight.</p></div><span class="journal-entry mono">The bridge is lit</span></div>
     </section>
   </main>
   <footer class="gallery-footer"><p id="specimen-caption">01 / Field Notes — a route, a record, a reason to look closer.</p><div><span>Fictional local prototypes · changes reset on reload</span><a id="brief-link" href="https://github.com/drevendev/Silicon-Design/blob/master/examples/field-notes.DESIGN.md">Design decisions ↗</a></div></footer>

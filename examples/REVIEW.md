@@ -1,37 +1,31 @@
-# Review — character carried into the task
+# Review — evidence before another style rule
 
-Date: **2 November 2026**. Scope: three fictional browser prototypes. This is a design and implementation review, not a usability study or evidence of increased attachment.
+Reviewed 3 November 2026. Scope: Field Notes same-brief alternatives, Dispatch work/handovers and Mosslight scene/book/journal. [Verification](VERIFICATION.md) records actual environments and limits. No audience attachment or comparative preference has been measured.
 
-## What changed after the first critique
+## Operational result and character judgment
 
-| Original weakness | Implemented decision | Observable consequence |
-| --- | --- | --- |
-| Field Notes signalled “editorial” without its own material | One imagined street, three numbered details, an observation route and reader's margin | Selecting a mark changes the reading; kept observations and an editable note form a local field book |
-| Dispatch stopped at disclosure in a generic queue | A repair desk with object-specific drawings, bench notes and an address correction | Correct release clears the same job and count; undo restores it without discarding the choice |
-| Mosslight's lantern stayed decorative | An empty hook becomes the destination for the craft | Making consumes resources; hanging places a lantern and lights the path; the journal records the act |
+Field Notes now supports three reading models on one fixture and a real secondary book. Dispatch exposes repair truth and finished handovers with recovery. Mosslight's placed object belongs to the painted world and its making journal preserves the pending action.
 
-The [original critique](../research/specimen-critique.md) is retained against the old revision. The replacement changes content, composition, behavior and completion feedback together. Different palettes and font roles support those decisions.
+These are observed implementation differences. Our aesthetic judgment is that the atlas, contact sheet and continuous text have different attention sequences; Dispatch reads as an operating bench and Mosslight as a scene with a craft book. That judgment is weaker than evidence from actual readers/operators/players. Generated fiction remains less specific than an established product's real material.
 
-## Skills applied
+## Situated correction log
 
-- [Direction](../skills/silicon-design-direction/SKILL.md): define attention, quiet competence and small care; compare alternatives that would change the task; record the tradeoffs in each brief.
-- [System](../skills/silicon-design-system/SKILL.md): give each product semantic palette and typography roles; keep native controls, focus and truthful states beneath the visual grammar.
-- [Interface build](../skills/silicon-interface-build/SKILL.md): implement a complete local flow, error recovery, retained input and completion rather than linking to placeholder pages.
-- [Game UI](../skills/silicon-game-ui/SKILL.md): connect costs, inventory, object placement and world response; keep the recipe readable outside the painting.
-- [Review](../skills/silicon-design-review/SKILL.md): inspect rendered wide/narrow states, use keyboard actions, correct visible problems and record unperformed checks separately.
+| Priority / status | Located observation and state | Expected correction | Recapture / remaining limit |
+| --- | --- | --- | --- |
+| Major / resolved | Old Field Notes alternatives were descriptions across three different products | Retain 2–3 working structures for one fixture | [Atlas](previews/field-notes-atlas.jpg), [contact](previews/field-notes-contact.jpg), [reading](previews/field-notes-reading.jpg): same initial state, 1280×900. This shows internal variation, not a benchmark win. |
+| Major / resolved | field-notes-directions.js photo() / first contact frame: initial centered scaling cropped out the named shutter | Anchor crop/scale to the shutter edge; describe the actual crop in alt text | [Contact recapture](previews/field-notes-contact.jpg) shows blue metal, chair and waterline as distinct details. |
+| Major / resolved | .atlas-observation, 390×844, select chair: reading stayed below the map | Reveal and focus the selected observation while retaining selection/keeps | Live mobile recapture/check: observation top near zero after selection. Source now moves programmatic focus to the article; limited keyboard check in verification. |
+| Major / resolved | Dispatch .ticket-status/.address-option/.release-button: decision text borrowed hierarchy from small technical metadata | Readable operating values/actions and stable queue | [Bench](previews/dispatch.jpg), 1280×720; narrow view uses full-width rows. No claim that every previous small label was a WCAG failure. |
+| Major / resolved | Dispatch interior: collection and release needed a shared completed-record surface | Derive real empty/populated handovers and allow opening/undo | [Handovers](previews/dispatch-handovers.jpg). After both ready jobs clear, radio still explicitly waits. |
+| Major / resolved | Mosslight #placed-lantern: outlined SVG looked pasted on the painted world | A painted suspended object at the existing hook with local light | [Completed scene](previews/mosslight.jpg), 1280×720. Old SVG/glow removed; [edit provenance](assets/PROVENANCE.md). |
+| Polish / partial | Mosslight .world-complete: generated edit slightly changes brush detail outside the lantern | Keep composition/geometry stable and inspect transition | Hook/bridge/house align, but detail drift remains. A production game should use a controlled layered asset pipeline. |
+| Major / resolved | Same-visit behavior needed secondary/interrupted checks | Empty/populated book, handovers and making journal; retain state during return | Actual local flows checked, reload boundary stated. No persistent save added. |
+| Research / unresolved | Nearest-category specificity and attachment remain hypotheses | Apply to real product material and observe actual people | Existing real-product trial #2 remains open. No fabricated score or synthetic participant study. |
 
-## Findings resolved during inspection
+Capture links above show corrected states; the previous public implementation remains inspectable at [d646538](https://github.com/drevendev/Silicon-Design/tree/d646538693462ecdbf589dde53b6ed892423ace8/examples). Reproduction details identify where to inspect; no retrospective “before screenshot” was manufactured.
 
-- Smaller service labels were raised to a 10px minimum. They remain a compact role; this is a provisional design choice, not an accessibility guarantee.
-- The Field Notes display size now scales through the intermediate two-column width; its long second line stays inside the story column at the checked 768px view.
-- The game scene height leaves the recipe action visible in the checked wide viewport. Narrow framing retains the hook and path; artwork and light share the same crop.
-- Dispatch changes its drawing for each object, changes its headline after completion and does not mark the unfinished radio's bench check complete.
-- Undo preserves the address selection. A margin-note validation error keeps the text field available; valid Cyrillic input renders as text.
+## Fidelity and comparison
 
-## Judgment and remaining work
+Geometry: inspect actual bounds, overflow and placed-object alignment. Interpretation: preserve fixture words, action/resource truth and content order. Judgment: decide if composition and material express the brief; screenshots alone do not settle it.
 
-The three specimens now have different ways of paying attention, making progress and finishing. That is the design judgment this revision makes inspectable. It does **not** establish memorability, affection or better task performance.
-
-Before treating any of these as a production direction, test the actual intended audience. Field Notes needs real editorial material and a persistence decision. Dispatch needs a large-queue workflow, permissions and durable audit records. Mosslight needs a repeatable play loop and runtime/controller checks. The compact labels, narrow reading order and platform-dependent font fallback deserve specific observation in those trials.
-
-See [VERIFICATION.md](VERIFICATION.md) for the narrower technical evidence. Passing checks does not close the character review.
+[Issue #8 application](../research/issue-8-application.md) changes all five skill output contracts. [Anti Slop](../research/benchmark.md) is the first benchmark target, with equally informative direction, matched budgets and retained results. Baseline generation and blinded human review are unrun; superiority remains unproven.

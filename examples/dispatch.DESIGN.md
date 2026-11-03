@@ -1,33 +1,25 @@
-# Dispatch — finish the repair properly
+# Dispatch — finish the handover
 
-## Person, moment and feeling
+A fictional workshop has three fixture records: a repaired lamp with an address correction, a turntable ready to collect and a radio awaiting a switch/final test. The operator needs quiet competence: see the object, resolve the outstanding decision and preserve context. No real delivery or collection occurs.
 
-A repair-workshop operator is closing work orders before delivery or collection. The intended feeling is quiet competence: a repaired object goes back into someone's life, and the operator knows what has actually been completed. All people, objects, addresses and jobs are fictional fixtures.
+## Material and position
 
-## The recognizable idea
+Inventory: work orders, object drawings, bench notes, customer correction and handover record. Against another workshop tool, the differentiating candidate is the connection from an object's repair note to its final handover; drawings alone are category atmosphere.
 
-**A work order travels from the bench to a cleared ticket.** The shelf holds clipped job tags; the main surface carries the object's line drawing, bench note, unresolved decision and route. Finishing work changes that record and the shelf, while keeping the operator in place. Undo is part of the completion state.
+The dark bench keeps jobs in a stable location. Lime identifies selection with pressed state; the white work order presents the action and consequence. Sans labels, 17px addresses, 15px actions and 14–16px explanations take priority over decorative technical metadata. Drawings share stroke, fill and viewpoint. Clipped-tag decoration and repeated tiny uppercase/monospace labels were reduced.
 
-A broad analytics dashboard would show more totals and less of the object being repaired. A generic support queue would lose the workshop's practical context. The desk chooses one consequential decision at a time. The physical-ticket composition sacrifices some density; scaling beyond three jobs would require a different shelf and proper filtering.
+## Workflows and second surface
 
-## Visual grammar and voice
+1. Lamp: no address or original 18 produces an error without mutation. Corrected 18a clears only 017. Receipt reports the exact label. Undo restores the previous stage and retains the choice.
+2. Turntable: its own drawing, bench note and collection action. Collection clears only 018; undo restores it.
+3. Radio: switch/final test remain outstanding. Release is disabled with an adjacent reason; checked seal is absent.
 
-- Compact sans, tabular job numbers, cut ticket corners, dashed routing rules and original technical SVG drawings make a repair record rather than an abstract “case.” Each job has its own drawing.
-- Lime identifies the selected ticket; written status and pressed state also identify it. A restrained checked seal describes passed bench work and disappears for the unfinished radio. A cleared stamp appears only after the action succeeds.
-- Semantic paper/ink/signal roles are declared in [palette data](palettes.json). Customer handwriting uses Georgia; operational labels remain compact and aligned.
-- “The lamp is fixed. The address isn't.” names the actual uncertainty. Errors explain the needed correction. Completion names the outcome and preserves an immediate way back.
+**Handovers** starts empty and populates from actual completed jobs. Open a record to inspect/undo. Counts and records derive from the same jobs. After both ready jobs clear, the message explicitly says the radio still waits, rather than claiming the whole workshop is complete.
 
-## States and behavior
+Work-order, bench/handovers and Mosslight switching retain local state. Reload or Reset sample restores fixtures. No shipping/printing/address service or stored shift history exists.
 
-- **017 / address decision:** compare the original label, 18 High Street, with the customer's correction, 18a. Submission without a choice or with the old address explains the issue and retains the selection. Correct release updates the open count, ticket, headline, route and receipt. Focus moves to Undo.
-- **018 / collection:** marking collection clears this particular job. It does not silently affect delivery or the waiting radio.
-- **019 / waiting:** the missing switch and outstanding final test are stated beside the unavailable release control. The bench stage is not marked complete.
-- **Undo:** restores that job, preserves the address choice and returns focus to the decision. Switching jobs retains other local work. Reset restores all three fixtures.
+## Tradeoff and evidence
 
-There is no printing, shipping, stock service, customer contact or saved backend state. Reload resets the sample; the page labels this clearly. Native radios and buttons handle the decisions. On narrow screens the three short job selectors sit above the order; secondary owner metadata gives way to the decision content.
+The explanatory drawing and customer note take space a high-volume queue could use for more rows. Phone layouts use full-width job rows to preserve names and reasons. Three fixtures do not test workshop load.
 
-## Evidence and remaining questions
-
-[Working specimen](specimen.html?example=dispatch), [review](REVIEW.md), [verification](VERIFICATION.md).
-
-The completion now has a truthful local consequence and a domain-specific expression. Faster work, operator confidence and long-term fondness are hypotheses, not measured outcomes. Real release permissions, concurrent edits, audit records, printing and a large queue remain outside this prototype.
+[Working example](specimen.html?example=dispatch) · [State sheet](STATE-SHEET.md) · [Review](REVIEW.md) · [Verification](VERIFICATION.md). State tests check behavior; operational density and character still need operator observation.

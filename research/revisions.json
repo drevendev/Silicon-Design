@@ -1,5 +1,104 @@
 [
   {
+    "repository": "anthropics/skills",
+    "revision": "ca45fc496a3436251f191354091d557da31c15b5",
+    "reviewed_at": "2026-11-03",
+    "paths": [
+      "skills/frontend-design/SKILL.md"
+    ],
+    "review_scope": "Selected ranges retained in research/issue-8-sources.json and issue #8. Methods paraphrased; no foreign code/skills/assets copied."
+  },
+  {
+    "repository": "pbakaus/impeccable",
+    "revision": "9fadc41729c38fd47d7ae622b501558653f9d2e9",
+    "reviewed_at": "2026-11-03",
+    "paths": [
+      ".agents/skills/impeccable/reference/new-work.md",
+      ".agents/skills/impeccable/reference/critique.md"
+    ],
+    "review_scope": "Selected ranges retained in research/issue-8-sources.json and issue #8. Methods paraphrased; no foreign code/skills/assets copied."
+  },
+  {
+    "repository": "Leonxlnx/taste-skill",
+    "revision": "12af471f627f866411b4bd785b19646d3672784c",
+    "reviewed_at": "2026-11-03",
+    "paths": [
+      "skills/taste-skill/SKILL.md",
+      "skills/taste-skill/references/critique.md"
+    ],
+    "review_scope": "Selected ranges retained in research/issue-8-sources.json and issue #8. Methods paraphrased; no foreign code/skills/assets copied."
+  },
+  {
+    "repository": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "revision": "713eef51b04efc98d6fa565323b495f7c9c89fd4",
+    "reviewed_at": "2026-11-03",
+    "paths": [
+      ".claude/skills/ui-ux-pro-max/SKILL.md"
+    ],
+    "review_scope": "Selected ranges retained in research/issue-8-sources.json and issue #8. Methods paraphrased; no foreign code/skills/assets copied."
+  },
+  {
+    "repository": "google-labs-code/stitch-skills",
+    "revision": "0337446dadde6f8c94210444e2aa9d546126480f",
+    "reviewed_at": "2026-11-03",
+    "paths": [
+      "plugins/stitch-utilities/skills/design-md/SKILL.md",
+      "plugins/stitch-utilities/skills/stitch-loop/SKILL.md"
+    ],
+    "review_scope": "Selected ranges retained in research/issue-8-sources.json and issue #8. Methods paraphrased; no foreign code/skills/assets copied."
+  },
+  {
+    "repository": "vercel-labs/agent-skills",
+    "revision": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+    "reviewed_at": "2026-11-03",
+    "paths": [
+      "skills/web-design-guidelines/SKILL.md",
+      "skills/composition-patterns/SKILL.md"
+    ],
+    "review_scope": "Selected ranges retained in research/issue-8-sources.json and issue #8. Methods paraphrased; no foreign code/skills/assets copied."
+  },
+  {
+    "repository": "superdesigndev/superdesign",
+    "revision": "49e2b9dd9615c6dae936b326b1ddb85d4f1d6f19",
+    "reviewed_at": "2026-11-03",
+    "paths": [
+      "README.md",
+      "system-prompt.txt"
+    ],
+    "review_scope": "Selected ranges retained in research/issue-8-sources.json and issue #8. Methods paraphrased; no foreign code/skills/assets copied."
+  },
+  {
+    "repository": "benjitaylor/agentation",
+    "revision": "0e3236eb1a0f5577852ab7bb5121f5dd46d42f1d",
+    "reviewed_at": "2026-11-03",
+    "paths": [
+      "README.md",
+      "package/src/components/design-mode/output.ts"
+    ],
+    "review_scope": "Selected ranges retained in research/issue-8-sources.json and issue #8. Methods paraphrased; no foreign code/skills/assets copied."
+  },
+  {
+    "repository": "abi/screenshot-to-code",
+    "revision": "a8139779f7c5ae231b7f2a86fa7f83ddc5f7badc",
+    "reviewed_at": "2026-11-03",
+    "paths": [
+      "backend/prompts/system_prompt.py",
+      "design-docs/commits-and-variants.md"
+    ],
+    "review_scope": "Selected ranges retained in research/issue-8-sources.json and issue #8. Methods paraphrased; no foreign code/skills/assets copied."
+  },
+  {
+    "repository": "tldraw/make-real",
+    "revision": "928c4c4176fbe84fef4e4c3573e325d12cddbe4d",
+    "reviewed_at": "2026-11-03",
+    "paths": [
+      "README.md",
+      "app/prompt.ts",
+      "prompts/openai-system-prompt.md"
+    ],
+    "review_scope": "Selected ranges retained in research/issue-8-sources.json and issue #8. Methods paraphrased; no foreign code/skills/assets copied."
+  },
+  {
     "repository": "mondaycom/vibe",
     "revision": "f39a2f6e2d950adced82e9e975255399ac4f1541",
     "reviewed_at": "2026-11-02",
@@ -84,7 +183,7 @@
   {
     "repository": "miqdadbadjuber/anti-slop",
     "revision": "941b1532f9cc8ffde766bca5921d75257c9e5762",
-    "reviewed_at": "2026-11-02",
+    "reviewed_at": "2026-11-03",
     "paths": [
       "README.md",
       "rules/antislop.md",
@@ -93,7 +192,7 @@
       "skills/antislop-ui/SKILL.md",
       "skills/antislop/SKILL.md"
     ],
-    "review_scope": "Selected design-relevant sections; see research/deep-read.md for extracts, transfers and boundaries."
+    "review_scope": "Selected sections; benchmark pin and boundaries in research/benchmark.md. Foreign instructions are research material, not installed rules."
   },
   {
     "repository": "primer/design",

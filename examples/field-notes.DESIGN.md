@@ -1,33 +1,29 @@
-# Field Notes — a street, read closely
+# Field Notes — one street, three reading models
 
-## Person, moment and feeling
+Fictional journal for a reader with a few minutes to notice an ordinary street. Intended feeling: attention, followed by a small personal record. This is authored teaching material, not a real walk or reader study.
 
-A curious reader has a few minutes to look at an ordinary street after closing time. The intended feeling is attention: something apparently unremarkable becomes worth keeping. This is a fictional illustrated field journal, not a report of an actual walk.
+## Subject inventory
 
-## The recognizable idea
+Output: three observations and the reader's kept collection/margin note. Vocabulary: shutter, chair, waterline; look, keep, margin, field book. Constraints: one generated photograph, three authored observations, 300-character note, visit-only state. Artifacts: schematic, detail crops, continuous reading and empty/populated book. Ritual: look closely, keep what matters, record it in your own words.
 
-**The photograph is the route; the reader makes the field book.** Three numbered marks connect the shutter, chair and waterline to three short observations. Selecting either a photographic mark or a route stop changes the same reading panel. Keeping an observation and adding a margin note make the reader's attention part of the page.
+The nearest peer is another illustrated street journal. A photograph and a serif would not distinguish those products. Our more specific candidate is the reader's transition from three situated details to a book they assemble. Its value to readers is untested.
 
-An archive grid would emphasize volume. A long essay would emphasize an author's argument. This specimen chooses a small, spatial reading ritual and gives up both breadth and continuous reading. The image takes substantial space on a phone; that tradeoff needs a reader trial.
+## Retained alternatives
 
-## Visual grammar and voice
+[Working comparison](field-notes-directions.html). All three share [fixture/model](field-notes-data.js), photograph, exact observation words, select/keep/remove/note capabilities and state boundary. Paper/ink/red roles and Arial/Georgia stacks are shared. Supporting invitations and framing differ.
 
-- A cropped, ordinary street photograph supplies the material: blue metal, worn plaster, a chair, a water channel. Its generated origin and imagined place are explicitly labelled. It is not invented research evidence.
-- A compressed two-line headline sits beside the plate on wide screens. Impact/Haettenschweiler/Arial Narrow is a role-based system stack; actual glyphs vary by platform. Georgia carries the observation, while sans and monospace identify controls and recording marks.
-- Ink, paper and red are functional roles in [palette data](palettes.json), not the whole identity. The repeated language is plate / route / observation / field book / margin.
-- The voice notices specific things without selling a lifestyle: “A chair keeping the doorway.” A saved state says what was kept rather than awarding points.
+| Direction | Dominant object / attention | Tradeoff |
+| --- | --- | --- |
+| [A · Street atlas](field-notes-directions.html?direction=atlas) | Schematic street → selected crop → observation → keep | Selective exploration; extra step before reading, especially on a phone. Explicitly schematic, not geographic. |
+| [B · Contact sheet](field-notes-directions.html?direction=contact) | Three details together → compare → collect | Dense wide view; long phone sequence. Frame heights follow shutter/chair/waterline framing. |
+| [C · Reading room](field-notes-directions.html?direction=reading) | Full photograph → continuous prose → pause in the margin | Author's sequence and larger body type; quieter controls and more scrolling. |
 
-## States and behavior
+A is a provisional gallery entry, not a user-validated winner. B/C remain working alternatives.
 
-1. Start at the shutter, with zero observations kept. Image marks and route buttons expose their selected state.
-2. Select any stop; both representations synchronize and the reading panel changes. Existing keeps remain intact.
-3. Keep or remove the current observation. The count and control label reflect the actual local set. Keeping all three produces a distinct completion line.
-4. Open the margin, submit an empty note and receive an inline error with focus on the textarea. A valid note appears as text in the field book; the editable draft remains available. Cyrillic content is supported by the system font stacks.
+## Grammar and behavior
 
-View switching retains this visit's state. Reload clears it; that boundary is visible. There is no account, archive service or persistence claim. No decorative motion is needed.
+Reading type is Georgia at 17–23px depending on density; UI labels use Arial, generally 13–16px. Red selection/kept state has a label and pressed state. The book reuses crops, observation titles and keep controls. It has a blank state, keeps in selection order, removable entries and saved/editable margin note.
 
-## Evidence and remaining questions
+Direction and book switching preserve this page visit's selection, keeps, draft and saved note. An empty edit focuses the textarea and preserves the previous saved note. Markup-like input is rendered as text. Reload clears the book. Leaving for Dispatch/Mosslight starts a separate page visit; no shared account/archive/persistence service exists.
 
-[Working specimen](specimen.html?example=field-notes), [review](REVIEW.md), [verification](VERIFICATION.md), [art provenance](assets/PROVENANCE.md).
-
-The material and interaction now express the same idea. Whether the ritual encourages closer looking, or whether readers would return, remains untested. The scene is authored fiction; a real publication would need commissioned or documented field material and an editorial practice.
+[State sheet](STATE-SHEET.md) · [Review](REVIEW.md) · [Verification](VERIFICATION.md) · [Image provenance](assets/PROVENANCE.md). No attachment, recall or superiority over Anti Slop has been measured.

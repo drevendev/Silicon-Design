@@ -25,6 +25,8 @@ Each finding needs a specific observation and reproduction, user consequence, bo
 - Major: materially harms comprehension, efficiency, readability or the recorded identity.
 - Polish: smaller coherence or craft issues.
 
+Attach visual findings to a selector/source path or marked screenshot region, with fixture state, viewport and expected visible correction. After a fix, capture that same state and label the result resolved, partial or unresolved. Distinguish geometric fidelity, interpretation of the brief and aesthetic judgment. A vague instruction to make the whole screen less generic is not a reproducible finding.
+
 Do not invent a beauty score, “AI probability” or user research result. Avoid duplicate findings and do not inflate speculative preferences into blockers.
 
 ## Fix and verify within scope
@@ -32,6 +34,8 @@ Do not invent a beauty score, “AI probability” or user research result. Avoi
 For a review-only request, report findings without changing implementation. If fixes are requested or already authorized, apply bounded corrections and repeat the affected checks. Do not demand a fresh approval for each routine reversible fix. Leave broad direction changes outside a narrow repair unless they are required to solve the reported problem.
 
 Record checks as checked, failed, untested or inapplicable, with supporting details. Distinguish palette math from rendered contrast, viewport resize from actual zoom, and visual captures from keyboard or screen-reader tests. If rendering is unavailable, say so and provide the useful source-level findings.
+
+Review retained same-brief alternatives when exploration was in scope. Different products or different palettes alone cannot establish diversity. Inspect the entire artifact, a second meaningful surface and ordinary/repeated/returning work; identify the persistence boundary. Classify necessary versus decorative small text. For a benchmark claim, inspect matched baseline artifacts and human preference/task evidence; leave superiority unproven when those runs are absent.
 
 Deliver the important findings first, link evidence, explain fixes and remaining limits, and give separate scoped conclusions about usefulness/access and character/care. The latter can remain weak while the former passes. Label aesthetic judgments and emotional-effect hypotheses; do not claim user affection, recall or improved retention without real observations. A clean static check does not establish accessibility compliance, successful usability testing or design quality.
 

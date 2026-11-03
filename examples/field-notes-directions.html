@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Three working directions for the same fictional Field Notes journal: street atlas, contact sheet and reading room.">
+  <title>One street, three directions — Silicon Design</title>
+  <link rel="stylesheet" href="field-notes-directions.css">
+  <script src="field-notes-data.js" defer></script>
+  <script src="field-notes-directions.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#journal">Skip to journal</a>
+  <aside class="comparison" aria-label="Direction comparison">
+    <a href="https://github.com/drevendev/Silicon-Design">Silicon Design / trials</a>
+    <nav aria-label="Same brief, three directions">
+      <button data-direction="atlas">A · Street atlas</button>
+      <button data-direction="contact">B · Contact sheet</button>
+      <button data-direction="reading">C · Reading room</button>
+    </nav>
+    <span><a href="specimen.html?example=dispatch">Dispatch</a> · <a href="specimen.html?example=mosslight">Mosslight</a><br>Same photograph, words &amp; field book</span>
+  </aside>
+  <main id="journal" tabindex="-1"></main>
+  <footer class="scope">Fictional journal · Generated street photograph · Keeps and notes last for this visit; reloading clears them. <a href="https://github.com/drevendev/Silicon-Design/blob/master/examples/assets/PROVENANCE.md">Image provenance</a></footer>
+  <noscript><p class="scope">This interactive journal requires JavaScript. Read the <a href="https://github.com/drevendev/Silicon-Design/blob/master/examples/field-notes.DESIGN.md">brief and retained alternatives</a> on GitHub.</p></noscript>
+  <div class="sr-only" role="status" id="announcement"></div>
+</body>
+</html>

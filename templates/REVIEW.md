@@ -24,6 +24,8 @@
 | --- | --- | --- | --- | --- |
 | [blocking / major / polish] | [specific state and action] | [effect on a real task] | [bounded change] | [path; confirmed or hypothesis] |
 
+For visual findings include selector/source or marked region, fixture state, viewport, before capture, expected visible correction and recapture. Track resolved / partial / unresolved independently of checked / failed / untested coverage. Inspect the whole artifact and a second surface. Label geometric measurements, interpretation and aesthetic judgment separately.
+
 Blocking prevents a key task, access or truthful feedback. Major materially harms comprehension, readability, identity or efficiency. Polish is a smaller coherence issue. Do not report a style preference as a blocker without an observable consequence.
 
 ## Coverage

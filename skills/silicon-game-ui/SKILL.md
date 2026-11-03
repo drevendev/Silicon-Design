@@ -15,6 +15,8 @@ Use expressive type and materials for world identity where helpful, with readabl
 
 Specify the feeling appropriate to each moment: exploration, comparison, risk, recovery or completion. Carry a recognizable world idea through the task and its result. Let a visual response correspond to an actual game event when useful; a decorative illustration that never relates to state is only one part of the direction. Keep common actions efficient after repeated use and avoid replaying a celebration at every routine input.
 
+Retain a small world/UI asset sheet at actual display size, plus the normal, difficult and completed states. Compare painted edges, lighting, perspective and material across scenery, interactable objects, inventory and menus. Inspect the placed object in its actual scene; palette agreement alone cannot hide a flat icon pasted onto a painted world. Extend the grammar to a second surface already justified by the game, such as the making journal.
+
 ## Preserve game truth
 
 For purchases and crafting, show effect, owned/required amounts, cost and the explicit reason an action is blocked. Preserve exact values or an accessible exact disclosure when compact formatting hides a decision. Distinguish zero, unknown and not applicable.
@@ -28,6 +30,8 @@ Feedback should correspond to actual events. Handle pending, failed, interrupted
 Check every supported input path: keyboard, controller, pointer or touch. Define focus order and restoration in menus, visible selection, UI scaling and safe-area behavior. Address remapping, alternatives to drag, subtitles and motion/audio controls as applicable to scope. Critical information needs cues independent of sound and color.
 
 Inspect a normal action, insufficient resources, empty/full inventory where relevant, interruptions, large quantities and long translations in the real runtime. Check changing backgrounds and target viewing conditions. Report untested platforms or input methods explicitly.
+
+Exercise repeated input and a return after interruption. State what persists on surface switching, reload and restart. Keep exact resource contracts intact. If the specimen is a web-only local simulation, do not present its checks as native-runtime, controller or save-system evidence.
 
 Deliver the UI and state contracts, a working representative flow, captures where available and actual test coverage. If only a mockup was possible, label it as a mockup and identify the runtime questions it leaves open.
 

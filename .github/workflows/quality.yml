@@ -20,4 +20,4 @@ jobs:
       - name: Test checker behavior
         run: python3 -m unittest discover -s tests -v
       - name: Test specimen state transitions
-        run: node --test tests/specimen-model.test.cjs
+        run: node --test tests/specimen-model.test.cjs tests/field-notes.test.js

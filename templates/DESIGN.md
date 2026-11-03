@@ -15,12 +15,15 @@ Template: replace bracketed prompts and remove sections that do not apply. Keep 
 
 - Character: [two or three qualities, expressed as concrete visual decisions].
 - Product material: [real artifacts, imagery, vocabulary or subject references that inform the direction].
+- Subject inventory: [actual output, vocabulary, constraints, artifacts and rituals; supplied / authored fiction / generated].
 - Intensity, rhythm and motion: [how assertive, varied and animated the experience should be, tied to context].
 - First attention → supporting information → next action: [content order].
 - Composition: [alignment, density, rhythm, grouping and adaptation].
 - Distinctive element: [a product-specific detail and its purpose].
 - Recurring idea: [how an identifiable visual or behavioral idea appears in the primary task, a difficult state and a completed action].
 - Alternatives considered: [what changed between directions and why this one fits].
+- Retained alternatives: [rendered links/captures; same brief, words, capabilities, assets, state and viewport; dominant object and reading model of each].
+- Nearest category peer: [what would remain specific if names and logo were removed].
 - Tradeoff: [what this choice gives up].
 
 ## Visual roles
@@ -40,9 +43,11 @@ Template: replace bracketed prompts and remove sections that do not apply. Keep 
 
 - Representative real content and stress cases: [long, empty, large, translated].
 - Important component states: [applicable default/focus/loading/error/etc.].
+- Component/asset/state sheet and second surface: [use-size proof of the grammar beyond the opening].
 - Recovery and unavailable actions: [feedback, reason, retry or undo].
 - Voice in use: [representative invitation, success and failure messages; tone boundaries].
 - Repeated use: [what becomes faster or quieter; help dismissal, recurrence and respect for existing work].
+- Ordinary second workflow, interruption and return: [actual contract and persistence boundary, including reload].
 - Moment of care: [a useful or expressive detail someone could appreciate; its repetition and access costs].
 - Responsive/input rules: [what wraps, stacks or scrolls; keyboard/touch/controller].
 - For games: [safe areas, UI scale, playfield, visibility/knowledge rules].

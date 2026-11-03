@@ -25,3 +25,9 @@ Use this as a prompt for inspection, not a score. Record evidence and applicabil
 - [ ] For games, UI scale, scene contrast, knowledge rules and resource feedback were checked in runtime.
 - [ ] The report identifies what was checked, what failed and what remains unknown.
 - [ ] The report gives separate conclusions on operation and character; static checks are not presented as a taste test.
+- [ ] Substantial open-direction work retains same-brief rendered alternatives, with fixed content/capabilities/assets/state/viewport and visible structural tradeoffs.
+- [ ] Subject inventory survives comparison with the nearest same-category product.
+- [ ] Use-size component/asset/state sheet and a second meaningful surface demonstrate the grammar.
+- [ ] A second ordinary task, interruption/return and declared reload boundary were exercised where in scope.
+- [ ] Visual findings name a selector/region, expected correction and recapture, marked resolved/partial/unresolved.
+- [ ] Comparative quality/diversity claims have matched artifacts and scoped human evidence; otherwise they remain targets.
