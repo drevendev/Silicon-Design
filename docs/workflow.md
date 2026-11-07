@@ -1,53 +1,48 @@
 # From brief to checked interface
 
-Scale this workflow to the task. A label or spacing correction can follow an existing DESIGN.md. A new product or major redesign needs explicit direction before broad implementation.
+Start with the requested change and existing direction. A skill or template supports that work; it does not require a full product-design process for every edit.
 
-## Understand the situation
+## Select the scope
 
-Inspect the existing product, components, assets, content and implementation constraints. State who uses it, what they need to accomplish, where they use it, and what success looks like. Include the feeling the experience should support at a particular moment: curiosity, confidence, relief, mastery or another specific intention. Separate observed facts from assumptions. Ask only about missing information that changes the decision; continue independent work while waiting.
+| Assignment | Work and evidence |
+| --- | --- |
+| Existing-brand screen or local correction | Preserve direction; implement the requested result and inspect affected behaviour. One direction by default. |
+| Open direction, new identity or requested exploration | Compare inexpensive same-content compositions, select through visible tradeoffs and develop the selected direction. |
+| Static screen or chart | Inspect the complete requested frame, its information and composition. |
+| Interactive flow | Exercise changed decisions, relevant states and recovery; additional tasks only when present or needed for validation. |
 
-Choose a representative slice: a site's first visit to evidence and action, an app's record-to-resolution flow, or a game's purchase with insufficient resources. Include one uncomfortable state such as failure, a long translation or a full inventory.
+Read relevant product material and the skill for the actual job. Do not load all five skills, every foundation or benchmark history by default. Each skill works alone; an existing brand rarely needs a fresh direction exercise.
 
-## Establish direction
+## Choose a direction when needed
 
-For open direction, compare two or three materially different possibilities using the same content. Change composition, hierarchy, type, image treatment or interaction emphasis, rather than just swapping accent colors. Explain audience fit and tradeoffs. A firm existing brand may make one direction sufficient.
+Identify the person, task, constraints and intended feeling at a specific moment. Ground choices in the product's output, vocabulary, material or behaviour. Mark supplied, fictional and generated content.
 
-Keep actual rendered alternatives, not only their descriptions. Freeze the brief, content, capabilities, fixture state, asset pool and capture dimensions. Explain the dominant object, reading model and attention sequence of each option. Retain a link or capture for rejected options. Our [Field Notes trial](../examples/field-notes-directions.html) compares spatial exploration, simultaneous comparison and sequential reading with one photograph and three observations.
+When exploration is justified, keep words, capabilities, fixture, assets and viewport comparable. Include a restrained treatment among the alternatives already needed; change hierarchy, reading model, imagery or another meaningful relationship. Retain inexpensive inspectable sketches or captures and their tradeoffs. Develop the selected option instead of finishing every candidate.
 
-Make a short subject inventory: actual output, characteristic vocabulary, constraints, artifacts and recurring rituals. Mark supplied, authored-fiction and generated material. Compare the proposal to the nearest product in the same category; a street photograph distinguishes a journal from a repair tool, but may not distinguish two street journals.
+Before selecting a responsive direction, check that its intended priority survives narrow reflow. Honour explicitly requested comparison scope; unrendered alternatives remain proposals. A new palette alone does not establish diversity. The [Field Notes comparison](../examples/field-notes-directions.html) is an inspectable exercise, not a required deliverable for every project.
 
-Use references as analysis: identify what works, why, and what will be different here. Include material from the product's subject and actual output, rather than relying entirely on other software homepages. Do not collect a mood board without decisions. Select a direction using the user's constraints; for authorized exploratory work, proceed with a clearly stated provisional choice. Do not force an approval ritual for ordinary iteration.
+Reuse DESIGN.md or [record changed decisions](../templates/DESIGN.md) briefly when necessary. Subject inventories, sample copy and asset/state sheets are useful only when they resolve a real design question. Do not invent capabilities or a second surface to populate them.
 
-Describe the intensity, compositional rhythm and motion that fit the product. Try a recognizable idea across the main task, a difficult state and a completed action. Write representative invitation, success and failure copy. A named aesthetic or an attractive font pair is a starting input; the [character exercise](character.md) turns it into specific decisions.
+## Build and finish
 
-Capture the result in [DESIGN.md](../templates/DESIGN.md): intent, hierarchy, visual roles, component behavior, reference boundaries and verification. Mark unresolved questions. The document should be short enough to read before implementing a screen.
+Use real content and sound existing components. Preserve semantic roles, exact values and state truth. On repeated-use operator screens, start compact: remove framing without decision value while keeping useful summaries, legends and status explanations. On a landing, inspect the actual headline block, comparable choices and action destinations together.
 
-## Build the slice
+For interactive work, preserve useful input and task context through affected failures, close/removal/undo and return paths. Test persistence only when promised and affected. For static work, inspect the frame without adding interactive workflows.
 
-Start with real structure and content. Establish type, spacing and color roles, then implement a narrow complete flow. Reuse suitable components; theme them coherently without rewriting reliable interaction behavior for novelty. Choose custom illustration or other assets when their contribution justifies the work.
+At use size, inspect the main statement, primary action and decision-critical values first. Then fix observed grouping, wrapping, crop, symbol and label problems. Keep the recognizable idea coherent across requested states; efficiency can carry character in work screens. Fix structural problems before extra documentation.
 
-Build content extremes and states while the structure is still cheap to change. Check responsive behavior as elements become too tight, rather than designing only one desktop screenshot and one phone screenshot. Finish the smaller decisions in a separate pass: type wrapping, optical alignment, asset crops, icon weight, value formatting, action wording and feedback. Preserve the chosen direction while fixing structural problems.
+## Verify the affected result
 
-Keep a compact sheet of important components, assets and states at their intended display size. Check the relationships between image edges, icon weight, type, surfaces and controls. Extend the grammar to a second meaningful surface: for example an empty/populated field book, a second work-order type or a making journal. Do not add an unrelated feature to fill a checklist.
+Use the actual browser/runtime when available. Inspect relevant widths, languages, themes, input paths, resolved contrast, text enlargement/actual zoom and motion behaviour. Match effort to the change and broaden checks when failures justify it.
 
-## Inspect and iterate
+For interactive review involving controls, state transitions, overlays or sticky/scroll regions, the review skill includes a [conditional procedure](../skills/silicon-design-review/references/interactive-checks.md). Build still verifies its work without requiring that skill. Deliberate reflow and variable card heights are not automatic defects.
 
-Review in a browser or runtime. Check task comprehension, hierarchy, identity, typography, color, input, motion and recovery. Record viewport, theme, state and input method with screenshots where useful. Perform keyboard and scaling checks directly; a screenshot cannot prove them.
+Locate a finding by state/viewport and selector or region; explain consequence and expected correction. Recheck the affected state and distinguish resolved/partial/unresolved findings from checked/failed/untested coverage. Source assertions, palette calculations and screenshots do not substitute for unperformed native input, focus or assistive-technology checks.
 
-Run two reviews: task/access/behavior and character/coherence/care. A flow may work while its identity remains interchangeable. Examine the entire journey and the experience of repeated use; a strong first screen does not excuse a generic interior or recurring interruption.
+Assess operation/access separately from character/care. Read comments on comparison winners; a relative win does not establish acceptance. Keep supplied input defects, unavailable assets, capture uncertainty and test-adapter mistakes separate from implementation failures.
 
-Walk a second ordinary workflow, interrupt and resume within the supported scope, and reload once to check the declared persistence boundary. Tag text as decision-critical, supporting or decorative; inspect it at use size. Reading, operation and play need different densities. Small text is a contextual readability concern, not an automatic WCAG failure.
+## Deliver proportionally
 
-For a visual finding, retain state/viewport, selector or marked region, observation, expected correction and capture. After fixing it, recapture the same state and mark resolved, partial or unresolved. Inspect lower sections and copy order as carefully as the first viewport. Separate measured geometry, interpretation of the brief and aesthetic judgment.
+A small fix can finish with the change, relevant check and remaining uncertainty. A substantive review may use the [review template](../templates/REVIEW.md); keep only applicable sections. No fixed document, screenshot, finding or test count is required.
 
-Fix observed structural problems before polishing tiny details. Change one coherent group of decisions and inspect again. Stop when the representative flow meets its operational criteria and its direction has been demonstrated, or state which design question remains open. Static checks alone do not close that question. Additional polish needs a clear benefit.
-
-## Deliver with evidence
-
-Use the [review template](../templates/REVIEW.md) to distinguish checked, failed, untested and inapplicable items. Link implementation and captures, describe remaining risks, and record exceptions. Never promote a mockup to a shipped result or a browser-width check to a real 400% zoom test.
-
-After real use, record confusing interactions and useful exceptions. Update a shared rule only when the observation generalizes beyond that one screen.
-
-## Lessons from the first matched trial
-
-The [retained comparison](../benchmarks/2026-11-03/RESULTS.md) exposed gaps that source checks missed. Compare direction priority after narrow reflow, measure resolved theme roles, and exercise last-item recovery from its actual secondary surface. Keep requested capabilities fixed; adding an editable field is not a substitute for care in the real task. Repair copies remain separate from frozen benchmark outputs, with additional feedback disclosed.
+The [first matched trial](../benchmarks/2026-11-03/RESULTS.md) retains theme-inheritance, narrow-priority and last-item-recovery failures. Preserve those invariants where relevant. Benchmark originals and assisted repairs remain separate; the [later improvement specification](../research/skill-improvement-spec-2026-11-07.md) does not turn preference into a universal style rule.

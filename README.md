@@ -30,25 +30,24 @@ Removing clichés leaves space. The design work is deciding what belongs in it.
 
 ## Use it on a project
 
-1. Choose the feeling and behavior the product should be remembered for using [Character & attachment](docs/character.md), then adapt the [DESIGN.md template](templates/DESIGN.md). For a small fix, preserve the existing direction.
-2. Read the relevant foundations: [typography](docs/foundations/typography.md), [color](docs/foundations/color.md), [layout](docs/foundations/layout.md), [interaction](docs/foundations/interaction.md), [accessibility](docs/foundations/accessibility.md).
-3. Pick the product context: [websites](docs/products/websites.md), [apps](docs/products/apps.md), [games](docs/products/games.md).
-4. Build and review a representative flow using the [review checklist](checklists/design-review.md). Save the result with the [review template](templates/REVIEW.md).
+Choose the skill for the actual job from the table below. Preserve an existing direction for a small fix or established-brand screen; no rendered alternatives are needed by default. For open identity work, compare inexpensive same-content compositions and develop the selected one.
+
+Read relevant foundations and product guidance only when they help the decision. Reuse DESIGN.md or [record changed decisions](templates/DESIGN.md) when necessary. Verify the requested frame or affected interactive flow; the [checklist](checklists/design-review.md) and [review template](templates/REVIEW.md) are optional aids, not required output bundles.
 
 An example instruction for an agent:
 
-> Use silicon-design-direction to give this product a character of its own. Ground the choices in its audience and subject. Carry one recognizable idea through the main task, an empty state and a completed action. Implement that flow with silicon-interface-build, then use silicon-design-review to inspect both usability and character. Show the result and distinguish evidence from judgment.
+> Use silicon-interface-build to refine this existing-brand screen. Preserve its identity and functional contract. Produce the requested result, inspect the affected states and report actual checks and meaningful gaps. Do not create alternatives or another workflow merely to demonstrate the process.
 
 ## Skills
 
-Each folder is a self-contained skill with a `SKILL.md`; no paid service, component library or design tool is required. [Adoption and installation](docs/adoption.md) explains how to use them without replacing project instructions.
+Each folder is a self-contained skill; copy the entire folder. No paid service, sibling skill or online handbook fetch is required. Review's local interaction reference is loaded only for relevant interactive reviews. [Adoption and installation](docs/adoption.md) explains how to use them without replacing project instructions.
 
 | Skill | Use it for | Concrete output |
 | --- | --- | --- |
-| [silicon-design-direction](skills/silicon-design-direction/SKILL.md) | Establishing or changing identity | Subject inventory, retained same-brief alternatives, DESIGN.md |
-| [silicon-design-system](skills/silicon-design-system/SKILL.md) | Typography, tokens and components | Semantic roles, measured pairs, use-size component/asset/state sheet |
-| [silicon-interface-build](skills/silicon-interface-build/SKILL.md) | Implementing a site or app | Complete/adverse/ordinary flows, second surface and rendered evidence |
-| [silicon-game-ui](skills/silicon-game-ui/SKILL.md) | Game interfaces and feedback | Coherent world/state proof, truthful costs and repeated-input checks |
+| [silicon-design-direction](skills/silicon-design-direction/SKILL.md) | New identity or open direction | Selected direction and tradeoff; inexpensive alternatives when exploration is in scope |
+| [silicon-design-system](skills/silicon-design-system/SKILL.md) | Typography, tokens, components and data meaning | Changed roles/contracts, resolved pairs and relevant use-size checks |
+| [silicon-interface-build](skills/silicon-interface-build/SKILL.md) | Implementing or refining a site/app | Requested frame or affected flow, located corrections and actual verification |
+| [silicon-game-ui](skills/silicon-game-ui/SKILL.md) | Game interfaces and feedback | Scoped UI/state contracts, truthful resources and relevant runtime evidence |
 | [silicon-design-review](skills/silicon-design-review/SKILL.md) | Reviewing implementation | Located findings, expected correction and recapture |
 
 ## Three small worlds

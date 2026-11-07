@@ -1,44 +1,36 @@
 ---
 name: silicon-game-ui
-description: Design or implement game HUDs, inventory, purchase flows, menus and feedback in the game's runtime context. Use when playfield hierarchy, UI scale, resource truth and game input matter.
+description: Design or refine game HUDs, menus and feedback where playfield hierarchy, exact resources, UI scale and game input matter.
 ---
 
 # Silicon game UI
 
-Fit the interface to the play experience and the game's own visual world. Inspect the game direction, existing UI, gameplay contracts, text catalogs and runtime constraints first.
+Fit UI to the game's loop and visual world. Inspect relevant direction, gameplay contracts, text and assets. Preserve scope: one static screen does not require a new flow, second surface or save system.
 
-## Establish the play context
+## Prioritise the play decision
 
-Identify genre, primary loop, target platforms, inputs, resolution, viewing distance, safe areas, UI scaling and supported languages. Choose one representative decision and a difficult state. Keep the playfield and immediate task dominant; disclose less urgent detail in a way the intended input can reach.
+Identify genre, input paths, target resolution, viewing conditions, UI scale, safe areas and languages. Keep the immediate decision and playfield appropriately prominent; less urgent details must remain reachable.
 
-Use expressive type and materials for world identity where helpful, with readable body text and quantities. Test actual scripts, long labels and scene backgrounds. Do not assume a static HUD image establishes runtime legibility.
+Inspect real labels and quantities against their scene. Use expressive materials/type where useful, with readable operational text. At intended scale, distinguish resource/weather/action symbols and the selected option. Keep important names, costs and effects beside the decision rather than relying on detailed glyphs alone.
 
-Specify the feeling appropriate to each moment: exploration, comparison, risk, recovery or completion. Carry a recognizable world idea through the task and its result. Let a visual response correspond to an actual game event when useful; a decorative illustration that never relates to state is only one part of the direction. Keep common actions efficient after repeated use and avoid replaying a celebration at every routine input.
+Carry a recognizable world idea through requested surfaces and states. Compare placed scenery, objects, icons and controls for edge, lighting, perspective and material coherence; palette agreement alone is insufficient. A use-size sheet is useful for asset-family changes, not compulsory for an isolated correction.
 
-Retain a small world/UI asset sheet at actual display size, plus the normal, difficult and completed states. Compare painted edges, lighting, perspective and material across scenery, interactable objects, inventory and menus. Inspect the placed object in its actual scene; palette agreement alone cannot hide a flat icon pasted onto a painted world. Extend the grammar to a second surface already justified by the game, such as the making journal.
-
-Check each materially different surface/theme with resolved foregrounds, especially owned/required quantities and action labels. A light folio must not inherit the dark scene's light ink; keep overlay text roles local to the painting. Validate those actual pairs, not only a palette table.
-
-Preserve a direction's play priority after reflow. If one option is a workbench, inspect where making becomes reachable at the target narrow size and whether necessary labels remain readable. Another option may deliberately prioritize exploration. Do not shrink action labels to inscription size to make the artwork feel dominant, or make every option the same scene-first phone stack. Treat exact sizes and action positions as contextual evidence, not a universal above-fold rule.
+Preserve selected priority after responsive reflow. Do not shrink action labels to favour artwork or force every scene's action above the fold. Resolve foreground/background roles for changed themes and overlays, especially quantities; a passing swatch list does not verify inherited ink. Measure actual pairs, including transparency.
 
 ## Preserve game truth
 
-For purchases and crafting, show effect, owned/required amounts, cost and the explicit reason an action is blocked. Preserve exact values or an accessible exact disclosure when compact formatting hides a decision. Distinguish zero, unknown and not applicable.
+Show effect, owned/required amounts, costs and explicit blocked reasons. Preserve exact values or reachable exact disclosure when compact formatting hides a decision. Distinguish zero, unknown and not applicable.
 
-Respect knowledge and unlock rules in visible text, tooltips and accessible names. A presentation change must not modify economy coefficients, inventory, progression or simulation behavior unless requested. Focus, hover, help expansion and formatting must not mutate gameplay state.
+Presentation must not change economy, inventory, progression or simulation unless requested. Hover, focus and help must not mutate gameplay. Respect hidden knowledge and unlock rules in visible text, tooltips and accessible names.
 
-Feedback should correspond to actual events. Handle pending, failed, interrupted and completed actions without misleading resource animations. Provide useful recovery and avoid duplicate purchases caused by ambiguous input.
+Feedback follows actual events. Handle pending, failed, interrupted and completed actions without misleading resource effects or duplicate purchases. Keep repeated actions efficient; celebrations must not become recurring input delays. Do not invent events to demonstrate personality.
 
-## Input and access
+## Verify within scope
 
-Check every supported input path: keyboard, controller, pointer or touch. Define focus order and restoration in menus, visible selection, UI scaling and safe-area behavior. Address remapping, alternatives to drag, subtitles and motion/audio controls as applicable to scope. Critical information needs cues independent of sound and color.
+Exercise affected normal/adverse states, large quantities and long translations in the actual runtime when available. Check supported keyboard/controller/pointer/touch paths, focus order/restoration, selection and scaling. Address remapping, non-drag alternatives and motion/audio independence where relevant; critical information needs cues beyond colour or sound.
 
-Inspect a normal action, insufficient resources, empty/full inventory where relevant, interruptions, large quantities and long translations in the real runtime. Check changing backgrounds and target viewing conditions. Report untested platforms or input methods explicitly.
+Where interruption or return is affected, check repeated input and the promised persistence boundary across surfaces, reload or restart. Keep useful context and visible, connected focus after relevant removal/recovery.
 
-Exercise repeated input and a return after interruption. State what persists on surface switching, reload and restart. Keep exact resource contracts intact. If the specimen is a web-only local simulation, do not present its checks as native-runtime, controller or save-system evidence.
+Deliver changed UI/state contracts, located corrections and actual checked/failed/untested coverage. Label static mockups and web simulations honestly; they do not prove native-runtime, controller, save-system or player-comprehension results. Report character/coherence separately from resource correctness and operability; technical checks do not establish attachment.
 
-Deliver the UI and state contracts, a working representative flow, captures where available and actual test coverage. If only a mockup was possible, label it as a mockup and identify the runtime questions it leaves open.
-
-Report character and coherence separately from resource correctness and operability. A coherent palette alone does not establish a distinctive game world, and a technical pass does not demonstrate player attachment.
-
-Optional depth: [Silicon Design game guide](https://github.com/drevendev/Silicon-Design/blob/master/docs/products/games.md).
+Optional depth: [games](https://github.com/drevendev/Silicon-Design/blob/master/docs/products/games.md).

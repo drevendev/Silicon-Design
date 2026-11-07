@@ -250,5 +250,26 @@
       "docs/spec/values.en-US.md"
     ],
     "review_scope": "Selected design-relevant sections; see research/deep-read.md for extracts, transfers and boundaries."
+  },
+  {
+    "repository": "drevendev/Silicon-Design",
+    "revision": "5d0d30a01b5bc9129a7abb3c8911c68b43addb15",
+    "reviewed_at": "2026-11-07",
+    "paths": [
+      "skills/silicon-design-direction/SKILL.md",
+      "skills/silicon-design-review/SKILL.md",
+      "skills/silicon-design-system/SKILL.md",
+      "skills/silicon-game-ui/SKILL.md",
+      "skills/silicon-interface-build/SKILL.md"
+    ],
+    "review_scope": "Planning-only synthesis of operations-trial issues #11 through #15 and Design Duel v2 issues #16 through #20, including the #15 addition. This commit pins only the inspected portable skill baseline; issue revisions, bundled authoring guidance and dated official documentation are separately identified in the source manifest. No skill implementation or product specimen changed.",
+    "source_manifest": "research/skill-improvement-spec-2026-11-07.sources.json",
+    "implementation_record": "research/skill-improvement-implementation-2026-11-07.md",
+    "guidance_sources": [
+      "https://learn.chatgpt.com/docs/build-skills",
+      "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+      "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+      "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+    ]
   }
 ]

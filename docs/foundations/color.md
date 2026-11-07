@@ -24,6 +24,12 @@ Record foreground, background, role, threshold and result. Check the unrounded r
 
 The [specimen palettes](../../examples/palettes.json) declare tested pairs for three fictional directions. Run `python tools/check.py` from the repository root to recompute them. These palettes illustrate role assignment; they are not a shared skin for every product.
 
+## Preserve status meaning
+
+Retain informative semantic colour together with text or shape. If a resolved pair fails its applicable contrast requirement, choose and remeasure a suitable semantic variant rather than replacing every status with ink. A darker or more saturated swatch is not automatically sufficient. A 3.09:1 ratio alone does not fail a 3:1 threshold; the actual role, pair and applicable criterion matter.
+
+Prefer understandable status names. Dense codes need a nearby legend and reachable item detail through supported pointer, keyboard and touch paths. An existing detail view may suffice without a tooltip on every item. Include truthful success, partial, unknown and blocked examples where those states belong to the contract; do not colour an unknown or incomplete result as success.
+
 ## Design themes and states
 
 Create a dark theme by remapping surface, foreground, border and state roles. Simple inversion rarely preserves hierarchy. Check selected, hover, pressed, loading, focus and error combinations independently. Support a system preference or a deliberate theme choice when the product calls for it; do not add a theme switch merely to satisfy a style checklist.

@@ -1,37 +1,47 @@
 # Adopt the handbook and skills
 
-## Start small
+Use the smallest route that fits the assignment. Keep the product's brand, component library and engineering conventions unless changing them serves the requested work.
 
-Select a real product and one representative flow. Keep its existing brand, component library and engineering conventions unless changing them serves the task. Create a product DESIGN.md from the [template](../templates/DESIGN.md), then use the relevant skill by giving an agent its SKILL.md or a local path.
+## Choose one entry point
 
-The handbook is a reference, not configuration that must be installed globally. A link in project instructions can point to a pinned revision or a vendored copy. Record the revision you adopted so future changes are deliberate.
+| Job | Skill |
+| --- | --- |
+| New identity or open direction | silicon-design-direction |
+| Type, semantic roles, tokens or components | silicon-design-system |
+| Implement/refine a website or app | silicon-interface-build |
+| Game HUD, menus or feedback | silicon-game-ui |
+| Design critique or verification of requested fixes | silicon-design-review |
 
-## Skill packaging
+These are independent tools, not a mandatory sequence. A local correction or established-brand screen needs no rendered alternatives by default. Read handbook foundations only when they help the current decision. Reuse an existing DESIGN.md; create a concise record when real direction decisions need recording.
 
-`skills/<name>/SKILL.md` is the complete operational entry point for each skill. Every skill works by itself; optional online handbook links add depth. Copy the entire chosen folder if supporting resources are added later. Do not copy the repository's AGENTS.md into a product: it governs maintaining this handbook.
+Each SKILL.md contains the essential workflow and constraints. Online handbook links provide optional depth. Review's local `references/interactive-checks.md` contains a detailed procedure only for relevant interactive reviews; skip it for screenshot-only/static appearance work.
 
-For an agent that supports project-local `.agents/skills`, place the chosen folder there. For example, from a project root in PowerShell, with a Silicon-Design checkout next to that project:
+## Copy a portable folder
+
+Copy the entire selected folder, including supporting references. Its essential workflow works offline and does not require another skill, this checkout or a commercial tool. The handbook is reference material, not global configuration; do not copy its maintenance AGENTS.md into the consuming product.
+
+For an agent supporting project-local `.agents/skills`, with a Silicon-Design checkout next to the project:
 
 ```powershell
 New-Item -ItemType Directory -Force -Path .agents/skills
-Copy-Item -LiteralPath ../Silicon-Design/skills/silicon-design-direction -Destination .agents/skills/ -Recurse
+Copy-Item -LiteralPath ../Silicon-Design/skills/silicon-design-review -Destination .agents/skills/ -Recurse
 ```
 
-Check the destination first if that skill is already present; compare changes before replacing an installed version. Follow the agent's current discovery instructions for other locations. No installer, plugin manifest or commercial integration is supplied in this initial version.
-
-You can also use a skill without installation by explicitly asking an agent to read its local SKILL.md. Whether an agent automatically discovers or invokes it depends on that agent; the files do not guarantee execution.
+Inspect an existing destination and compare revisions before replacing it. Record the adopted revision so updates remain deliberate. Follow the host's discovery instructions for other locations. No installer or plugin manifest is required. A local path can also be used explicitly; automatic discovery depends on the host.
 
 ## Useful project instruction
 
-Adapt this text to the product's instruction file without replacing existing rules:
+Adapt without replacing project rules:
 
 ```text
-For interface work, read the project's DESIGN.md and use the relevant
-Silicon Design skill installed in this project. Preserve existing identity
-and functional requirements. Scale design exploration to the change.
-Inspect the rendered result and report actual checks and untested areas.
+Use the relevant installed Silicon Design skill for the requested interface
+work. Preserve the existing identity and functional contracts. Read only
+material needed for the change; scale exploration and evidence to scope.
+Inspect the result and report actual checks and meaningful untested areas.
 ```
 
-## Keep the feedback
+For example, ask build to refine an existing-brand screen without alternatives, or direction to compare low-fidelity compositions for an explicitly open identity. The [DESIGN.md](../templates/DESIGN.md) and [review](../templates/REVIEW.md) templates are optional records, not output bundles.
 
-After using the skills, save concrete failures and successful decisions. Propose handbook changes with the task, artifact, observed behavior and expected improvement. A single project's accent color should not become a global rule.
+## Keep useful feedback
+
+Record concrete failures, successful decisions and context. Report loaded material and available cost separately; shorter entrypoints do not guarantee every specialised review is cheaper. A local preference should not become a global font, colour or layout ban.
