@@ -1,0 +1,43 @@
+[
+  {
+    "act": "label",
+    "expanded": "true"
+  },
+  {
+    "act": "enter",
+    "expanded": "false"
+  },
+  {
+    "act": "space",
+    "expanded": "true"
+  },
+  {
+    "act": "icon",
+    "expanded": "false"
+  },
+  {
+    "act": "padding",
+    "expanded": "true"
+  },
+  {
+    "case": "search-and-negative-controls",
+    "observed": {
+      "cards": [
+        {
+          "height": 83.84375,
+          "text": "Today\n\nThree urgent repairs."
+        },
+        {
+          "height": 117.04167175292967,
+          "text": "Handover\n\nCheck the repaired radio, packaging and power cable before collection.\n\nThe customer will arrive after 17:00."
+        }
+      ],
+      "search": "N-103",
+      "status": "1 jobs",
+      "viewport": [
+        1280,
+        720
+      ]
+    }
+  }
+]

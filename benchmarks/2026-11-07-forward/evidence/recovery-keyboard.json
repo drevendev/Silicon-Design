@@ -1,0 +1,32 @@
+[
+  {
+    "case": "close",
+    "observed": {
+      "active": "inspect",
+      "connected": true,
+      "outline": "rgb(0, 90, 198) solid 2.66667px",
+      "search": "radio",
+      "visible": true
+    }
+  },
+  {
+    "case": "remove",
+    "observed": {
+      "active": "undo",
+      "connected": true,
+      "outline": "rgb(0, 90, 198) solid 2.66667px",
+      "search": "radio",
+      "visible": true
+    }
+  },
+  {
+    "case": "undo",
+    "observed": {
+      "active": "inspect",
+      "connected": true,
+      "outline": "rgb(0, 90, 198) solid 2.66667px",
+      "search": "radio",
+      "visible": true
+    }
+  }
+]
