@@ -10,9 +10,9 @@ Each has an implementation consequence and a review question. [Character & attac
 | --- | --- | --- | --- |
 | P01 | Start with a person and a situation | Name the task, stakes and context before choosing a look | Whose day gets better, and at which moment? |
 | P02 | Give the product an emotional intention | Translate a desired feeling into composition, words and behavior | What should someone feel, and which choices cause that? |
-| P03 | Take a position | Retain same-brief alternatives and compare their attention/action sequence at wide and narrow sizes | Do the choices stay meaningfully different where people use them, rather than collapse into the same stack? |
-| P04 | Draw from the product's own world | Inventory its actual output, vocabulary, constraints, artifacts and rituals; test against its nearest category peer | Could another street journal, workshop or game use this unchanged? |
-| P05 | Establish a repeatable visual grammar | Show type, components and assets together at use size, through a difficult state and a second meaningful surface | Does the identity survive beyond the hero and logo, without an asset looking pasted in? |
+| P03 | Take a position | For open direction or requested exploration, compare inexpensive same-brief alternatives and check selected responsive priority | Do the meaningful differences survive intended use, without extra alternatives for a bounded fix? |
+| P04 | Draw from the product's own world | Ground choices in actual output, vocabulary, constraints and rituals; inventory them when useful and compare with the nearest category peer | Could another street journal, workshop or game use this unchanged? |
+| P05 | Establish a repeatable visual grammar | Inspect type, components and assets together at use size across the requested surfaces and states | Is the identity coherent where demonstrated, without adding a surface solely for proof? |
 | P06 | Spend novelty where it matters | Express character through the requested work; keep a capability inventory before adding interactions | Does the detail improve an existing task, or invent a feature to make the design seem caring? |
 
 ## Composition and craft
@@ -64,9 +64,9 @@ Do not give a thin choice a grand explanation after the fact. “A serif express
 
 ## Evidence that travels with the work
 
-For a substantial new direction, keep the subject inventory, two or three rendered alternatives, a compact component/asset/state sheet and the representative journey. Match the content, state, assets and viewport when comparing alternatives. Record the changed hierarchy, reading model and tradeoff. Three different products demonstrate range across briefs; they cannot establish variation within one brief.
+Scale evidence to the assignment. An established-brand screen needs one direction by default. For open direction or requested exploration, retain inexpensive same-content alternatives, including a restrained treatment, and record the visible hierarchy/reading-model tradeoff. Develop the selected option; check its responsive priority before committing to it. Inventory, asset/state sheets, secondary surfaces and journeys are conditional on actual decisions or requested work. Three different products demonstrate range across briefs; they cannot establish variation within one brief.
 
-Inspect the whole artifact: reading order, lower sections, ordinary work, recovery and return. Distinguish geometric fidelity (positions and sizes), interpretive fidelity (content and intended relationships) and design judgment (whether those choices are good). A close screenshot match can still preserve a poor decision.
+Inspect the whole requested artifact: reading order and, where present or affected, lower sections, ordinary work, recovery and return. A static frame does not require invented workflows. Distinguish geometric fidelity (positions and sizes), interpretive fidelity (content and intended relationships) and design judgment (whether those choices are good). A close screenshot match can still preserve a poor decision.
 
 These are Silicon Design working conventions from [issue #8](https://github.com/drevendev/Silicon-Design/issues/8), demonstrated in the [same-brief trial](../examples/field-notes-directions.html). They are not new accessibility standards. Our first comparative target is [Anti Slop](../research/benchmark.md); superiority remains unproven until matched results and human review exist.
 

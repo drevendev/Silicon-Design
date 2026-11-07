@@ -1,0 +1,220 @@
+{
+  "reviewed_at": "2026-11-07",
+  "retrieved_at": "2026-11-07T12:14:19.872Z",
+  "purpose": "Planning-only source register for the consolidated skill improvement specification.",
+  "tested_skill_commit": "5d0d30a01b5bc9129a7abb3c8911c68b43addb15",
+  "issues": [
+    {
+      "number": 11,
+      "title": "Completed: blind real-product trial on 10 operations screens. Silicon placed second, behind the no-skill baseline",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/11",
+      "author": "abogun-product",
+      "state": "open",
+      "updated_at": "2026-11-06T12:09:50Z",
+      "comments": [],
+      "body_sha256": "0b778adf551095396c6b8174a8265e9a4c59dc3c2c2d415e58a06853bce1732e"
+    },
+    {
+      "number": 12,
+      "title": "Repeated-use operator screens: compact by default, and stop spending hierarchy on framing",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/12",
+      "author": "abogun-product",
+      "state": "open",
+      "updated_at": "2026-11-06T12:09:44Z",
+      "comments": [],
+      "body_sha256": "92a2a4961fb1382fe6fa81fbc5e338eabb1068190a7f11e6b844ae3916faeb05"
+    },
+    {
+      "number": 13,
+      "title": "Status encoding: keep semantic colour, explain every code, show the success state",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/13",
+      "author": "abogun-product",
+      "state": "open",
+      "updated_at": "2026-11-06T12:09:46Z",
+      "comments": [],
+      "body_sha256": "563dc0bbd2b16074532318c56dea8fa5bdae23c564f39d737f2bc2f61bac2c72"
+    },
+    {
+      "number": 14,
+      "title": "Add review checks for layout shift, full hit areas, clipping and sticky intersections",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/14",
+      "author": "abogun-product",
+      "state": "open",
+      "updated_at": "2026-11-06T12:09:47Z",
+      "comments": [],
+      "body_sha256": "986a028b703cac10b34b11cf4f2a668804f6f68e7cd620a5c3e4386e898fc4a8"
+    },
+    {
+      "number": 15,
+      "title": "Scale exploration to the assignment: alternatives on established-brand work cost a third more without a better result",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/15",
+      "author": "abogun-product",
+      "state": "open",
+      "updated_at": "2026-11-07T11:32:44Z",
+      "comments": [
+        {
+          "id": 6706298551,
+          "url": "https://github.com/drevendev/Silicon-Design/issues/15#issuecomment-6706298551",
+          "updated_at": null,
+          "body_sha256": "352fa84537f06c98845cbe25c78b807c5effb160dbc3061739e57ff9ff19293e"
+        }
+      ],
+      "body_sha256": "7bd539d9efe0faea1365d0f28847fa765991d28f3ac0f700bf4168c4a8f7be6f"
+    },
+    {
+      "number": 16,
+      "title": "Completed: Design Duel v2 — Silicon beat Anti Slop 4:0 and tied the short prompt 2:2 on matched briefs",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/16",
+      "author": "drevendev",
+      "state": "open",
+      "updated_at": "2026-11-07T11:33:10Z",
+      "comments": [],
+      "body_sha256": "85a8e175bdc5fbbcff62275c71192c5390cd0db3490faa4ce710114ed07f169f"
+    },
+    {
+      "number": 17,
+      "title": "Make the static craft pass concrete and keep relative wins separate from acceptance",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/17",
+      "author": "drevendev",
+      "state": "open",
+      "updated_at": "2026-11-07T11:32:24Z",
+      "comments": [],
+      "body_sha256": "bf21312b9cb32482d8ac9ffcbc063709957f656c6801768df84e662f56bdbe4e"
+    },
+    {
+      "number": 18,
+      "title": "Charts: put units at the reading point and attach labels to their marks",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/18",
+      "author": "drevendev",
+      "state": "open",
+      "updated_at": "2026-11-07T11:32:27Z",
+      "comments": [],
+      "body_sha256": "eeea1c5f0131665b4a963d35a3c438fa19d2d4f3d90e462c2b791f5edf71897c"
+    },
+    {
+      "number": 19,
+      "title": "Finish landing-page type, option grouping and action cues with the actual content",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/19",
+      "author": "drevendev",
+      "state": "open",
+      "updated_at": "2026-11-07T11:32:31Z",
+      "comments": [],
+      "body_sha256": "354e59f1c4c23a2faf895d72edb57e0a6758f66e3316725f05bd3e056b828831"
+    },
+    {
+      "number": 20,
+      "title": "Check small game symbols and selected actions at the intended UI scale",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/20",
+      "author": "drevendev",
+      "state": "open",
+      "updated_at": "2026-11-07T11:32:34Z",
+      "comments": [],
+      "body_sha256": "aec0325b73adf61c947eff4069661dffceb0a96f1be4f56471cdc35252c4a508"
+    }
+  ],
+  "official_guidance": [
+    {
+      "url": "https://learn.chatgpt.com/docs/build-skills",
+      "sections": [
+        "Progressive disclosure",
+        "How ChatGPT and Codex use skills",
+        "Best practices"
+      ],
+      "evidence": "Dated live documentation; no immutable HTML snapshot claimed."
+    },
+    {
+      "url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+      "sections": [
+        "Better skills",
+        "Up-to-date AGENTS.md"
+      ],
+      "evidence": "Dated author guidance, not an effectiveness result for Silicon Design."
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+      "sections": [
+        "Success Criterion",
+        "Threshold and adjacent-colour notes"
+      ],
+      "evidence": "Informative explanation of WCAG 2.2 SC 1.4.11."
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "sections": [
+        "Success Criterion",
+        "Unrounded threshold note"
+      ],
+      "evidence": "Informative explanation of WCAG 2.2 SC 1.4.3."
+    }
+  ],
+  "local_authoring_guidance": {
+    "source": "bundled skill-creator SKILL.md",
+    "sha256": "cccd291077ec57c6f50ca6529f0f3fb93212da09473effb2fcec808e81b21288",
+    "scope": "Core principles, progressive disclosure, portability, validation; no implementation or forward test run."
+  },
+  "baseline_skills": [
+    {
+      "path": "skills/silicon-design-direction/SKILL.md",
+      "sha256": "94ed19e5379df9a49c76dacffdb5b9010e4803e915e1f948812e768464c643be",
+      "bytes": 6249,
+      "body_words": 833,
+      "description_chars": 191,
+      "matches_tested_package": true
+    },
+    {
+      "path": "skills/silicon-design-review/SKILL.md",
+      "sha256": "8b2435fc019472f4a73642ab98c870cd06ec073f02a93ddd6989713942810725",
+      "bytes": 5177,
+      "body_words": 668,
+      "description_chars": 206,
+      "matches_tested_package": true
+    },
+    {
+      "path": "skills/silicon-design-system/SKILL.md",
+      "sha256": "7962f8492342423050c12a612fa20599144a1500311d1cf0e002e6be0cffda01",
+      "bytes": 4561,
+      "body_words": 569,
+      "description_chars": 194,
+      "matches_tested_package": true
+    },
+    {
+      "path": "skills/silicon-game-ui/SKILL.md",
+      "sha256": "f6f0287420342233c021b3511d425979219ea39ad5c8a2d45c4cbb397f3a7dc2",
+      "bytes": 4937,
+      "body_words": 668,
+      "description_chars": 185,
+      "matches_tested_package": true
+    },
+    {
+      "path": "skills/silicon-interface-build/SKILL.md",
+      "sha256": "d01ea4e0e552e5def3b18557a9667f199624ae7be2f500b786e0d4c3de255c77",
+      "bytes": 4976,
+      "body_words": 655,
+      "description_chars": 198,
+      "matches_tested_package": true
+    }
+  ],
+  "baseline_totals": {
+    "body_words": 3393,
+    "description_chars": 974
+  },
+  "planning_targets": {
+    "total_entrypoint_body_words": 2200,
+    "description_chars_each": 160,
+    "interaction_reference_words_approximately": 600,
+    "budget_kind": "Engineering review targets, not model token counts or universal limits."
+  },
+  "tracking_issue": {
+    "number": 21,
+    "url": "https://github.com/drevendev/Silicon-Design/issues/21",
+    "body_read_back_verified": true
+  },
+  "validation": {
+    "source_issues": 10,
+    "source_comments": 1,
+    "requirements": 8,
+    "baseline_skills_unchanged": true,
+    "implementation_started": false,
+    "scope": "Specification and source records only; no skill rewrite or generation benchmark run."
+  }
+}

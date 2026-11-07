@@ -1,0 +1,322 @@
+{
+  "issue": 21,
+  "base_commit": "5d0d30a01b5bc9129a7abb3c8911c68b43addb15",
+  "date": "2026-11-07",
+  "status": "authoring_checks_passed",
+  "entrypoints": [
+    {
+      "path": "skills/silicon-design-direction/SKILL.md",
+      "before_words": 833,
+      "after_words": 375,
+      "before_description_chars": 191,
+      "after_description_chars": 136
+    },
+    {
+      "path": "skills/silicon-design-review/SKILL.md",
+      "before_words": 668,
+      "after_words": 401,
+      "before_description_chars": 206,
+      "after_description_chars": 128
+    },
+    {
+      "path": "skills/silicon-design-system/SKILL.md",
+      "before_words": 569,
+      "after_words": 408,
+      "before_description_chars": 194,
+      "after_description_chars": 128
+    },
+    {
+      "path": "skills/silicon-game-ui/SKILL.md",
+      "before_words": 668,
+      "after_words": 420,
+      "before_description_chars": 185,
+      "after_description_chars": 122
+    },
+    {
+      "path": "skills/silicon-interface-build/SKILL.md",
+      "before_words": 655,
+      "after_words": 419,
+      "before_description_chars": 198,
+      "after_description_chars": 121
+    }
+  ],
+  "context": {
+    "before_entrypoint_words": 3393,
+    "after_entrypoint_words": 2023,
+    "before_description_chars": 974,
+    "after_description_chars": 635,
+    "conditional_reference_words": 492,
+    "word_count_method": "Whitespace split after YAML frontmatter; not model tokens or billing."
+  },
+  "requirement_audit": {
+    "mode": "semantic source walkthrough, not wording/regex tests",
+    "requirements": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "R8"
+    ],
+    "result": "covered",
+    "details": "research/skill-improvement-implementation-2026-11-07.md"
+  },
+  "checks": {
+    "bundled_skill_validator": {
+      "original_folders": 5,
+      "isolated_copies": 5,
+      "result": "passed",
+      "validation_dependency": "Existing workspace PyYAML 6.0.3; not a skill dependency"
+    },
+    "portable_local_links": {
+      "result": "passed",
+      "only_local_reference": "silicon-design-review/references/interactive-checks.md"
+    },
+    "checker_unit_tests": {
+      "passed": 12,
+      "failed": 0
+    },
+    "specimen_state_tests": {
+      "passed": 9,
+      "failed": 0
+    },
+    "repository_checker": {
+      "result": "passed",
+      "scope": "local links, metadata, source revisions, declared palette contracts"
+    },
+    "protected_repository_blobs": {
+      "checked": 165,
+      "content_differences": 0,
+      "local_CRLF_equivalents": [
+        "examples/specimen.html",
+        "examples/specimen.js"
+      ],
+      "baseline_commit": "5d0d30a01b5bc9129a7abb3c8911c68b43addb15",
+      "scope": "examples, frozen benchmarks, tools and tests; local source line endings preserved"
+    }
+  },
+  "independent_exercise": {
+    "contexts": 1,
+    "tasks": 2,
+    "history_or_expected_findings_supplied": false,
+    "label_only_change_parent_verified": true,
+    "script_style_preserved": true,
+    "extra_alternatives_or_workflows": false,
+    "review_input_preserved": true,
+    "source_findings": [
+      "partial Priority activation",
+      "Owner overflow clipping",
+      "inert filter options with prototype qualification",
+      "Stage containing block",
+      "sticky corner layering"
+    ],
+    "negative_controls": "Whole-button handler and natural card heights were not treated as automatic defects",
+    "browser_runtime_input_focus_zoom_AT": "untested; browser inventory empty",
+    "limits": "Small source-based exercise, not independent runs for every requirement, a cost benchmark or audience evidence"
+  },
+  "corpus_preservation": {
+    "status": "passed",
+    "corpus_hash": "f018be7a03c9b1b441fd8e17b8616b406575fe1466069fc55f388969654e6405",
+    "frozen_inputs": 621,
+    "generated_outputs": 36,
+    "captures": 48,
+    "reference_originals": 12,
+    "first_series_files": 465,
+    "export_sha256": "051b1bfe560490f2520c8fd622c6d3709584d01fa4895f18cf492ecdb40db064",
+    "note": "Read-only audit; no export, derived summary, original HTML or capture rewritten."
+  },
+  "files": [
+    {
+      "path": "skills/silicon-design-direction/SKILL.md",
+      "before_local_sha256": "94ed19e5379df9a49c76dacffdb5b9010e4803e915e1f948812e768464c643be",
+      "after_sha256": "77f9ae0f1e20653fe083a2651c6bbbcd81621716cb9e925786d5c6b46b64d1f9",
+      "git_blob_sha1": "d05d887433b289ddce816b16b708b37b023c6eae",
+      "bytes": 3038
+    },
+    {
+      "path": "skills/silicon-design-review/SKILL.md",
+      "before_local_sha256": "8b2435fc019472f4a73642ab98c870cd06ec073f02a93ddd6989713942810725",
+      "after_sha256": "f2a5c1b87571902ffdaf5188ba0a71575ccf22592c8e1f031b79aa3443ad8f05",
+      "git_blob_sha1": "78f68491ca5893b5c49028655338da347611b22b",
+      "bytes": 3520
+    },
+    {
+      "path": "skills/silicon-design-system/SKILL.md",
+      "before_local_sha256": "7962f8492342423050c12a612fa20599144a1500311d1cf0e002e6be0cffda01",
+      "after_sha256": "5def568b785750109142542ad4d4bce0235805e10974056d059a319b7540941b",
+      "git_blob_sha1": "4e2d15b6d994aba11a8d48eb313e5d38b24a037d",
+      "bytes": 3236
+    },
+    {
+      "path": "skills/silicon-game-ui/SKILL.md",
+      "before_local_sha256": "f6f0287420342233c021b3511d425979219ea39ad5c8a2d45c4cbb397f3a7dc2",
+      "after_sha256": "52a485e28c7e60ad3be129875b93268fd63eda2f179ef84b39c9cba656de781c",
+      "git_blob_sha1": "75e3bbe715309638fa7ad9b469af07c1c5ed0e48",
+      "bytes": 3461
+    },
+    {
+      "path": "skills/silicon-interface-build/SKILL.md",
+      "before_local_sha256": "d01ea4e0e552e5def3b18557a9667f199624ae7be2f500b786e0d4c3de255c77",
+      "after_sha256": "8e76afbdc6341694a9282e5c986a7970f60cc4642b219d0a7b3be3afae69f5fb",
+      "git_blob_sha1": "162c49317452d6449db457cbf00e0e8f60c073b7",
+      "bytes": 3355
+    },
+    {
+      "path": "docs/workflow.md",
+      "before_local_sha256": "15e0776168e7cb7f6af7c9b026ce26db3b2316264280874053d29e03b328e50e",
+      "after_sha256": "3d09d42ae836e1111b479797309da87699c70720cd0a976f497ed6cbc02a85fa",
+      "git_blob_sha1": "33523769048084d5528f0218811fafe51782caa0",
+      "bytes": 5236
+    },
+    {
+      "path": "docs/adoption.md",
+      "before_local_sha256": "10e98318450a14ed0399fa417d8284580fb035f3dbd0530a780ebd7dcff64ba3",
+      "after_sha256": "cd93fc0c9471f56dd7111cfc744202e7dcd3eaee70d8aba368e898949848f4b5",
+      "git_blob_sha1": "ec5923c8e3d1a5fa2cd322190ed335d54d7e4cf8",
+      "bytes": 3090
+    },
+    {
+      "path": "docs/products/apps.md",
+      "before_local_sha256": "fe9b4b535f53af2054d1525d7e8e62a5500386d3c26f309d1271235eaf0789e1",
+      "after_sha256": "beba083e0d263fb34dfe338c0fab464967ae65f4ef05d30c30e08d275e725dac",
+      "git_blob_sha1": "7eec54dff34918329b940aa8de03d6849fbe17af",
+      "bytes": 3569
+    },
+    {
+      "path": "docs/products/websites.md",
+      "before_local_sha256": "b81fab0172b8805e77c92e0935ffb14a16ac6918b23bb62ad91cc15b7a80b7cd",
+      "after_sha256": "f98a95e758cc907d2e1a67a3b71c10c32aa278d7b858f4af8f0cd23d5660083b",
+      "git_blob_sha1": "a4ec849cf56a2014a17d103c217c737ffc945914",
+      "bytes": 2751
+    },
+    {
+      "path": "docs/products/games.md",
+      "before_local_sha256": "fd735beebd3ea2786c90a4624681025fb48f0bb8caedd52029118befb2256c62",
+      "after_sha256": "1184980f4c8ab6fdcb679a52548c1cc4315a45667f11a0c351a2939ef1dc96d8",
+      "git_blob_sha1": "de46eaf1dd3b28bb3e15328aadb56c352312d3f8",
+      "bytes": 3809
+    },
+    {
+      "path": "docs/foundations/color.md",
+      "before_local_sha256": "17799f640a1d275f0e9c059b4aa1c917d74a4367b1ab29e7478c1107079da2d4",
+      "after_sha256": "1b60d9835d5d600e2ddc43513c2fe8b517cdd1b3035915b585b8c339ed845ad8",
+      "git_blob_sha1": "649a4eb3a3a5d71740e7f149e7d4f4be992bec8e",
+      "bytes": 4958
+    },
+    {
+      "path": "docs/foundations/typography.md",
+      "before_local_sha256": "c09c89fc03fefdd0826dbe3742651296e38affa465b93a142e13942c9561991d",
+      "after_sha256": "9d20ccc358fb218fc70277fbc8f1c38fd26d78894454582c295edfeef2e87953",
+      "git_blob_sha1": "a0b2da5c937948998939b6f48f2e1e34870b617a",
+      "bytes": 5805
+    },
+    {
+      "path": "docs/foundations/interaction.md",
+      "before_local_sha256": "4f520f9ea4ce41a68e8aeeccc53c754739b2aaaa7dfd2b69ca8580060b0aeb02",
+      "after_sha256": "890a26e6e107864bc1d02aaeaed35ba807c1b0ef8669d839cdea4103089c54ec",
+      "git_blob_sha1": "8e3d60c5f8d78f98932427e4629b7766f792092d",
+      "bytes": 7484
+    },
+    {
+      "path": "docs/principles.md",
+      "before_local_sha256": "a1aff26e27c5f841ff405679cf5cda2069ddb9dc33d4a79979ed5100d528dc35",
+      "after_sha256": "7cd0cf86bef73abd4e1c5947d1fa9761a11ee3580e0ac276d69619f9c654c5ad",
+      "git_blob_sha1": "c69a48fc89dad3da7cab3e585e46b8981efdbac0",
+      "bytes": 9702
+    },
+    {
+      "path": "docs/character.md",
+      "before_local_sha256": "317ca5e8d46212d399490d600b2dbadbe08e194b71752797baf793827a916e3a",
+      "after_sha256": "5a7f1a15c605d5e5d3b8b9f8b32f22c884f733a58b162744f71855880377aac4",
+      "git_blob_sha1": "daf24c21232cd9fdf285c4082fb34621935d130b",
+      "bytes": 7691
+    },
+    {
+      "path": "templates/DESIGN.md",
+      "before_local_sha256": "e987f7ffc758093ea5565db3cc446bfddbe7a67b3b71eecd9e6e97366879319a",
+      "after_sha256": "c4a8be85524c4ed4f64cf8bb2980bcf4c5f3eb8e899bf53fabf1bf0c35451e0a",
+      "git_blob_sha1": "90c571c340abe8ae48a882520b15e579bdaa8892",
+      "bytes": 3310
+    },
+    {
+      "path": "templates/REVIEW.md",
+      "before_local_sha256": "c381e762129c9c1ecfb19c33974a0fba1c5c0e8d4f006011774e2a51906612df",
+      "after_sha256": "d4fa15754677ddf50ac245376c9b0f565645f7e169c9213f0bca7b28a1215f81",
+      "git_blob_sha1": "db24f5225cb2d82ef116d960ceb640e3fa22a7e3",
+      "bytes": 3250
+    },
+    {
+      "path": "checklists/design-review.md",
+      "before_local_sha256": "6ad35fe2bf8ef06be9f4928a044b13a318a6233a7a61a7d6f8c6efd2985fca97",
+      "after_sha256": "1ef10bfb35b1142951a27546c7b9059a45f675a36d3a3ca256c896c50132ab21",
+      "git_blob_sha1": "695211eb724e627d543f9f408083b087db93b2cb",
+      "bytes": 3624
+    },
+    {
+      "path": "README.md",
+      "before_local_sha256": "9b67abcfd60280edac22739f9124233349aee2c646e2ba526880e57d4fe89c69",
+      "after_sha256": "a40b213835f805e6b7133ad5986386159d0800e1d951b12a09bea0a64bcf66c2",
+      "git_blob_sha1": "9da4ec9aa3d43b5aec8780ebb4e31cf010df0063",
+      "bytes": 7375
+    },
+    {
+      "path": "README.ru.md",
+      "before_local_sha256": "effefe3a26bfd5346b5ced70dce9acae00dcf0537a7395b119ecc2aadb16cc57",
+      "after_sha256": "f3deec78e9acc806c8fa7fb0d507d0f000cdafb9935a0fdc874194058d7a2721",
+      "git_blob_sha1": "92171ae176cc9a350bc39686eaecfe103c70286b",
+      "bytes": 5350
+    },
+    {
+      "path": "research/sources.md",
+      "before_local_sha256": "4f906963127fcef06cb0b772705a85de6e80a48c9fd8fb7bca0eebfa7c165342",
+      "after_sha256": "95dfd5ee6748157d94031baf4231cb07f2cff3920c3967b241d22fc8243fab77",
+      "git_blob_sha1": "df9a34faa1c57fcb52954abdfdc5d0d5c2684261",
+      "bytes": 12025
+    },
+    {
+      "path": "research/revisions.json",
+      "before_local_sha256": "07c882aa9976899a626f44a3cbdb85157076ec143eda1fa23a25363455a02de0",
+      "after_sha256": "679e9561fce2719ffd3349d0388deb8bc95e55039c09c303f3fddea1e0c8ae85",
+      "git_blob_sha1": "22f8dbe910f6f475e5e807dece5d4a65ef1e0259",
+      "bytes": 10852
+    },
+    {
+      "path": "research/benchmark.md",
+      "before_local_sha256": "f66b00ec9902c9f70c9c49415b5e0ff9b96575166eefe34def666027b2a6b0f9",
+      "after_sha256": "fe267a74acd0525f0281182b6cfaaaeba06640b9c09b7e783fc5232b48c34c31",
+      "git_blob_sha1": "c7c330a43b97e395cb1ef40a20da1da62d9d93ce",
+      "bytes": 6563
+    },
+    {
+      "path": "skills/silicon-design-review/references/interactive-checks.md",
+      "before_local_sha256": null,
+      "after_sha256": "2422634ebfd6298d8fd4b654988ec846ee7c1f7a012ec61cb0d622e7635e2fbc",
+      "git_blob_sha1": "fe6336edd63f0ff298c621686ecef424f34072f4",
+      "bytes": 3541
+    },
+    {
+      "path": "research/skill-improvement-spec-2026-11-07.md",
+      "before_local_sha256": null,
+      "after_sha256": "808c9691470049b5c1495865ace305ad149a951fdbb347583a13faf19135c081",
+      "git_blob_sha1": "2e7a0e9b0628567a4def85a937512386516bc3a2",
+      "bytes": 20089
+    },
+    {
+      "path": "research/skill-improvement-spec-2026-11-07.sources.json",
+      "before_local_sha256": null,
+      "after_sha256": "b684a273663b91f8384ac8dd2ee0c5bd909b29dd711ddb2c8920b27720a29965",
+      "git_blob_sha1": "86a947248c8ced48432b206092e114b8e6966666",
+      "bytes": 8267
+    },
+    {
+      "path": "research/skill-improvement-implementation-2026-11-07.md",
+      "before_local_sha256": null,
+      "after_sha256": "ad3874378916a04ebecdf0ca35c35c984d0ac4185efd22a6432fc60a11f62994",
+      "git_blob_sha1": "926b31be86da1d58a1432a13a3e8df3a926c9467",
+      "bytes": 10099
+    }
+  ],
+  "record_hash_note": "The verification JSON omits its own hash to avoid self-reference. Original specification source ledger remains a historical baseline."
+}

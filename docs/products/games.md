@@ -14,6 +14,10 @@ For a purchase, show the effect, exact cost or accessible exact disclosure, owne
 
 Separate presentation changes from game balance. Compact formatting, help expansion, focus or hover must not change resources, coefficients, unlocks or progression. Keep zero, unknown and not-applicable values distinct. These conventions are informed by [IdleShop's authoring wireframes](../../research/our-practice.md), which are specifications rather than proof of shipped UI.
 
+Inspect resource, weather, route and action symbols within their actual surroundings at the intended UI scale. Distinct meanings and the selected option must remain discernible; keep important names, costs and effects beside the decision. A top resource strip or particular snowflake is a contextual option, not a universal HUD rule.
+
+Compare placed scenery, objects, icons and controls for edge, lighting, perspective and material coherence. An asset sheet helps a reusable-family change; it is not required for an isolated icon fix. Resolve and measure actual foreground/background roles in changed themes and overlays, especially quantities.
+
 ## Input, motion and audio
 
 Make focus visible on controller/keyboard paths and map navigation explicitly in spatial menus. Provide a suitable non-drag route for drag interactions when feasible. Address UI scaling, safe areas, subtitles and input remapping according to the game's platform and audience.
@@ -24,6 +28,6 @@ Connect world identity to what the player does and what changes afterward. An ob
 
 ## Review in play
 
-Test a normal purchase, insufficient resources, a full or empty inventory, interruptions and resuming play. Check large quantities, translated labels, smallest supported UI scale and all supported input paths. Inspect the HUD over a changing playfield in runtime; a static image cannot establish that it works.
+For affected interactive work, exercise relevant normal/adverse states, large quantities, long translations and supported input paths at the intended UI scale. Check interruption/return and switching/reload/restart only where the persistence contract is promised and affected. Inspect changing backgrounds in the actual runtime when available; a static assignment needs its complete frame and cannot establish runtime operability. Do not add purchases, inventory or save behaviour solely to populate a review.
 
 Example: [Mosslight brief](../../examples/mosslight.DESIGN.md). External starting point: [Game Accessibility Guidelines](https://gameaccessibilityguidelines.com/basic/).

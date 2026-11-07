@@ -27,7 +27,7 @@ Gather concrete inputs: a real artifact the product creates, a useful diagram fr
 
 A reference set made entirely of popular SaaS homepages tends to reproduce their shared conventions. Include product evidence and references from the subject itself. A restoration journal might draw on condition reports and repair marks; a game might draw on the material transformation the player performs. These are directions to investigate, not permission to invent historical facts or copy assets.
 
-Select a recognizable idea and try it across the primary task, a difficult state and a completed action. It can be typographic, spatial, illustrative, verbal or behavioral. Repetition should communicate a consistent idea, with variation appropriate to the moment. A logo repeated in every corner is not enough.
+Select a recognizable idea and carry it through the requested surfaces: the primary task, difficult state and completion when those are present. For a static frame, demonstrate it in that frame; do not invent workflows or features to fill the exercise. It can be typographic, spatial, illustrative, verbal or behavioral. Repetition should communicate a consistent idea, with variation appropriate to the moment. A logo repeated in every corner is not enough.
 
 ## Compose intensity and rhythm
 
@@ -35,7 +35,7 @@ Choose how assertively the product greets people, how much its composition varie
 
 Make at least one hierarchy decision with conviction: a meaningful scale contrast, a deliberately dominant artifact, a crop that reveals the subject, or supporting information that visibly recedes. Give the experience changes in pace where the content calls for them. Predictable rows may be exactly right for a queue; a sequence of identical sections can flatten a story.
 
-Inspect the whole journey. A dramatic opening followed by interchangeable cards loses its own direction. Arbitrary alternation also creates noise. Rhythm should help the person read, compare, anticipate and finish.
+When a journey is in scope, inspect it beyond the opening. A dramatic introduction followed by interchangeable cards loses its own direction. Arbitrary alternation also creates noise. Rhythm should help the person read, compare, anticipate and finish.
 
 ## Write a voice that can handle trouble
 

@@ -1,6 +1,6 @@
 # First benchmark: Anti Slop
 
-Our first target is to produce **better and more varied results than Anti Slop**. This is an objective, not a result. The [first matched generation trial](../benchmarks/2026-11-03/RESULTS.md) is now complete, with [live original artifacts side by side](https://drevendev.github.io/Silicon-Design/benchmarks/2026-11-03/). It found concrete Silicon losses and did not establish superiority. A blinded audience trial has not been run.
+Our first target is to produce **better and more varied results than Anti Slop**. This is an objective, not a universal result. The [first matched generation trial](../benchmarks/2026-11-03/RESULTS.md) is complete, with [live original artifacts side by side](https://drevendev.github.io/Silicon-Design/benchmarks/2026-11-03/). It found concrete Silicon losses and did not establish superiority. Later one-owner blind comparisons are recorded below; they are not an independent audience study.
 
 Comparator reviewed on 2026-11-03: [miqdadbadjuber/anti-slop at 941b153](https://github.com/miqdadbadjuber/anti-slop/tree/941b1532f9cc8ffde766bca5921d75257c9e5762). Read: README, core skill, UI skill and mobile-layout skill, selected sections. Its own README distinguishes the filter from direction supplied by DESIGN.md. Use **Anti Slop + an equally informative DESIGN.md** as the main baseline; handicapping it with no direction would answer the wrong question. Record exact loaded files. Do not install a package or run a foreign installer to read the sources.
 
@@ -34,6 +34,12 @@ Promote “beats Anti Slop” only when matched artifacts and the scoped human r
 - [Applied research and boundaries](issue-8-application.md).
 - [First trial, 2026-11-03](../benchmarks/2026-11-03/RESULTS.md): six fresh-context agents, one per brief/condition; identical non-skill inputs, inherited settings and 600-second allowance; exact model/sampling/token billing unavailable. All 18 directions retained.
 - [Losses and scoped repairs](../benchmarks/2026-11-03/RESULTS.md): theme inheritance, last-record recovery, phone task priority and shared scope drift informed all five skills. Repairs received extra operator feedback; original outputs remain frozen.
-- Blinded human comparison: **not run**. Superiority: **unproven**.
+- The first six-run trial had no blinded human comparison. Its superiority claim remains unproven.
+
+### Later one-owner comparisons
+
+The [operations trial #11](https://github.com/drevendev/Silicon-Design/issues/11) reports Silicon 6:4 against Anti Slop and 3:7 against its no-skill baseline on ten internal-product screens. [Design Duel v2 #16](https://github.com/drevendev/Silicon-Design/issues/16) records 4:0 against Anti Slop and 2:2 against the short prompt on four common briefs; its B comparisons use different assigned references and cannot rank methods directly. Models, fixtures, budgets and voting designs differ; do not pool their totals or infer a trend from them.
+
+The [consolidated specification #21](skill-improvement-spec-2026-11-07.md) translates those observations into bounded scope, craft and verification changes. Its [implementation record](skill-improvement-implementation-2026-11-07.md) distinguishes source/packaging checks from unperformed fresh generation and audience evaluation. Existing benchmark originals remain frozen.
 
 Do not substitute a hand-authored imitation of Anti Slop for a baseline. The trial used separate fresh generation contexts; the operator and subsequent repairs were not independent or blinded. Revised skills require a new matched run before claiming a generation improvement.

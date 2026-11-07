@@ -1,50 +1,34 @@
 ---
 name: silicon-design-direction
-description: Establish or revise a product's visual direction and DESIGN.md for a website, app or game. Use for new identities and substantive redesigns; keep small UI fixes within the existing direction.
+description: Establish or change a product's visual direction. Use for new identities or open redesigns; preserve existing direction for small fixes.
 ---
 
 # Silicon design direction
 
-Turn a product brief into implementable visual and behavioral decisions with a character of their own. Preserve the user's scope, brand constraints and useful existing identity. Clean, usable output can still be interchangeable.
+Preserve the user's scope, brand and useful existing decisions. For an established-brand screen or small correction, use one direction by default; do not produce rendered alternatives or a new document bundle.
 
-## Establish context
+## Choose what needs designing
 
-Inspect the existing product, content, assets and components when available. Identify audience, primary task, use environment, platforms, languages and constraints. Separate observed facts from assumptions. Ask about missing context only when it changes a consequential choice; continue independent work when possible.
+Inspect the relevant product, content, assets and constraints. Identify the person, task, use environment and intended feeling at a specific moment. Separate facts from assumptions; ask only when missing context changes a consequential choice.
 
-Choose one representative flow and a difficult state. A site might move from promise to evidence to action; an app from record to resolution; a game from cost inspection to a blocked purchase. Use the same content while comparing directions.
+Express character through this product's subject, vocabulary, output or behaviour. A palette, font category or named aesthetic alone is insufficient. Keep a short subject inventory only when it helps choose a direction; label supplied, fictional and generated material.
 
-Name an emotional intention for a specific person and moment. Translate it into visible and behavioral choices; avoid treating “modern,” “warm” or “premium” as sufficient direction. Gather references from the product's subject, actual output, vocabulary and materials alongside interface references. Separate supplied material from invented teaching content.
+## Explore when warranted
 
-## Make the direction concrete
+For open direction, a new identity or requested exploration, compare inexpensive compositions with the same words, capabilities, fixture, assets and viewport. Include a restrained treatment among the justified alternatives. Change meaningful relationships such as dominant object, reading model, hierarchy or imagery; palette swaps alone are weak variation.
 
-When direction is open, explore two or three materially different compositions. Change hierarchy, density, type, image language or rhythm; do more than exchange accent colors. With an established brand, one consistent direction may suffice. Scale exploration to the assignment.
+Retain inspectable sketches or captures and explain the useful tradeoff. Develop the selected direction rather than finishing every candidate. Honour explicitly requested comparison scope; if rendering is unavailable, label options as unverified proposals.
 
-For substantive open-direction work, deliver retained rendered alternatives, not only prose names. Hold the brief, words, capabilities, fixture state, asset pool and viewport constant. For each, identify the dominant object, reading model, attention sequence and tradeoff. Keep rejected candidates inspectable. If rendering is unavailable, label the alternatives as proposals and leave the comparison unverified.
+Choose through visible priorities: first attention, useful action and next transition. Before selecting a responsive direction, check that its priority survives narrow reflow; do not polish every rejected option at every size. Compare specificity with the nearest same-category product, without copying its identity.
 
-Use the contact sheet to challenge the options before polishing each one. Name the first thing noticed, first useful action and next transition in each. Repeat the comparison at the intended narrow size: three distinct desktop arrangements may all become the same image-first stack. A direction described as a workbench should actually prioritize work there. Preserve meaningful differences in priority without forcing every surface's action above the fold.
+## Carry and record the choice
 
-Write a small subject inventory: output, vocabulary, constraints, artifacts and rituals, with supplied versus invented material marked. Test specificity against the nearest same-category product. Category atmosphere alone is weak differentiation. References from other disciplines can broaden the search; name the relationship learned rather than collecting fashionable styles.
+Keep a recognizable idea coherent across the requested surfaces and states. An operational tool may express care through efficiency and exactness while its controls remain familiar. Test repeated-use costs where relevant; expressive detail must not obstruct the task.
 
-For each useful option, explain audience fit, distinctive decisions, a rejected alternative and a tradeoff. Use references to analyze relationships and methods, without copying a brand identity. Familiar controls, gradients, system fonts and cards are allowed when they serve the product.
+Do not invent fields, workflows, persistence, onboarding or additional screens to demonstrate character. A static frame needs that frame's complete composition, not an invented adverse interaction or second surface.
 
-Describe the intended intensity, compositional rhythm and motion in context. Choose a recognizable idea and show how it changes appropriately across the main task, a difficult state and completion. It may live in type, imagery, composition, language or behavior. A new palette, named aesthetic or decorative mascot alone does not establish a direction.
+Update DESIGN.md only when actual decisions need recording: context, hierarchy, visual roles, rationale, tradeoff and unresolved questions. Inventory, component sheets and cross-state evidence are conditional on the assignment.
 
-Include sample invitation, success and failure copy, plus a useful detail for repeated use. Keep the voice stable and tone appropriate to the situation. Put novelty where it adds recognition or meaning; keep familiar controls easy to operate. Do not add product features, persistence or onboarding outside the requested scope to satisfy this exercise.
+Deliver the chosen direction and concise evidence. Distinguish proposal, prototype and implemented result; do not invent audience affection, recall or successful checks. Proceed within authorized reversible work without adding an approval sequence.
 
-Make a short inventory of requested capabilities and real editable fields. Express care through those operations; do not invent a notes field merely to demonstrate input preservation or a second workflow. Spend exploration effort on alternatives before multiplying delivery documents and self-check counts.
-
-Select against the brief. For authorized exploratory work, proceed with a clearly stated provisional choice if the user has not specified one. Do not turn routine reversible work into an approval sequence.
-
-## Record and check
-
-Write or update the product's DESIGN.md with context, primary hierarchy, type roles, color roles, spacing/density, imagery, motion, behavior, responsive/input rules and verification criteria. Keep it brief and record unresolved questions. If file writes are outside the request, provide the document in the response.
-
-Check the direction against realistic text, translated labels where relevant, narrow/target layouts and at least one adverse state. Test whether the claimed rationale could equally justify an unrelated product; replace thin explanations with more specific choices. Describe what remains recognizable beyond the introduction and what a tenth visit would feel like. These are critique exercises, not proof of audience affection.
-
-State whether the result is a written direction, a rendered prototype or an implemented product. Do not invent user outcomes, recall tests or successful checks.
-
-Deliver the selected direction, emotional intention, cross-state idea, rationale and tradeoff, the document location and the representative slice to implement next. Keep the handoff concise and explicitly separate proposals from observed results.
-
-The handoff includes the inventory, retained alternatives and a small proof of how the chosen grammar extends to a second surface. For comparative claims, require matched briefs and independent human assessment; neither self-scores nor different products establish superiority. These artifacts scale down for a bounded correction and never create a new approval requirement.
-
-Optional depth: [Silicon Design workflow](https://github.com/drevendev/Silicon-Design/blob/master/docs/workflow.md). The skill is usable without that reference.
+Optional depth: [workflow](https://github.com/drevendev/Silicon-Design/blob/master/docs/workflow.md).

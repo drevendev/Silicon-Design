@@ -14,7 +14,7 @@ Preserve entered data after recoverable failures. Show whether an operation is p
 
 Make useful actions discoverable near the object they affect. Direct editing and contextual tools can reduce a detour, but need visible cues and keyboard/touch access. Preserve focus, useful selection and the working comparison when details open. Context preservation is the goal; a single page or overlay is only one possible implementation.
 
-Test the moment a record disappears from a secondary view, including undo of its last item. Restore a useful object/surface or a meaningful remaining focus target. In a real browser check the focused node and visibility after rendering; a stub recording a focus call cannot prove that context survived. Preserve actual task inputs instead of adding a new editable field merely to demonstrate care.
+When that path is affected, test the moment a record disappears from a secondary view, including undo of its last item. Restore a useful object/surface or a meaningful remaining focus target. In a real browser check the focused node and visibility after rendering; a stub recording a focus call cannot prove that context survived. Preserve actual task inputs instead of adding a new editable field merely to demonstrate care.
 
 Distinguish a new collection, no search matches, no pending work, missing access and failed loading. They need different explanations and next steps. A finished queue can acknowledge completion; a failed request must describe recovery. Do not send someone to an unrelated feature merely to fill an empty state.
 
@@ -22,11 +22,19 @@ Place onboarding near the relevant feature. Keep it dismissible, bound its recur
 
 These decisions adapt [Ant interaction patterns and Primer empty-state/onboarding guidance](../../research/deep-read.md). They are product-sensitive patterns, not a requirement to add every mechanism to every interface.
 
+## Check the interactive boundary
+
+For affected controls, verify actual activation from labels, icons and usable padding, with supported keyboard paths. Hit-testing can diagnose an interception but cannot prove that the intended event occurred. Inspect opened menus and important text in their real overflow context; deliberate truncation needs reachable full necessary information.
+
+Check unexpected movement during relevant search, filter, mode and inspector changes, including lost reading/selection context. Intended result removal, expansion and responsive reflow remain valid. Comparable items need coherent rhythm, not compulsory equal heights. For sticky headers and identity columns, inspect the corner during two-axis scrolling for incorrect overlap.
+
+The review skill's [conditional procedure](../../skills/silicon-design-review/references/interactive-checks.md) gives measurement detail and negative controls. Use it when needed for interactive review, not for every edit or static screenshot. Check only relevant transitions and broaden when observations justify it.
+
 ## Voice and tone
 
 Use consistent names for actions and results. Let the product's voice remain recognizable while tone follows the user's situation. An invitation can be light; a payment or failure needs precision and reassurance. Write errors around what happened, what remains intact and what to do next. Avoid blame, theatrical apology and humor that competes with recovery.
 
-Define examples of invitation, confirmation and failure in DESIGN.md. Inspect them in the interface, including repeated confirmations. Charming copy that hides the actual result is a state-design problem. See [Character & attachment](../character.md) and the [Vibe/Primer source analysis](../../research/deep-read.md).
+When establishing voice, record useful examples of invitation, confirmation and failure in DESIGN.md; a local copy fix does not need a new document or message flow. Inspect them in the interface, including repeated confirmations. Charming copy that hides the actual result is a state-design problem. See [Character & attachment](../character.md) and the [Vibe/Primer source analysis](../../research/deep-read.md).
 
 ## Motion and sound
 

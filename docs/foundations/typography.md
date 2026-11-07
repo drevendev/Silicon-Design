@@ -33,6 +33,12 @@ Use weight, size, spacing and position to establish hierarchy before adding more
 
 For prices, counts and timestamps, choose alignment and precision according to the comparison. A compact number should preserve an accessible route to its exact value when the exact value changes a decision. Do not align numbers with spaces in markup.
 
+## Read values with their meaning
+
+On a chart or infographic, keep a short visible unit cue where values are read: an axis label, heading or other unambiguous nearby location. A unit buried in long explanatory copy or an accessible description may be missed visually. Put category and explanatory labels near their marks or use clear leaders.
+
+Check quantity, period, geography, scale, series, source values, totals, denominators, missing observations and stacked order. Report contradictory supplied data instead of inventing repairs. Chart form follows the actual comparison; a preferred donut in one example is not a general rule.
+
 ## Make the type direction specific
 
 A font category does not supply a complete voice. Compare actual letterforms and weights using the product's real vocabulary, then compose them with images, space and content. Decide whether hierarchy comes mainly from scale, weight, placement or the artifact itself. A modest title beside strong photography can be as intentional as a dramatic typographic opening.

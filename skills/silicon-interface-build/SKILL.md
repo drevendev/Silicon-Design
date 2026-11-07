@@ -1,40 +1,34 @@
 ---
 name: silicon-interface-build
-description: Implement and visually verify a website or application interface using its product direction. Use for real screens and flows, including responsive layouts, states and existing component integration.
+description: Implement or refine website and application interfaces within their product direction; verify the changed screen or flow.
 ---
 
 # Silicon interface build
 
-Carry design intent into working behavior. Inspect the product's DESIGN.md, framework, current UI, components, assets and content before editing. Keep changes within the requested scope. For a small correction, follow the existing direction; for missing direction on a major build, establish a concise provisional direction from the brief.
+Inspect relevant existing UI, content, components and DESIGN.md. Preserve scope and branding. An established-brand screen needs one direction by default; missing direction on a major build may need a concise provisional choice, not an automatic exploration bundle.
 
-## Build a representative slice
+## Compose the requested work
 
-Identify the person, task, primary information and next action. Use representative content from the product; label fictional fixtures and prototype actions. Do not manufacture testimonials, customer logos, measurements or successful integrations.
+Identify the main statement, primary object, useful action and critical values. Use representative content; label fiction and prototype actions. Do not invent testimonials, results, assets or functionality.
 
-Choose structure according to content: prose for reading, rows or tables for comparison, cards for independent objects. A website should make its promise and evidence understandable; an app should expose the work and state that support an action. Preserve reliable component semantics while adapting the visual system.
+For repeated-use operator work, start compact: rank identifiers, search keys, statuses and actions by task use. Remove framing without decision value; retain useful summaries, legends and explanations. Compare visible useful rows where relevant without shrinking necessary text or targets.
 
-Implement one complete flow with an adverse state before spreading styling across the product. Include relevant loading, empty, error, unavailable and success feedback. Preserve useful input on recoverable errors and explain unavailable actions. Use semantic controls and persistent labels.
+For websites, inspect real headline breaks, navigation, comparable choices and action destinations together. Preserve distinctions between links, disclosure, selection and action; do not add fake affordances or rewrite fixed copy outside scope.
 
-Establish coherent type, color and spacing roles. Use assets for a specific information or identity purpose, with suitable rights and text alternatives. Keep critical content independent of decorative motion and audio.
+Keep semantic status colour with other cues, explain unfamiliar codes and preserve exact values. For data displays, keep units near values and labels near marks; check supplied data and report contradictions rather than inventing corrections.
 
-Carry the chosen direction beyond the first screen into the task, an adverse state and a result where in scope. Include a product-specific detail in wording, visual relationships or behavior. Preserve context, explain why a collection is empty, and keep repeated actions efficient. Finish wrapping, optical alignment, crops, icon weight, units and feedback as a distinct craft pass. Do not add out-of-scope features merely to create a memorable moment.
+## Implement and inspect
 
-Retain evidence of the complete journey and a second ordinary workflow where the brief contains one. Exercise interruption and return, and check the declared reload/persistence boundary. A blank-note error is useful evidence, but does not cover an interrupted task or a second workflow. Keep a secondary surface such as an empty/populated collection in the same visual grammar.
+A static assignment needs the complete requested frame. For interactive work, implement the changed flow and relevant failure/recovery states; preserve useful input and explain blocked actions. Additional workflows, second surfaces, component sheets and persistence tests apply only when present or necessary to validate the change. Do not invent fields or capabilities to fill a checklist.
 
-Exercise undo/removal from the secondary surface, including its last item. Choose the useful destination after the object disappears: restore the edited object or focus a meaningful remaining control. In a real browser verify that the focused node is connected, visible and reveals the restored task. A DOM stub recording a focus() request cannot establish that result. Preserve the actual task's fields rather than adding an unrelated editable feature to demonstrate context retention.
+Check changed controls from their labels, icons and usable padding, plus supported keyboard paths. Inspect unexpected layout movement, clipped labels/overlays and sticky intersections where present. Deliberate reflow, truncation with reachable necessary detail and variable card heights can be valid.
 
-## Inspect the result
+After close, removal or last-item undo, preserve useful task context and connected, visible focus. Verify actual activation/focus in a browser; a source stub or hit-test alone cannot establish it. Check the promised persistence boundary where affected.
 
-Open the actual implementation in a browser when available. Inspect narrow, intermediate and wide layouts, content extremes and supported themes/languages. Fix overflow, weak hierarchy, awkward wrapping and incomplete states before micro-polish.
+Finish at use size: main statement, action and quantities first, then wrapping, grouping, crops and symbol meaning. Fix observed problems and recheck affected states until criteria are met within scope; no fixed finding or test count.
 
-Exercise keyboard navigation, focus and a complete task/recovery path. Check relevant contrast pairs, text enlargement and reduced-motion behavior. Distinguish viewport resizing from actual browser zoom and screenshots from input testing. Run project checks appropriate to the change; do not add tests that merely repeat styling choices.
+Inspect relevant widths, themes, languages, resolved contrast, text enlargement/actual zoom and reduced motion according to the change. Keep the recognizable idea coherent across requested states and repeated use without requiring decorative novelty.
 
-Inspect the whole page and its real copy order, including lower sections and supporting information at use size. Retain a short visual correction log: selector or marked region, fixture state, viewport, observed defect, expected correction and recapture. Mark each finding resolved, partial or unresolved. Separate position/size fidelity from interpretation of content and aesthetic judgment.
+Report implementation, located corrections and actual checked/failed/untested coverage. If runtime is unavailable, provide source findings and mark rendering/input unverified. Assess operation and character separately; do not turn static checks into accessibility or audience claims.
 
-If a browser/runtime is unavailable, perform useful source checks and explicitly report that rendered behavior remains unverified. Do not replace evidence with a claim that the UI looks correct.
-
-Assess operation and character separately. Point to what makes the result specific and coherent, inspect the interior as well as the introduction, and walk through repeated use for recurring interruptions. A passed build or contrast check does not answer these design questions. Treat emotional effects and memorability as hypotheses unless actual audience observations support them.
-
-Deliver the implemented flow, changed surfaces, rendered evidence where available, checks performed and remaining limits. Continue fixing observed issues within scope until the flow meets its criteria.
-
-Optional depth: [Silicon Design review checklist](https://github.com/drevendev/Silicon-Design/blob/master/checklists/design-review.md).
+Optional depth: [review checklist](https://github.com/drevendev/Silicon-Design/blob/master/checklists/design-review.md).

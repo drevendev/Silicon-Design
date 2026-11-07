@@ -1,36 +1,32 @@
 ---
 name: silicon-design-system
-description: Define or refine typography, semantic color roles, tokens and component states for an existing product direction. Use when a UI needs a coherent reusable system rather than isolated style fixes.
+description: Define typography, semantic roles, tokens and component contracts for an existing direction, including status and data displays.
 ---
 
 # Silicon design system
 
-Build the smallest system that supports the actual product. Inspect its DESIGN.md, existing tokens and components first. Reuse sound conventions and avoid introducing a new framework merely to change appearance.
+Build the smallest system needed by the requested surfaces. Reuse the product's direction, token format and sound components; no new framework or universal skin is required.
 
-## Typography and color
+## Type and meaning
 
-Test type with actual body copy, the longest title, numbers and supported scripts. Check required weights, fallback behavior, loading and licenses. Define reading, UI, title, supporting and numeric roles as needed, including size, weight, line height and intended use. Test wrapping and text enlargement; a mathematical scale alone is insufficient.
+Test actual scripts, long labels, quantities, weights, fallback/loading and licenses. Define reading, UI, display, supporting and numeric roles as needed. Inspect decision-critical text at use size and with text enlargement; do not shrink necessary labels to manufacture hierarchy.
 
-Identify decision-critical text separately from supporting metadata and decoration. Inspect addresses, quantities, costs, errors and primary actions at actual size. Reading, operating and play surfaces can have different densities within one system. Do not shrink necessary labels to create display contrast or claim a WCAG failure from font size alone.
+Map surface, foreground, action, status, boundary and focus roles. Measure resolved foreground/background pairs, including inherited backgrounds, transparency, overlays and changed themes. For web text use 4.5:1 ordinary and 3:1 qualifying-large thresholds; meaningful non-text cues use the applicable 3:1 requirement and exceptions. Compare unrounded ratios. A passing palette does not verify inherited component colours.
 
-Assign semantic surface, foreground, action, status, boundary and focus roles. Map existing primitives to those roles and map components to semantic roles. Specify theme mappings only for themes in scope. Avoid treating one attractive palette as a universal product skin.
+Retain informative semantic status colour with text or shape. If a pair fails its applicable requirement, choose and remeasure a suitable semantic variant rather than flattening all states to ink. Darker or more saturated does not automatically mean sufficient contrast or correct meaning.
 
-Measure actual foreground/background pairs, including relevant state combinations and transparency. For web text use WCAG's 4.5:1 ordinary-text and 3:1 qualifying-large-text thresholds; evaluate meaningful non-text cues against the applicable 3:1 requirement and exceptions. Compare unrounded ratios. Pair status colors with text or shape. Report tested combinations rather than declaring a whole product compliant.
+Prefer understandable words. For unfamiliar codes in dense displays, provide a nearby legend and reachable item detail through supported pointer, keyboard and touch paths. An existing detail view can suffice; not every item needs a tooltip. Include truthful success, partial, unknown and blocked examples when those states belong to the contract.
 
-Cover materially different themes/directions with a small component/role matrix. Inspect resolved ink, inherited ancestor backgrounds, quantities, action labels and overlays in the implementation; a passing swatch list does not establish those combinations. When a paper variant replaces a dark surface, map its foreground roles too, while keeping image-overlay ink local. Source calculations cannot verify unresolved CSS inheritance; mark that gap when rendering is unavailable.
+For charts, identify quantity, unit, geography, period, scale and series. Keep units visible where values are read and labels attached to marks by proximity or clear leaders. Check supplied values, totals, denominators, missing observations and stacking order. Report contradictory inputs; do not silently invent or repair data. Chart form follows the comparison.
 
-## Components and implementation
+## Components and checks
 
-Define a compact spacing, shape and elevation vocabulary from content relationships. Cover applicable default, hover, focus, pressed, selected, disabled-with-reason, loading, empty, error and success states for important components. Include content limits, responsive behavior and keyboard/touch expectations.
+Define content limits, spacing/density, responsive/input behaviour and important states: focus, selected, pending, unavailable-with-reason, empty, error and success as applicable. Keep zero, unknown and not applicable distinct; preserve exact values or a reachable exact disclosure when precision changes a decision.
 
-Keep source-of-truth tokens in the project's existing format. Do not claim DTCG compatibility unless the chosen representation is validated against that format. If generating CSS or another platform export, identify its source and avoid hand-maintained duplicate values without an explicit reason.
+Keep tokens authoritative in the existing format. Do not claim DTCG compatibility without validation or hand-maintain duplicate exports without reason.
 
-Build or update a representative specimen in the product's real environment. Include long content, values with units, an error and an unavailable action. Inspect the rendered result and check relevant input and scaling behavior.
+Inspect changed components with realistic content at intended size. Check icon meaning, crop, edge/stroke/material coherence and actual theme roles. A compact specimen or asset/state sheet is useful for reusable changes; do not add a second surface or workflow solely to create one.
 
-Retain a compact component/asset/state sheet at use size, with selectors or source paths. Show the important controls, type roles and artwork together; inspect edge treatment, stroke weight, lighting, perspective and material as well as colors. Extend the grammar to a second meaningful surface. A beautiful painting with a visibly unrelated inventory icon is a coherence finding even when every contrast pair passes.
+Deliver the changed roles/contracts, measured pairs and actual checks with untested areas. Preserve product-specific character while allowing quiet task surfaces; measurements alone do not establish design quality or compliance.
 
-Carry the product's visual grammar through the system. Specify how a recognizable typographic, spatial, material or interaction idea applies to different states; avoid making every component equally expressive. The system should preserve character while allowing quiet task surfaces. When working in a design canvas, bound content width, expose editable text with actual bindings, and model meaningful variant dimensions. Inspect the result after mutation; a successful tool call proves that a write happened.
-
-Deliver token/type roles, component contracts, measured contrast pairs and evidence with untested areas. A collection of swatches is an intermediate artifact.
-
-Optional depth: [typography](https://github.com/drevendev/Silicon-Design/blob/master/docs/foundations/typography.md) and [color](https://github.com/drevendev/Silicon-Design/blob/master/docs/foundations/color.md).
+Optional depth: [foundations](https://github.com/drevendev/Silicon-Design/blob/master/docs/foundations/color.md).

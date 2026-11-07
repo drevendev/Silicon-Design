@@ -1,19 +1,33 @@
 # Applications
 
-Organize the product around work people complete and information they compare. A dashboard should justify its position in that work.
+Organize the product around work people complete and information they compare. A dashboard should justify its place in that work.
 
-- Start with the primary object and task: a document to edit, a case to resolve, an order to fulfill. Expose relevant state and next actions near the object.
-- Match density to the work. Use aligned rows for scanning and comparison; use cards for independently meaningful objects; disclose detail without removing decision-critical information.
-- Establish navigation and location. Preserve filters, selection and entered data when moving between related views where that supports the task.
-- Define forms, validation, loading, empty, offline and permission states. Distinguish “nothing exists” from “nothing matches” and “cannot load.”
-- Make actions predictable. Explain unavailable actions, reveal consequences, and use undo or meaningful confirmation where appropriate.
-- Keep numeric units and precision clear. Align comparable quantities and retain exact values when compact formatting hides necessary information.
-- Adapt for touch and keyboard without relying on hover. Test long translated labels and data-heavy narrow views.
+## Start with the decision
 
-Identity can live in composition, content voice, typography, selected assets and deliberate visual details while controls remain familiar. Reusing a mature component system is compatible with distinctive product design.
+Expose the primary object, its state and useful next action. Preserve filters, selection and entered data between related views where the task requires it. Keep an established brand; a bounded screen redesign needs one direction by default.
 
-Look for care in the work itself: preserving an unfinished comparison, making an exact value easy to inspect, or explaining why a case cannot progress. These are possible directions, not an automatic feature list. Distinguish completion from a first-use empty state. Let guidance recede as people become proficient, and use a calm, specific tone during failures. A tenth-visit walkthrough can reveal friction a first-screen critique misses.
+For repeated-use operator work, start compact. Rank identifiers, search keys, methods/types, statuses and actions by actual frequency and consequence. Put rarely used controls outside the primary band when appropriate. Prefer aligned rows for comparison and cards for independently meaningful objects.
 
-Review a full object-to-action flow, a failed action and recovery, keyboard navigation and the largest plausible content case. A polished empty dashboard is insufficient evidence.
+Subtract bands, captions, separators and containers whose removal loses no decision. Keep summaries that support planning and legends that explain codes. One-line headers and bounded date columns can save space, but calendars and long content may need another structure. Compare visible useful rows before/after only where row comparison matters; row count does not justify tiny text or unusable targets.
 
-Example: [Dispatch brief](../../examples/dispatch.DESIGN.md). Relevant source families: [Vibe, Ant Design and Primer](../../research/sources.md).
+## Preserve meaning and state
+
+Keep informative semantic status colour with text/shape; measure the actual pair and role rather than removing colour by default. Explain unfamiliar codes near the representation and make item detail reachable through supported pointer, keyboard and touch paths. A detail view may suffice without a tooltip on every cell.
+
+Show truthful complete/success examples alongside partial, unknown and blocked states when those belong to the contract. Distinguish first use, no matches, no work, missing access and failed loading. An unavailable action needs an understandable reason.
+
+Keep units and useful precision clear, with exact disclosure when compact formatting hides necessary information. Preserve useful input through recoverable failure and task context after close, removal or undo. Do not add notes or another workflow merely to demonstrate preservation.
+
+## Verify affected interactions
+
+Check actual activation from composite controls' labels, icons and usable padding, plus supported keyboard paths. Inspect clipped important text and opened popovers in their real overflow context. Intended truncation needs reachable full necessary detail.
+
+Inspect unexpected movement during affected filters, search, mode and inspector changes. Deliberate result removal or expansion is not automatically a defect. Comparable items need a coherent rhythm; variable-height cards can be deliberate. In two-axis sticky tables, inspect corner/header/identity-column intersections for incorrect overlap.
+
+For a scoped fix, verify affected states. For a flow, include relevant failure/recovery, long content, narrow layouts and actual focus. Test interruption/return and reload only where that persistence contract is affected. The [review procedure](../../skills/silicon-design-review/references/interactive-checks.md) supplies deeper diagnostics when needed.
+
+## Keep the product's character
+
+Identity can live in composition, voice, typography, selected assets and efficient, exact work while controls stay familiar. Let guidance recede with proficiency and use calm, specific failures. Extra framing is not proof of care.
+
+Example: [Dispatch brief](../../examples/dispatch.DESIGN.md). Sources: [Vibe, Ant Design and Primer](../../research/sources.md), the [operations trial](https://github.com/drevendev/Silicon-Design/issues/11) and [consolidated specification](../../research/skill-improvement-spec-2026-11-07.md).

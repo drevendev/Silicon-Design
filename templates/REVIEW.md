@@ -1,50 +1,52 @@
 # [Product / surface] — design review
 
-- Date and reviewer: [values].
-- Implementation revision and flow: [commit/build and exact scope].
-- Direction: [DESIGN.md link].
-- Environment: [browser/runtime, OS, viewport/resolution, scale, input, theme, language].
-- Evidence: [captures and relevant implementation links].
+For a local fix, a concise finding and affected recheck may suffice. Keep only sections relevant to the request; do not invent a second surface, workflow or research result.
+
+- Revision, reviewed surface/state and direction: [exact scope; existing DESIGN.md if relevant].
+- Environment: [browser/runtime, viewport/resolution/scale, theme, language, input].
+- Evidence: [actual captures, implementation paths and checks].
 
 ## Outcome
 
-[What works, what blocks the task, and what the evidence allows us to conclude.]
+[Important findings first; what works, what needs correction and what remains unknown.]
 
-### Usefulness and access
+- Operation/access: [readable information, task and input/recovery evidence].
+- Character/care: [specific composition, imagery, voice or behaviour; label taste and emotional-effect hypotheses].
 
-[Task completion, input, readable information, recovery and checked limits.]
+For a screenshot-only review, conclusions concern appearance. Compare character beyond the introduction or repeated use only where those surfaces/events are in scope and observable.
 
-### Character and care
+## Located findings
 
-[Specific choices in composition, imagery, voice and behavior. Does the identity survive beyond the introduction? What is still interchangeable? Does repeated use remain considerate? Label judgments and hypotheses; name actual audience observations only when they exist.]
-
-## Findings
-
-| Priority | Observation and reproduction | User consequence | Proposed correction | Evidence / status |
+| Priority | Observation/reproduction | Consequence | Bounded correction | Evidence/confidence |
 | --- | --- | --- | --- | --- |
-| [blocking / major / polish] | [specific state and action] | [effect on a real task] | [bounded change] | [path; confirmed or hypothesis] |
+| [blocking / major / polish] | [state, action, selector/region] | [task effect] | [expected change] | [confirmed / hypothesis / preference] |
 
-For visual findings include selector/source or marked region, fixture state, viewport, before capture, expected visible correction and recapture. Track resolved / partial / unresolved independently of checked / failed / untested coverage. Inspect the whole artifact and a second surface. Label geometric measurements, interpretation and aesthetic judgment separately.
+Blocking prevents key task/access/truthful feedback; major materially harms comprehension, readability, efficiency or identity; polish is smaller craft. Do not inflate taste into a blocker.
 
-Blocking prevents a key task, access or truthful feedback. Major materially harms comprehension, readability, identity or efficiency. Polish is a smaller coherence issue. Do not report a style preference as a blocker without an observable consequence.
+For visual fixes, retain state/viewport, expected correction and same-state recapture where possible. Track resolved/partial/unresolved independently of coverage. Separate geometry, brief interpretation and aesthetic judgment.
 
-## Coverage
+## Relevant coverage
 
-| Check | Result: checked / failed / untested / inapplicable | Evidence or reason |
+Retain meaningful untested areas; omit clearly inapplicable rows instead of performing work to fill them.
+
+| Check | Checked / failed / untested / inapplicable | Evidence or reason |
 | --- | --- | --- |
-| Primary flow and recovery | [result] | [details] |
-| Character across task, difficult state and completion | [result] | [concrete observations; design judgment] |
-| Returning use, tone and repeated interruptions | [result] | [walkthrough or actual observations] |
-| Content extremes and localization | [result] | [details] |
-| Narrow/wide or target resolutions | [result] | [details] |
-| Keyboard / touch / controller as supported | [result] | [details] |
-| Text enlargement and actual zoom | [result] | [separate from viewport resize] |
-| Contrast and meaning without color | [result] | [pairs and actual states] |
-| Reduced motion / audio independence | [result] | [details] |
-| Assistive technology | [result] | [tool and flow, or untested] |
+| Changed frame or interactive decision/recovery | [result] | [scope] |
+| Hierarchy, type, units, status and data meaning | [result] | [visible roles and source checks] |
+| Subject-specific character in requested states | [result] | [judgment or real observations] |
+| Relevant widths, long/localized content and themes | [result] | [actual state] |
+| Supported activation, focus and affected persistence | [result] | [native input versus source harness] |
+| Applicable contrast, enlargement/actual zoom, motion/audio | [result] | [tested pairs/paths] |
+| Assistive technology | [result] | [tested flow or meaningful gap] |
+
+For relevant interactive reviews use [the conditional procedure](../skills/silicon-design-review/references/interactive-checks.md). Do not load it for static appearance work.
+
+## Comparisons — only when present
+
+[Matched scope, participant count, actual votes and comments; read dissatisfaction on winners. Relative preference is not acceptance. Keep supplied copy, unavailable assets, capture uncertainty and adapter mistakes separate from implementation defects. Do not combine unlike experiments or invent superiority.]
 
 ## Follow-up
 
-[Fixes made, rechecked states, remaining findings and deliberate exceptions.]
+[Authorized corrections, affected rechecks, remaining findings and deliberate exceptions.]
 
-Screenshots and static checks cover only their recorded scope. Leave untested checks visible.
+Static/source checks do not establish accessibility compliance, native-runtime behaviour or audience attachment.
