@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Northstar workboard</title>
+<style>
+body{font:16px/1.5 Arial,sans-serif;color:#20332d;background:#faf8f1;margin:30px}
+.controls{display:flex;gap:20px}.filter{position:relative;border:1px solid #71857a;padding:10px;min-width:200px}
+.trigger{display:flex;justify-content:space-between;align-items:center;min-height:36px}.trigger-icon{padding:8px;cursor:pointer}
+.filter-panel{position:relative;overflow:hidden;height:64px;padding:0 10px;border:1px solid #71857a}
+.menu{display:none;position:absolute;top:48px;left:0;background:white;border:1px solid #71857a;z-index:9;min-width:180px}
+.menu.open{display:block}.menu button{display:block;width:100%;padding:12px;font:inherit}
+button,input{font:inherit;padding:9px}.scroll{width:650px;height:220px;overflow:auto;border:1px solid #71857a;margin-top:24px}
+table{border-collapse:separate;border-spacing:0;min-width:1000px}th,td{padding:16px;white-space:nowrap;border:1px solid #bbc4bb;background:white}
+thead th{position:sticky;top:0;z-index:3;background:#e5edde}
+tbody th{position:sticky;left:0;z-index:2;background:#e5edde}thead .corner{left:0;z-index:1}
+.cards{display:flex;align-items:flex-start;gap:18px;margin-top:24px}.card{width:230px;padding:16px;background:#e5edde}
+</style>
+<h1>Workboard</h1><p>Fictional local interface. Review the existing board and filter controls.</p>
+<div class="controls">
+ <div class="filter"><div class="trigger" tabindex="0" role="button" aria-label="Priority"><span>Priority</span><span class="trigger-icon" id="partial">⌄</span></div><div class="menu" id="priority"><button>All</button><button>High</button></div></div>
+ <div class="filter-panel"><button id="owner" aria-expanded="false">Owner <span>⌄</span></button><div class="menu" id="owners"><button>All owners</button><button>Mira</button><button>Oleg</button></div></div>
+ <button id="working" aria-expanded="false">Stage <span>⌄</span></button><div class="menu" id="stages"><button>Any stage</button><button>Repair</button></div>
+</div>
+<p><label>Search jobs <input id="search"></label><span id="count" role="status">8 jobs</span></p>
+<div class="scroll"><table><thead><tr><th class="corner">Job</th><th>Owner</th><th>Customer</th><th>Stage</th><th>Due</th><th>Notes</th></tr></thead><tbody id="rows"></tbody></table></div>
+<div class="cards"><article class="card"><h2>Today</h2><p>Three urgent repairs.</p></article><article class="card"><h2>Handover</h2><p>Check the repaired radio, packaging and power cable before collection.</p><p>The customer will arrive after 17:00.</p></article></div>
+<script>
+const body=document.querySelector('#rows');
+for(let i=1;i<=8;i++)body.insertAdjacentHTML('beforeend','<tr><th>N-'+(100+i)+'</th><td>Mira</td><td>Customer '+i+'</td><td>Repair</td><td>17:00</td><td>Awaiting part confirmation</td></tr>');
+document.querySelector('#partial').addEventListener('click',()=>document.querySelector('#priority').classList.toggle('open'));
+for(const [a,b]of [['owner','owners'],['working','stages']])document.querySelector('#'+a).addEventListener('click',()=>{const menu=document.querySelector('#'+b);const open=menu.classList.toggle('open');document.querySelector('#'+a).setAttribute('aria-expanded',String(open))});
+document.querySelector('#search').addEventListener('input',event=>{let n=0;for(const row of body.rows){row.hidden=!row.textContent.toLowerCase().includes(event.target.value.toLowerCase());if(!row.hidden)n++}document.querySelector('#count').textContent=n+' jobs'});
+</script></html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northstar workboard — corrected fixture</title>
+<style>
+:root{color-scheme:light;--paper:#faf8f1;--ink:#20332d;--green:#e5edde;--line:#71857a;--focus:#155e41}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.45 Arial,sans-serif}
+main{max-width:1240px;margin:auto;padding:24px}h1{margin:0 0 4px;font-size:28px;line-height:1.2}header p{margin:0 0 20px;color:#43584b}
+button,input{font:inherit;color:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,.scroll:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.toolbar{display:flex;align-items:flex-end;flex-wrap:wrap;gap:16px;margin-bottom:16px}.controls{display:flex;gap:10px;flex-wrap:wrap}.filter,.filter-panel,.stage-filter{position:relative;min-width:160px}
+.trigger,#owner,#working{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:44px;padding:10px 14px;border:1px solid var(--line);border-radius:5px;background:var(--green)}
+.trigger span,#owner span,#working span{pointer-events:none}.trigger-icon{margin-left:28px}.menu{display:none;position:absolute;top:calc(100% + 6px);left:0;z-index:10;min-width:100%;padding:5px;background:var(--paper);border:1px solid var(--line);border-radius:5px;box-shadow:0 5px 16px #20332d24}.menu.open{display:block}.menu button{display:block;width:100%;min-height:44px;text-align:left;padding:9px 12px;border:0;border-radius:3px;background:transparent}.menu button:hover,.menu button:focus-visible{background:var(--green)}
+.search-area{display:flex;align-items:flex-end;gap:12px;margin:0 0 0 auto}.search-area label{display:grid;gap:4px;font-size:14px;font-weight:bold}input{width:240px;max-width:100%;min-height:44px;padding:8px 10px;border:1px solid var(--line);border-radius:5px;background:#fff}#count{white-space:nowrap;padding-bottom:11px;font-size:14px}
+.scroll{width:100%;max-height:29rem;overflow:auto;border:1px solid var(--line);border-radius:5px;background:#fff}table{border-collapse:separate;border-spacing:0;width:100%;min-width:940px;font-size:15px}th,td{padding:10px 14px;white-space:nowrap;text-align:left;border-bottom:1px solid #c8d0c4;background:#fff}thead th{position:sticky;top:0;z-index:3;background:var(--green);font-size:13px}tbody th{position:sticky;left:0;z-index:2;background:#f1f4e9;font-variant-numeric:tabular-nums}thead .corner{left:0;z-index:4}tbody tr:last-child>*{border-bottom:0}tbody tr:hover>*{background:#edf2e8}
+.cards{display:grid;grid-template-columns:minmax(220px,1fr) minmax(300px,2fr);align-items:start;gap:16px;margin-top:18px}.card{padding:15px 18px;background:var(--green);border-left:3px solid var(--line);border-radius:3px}.card h2{font-size:17px;margin:0 0 6px}.card p{margin:0}.card p+p{margin-top:10px}
+@media(max-width:720px){main{padding:18px 16px}.toolbar{gap:12px}.controls{width:100%;gap:8px}.filter,.filter-panel,.stage-filter{flex:1;min-width:130px}.search-area{width:100%;margin:0}.search-area label{flex:1}input{width:100%}.cards{grid-template-columns:1fr}.scroll{max-height:29rem}}
+</style>
+<main>
+<header><h1>Workboard</h1><p>Fictional local interface. Review the existing board and filter controls.</p></header>
+<div class="toolbar">
+ <div class="controls">
+  <div class="filter"><button type="button" class="trigger" id="priority-trigger" aria-label="Priority" aria-expanded="false" aria-controls="priority"><span>Priority</span><span class="trigger-icon" id="partial">⌄</span></button><div class="menu" id="priority"><button type="button">All</button><button type="button">High</button></div></div>
+  <div class="filter-panel"><button type="button" id="owner" aria-expanded="false" aria-controls="owners">Owner <span>⌄</span></button><div class="menu" id="owners"><button type="button">All owners</button><button type="button">Mira</button><button type="button">Oleg</button></div></div>
+  <div class="stage-filter"><button type="button" id="working" aria-expanded="false" aria-controls="stages">Stage <span>⌄</span></button><div class="menu" id="stages"><button type="button">Any stage</button><button type="button">Repair</button></div></div>
+ </div>
+ <p class="search-area"><label for="search">Search jobs <input id="search" type="search"></label><span id="count" role="status">8 jobs</span></p>
+</div>
+<div class="scroll" tabindex="0" role="region" aria-label="Jobs"><table><thead><tr><th class="corner" scope="col">Job</th><th scope="col">Owner</th><th scope="col">Customer</th><th scope="col">Stage</th><th scope="col">Due</th><th scope="col">Notes</th></tr></thead><tbody id="rows">
+<tr><th scope="row">N-101</th><td>Mira</td><td>Customer 1</td><td>Repair</td><td>17:00</td><td>Awaiting part confirmation</td></tr>
+<tr><th scope="row">N-102</th><td>Mira</td><td>Customer 2</td><td>Repair</td><td>17:00</td><td>Awaiting part confirmation</td></tr>
+<tr><th scope="row">N-103</th><td>Mira</td><td>Customer 3</td><td>Repair</td><td>17:00</td><td>Awaiting part confirmation</td></tr>
+<tr><th scope="row">N-104</th><td>Mira</td><td>Customer 4</td><td>Repair</td><td>17:00</td><td>Awaiting part confirmation</td></tr>
+<tr><th scope="row">N-105</th><td>Mira</td><td>Customer 5</td><td>Repair</td><td>17:00</td><td>Awaiting part confirmation</td></tr>
+<tr><th scope="row">N-106</th><td>Mira</td><td>Customer 6</td><td>Repair</td><td>17:00</td><td>Awaiting part confirmation</td></tr>
+<tr><th scope="row">N-107</th><td>Mira</td><td>Customer 7</td><td>Repair</td><td>17:00</td><td>Awaiting part confirmation</td></tr>
+<tr><th scope="row">N-108</th><td>Mira</td><td>Customer 8</td><td>Repair</td><td>17:00</td><td>Awaiting part confirmation</td></tr>
+</tbody></table></div>
+<div class="cards"><article class="card"><h2>Today</h2><p>Three urgent repairs.</p></article><article class="card"><h2>Handover</h2><p>Check the repaired radio, packaging and power cable before collection.</p><p>The customer will arrive after 17:00.</p></article></div>
+</main>
+<script>
+const body=document.querySelector('#rows');
+const pairs=[['priority-trigger','priority'],['owner','owners'],['working','stages']];
+function closeMenus(except){for(const [triggerId,panelId] of pairs){if(panelId===except)continue;document.getElementById(panelId).classList.remove('open');document.getElementById(triggerId).setAttribute('aria-expanded','false')}}
+for(const [triggerId,panelId] of pairs){const trigger=document.getElementById(triggerId);const panel=document.getElementById(panelId);trigger.addEventListener('click',()=>{const open=!panel.classList.contains('open');closeMenus();panel.classList.toggle('open',open);trigger.setAttribute('aria-expanded',String(open))});panel.addEventListener('keydown',event=>{if(event.key==='Escape'){closeMenus();trigger.focus()}})}
+document.addEventListener('click',event=>{if(!event.target.closest('.filter,.filter-panel,.stage-filter'))closeMenus()});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'){const open=pairs.find(([,panelId])=>document.getElementById(panelId).classList.contains('open'));if(open){closeMenus();document.getElementById(open[0]).focus()}}});
+document.querySelector('#search').addEventListener('input',event=>{let n=0;for(const row of body.rows){row.hidden=!row.textContent.toLowerCase().includes(event.target.value.toLowerCase());if(!row.hidden)n++}document.querySelector('#count').textContent=n+' jobs'});
+</script>
+</html>
