@@ -6,7 +6,7 @@ An interface includes the transition between states. Design what happens before,
 
 For each important component, record applicable states: default, hover, focus, pressed, selected, disabled with a reason, loading, empty, error and success. Some states do not apply to every component. Identify the action, state transition, visible feedback, accessible feedback and recovery path.
 
-Use native semantic controls when possible. Keep persistent field labels, errors beside their fields, and instructions before a decision. A disabled button should not be the only place to explain an unavailable action. In dense tools, an adjacent reason or an operable help control can expose the cause without making a disabled element falsely interactive.
+Use native semantic controls when possible. Keep necessary persistent labels/context, errors beside their fields, and instructions before a decision. A placeholder is not a programmatic label and disappears with input. Where a field's purpose is visually clear, a redundant caption may be hidden while an associated label or appropriate accessible name remains. Otherwise keep the visible label. See [WAI labeling guidance](https://www.w3.org/WAI/tutorials/forms/labels/). A disabled button should not be the only place to explain an unavailable action; an adjacent reason or operable help can expose it without making the disabled control falsely interactive.
 
 Preserve entered data after recoverable failures. Show whether an operation is pending or complete; prevent accidental duplicate commitments. Use confirmation when consequences merit it and consider undo for reversible operations. Do not add confirmation dialogs to every routine action.
 
@@ -21,6 +21,27 @@ Distinguish a new collection, no search matches, no pending work, missing access
 Place onboarding near the relevant feature. Keep it dismissible, bound its recurrence and avoid competing announcements. Support people as they become proficient: efficient repetition, discoverable shortcuts where appropriate, and detail available without turning each action into a tutorial.
 
 These decisions adapt [Ant interaction patterns and Primer empty-state/onboarding guidance](../../research/deep-read.md). They are product-sensitive patterns, not a requirement to add every mechanism to every interface.
+
+## Simplify structure when authorized
+
+Question each caption, wrapper and repeated action word. Remove presentation that adds no decision, not useful units, requirements, instructions or empty/loading/error feedback. Regroup state, quantities and actions around the object. A fixed-copy or CSS-only brief may prevent this work; report the limit rather than inventing a CSS-generated control or hiding necessary content.
+
+For a familiar reversible action, a clear glyph can replace repeated visible text. Preserve the same handler, target size, localized name, keyboard activation, focus/recovery and safeguards. An unassign action must not become deletion. Unfamiliar or consequential meanings may still need visible text. The [WAI button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/) informs semantics and input; it does not prescribe a cross for every action.
+
+For example, in a fictional, clearly identified shortlist, these JSX representations use the same existing action and target:
+
+```jsx
+// Existing representation
+<button type="button" onClick={() => removeFromShortlist(item.id)}>Remove</button>
+// Compact representation where the glyph is understandable
+<button type="button" className="icon-button"
+  aria-label={`Remove ${item.name} from shortlist`}
+  onClick={() => removeFromShortlist(item.id)}>
+  <span aria-hidden="true">×</span>
+</button>
+```
+
+Keep the product's existing query binding when simplifying an obvious search field; retain its programmatic label and enough persistent context after typing. These are instructional patterns, not an implemented fixture or proof of working input/focus. Validate the actual consuming component, including removal of the last item and relevant recovery.
 
 ## Check the interactive boundary
 
@@ -54,4 +75,4 @@ For generated assets, describe their role, composition, crop, style constraints 
 
 ## Handoff
 
-A component is more than a picture. Include its content limits, state behavior, input methods, semantic role, theme mapping and responsive behavior. In a design canvas, use named components, deliberate auto-layout and token roles rather than piles of unstructured absolute-positioned shapes. Bound container width so long content can wrap, expose editable text through actual bindings, and model meaningful variant dimensions. Read back and inspect a result after changes; API success proves that a write happened. [Vibma's detailed guidance](../../research/deep-read.md) informed this structural emphasis; the workflow does not depend on installing it.
+A component is more than a picture. Include its content limits, state behavior, input methods, semantic role, theme mapping and responsive behavior. For multiple screens, use one [shared product contract](../product-contract.md) and authoritative components rather than copying divergent values. In a design canvas, use named components, deliberate auto-layout and token roles rather than piles of unstructured absolute-positioned shapes. Bound container width so long content can wrap, expose editable text through actual bindings, and model meaningful variant dimensions. Read back and inspect a result after changes; API success proves that a write happened. [Vibma's detailed guidance](../../research/deep-read.md) informed this structural emphasis; the workflow does not depend on installing it.

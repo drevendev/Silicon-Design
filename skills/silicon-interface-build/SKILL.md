@@ -5,30 +5,30 @@ description: Implement or refine website and application interfaces within their
 
 # Silicon interface build
 
-Inspect relevant existing UI, content, components and DESIGN.md. Preserve scope and branding. An established-brand screen needs one direction by default; missing direction on a major build may need a concise provisional choice, not an automatic exploration bundle.
+Inspect current UI/revision, relevant content, components and DESIGN.md. Carry accepted changes, arrangement/capacity constraints and supplied growth plans; separate speculation. Respect scope and brand constraints. A bounded screen needs one direction; missing direction may need a provisional choice, not an exploration bundle.
 
-## Compose the requested work
+Before expanding multiple screens, reuse or establish shared roles, type/numbers, icons, density, chrome and components/states. Reuse implementations; explain meaningful exceptions. A local fix needs no new kit or framework.
 
-Identify the main statement, primary object, useful action and critical values. Use representative content; label fiction and prototype actions. Do not invent testimonials, results, assets or functionality.
+## Compose the work
 
-For repeated-use operator work, start compact: rank identifiers, search keys, statuses and actions by task use. Remove framing without decision value; retain useful summaries, legends and explanations. Compare visible useful rows where relevant without shrinking necessary text or targets.
+Identify the primary object, statement, action and critical values. Label fiction/prototypes; invent no testimonials, results, assets or capabilities.
 
-For websites, inspect real headline breaks, navigation, comparable choices and action destinations together. Preserve distinctions between links, disclosure, selection and action; do not add fake affordances or rewrite fixed copy outside scope.
+On repeated-use work, start compact. Rank identifiers, search keys, statuses and actions by use; bound row widths and group actions with objects. Balance quantities, costs and units without shrinking necessary text/targets or enlarging every card.
 
-Keep semantic status colour with other cues, explain unfamiliar codes and preserve exact values. For data displays, keep units near values and labels near marks; check supplied data and report contradictions rather than inventing corrections.
+When authorized, remove redundant headings, decorative placeholders and empty wrappers; retain useful summaries, legends, instructions and meaningful empty/error states. Consider a recognizable remove glyph or an obvious search field with placeholder and programmatic label. Preserve persistent context, action semantics and safeguards; unfamiliar/consequential actions need explanation. Do not fake structural changes under fixed-copy/DOM constraints; report the limitation.
+
+On websites inspect real headline breaks, navigation, comparable choices and destinations together. Distinguish link, disclosure, selection and action; preserve fixed copy. Keep semantic status colour plus other cues, explain codes and preserve exact data. Distinguish zero, unknown and not applicable. Data displays need visible units, near labels and checked values; report contradictions.
 
 ## Implement and inspect
 
-A static assignment needs the complete requested frame. For interactive work, implement the changed flow and relevant failure/recovery states; preserve useful input and explain blocked actions. Additional workflows, second surfaces, component sheets and persistence tests apply only when present or necessary to validate the change. Do not invent fields or capabilities to fill a checklist.
+Complete the requested static frame. Interactive work includes affected decisions, blocked/failure/recovery states and useful input preservation. Add flows, surfaces, sheets or persistence checks only where needed.
 
-Check changed controls from their labels, icons and usable padding, plus supported keyboard paths. Inspect unexpected layout movement, clipped labels/overlays and sticky intersections where present. Deliberate reflow, truncation with reachable necessary detail and variable card heights can be valid.
+Exercise changed controls' labels, icons, usable padding and supported keyboard paths. Inspect unexpected movement, clipped labels/overlays and sticky intersections. Deliberate reflow, reachable truncation detail and variable heights may be valid.
 
-After close, removal or last-item undo, preserve useful task context and connected, visible focus. Verify actual activation/focus in a browser; a source stub or hit-test alone cannot establish it. Check the promised persistence boundary where affected.
+After affected close/removal/last-item undo, preserve useful context and connected visible focus. Browser activation/focus cannot be established by a stub or hit-test. Check promised persistence where affected.
 
-Finish at use size: main statement, action and quantities first, then wrapping, grouping, crops and symbol meaning. Fix observed problems and recheck affected states until criteria are met within scope; no fixed finding or test count.
+At use size, extend colours coherently or remap the palette within scope; trace actual text/icon colours, including SVG/mask/filter inheritance, onto changed surfaces. Inspect wrapping and crops. Unreadable glyphs fail even when declared swatches pass.
 
-Inspect relevant widths, themes, languages, resolved contrast, text enlargement/actual zoom and reduced motion according to the change. Keep the recognizable idea coherent across requested states and repeated use without requiring decorative novelty.
-
-Report implementation, located corrections and actual checked/failed/untested coverage. If runtime is unavailable, provide source findings and mark rendering/input unverified. Assess operation and character separately; do not turn static checks into accessibility or audience claims.
+Check relevant widths, themes, languages, content growth/live values, enlargement/actual zoom and reduced motion. Fix observed defects and recheck affected consumers; no finding quota. If runtime is unavailable, distinguish source findings from unverified rendering/input. Deliver located corrections and checked/failed/untested coverage; assess operation and character separately without compliance or audience claims.
 
 Optional depth: [review checklist](https://github.com/drevendev/Silicon-Design/blob/master/checklists/design-review.md).

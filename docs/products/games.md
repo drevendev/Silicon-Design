@@ -6,6 +6,8 @@ The play experience sets the hierarchy. UI should communicate decisions and feed
 
 Specify genre, loop, target devices, input methods, resolution, viewing distance, localization and UI scale. Decide which information must remain visible during play and which can live in a menu. A phone idle game, controller action game and desktop strategy game need different density and focus behavior.
 
+Use the current revision, accepted changes, explicit layout/capacity constraints and supplied growth plans. For multiple screens, reuse a [shared kit](../product-contract.md) before expansion: common navigation, level/XP, quantities and equivalent actions share implementations. Preserve task-based differences. A local correction needs no new system. Authorized simplification may regroup a mechanic's state and effects or remove redundant wording while preserving accessible meaning and gameplay truth.
+
 ## Build readable decisions
 
 Use an expressive face for short world-building titles if desired; use a readable face for inventory, instructions and quantities. Check text against the darkest and brightest relevant scenes, with stable panels or outlines when necessary.

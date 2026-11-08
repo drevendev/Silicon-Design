@@ -5,30 +5,28 @@ description: Establish or change a product's visual direction. Use for new ident
 
 # Silicon design direction
 
-Preserve the user's scope, brand and useful existing decisions. For an established-brand screen or small correction, use one direction by default; do not produce rendered alternatives or a new document bundle.
+Respect scope, explicit brand constraints and useful decisions. A bounded established-brand correction needs one direction, not rendered alternatives or a document bundle.
 
-## Choose what needs designing
+## Choose the work
 
-Inspect the relevant product, content, assets and constraints. Identify the person, task, use environment and intended feeling at a specific moment. Separate facts from assumptions; ask only when missing context changes a consequential choice.
+Inspect the current source/revision, relevant content, assets and components. Identify the person, task, use environment and intended feeling. Carry accepted changes, explicit layout/capacity constraints and supplied growth plans; distinguish current requirements, authorized plans and speculation. Ask only about consequential missing context.
 
-Express character through this product's subject, vocabulary, output or behaviour. A palette, font category or named aesthetic alone is insufficient. Keep a short subject inventory only when it helps choose a direction; label supplied, fictional and generated material.
+Express character through the product's subject, vocabulary, output or behaviour. A hue, font category or named aesthetic is insufficient. Keep a subject inventory only when useful; label supplied, fictional and generated material.
 
 ## Explore when warranted
 
-For open direction, a new identity or requested exploration, compare inexpensive compositions with the same words, capabilities, fixture, assets and viewport. Include a restrained treatment among the justified alternatives. Change meaningful relationships such as dominant object, reading model, hierarchy or imagery; palette swaps alone are weak variation.
+For open identity or requested exploration, compare inexpensive compositions with matched words, capabilities, fixture, assets and viewport. Include a restrained treatment. Change meaningful relationships: dominant object, reading model, hierarchy or imagery. Retain inspectable sketches/captures and tradeoffs; develop the selected direction.
 
-Retain inspectable sketches or captures and explain the useful tradeoff. Develop the selected direction rather than finishing every candidate. Honour explicitly requested comparison scope; if rendering is unavailable, label options as unverified proposals.
+Select through first attention, useful action and next transition. Check that priority survives narrow reflow before polishing rejected options. Compare specificity with a category peer without copying identity. Honour requested comparison scope; unavailable rendering leaves proposals unverified.
 
-Choose through visible priorities: first attention, useful action and next transition. Before selecting a responsive direction, check that its priority survives narrow reflow; do not polish every rejected option at every size. Compare specificity with the nearest same-category product, without copying its identity.
+## Carry the choice
 
-## Carry and record the choice
+Extend the palette coherently or, within authorized redesign, remap surfaces, text, icons and states together. Neither an unrelated accent nor freezing every existing colour follows from respecting identity. No hue is inherently wrong.
 
-Keep a recognizable idea coherent across the requested surfaces and states. An operational tool may express care through efficiency and exactness while its controls remain familiar. Test repeated-use costs where relevant; expressive detail must not obstruct the task.
+For multiple screens, establish shared visual/component roles before expansion; equivalent headers, navigation, levels and controls reuse one contract, with task-based exceptions. An isolated fix needs no new UI kit.
 
-Do not invent fields, workflows, persistence, onboarding or additional screens to demonstrate character. A static frame needs that frame's complete composition, not an invented adverse interaction or second surface.
+Permit useful regrouping and removal of redundant presentation when in scope; fixed-copy/DOM restrictions remain binding and must be reported when they prevent the intended result. Do not invent fields, workflows, persistence or screens to demonstrate character. Efficiency can carry identity; expressive detail must not obstruct repeated work.
 
-Update DESIGN.md only when actual decisions need recording: context, hierarchy, visual roles, rationale, tradeoff and unresolved questions. Inventory, component sheets and cross-state evidence are conditional on the assignment.
-
-Deliver the chosen direction and concise evidence. Distinguish proposal, prototype and implemented result; do not invent audience affection, recall or successful checks. Proceed within authorized reversible work without adding an approval sequence.
+Record changed decisions in DESIGN.md: hierarchy, roles, rationale, tradeoffs and open questions. Sheets and secondary states are conditional. Deliver evidence, distinguishing proposal/prototype/implementation; invent no audience effects or checks. Continue authorized reversible work without another approval sequence.
 
 Optional depth: [workflow](https://github.com/drevendev/Silicon-Design/blob/master/docs/workflow.md).
