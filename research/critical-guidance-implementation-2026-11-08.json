@@ -1,0 +1,182 @@
+{
+  "issue": 26,
+  "date": "2026-11-08",
+  "base_commit": "1d0f408016f5761766ab7b0400fd0b03be625b53",
+  "status": "guidance_implemented_authoring_checks_passed",
+  "entrypoints": [
+    {
+      "path": "skills/silicon-design-direction/SKILL.md",
+      "before_words": 375,
+      "after_words": 336,
+      "before_body_characters": 2850,
+      "after_body_characters": 2718,
+      "description_characters": 136
+    },
+    {
+      "path": "skills/silicon-design-review/SKILL.md",
+      "before_words": 401,
+      "after_words": 382,
+      "before_body_characters": 3343,
+      "after_body_characters": 3261,
+      "description_characters": 128
+    },
+    {
+      "path": "skills/silicon-design-system/SKILL.md",
+      "before_words": 408,
+      "after_words": 374,
+      "before_body_characters": 3059,
+      "after_body_characters": 2949,
+      "description_characters": 128
+    },
+    {
+      "path": "skills/silicon-game-ui/SKILL.md",
+      "before_words": 420,
+      "after_words": 408,
+      "before_body_characters": 3296,
+      "after_body_characters": 3443,
+      "description_characters": 122
+    },
+    {
+      "path": "skills/silicon-interface-build/SKILL.md",
+      "before_words": 419,
+      "after_words": 412,
+      "before_body_characters": 3183,
+      "after_body_characters": 3377,
+      "description_characters": 121
+    }
+  ],
+  "context": {
+    "before_entrypoint_words": 2023,
+    "after_entrypoint_words": 1912,
+    "before_body_characters": 15731,
+    "after_body_characters": 15748,
+    "description_characters": 635,
+    "conditional_reference_words": 492,
+    "new_always_loaded_references": 0,
+    "method": "Whitespace split after YAML frontmatter and Unicode character count; not model tokens or cost."
+  },
+  "skill_validation": {
+    "source_folders": 5,
+    "isolated_folders": 5,
+    "all_passed": true,
+    "details": [
+      {
+        "folder": "silicon-design-direction",
+        "isolated": false,
+        "exit_code": 0,
+        "output": "Skill is valid!"
+      },
+      {
+        "folder": "silicon-design-direction",
+        "isolated": true,
+        "exit_code": 0,
+        "output": "Skill is valid!"
+      },
+      {
+        "folder": "silicon-design-review",
+        "isolated": false,
+        "exit_code": 0,
+        "output": "Skill is valid!"
+      },
+      {
+        "folder": "silicon-design-review",
+        "isolated": true,
+        "exit_code": 0,
+        "output": "Skill is valid!"
+      },
+      {
+        "folder": "silicon-design-system",
+        "isolated": false,
+        "exit_code": 0,
+        "output": "Skill is valid!"
+      },
+      {
+        "folder": "silicon-design-system",
+        "isolated": true,
+        "exit_code": 0,
+        "output": "Skill is valid!"
+      },
+      {
+        "folder": "silicon-game-ui",
+        "isolated": false,
+        "exit_code": 0,
+        "output": "Skill is valid!"
+      },
+      {
+        "folder": "silicon-game-ui",
+        "isolated": true,
+        "exit_code": 0,
+        "output": "Skill is valid!"
+      },
+      {
+        "folder": "silicon-interface-build",
+        "isolated": false,
+        "exit_code": 0,
+        "output": "Skill is valid!"
+      },
+      {
+        "folder": "silicon-interface-build",
+        "isolated": true,
+        "exit_code": 0,
+        "output": "Skill is valid!"
+      }
+    ],
+    "local_links": [
+      {
+        "skill": "silicon-design-review",
+        "target": "references/interactive-checks.md"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "repository_checker",
+      "exit_code": 0,
+      "log": "repository_checker.log"
+    },
+    {
+      "name": "checker_tests",
+      "exit_code": 0,
+      "log": "checker_tests.log"
+    },
+    {
+      "name": "existing_state_tests",
+      "exit_code": 0,
+      "log": "existing_state_tests.log"
+    }
+  ],
+  "protected_files": {
+    "count": 166,
+    "all_byte_identical": true,
+    "sections": [
+      "examples",
+      "benchmarks",
+      "tools",
+      "tests",
+      ".github"
+    ],
+    "interactive_reference_unchanged": true
+  },
+  "requirement_audit": {
+    "mode": "semantic source walkthrough, not wording-match tests",
+    "record": "research/critical-guidance-implementation-2026-11-08.md",
+    "critical_issues": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ]
+  },
+  "comparative_experiments_started": 0,
+  "fresh_model_exercises": 0,
+  "new_native_browser_checks": 0,
+  "limits": [
+    "Guidance implementation and package validation only.",
+    "Illustrative JSX is not a natively tested consuming fixture.",
+    "No preference, billing, compliance or improved-generation claim.",
+    "Further comparative evaluation remains held for separate authorization."
+  ]
+}

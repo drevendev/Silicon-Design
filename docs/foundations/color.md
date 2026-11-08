@@ -2,6 +2,8 @@
 
 Build a palette from roles and context. Choosing a new accent is only one part of identity; typography, composition, imagery and voice must support the same direction.
 
+Palette coherence is the goal, not a freeze. Extend the existing relationships or, within the authorized redesign, remap surfaces, text, icons, boundaries and interaction/status states together. An isolated accent that clashes with the surrounding system needs reworking; the hue itself is not forbidden. Explicit brand constraints still apply.
+
 ## Build the roles
 
 1. Choose the product's lightness environment and neutral surfaces for its content and use setting.
@@ -35,6 +37,8 @@ Prefer understandable status names. Dense codes need a nearby legend and reachab
 Create a dark theme by remapping surface, foreground, border and state roles. Simple inversion rarely preserves hierarchy. Check selected, hover, pressed, loading, focus and error combinations independently. Support a system preference or a deliberate theme choice when the product calls for it; do not add a theme switch merely to satisfy a style checklist.
 
 Inspect the resolved component colors for every materially different theme or direction. In the [matched trial](../../benchmarks/2026-11-03/PROTOCOL.md), a light folio inherited light text from the dark root despite passing declared palette calculations. Its body copy and owned quantities were almost invisible. Remap the foreground at the scope that actually supplies it; keep image-overlay roles local. A variable change or a successful CSS write is not evidence that the browser's computed color changed.
+
+Trace meaningful glyphs too: SVG fill/stroke/currentColor, masks, filters and image-backed icons may follow a different colour path from adjacent text. Inspect the actual adjacent surface, transparency and affected states. An unreadable dark-on-dark glyph remains a failure even if other declared pairs pass. Use resolved colours for applicable contrast calculations; visual inspection also checks thin strokes, viewBox, line-height, padding and accidental overflow crops. Decorative/inactive exceptions do not make necessary active cues optional.
 
 For errors and resource deficits, combine color with a label, icon shape, pattern or explicit amount. Reserve visual intensity for decisions that need it. A warning should not look more urgent than a destructive action unless its consequences justify it.
 

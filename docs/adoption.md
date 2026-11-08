@@ -16,6 +16,8 @@ These are independent tools, not a mandatory sequence. A local correction or est
 
 Each SKILL.md contains the essential workflow and constraints. Online handbook links provide optional depth. Review's local `references/interactive-checks.md` contains a detailed procedure only for relevant interactive reviews; skip it for screenshot-only/static appearance work.
 
+Multi-screen work reuses or establishes one compact product kit before expansion; local edits do not. The essential rule is in each relevant skill. The [shared-contract procedure](product-contract.md) and [later evaluation protocol](evaluation.md) are optional handbook depth, not new always-loaded references. Palette changes must remain coherent; an authorized whole-palette redesign is allowed.
+
 ## Copy a portable folder
 
 Copy the entire selected folder, including supporting references. Its essential workflow works offline and does not require another skill, this checkout or a commercial tool. The handbook is reference material, not global configuration; do not copy its maintenance AGENTS.md into the consuming product.

@@ -4,12 +4,13 @@ Select applicable checks for the requested frame or flow; this is an inspection 
 
 ## Scope and appearance
 
-- [ ] Existing direction, requested capabilities and real content are preserved; fiction/prototypes and unavailable evidence are labelled.
+- [ ] Current revision, accepted changes, explicit arrangement/capacity constraints and supplied growth plans are respected; speculation, fiction/prototypes and unavailable evidence are labelled.
 - [ ] Primary statement, useful action and decision-critical information have clear priority at use size.
 - [ ] Composition, imagery, voice and behaviour support subject-specific character without requiring decorative novelty.
-- [ ] Density and grouping support the task; subtract redundant framing while retaining useful summaries, legends and state explanations.
+- [ ] Density, bounded widths and grouped actions support the task; quantities do not dwarf necessary costs/units. Authorized simplification removes redundant framing while preserving useful summaries, names, legends and state explanations.
 - [ ] Actual wrapping, crops, small symbols, selected states and supported scripts remain understandable.
-- [ ] Resolved ink/background/theme roles and applicable contrast pairs were inspected; palette checks alone are insufficient.
+- [ ] Palette roles are coherent, allowing an authorized whole-palette change. Actual text and glyph paths (SVG/mask/filter/image), adjacent surfaces, bounds/crops and applicable contrast pairs were inspected; selected swatches alone are insufficient.
+- [ ] For multiple screens/reusable changes, equivalent components share an authoritative contract and implementation across affected consumers; meaningful exceptions are explained. Local corrections do not require a new kit.
 - [ ] Fixed copy, unavailable assets and capture uncertainty are distinguished from implementation defects.
 
 ## Interactive work — where present or affected
@@ -39,3 +40,4 @@ For detailed diagnostics use the review skill's [interactive procedure](../skill
 - [ ] Operation/access and character/care conclusions are separate; preference and acceptance are not conflated.
 - [ ] Source assertions, screenshots and palette math are not presented as unperformed native-input, assistive-technology or audience tests.
 - [ ] Additional surfaces, sheets, workflows and documents are included only when requested or necessary for validation; no finding/test quota or new approval sequence.
+- [ ] Remaining scoped readability defects are unresolved findings, not successful delivery. Comparison protocol, permission and failure handling follow the [separate gate](../docs/evaluation.md); no new experiment is inferred from an instruction update.

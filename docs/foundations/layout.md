@@ -14,6 +14,8 @@ A 4 CSS px base with steps such as 4, 8, 12, 16, 24, 32 and 48 can be a convenie
 
 Density follows task and input. A data tool may need compact rows to enable scanning; a reading site benefits from longer pauses. Compact visuals can retain generous hit areas. Avoid enlarging every app control until the primary work disappears below the fold.
 
+Bound useful row widths and keep actions with their objects. Oversized counts beside tiny necessary costs or units are weak hierarchy, not useful density. Preserve deliberate level/status placement and scrolling context. Check long/live values and supplied content-growth limits; do not manufacture compactness through hidden content, tiny targets or compulsory equal heights.
+
 ## Author the rhythm
 
 Repeat what teaches a stable relationship; vary what changes the information's role. A sequence may move from a dominant artifact to a close comparison to a quieter explanation. Use meaningful scale jumps, framing, crop and density to shape that progression. Identical padding and card treatment on every section can flatten it; random alternation can make it harder to follow.
