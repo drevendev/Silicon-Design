@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assortment capacity · Silicon Design</title>
+  <style>
+    :root { font: 16px/1.35 system-ui, sans-serif; color: #30291f; background: #eee9dd; }
+    * { box-sizing: border-box; }
+    body { margin: 0; height: 100svh; display: grid; grid-template-rows: auto minmax(0, 1fr); }
+    button, input, select { font: inherit; color: inherit; }
+    button, input, select, .toolbar a { min-height: 44px; border: 1px solid #82745e; border-radius: 4px; }
+    button, select, input { background: #fffdf7; }
+    button { cursor: pointer; padding: 8px 12px; }
+    button:disabled { cursor: default; background: #ded8ca; }
+    :focus-visible { outline: 3px solid #245b7d; outline-offset: 2px; }
+    .toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 16px; padding: 6px 20px; border-bottom: 1px solid #a79a84; }
+    .toolbar p { margin: 0; flex: 1 1 250px; }
+    .toolbar nav { display: flex; flex-wrap: wrap; gap: 6px; }
+    .toolbar a { display: inline-flex; align-items: center; padding: 8px; color: inherit; }
+    .toolbar [aria-current] { background: #d9caa9; font-weight: 700; }
+    main { width: 100%; max-width: 1180px; justify-self: center; min-height: 0; overflow: auto; padding: 12px 20px; display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 12px; }
+    .market-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 16px; align-items: center; }
+    h1 { font-size: 1.25rem; margin: 0; }
+    .market-head p { margin: 0; }
+    #status { grid-column: 1 / -1; min-height: 2.7em; }
+    .head-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    #offers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(3, minmax(10.5rem, 1fr)); gap: 10px; min-height: 0; }
+    .offer { min-width: 0; border: 1px solid #a79a84; border-radius: 6px; background: #fffdf7; padding: 10px; display: grid; grid-template-rows: minmax(44px, 1fr) auto auto; gap: 8px; }
+    .item { display: flex; align-items: center; gap: 8px; padding: 0 4px; border: 0; background: transparent; text-align: left; font-weight: 700; overflow-wrap: anywhere; }
+    .item svg { flex: 0 0 28px; color: #6a5030; }
+    .facts { display: flex; justify-content: space-between; gap: 4px 8px; flex-wrap: wrap; }
+    .purchase { display: flex; align-items: end; gap: 8px; }
+    .purchase label { display: grid; gap: 2px; }
+    input[type=number] { width: 72px; padding: 6px; }
+    .buy { flex: 1; background: #684b24; color: #fffdf7; font-weight: 700; }
+    .buy:disabled { color: #30291f; font-weight: 400; }
+    #catalog-controls { padding: 12px 0; }
+    #catalog-controls:not([hidden]) { display: flex; gap: 12px; flex-wrap: wrap; align-items: end; }
+    #catalog-controls label { display: grid; gap: 4px; flex: 1 1 180px; }
+    #catalog-controls input, select { width: 100%; padding: 8px; }
+    .catalog { display: block; }
+    .catalog #offers { display: grid; grid-template-columns: 1fr; grid-template-rows: none; }
+    .catalog .offer { grid-template-rows: auto; grid-template-columns: minmax(0, 1fr) minmax(0, 220px) 240px; align-items: center; }
+    dialog { width: min(95vw, 560px); max-height: 90svh; overflow: auto; border: 1px solid #82745e; border-radius: 6px; background: #fffdf7; color: inherit; }
+    dialog::backdrop { background: #201c17aa; }
+    dialog h2 { font-size: 1.25rem; }
+    dialog dl { display: grid; grid-template-columns: 1fr auto; gap: 10px; }
+    dialog dd { margin: 0; }
+    dialog .close { float: right; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+    @media (max-width: 900px) { .catalog .offer { grid-template-columns: minmax(0, 1fr) 180px; } .catalog .facts { grid-column: 1; } .catalog .purchase { grid-column: 2; grid-row: 1 / 3; } }
+    @media (max-width: 700px) {
+      body { height: auto; min-height: 100svh; grid-template-rows: auto auto; }
+      main { overflow: visible; }
+      .market-head { grid-template-columns: 1fr; }
+      #offers { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; grid-auto-rows: minmax(10.5rem, auto); }
+      .catalog .offer { grid-template-columns: 1fr; }
+      .catalog .facts, .catalog .purchase { grid-column: auto; grid-row: auto; }
+    }
+    @media (max-width: 450px) { #offers { grid-template-columns: 1fr; } .toolbar, main { padding-inline: 12px; } }
+  </style>
+</head>
+<body>
+  <header class="toolbar">
+    <p id="fiction">Fictional teaching fixture · resets on reload</p>
+    <nav aria-label="Fixture cases">
+      <a id="assortment-link" href="?case=assortment">9 offers</a>
+      <a id="catalog-link" href="?case=catalog">Catalog</a>
+      <a id="en-link" href="?lang=en">EN</a>
+      <a id="ru-link" href="?lang=ru">RU</a>
+    </nav>
+  </header>
+  <main id="market">
+    <header class="market-head">
+      <div><h1 id="title">Quartermaster</h1><p id="count"></p></div>
+      <div class="head-actions"><strong id="gold"></strong><button id="rules" type="button">Pricing and rules</button></div>
+      <p id="status" role="status" aria-live="polite" aria-atomic="true"></p>
+    </header>
+    <section id="catalog-controls" hidden aria-label="Catalog controls">
+      <label><span id="search-label">Search</span><input id="search" type="search"></label>
+      <label><span id="sort-label">Sort</span><select id="sort"><option value="name">Name</option><option value="price">Price: low first</option></select></label>
+    </section>
+    <section id="offers" aria-label="Offers"></section>
+  </main>
+  <dialog id="detail" aria-labelledby="detail-title"><button class="close" id="close" type="button">Close</button><h2 id="detail-title"></h2><div id="detail-body"></div></dialog>
+  <script>
+    'use strict';
+    const params = new URLSearchParams(location.search), lang = params.get('lang') === 'ru' ? 'ru' : 'en', catalog = params.get('case') === 'catalog';
+    const copy = {
+      en: { fiction: 'Fictional teaching fixture · resets on reload', title: 'Quartermaster', offers: 'offers', gold: 'gold', stock: 'Stock', qty: 'Qty', buy: 'Buy', sold: 'Sold out', invalid: 'Check quantity', poor: 'Not enough gold', close: 'Close', rules: 'Pricing and rules', reference: 'Reference price', purchased: 'Purchased this visit', rulesText: 'Fictional fixed prices include a shared 20% supplier markup. Item names open exact reference prices and purchase counts. No refresh or saved progression is simulated.', receipt: 'Purchased', search: 'Search', sort: 'Sort', name: 'Name', price: 'Price: low first', empty: 'No matching offers.' },
+      ru: { fiction: 'Вымышленный учебный пример · сброс при перезагрузке', title: 'Снабженец', offers: 'предложений', gold: 'золота', stock: 'Остаток', qty: 'Кол-во', buy: 'Купить', sold: 'Распродано', invalid: 'Проверьте число', poor: 'Не хватает золота', close: 'Закрыть', rules: 'Цены и правила', reference: 'Базовая цена', purchased: 'Куплено за визит', rulesText: 'Вымышленные цены включают общую наценку поставщика 20%. Название предмета открывает точную базовую цену и число покупок. Обновление и сохранение прогресса не моделируются.', receipt: 'Куплено', search: 'Поиск', sort: 'Сортировка', name: 'Название', price: 'Цена: сначала ниже', empty: 'Подходящих предложений нет.' }
+    }[lang];
+    const names = lang === 'ru'
+      ? ['Кедровая веточка', 'Стеклянная бусина', 'Пузырёк чернил', 'Катушка шерстяной нити', 'Медная булавка', 'Глиняная миска', 'Небольшой полотняный мешок', 'Обрывок старой карты', 'Латунная застёжка']
+      : ['Cedar sprig', 'Glass bead', 'Ink vial', 'Wool spool', 'Copper pin', 'Clay bowl', 'Small linen pouch', 'Old map scrap', 'Brass clasp'];
+    const unit = lang === 'ru' ? ' / шт.' : ' each';
+    const items = Array.from({length: catalog ? 96 : 9}, (_, i) => ({ id: i, name: names[i % 9] + (catalog ? ' ' + String(i + 1).padStart(3, '0') : ''), base: 20 + i * 5, price: (20 + i * 5) * 6 / 5, stock: 50, purchased: 0, draft: '1' }));
+    let gold = params.get('funds') === '0' ? 0 : 10000;
+    const $ = id => document.getElementById(id), number = n => new Intl.NumberFormat(lang).format(n);
+    document.documentElement.lang = lang;
+    $('assortment-link').textContent = lang === 'ru' ? '9 товаров' : '9 offers';
+    $('catalog-link').textContent = lang === 'ru' ? 'Каталог' : 'Catalog';
+    for (const id of ['assortment','catalog']) { $(id + '-link').href = '?case=' + id + '&lang=' + lang; if ((id === 'catalog') === catalog) $(id + '-link').setAttribute('aria-current', 'page'); }
+    for (const id of ['en','ru']) { $(id + '-link').href = '?case=' + (catalog ? 'catalog' : 'assortment') + '&lang=' + id; if (id === lang) $(id + '-link').setAttribute('aria-current', 'page'); }
+    $('fiction').textContent = copy.fiction; $('title').textContent = copy.title;
+    $('rules').textContent = copy.rules; $('close').textContent = copy.close;
+    $('search-label').textContent = copy.search; $('sort-label').textContent = copy.sort;
+    $('sort').options[0].textContent = copy.name; $('sort').options[1].textContent = copy.price;
+    $('market').classList.toggle('catalog', catalog); $('catalog-controls').hidden = !catalog;
+    if (!catalog) $('catalog-controls').remove();
+    function values(item) {
+      const qty = Number(item.draft), valid = item.draft.trim() !== '' && Number.isSafeInteger(qty) && qty >= 1 && qty <= item.stock;
+      const total = valid ? qty * item.price : null;
+      return { qty, total, reason: item.stock === 0 ? copy.sold : !valid ? copy.invalid : total > gold ? copy.poor : '' };
+    }
+    function update(item) {
+      const node = $('offer-' + item.id); if (!node) return;
+      const v = values(item), button = node.querySelector('.buy');
+      node.querySelector('.stock').textContent = copy.stock + ': ' + number(item.stock);
+      button.disabled = Boolean(v.reason);
+      button.textContent = v.reason || copy.buy + ' · ' + number(v.total);
+      button.setAttribute('aria-label', (v.reason || copy.buy + ': ' + item.name + ', ' + number(v.total) + ' ' + copy.gold));
+      node.querySelector('input').max = item.stock;
+    }
+    function updateAll() { $('gold').textContent = number(gold) + ' ' + copy.gold; items.forEach(update); }
+    function detail(item) {
+      $('detail-title').textContent = item ? item.name : copy.rules;
+      $('detail-body').replaceChildren();
+      if (item) {
+        const dl = document.createElement('dl');
+        for (const [name,value] of [[copy.reference, number(item.base) + ' ' + copy.gold], [copy.stock, number(item.stock)], [copy.purchased, number(item.purchased)]]) {
+          const dt = document.createElement('dt'), dd = document.createElement('dd'); dt.textContent = name; dd.textContent = value; dl.append(dt,dd);
+        }
+        $('detail-body').append(dl);
+      } else { const p = document.createElement('p'); p.textContent = copy.rulesText; $('detail-body').append(p); }
+      $('detail').showModal();
+    }
+    function render() {
+      const query = catalog ? $('search').value.trim().toLocaleLowerCase(lang) : '';
+      const selected = items.filter(x => x.name.toLocaleLowerCase(lang).includes(query)).sort(catalog && $('sort').value === 'price' ? (a,b) => a.price - b.price : (a,b) => a.name.localeCompare(b.name, lang));
+      $('offers').replaceChildren(); $('count').textContent = selected.length + ' / ' + items.length + ' ' + copy.offers;
+      for (const item of selected) {
+        const node = document.createElement('article'); node.className = 'offer'; node.id = 'offer-' + item.id;
+        node.innerHTML = '<button class="item" type="button"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M3 8 14 2l11 6v12l-11 6-11-6Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m3 8 11 6 11-6M14 14v12" fill="none" stroke="currentColor"/></svg><span></span></button><div class="facts"><strong class="price"></strong><span class="stock"></span></div><div class="purchase"><label><span></span><input type="number" min="1" step="1" inputmode="numeric"></label><button class="buy" type="button"></button></div>';
+        node.querySelector('.item span').textContent = item.name;
+        node.querySelector('.item').onclick = () => detail(item);
+        node.querySelector('.price').textContent = number(item.price) + ' ' + copy.gold + unit;
+        node.querySelector('label span').textContent = copy.qty;
+        const field = node.querySelector('input'); field.value = item.draft; field.setAttribute('aria-label', copy.qty + ': ' + item.name);
+        field.oninput = () => { item.draft = field.value; update(item); };
+        node.querySelector('.buy').onclick = () => {
+          const v = values(item); if (v.reason) return;
+          gold -= v.total; item.stock -= v.qty; item.purchased += v.qty;
+          $('status').textContent = copy.receipt + ': ' + v.qty + ' × ' + item.name + ' · ' + number(v.total) + ' ' + copy.gold;
+          updateAll();
+        };
+        $('offers').append(node);
+      }
+      if (!selected.length) { const p = document.createElement('p'); p.textContent = copy.empty; $('offers').append(p); }
+      updateAll();
+    }
+    $('rules').onclick = () => detail(null); $('close').onclick = () => $('detail').close();
+    if (catalog) { $('search').oninput = render; $('sort').onchange = render; }
+    render();
+  </script>
+</body>
+</html>

@@ -8,6 +8,8 @@ Write the content in priority order without cards or columns. Group things that 
 
 Choose a dominant area appropriate to the surface: a representative result on a site, an unresolved work queue in an app, the playfield and immediate resource decision in a game. Different parts of a page may have different rhythms, while sharing alignment and a spacing vocabulary.
 
+Independently inspect relevant category/genre-and-task screens before selecting the reading model. Choose grid/rows through count, recognition, comparison and sorting needs; compactness alone does not prescribe rows. Budget the usable viewport after chrome and fit a bounded set intended together at base size. See [references and capacity](../references-and-capacity.md) for provenance, slot calculations and accessible fallbacks. Tiny text, hidden items or unnecessary pagination do not establish fit.
+
 ## Establish a spacing vocabulary
 
 A 4 CSS px base with steps such as 4, 8, 12, 16, 24, 32 and 48 can be a convenient web starting point. Use smaller spaces within related groups and larger spaces between groups. Type metrics and optical alignment may need exceptions. Do not quantize everything merely because the grid exists.

@@ -6,6 +6,7 @@ Select applicable checks for the requested frame or flow; this is an inspection 
 
 - [ ] Current revision, accepted changes, explicit arrangement/capacity constraints and supplied growth plans are respected; speculation, fiction/prototypes and unavailable evidence are labelled.
 - [ ] Primary statement, useful action and decision-critical information have clear priority at use size.
+- [ ] Inspected references match category/genre and task; provenance, useful transfers and unavailable evidence are explicit. Reading model follows actual count and decisions. Bounded-set capacity fits the usable base viewport without hiding/shrinking content; narrow/enlarged-text fallback remains usable.
 - [ ] Composition, imagery, voice and behaviour support subject-specific character without requiring decorative novelty.
 - [ ] Density, bounded widths and grouped actions support the task; quantities do not dwarf necessary costs/units. Authorized simplification removes redundant framing while preserving useful summaries, names, legends and state explanations.
 - [ ] Actual wrapping, crops, small symbols, selected states and supported scripts remain understandable.

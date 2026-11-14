@@ -27,6 +27,16 @@ State lasts within each page visit. Field Notes retains it across its directions
 
 ## Local development and publishing
 
+The original [capacity fixture](capacity.html) adds a separate teaching task:
+nine fixed offers fit a declared 1080×800 base viewport, while its
+[96-item catalog](capacity.html?case=catalog) uses search, sorting and a scrolling
+list. It has EN/RU text, exact per-unit/total prices, local purchases, blocked
+states and keyboard-accessible detail. Narrow/enlarged-text views may scroll.
+All content is fictional; state resets on reload. These are different content
+tasks, not a new same-brief generation or preference experiment. See
+[reference/capacity reasoning](../docs/references-and-capacity.md) and the dated
+[verification](VERIFICATION.md).
+
 Serve the repository root:
 
 ```sh

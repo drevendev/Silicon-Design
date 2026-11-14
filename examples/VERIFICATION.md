@@ -1,5 +1,48 @@
 # Specimen verification — 3 November 2026
 
+## Capacity fixture — 14 November 2026
+
+This section concerns only the new original `capacity.html`; the earlier
+specimens and historical captures below remain unchanged. No comparative
+generation/preference run or fresh model exercise was started.
+
+The optional native-browser check uses an existing Playwright installation:
+
+```sh
+node tests/capacity.browser.mjs
+```
+
+`SILICON_BROWSER_PACKAGE` may identify an already available Playwright package;
+`PLAYWRIGHT_BROWSERS_PATH` may identify its installed browsers.
+`SILICON_BROWSER_OUTPUT` selects a local evidence directory; otherwise the check
+uses a new OS temporary directory. No install, server or external requests are
+needed: exact local HTML bytes are fulfilled at a synthetic secure origin.
+
+Chromium 151.0.7922.34, DPR1; 10/10 scenario checks pass, no page errors. EN/RU
+each cover nine fully visible usable offers at 1080×800 without page/main
+scrolling; truthful purchase/gold/stock updates, invalid/excess/empty drafts,
+stock exhaustion and no funds; exact item/rules disclosure with keyboard
+activation and focus return. The separate 96-item catalog exercises real search,
+price sorting, retained drafts, no-results and purchase. All values/state are
+fictional and reset on reload; no private game or save is involved.
+
+390×844 and 200% text enlargement retain all nine offers and reachable purchase
+paths with deliberate vertical scrolling, without horizontal loss in the
+checked cases. Text enlargement is not native browser zoom. The base-state
+necessary text is 16px, and measured input/item/action targets are at least
+44px high; those observations do not establish accessibility compliance.
+
+Retained original captures:
+
+- [RU base](previews/capacity-ru-base.png)
+- [RU narrow, last offer after purchase](previews/capacity-ru-narrow.png)
+- [EN large catalog](previews/capacity-en-catalog.png)
+
+[Source, context and check record](../research/reference-capacity-implementation-2026-11-14.json).
+Autonomous model retrieval/design quality, audience preference, native zoom,
+physical devices, controller, assistive technology and complete contrast/state
+coverage remain untested. The existing historical checks are reported below.
+
 Scope: three same-brief Field Notes directions and revised Dispatch/Mosslight browser prototypes. Windows, in-app Chromium browser, Python 3.14.7, Node.js 24.19.0. This is implementation verification, not a usability study or accessibility certification.
 
 ## Offline checks

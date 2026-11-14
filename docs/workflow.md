@@ -13,13 +13,15 @@ Start with the requested change and existing direction. A skill or template supp
 
 Read relevant product material and the skill for the actual job. Do not load all five skills, every foundation or benchmark history by default. Each skill works alone; an existing brand rarely needs a fresh direction exercise. Name the current source/revision; carry accepted changes, explicit arrangement/capacity constraints and supplied growth plans. Separate current requirements, authorized plans and speculation.
 
+Before composing, independently find and visually inspect comparable category/genre-and-task screens, even without a research request. Reuse suitable inspected material for local corrections. Distinguish shipped UI, promotion, concepts and unavailable evidence; record applicable relationships and differences, not copied skins or invented features. Choose grid/rows from actual count, recognition/comparison and sorting needs, then budget usable width/height after chrome. Fit bounded sets intended together at base size; inspect narrow/enlarged-text fallback separately. [References and capacity](references-and-capacity.md) gives conditional detail.
+
 For multiple screens or a reusable change, reuse or establish the smallest [shared product contract](product-contract.md) before screen expansion. Keep tokens and common components authoritative across consumers; do not reinvent headers, navigation, levels or controls per screen. A local correction needs no new kit or second surface.
 
 ## Choose a direction when needed
 
 Identify the person, task, constraints and intended feeling at a specific moment. Ground choices in the product's output, vocabulary, material or behaviour. Mark supplied, fictional and generated content.
 
-When exploration is justified, keep words, capabilities, fixture, assets and viewport comparable. Include a restrained treatment among the alternatives already needed; change hierarchy, reading model, imagery or another meaningful relationship. Retain inexpensive inspectable sketches or captures and their tradeoffs. Develop the selected option instead of finishing every candidate.
+When exploration is justified, keep words, capabilities, fixture, assets and viewport comparable. Include a restrained treatment among the alternatives already needed; change hierarchy, reading model, imagery or another meaningful relationship. Before replacing a useful reading model, sketch against the existing composition. Retain inexpensive evidence/tradeoffs and develop the selected option instead of finishing every candidate.
 
 Before selecting a responsive direction, check that its intended priority survives narrow reflow. Honour explicitly requested comparison scope; unrendered alternatives remain proposals. A new palette alone does not establish diversity. The [Field Notes comparison](../examples/field-notes-directions.html) is an inspectable exercise, not a required deliverable for every project.
 
@@ -27,7 +29,7 @@ Reuse DESIGN.md or [record changed decisions](../templates/DESIGN.md) briefly wh
 
 ## Build and finish
 
-Use real content and sound existing components. Preserve semantic roles, exact values and state truth. On repeated-use operator screens, start compact: bound row widths, group actions with objects and balance quantities/costs/units. Remove framing without decision value while keeping useful summaries, legends and status explanations. On a landing, inspect the actual headline block, comparable choices and action destinations together.
+Use real content and sound existing components. Preserve semantic roles, exact values and state truth. On repeated-use work, start compact without defaulting to rows: bound component widths, group actions with objects and balance quantities/costs/units. Remove framing without decision value while keeping useful summaries, legends and status explanations. On a landing, inspect the actual headline block, comparable choices and action destinations together.
 
 Within authorized scope, redesign structure and control representation rather than only recolouring existing boxes. Remove meaningless headings, decorative placeholders and empty wrappers; preserve meaningful empty/error states and accessible operation. A familiar icon action or search field can replace repeated visible wording with appropriate names and persistent context. See [structural simplification](foundations/interaction.md). Fixed-copy/DOM constraints remain binding; explain which intended improvements they prevent instead of faking controls in CSS.
 

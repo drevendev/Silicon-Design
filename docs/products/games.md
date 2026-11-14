@@ -6,6 +6,10 @@ The play experience sets the hierarchy. UI should communicate decisions and feed
 
 Specify genre, loop, target devices, input methods, resolution, viewing distance, localization and UI scale. Decide which information must remain visible during play and which can live in a menu. A phone idle game, controller action game and desktop strategy game need different density and focus behavior.
 
+Before composing, independently find and visually inspect screens for the same genre and player task. For an idle/tycoon trade task, inspect comparable supply/trade screens; distinguish actual UI, promotion, concepts and unknown provenance. Extract recognition, grouping, price/action proximity, density and repeated-input relationships into this game's kit. A reference's art, extra controls or mechanics are not a specification to copy. Record unavailable inspection rather than manufacture evidence.
+
+Choose the reading model from actual count and decisions: a bounded assortment may fit a grid, a large sortable catalog may use rows. Budget shared chrome, task-wide effects/refresh and usable slots before implementation. Fit the bounded base-view set without unnecessary scrolling; retain readable names/values and operable purchase/detail paths. Reconsider repeated explanation before shrinking. Narrow/enlarged-text reflow may scroll deliberately. [Calculation and example](../references-and-capacity.md).
+
 Use the current revision, accepted changes, explicit layout/capacity constraints and supplied growth plans. For multiple screens, reuse a [shared kit](../product-contract.md) before expansion: common navigation, level/XP, quantities and equivalent actions share implementations. Preserve task-based differences. A local correction needs no new system. Authorized simplification may regroup a mechanic's state and effects or remove redundant wording while preserving accessible meaning and gameplay truth.
 
 ## Build readable decisions

@@ -9,6 +9,8 @@ Use this record when actual direction decisions need documenting; reuse the exis
 - Current source/revision and accepted changes: [authoritative component/content source; separate historical captures].
 - Existing direction, components and constraints: [what to preserve; platforms, languages, assets, time].
 - Explicit arrangement/capacity and supplied growth: [current requirement / authorized plan / speculation; permitted DOM/copy/control changes].
+- Inspected task/category references: [source/date/provenance, useful relationship, differences; reuse existing inspection or record unavailable evidence].
+- Reading model and capacity: [fixed/growing count, recognition/comparison/sorting, usable viewport after chrome, base-set fit and narrow/enlargement fallback].
 - Chosen hierarchy and useful action: [first attention, critical information, next step].
 - Character and intended feeling: [subject-specific choices; efficiency may carry character in operational work].
 - Rationale, tradeoff and unresolved questions: [brief, inspectable decisions].
@@ -56,6 +58,6 @@ A static frame does not need invented interactive states or a second screen.
 - Character versus operation: [separate judgments; no invented audience effects].
 - Exceptions and review: [tradeoffs, unresolved issues, report link if useful].
 
-## References — when used
+## Reference detail — only when needed
 
-[Source/revision/date, relationship learned, what differs here and asset/copying boundaries.]
+[Expand the context note only when a source or transfer needs explanation; no mandatory gallery.]

@@ -271,6 +271,13 @@
       "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
       "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
     ],
+    "reference_capacity_implementation": {
+      "base_revision": "75b7ba934f90b8655b8bfe047e6ac3bb1a80a7ed",
+      "reviewed_at": "2026-11-14",
+      "issues": [35, 31, 32],
+      "record": "research/reference-capacity-implementation-2026-11-14.md",
+      "scope": "Owner-requirement skill/handbook changes and original fictional runtime checks; no new comparative or model exercise."
+    },
     "critical_guidance_implementation": {
       "base_revision": "1d0f408016f5761766ab7b0400fd0b03be625b53",
       "reviewed_at": "2026-11-08",

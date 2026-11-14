@@ -6,7 +6,9 @@ Organize the product around work people complete and information they compare. A
 
 Expose the primary object, its state and useful next action. Preserve filters, selection and entered data between related views where the task requires it. Keep an established brand; a bounded screen redesign needs one direction by default.
 
-For repeated-use operator work, start compact. Rank identifiers, search keys, methods/types, statuses and actions by actual frequency and consequence. Put rarely used controls outside the primary band when appropriate. Prefer aligned rows for comparison and cards for independently meaningful objects.
+Before composing, independently find and visually inspect comparable category-and-task screens; translate useful relationships into the existing product's language. Match the reading model to fixed/growing count, recognition, comparison and real sorting/filtering needs. Aligned rows can serve attribute comparison; cards can represent a small set of meaningful objects. Neither is a default for every app. [References and capacity](../references-and-capacity.md) covers evidence and available-space calculations.
+
+For repeated-use work, start compact. Rank identifiers, search keys, methods/types, statuses and actions by frequency and consequence. Budget chrome and task-wide status before placing content; fit a bounded set intended together at base size, with separate accessible narrow/enlargement fallback. Put rarely used controls outside the primary band when appropriate; preserve their real paths.
 
 Subtract bands, captions, separators and containers whose removal loses no decision. Keep summaries that support planning and legends that explain codes. One-line headers and bounded date columns can save space, but calendars and long content may need another structure. Compare visible useful rows before/after only where row comparison matters; row count does not justify tiny text or unusable targets.
 
