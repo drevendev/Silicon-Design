@@ -1,0 +1,357 @@
+{
+  "format": "silicon-feedback-sources-1",
+  "retrieved_on": "2026-11-14",
+  "repository": "drevendev/Silicon-Design",
+  "base_revision": "d455f4aad76657281f5ad7bc2308310e8f3b7d09",
+  "scope": "Repository-wide issue search, every returned issue body and all returned issue comments. Hashes identify retrieved text, not immutable remote revisions.",
+  "issues": [
+    {
+      "number": 39,
+      "title": "[Owner v6 evidence · Claude run] Game UI: где S проиграл (полки, Management) — лишние подписи состояний, слабая иерархия объекта, нет прохода вычитания",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/39",
+      "body_sha256": "d374cc51cf9eb5e03276153a0b7cffcb75241365bc68721c7fa4f2af5a9c54fc",
+      "comments": []
+    },
+    {
+      "number": 37,
+      "title": "[Owner v6 evidence] Game UI: remove redundant labels, prioritise shelf goods and separate quality from passing QA",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/37",
+      "body_sha256": "318a5eda7ecf5c491230b551a06e6ab599d66738dee7686ff77abfa6f816a6e8",
+      "comments": []
+    },
+    {
+      "number": 35,
+      "title": "[Owner critical] Inspect task/genre references and determine screen capacity before composing",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/35",
+      "body_sha256": "5557c73941b746cf1cdd098a4769d0ff6e2c281dfae32703618fa909ecb77d3a",
+      "comments": [
+        {
+          "id": 6873858461,
+          "url": "https://github.com/drevendev/Silicon-Design/issues/35#issuecomment-6873858461",
+          "body_sha256": "fd379902457ad0db0b8ed4421a3b94a6390955e23aa6a4f0164753267acb95df"
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "title": "[Fix before retest] Rebuild the evaluation around shared product design and permitted structural work",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/33",
+      "body_sha256": "cf6a6d115b04debab3b94b5061297603d6618f6e554d071e3c0462e3427c77c9",
+      "comments": []
+    },
+    {
+      "number": 32,
+      "title": "[Owner critical] Carry the current product revision and supplied content-growth constraints into redesign briefs",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/32",
+      "body_sha256": "894768f4f22941afe894ec184eea4fefc5c634134d8e4ca484e168a3579f234e",
+      "comments": [
+        {
+          "id": 6873860134,
+          "url": "https://github.com/drevendev/Silicon-Design/issues/32#issuecomment-6873860134",
+          "body_sha256": "486f2d00ca06df0dba29e5a86e1ec87fbbdefcadec543466613db67be860b1d5"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "title": "[Owner critical] Make compact layouts readable: balanced quantities, widths, actions and scrolling",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/31",
+      "body_sha256": "99f07259863ca0377cdfe1c73d030e6c072fe94ae06f0ba9b74a463de0cea36b",
+      "comments": [
+        {
+          "id": 6873859236,
+          "url": "https://github.com/drevendev/Silicon-Design/issues/31#issuecomment-6873859236",
+          "body_sha256": "0cc621c1b69dde6c265babf92ee6c4822d39e9d9d63021950c06c260a38d8678"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "title": "[Owner critical] Simplify redundant UI and redesign control representation when authorized",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/30",
+      "body_sha256": "729e85779f4a2a829d525c71e999d94227dcf2e03ce44de3807927e26542a0d5",
+      "comments": []
+    },
+    {
+      "number": 29,
+      "title": "[Owner critical] Reuse one product UI kit and component contract across requested screens",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/29",
+      "body_sha256": "814fe13466b448a44ae725fc0ca87df53306b8ba5eab4c55a6853d89a1ba1c08",
+      "comments": []
+    },
+    {
+      "number": 28,
+      "title": "[Owner critical] Catch dark-on-dark glyphs, inherited icon colours and accidental crops",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/28",
+      "body_sha256": "ca6bd9456dc15547c9e10d31da6e3e2cef2e5543dbd7c94d57b38fb70d8e5bfc",
+      "comments": []
+    },
+    {
+      "number": 27,
+      "title": "[Owner critical] Keep palette changes coherent across the whole interface",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/27",
+      "body_sha256": "985e0d2a685bc6ac6675dd8b61cf569d8827d0726e66aa0a3d14e733d85aa523",
+      "comments": []
+    },
+    {
+      "number": 26,
+      "title": "[Owner critical] Fix design coherence, readability and structure before another experiment",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/26",
+      "body_sha256": "f98251a95221bb7731932802acb95c9eab937e96c7bf5175d64cc4fc0244fbff",
+      "comments": []
+    },
+    {
+      "number": 25,
+      "title": "Game UI practice: accepted compactness, truthful effects and stable interactions from IdleShop 0.15.1",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/25",
+      "body_sha256": "b85e5d79bb924577190ae11cac95b0a8ff56e0faff8470a3bde172972d9641b9",
+      "comments": []
+    },
+    {
+      "number": 23,
+      "title": "Validate the merged lean skills: runtime cases and matched generation/cost evidence",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/23",
+      "body_sha256": "3717d597d07d887771f9271db8646f9a35fed4895a76ddda117cdb9d39a11bf5",
+      "comments": []
+    },
+    {
+      "number": 21,
+      "title": "Implementation spec: lean Silicon Design skills from the operations trial and Design Duel v2",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/21",
+      "body_sha256": "f503bf3a749d65ecaf158c206a3c5fd419f658c99b195d5c8da20f8a790ccd2a",
+      "comments": [
+        {
+          "id": 6707283987,
+          "url": "https://github.com/drevendev/Silicon-Design/issues/21#issuecomment-6707283987",
+          "body_sha256": "94b1747ae97ac7868c610b890c5ba02ed702721b5a868d05930e58daa934eb26"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "title": "Check small game symbols and selected actions at the intended UI scale",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/20",
+      "body_sha256": "47c4f1724e9710963b6ff68a7a700a204fecc908495b61acc73769aec54307e6",
+      "comments": []
+    },
+    {
+      "number": 19,
+      "title": "Finish landing-page type, option grouping and action cues with the actual content",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/19",
+      "body_sha256": "e55b908186c4b2790ca741ae7f5cfeea04064acdde8c36f6f661f0506283e0a8",
+      "comments": []
+    },
+    {
+      "number": 18,
+      "title": "Charts: put units at the reading point and attach labels to their marks",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/18",
+      "body_sha256": "90aebe2995940e2a3ea70e6985241d13d1033bca8765da0fd425cdcf9ce0d18d",
+      "comments": []
+    },
+    {
+      "number": 17,
+      "title": "Make the static craft pass concrete and keep relative wins separate from acceptance",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/17",
+      "body_sha256": "5dae55573f7401f404538c5b4ad90e157105e1743a3e95d8b47098cdf267b6ca",
+      "comments": []
+    },
+    {
+      "number": 16,
+      "title": "Completed: Design Duel v2 — Silicon beat Anti Slop 4:0 and tied the short prompt 2:2 on matched briefs",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/16",
+      "body_sha256": "6cf34688ea9e4f99806770ee8930b14ed7e1b6553f2f2de0864e2d3058b15bb3",
+      "comments": []
+    },
+    {
+      "number": 15,
+      "title": "Scale exploration to the assignment: alternatives on established-brand work cost a third more without a better result",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/15",
+      "body_sha256": "7bd539d9efe0faea1365d0f28847fa765991d28f3ac0f700bf4168c4a8f7be6f",
+      "comments": [
+        {
+          "id": 6706298551,
+          "url": "https://github.com/drevendev/Silicon-Design/issues/15#issuecomment-6706298551",
+          "body_sha256": "352fa84537f06c98845cbe25c78b807c5effb160dbc3061739e57ff9ff19293e"
+        },
+        {
+          "id": 6707282539,
+          "url": "https://github.com/drevendev/Silicon-Design/issues/15#issuecomment-6707282539",
+          "body_sha256": "826a1b34a1cdf98635e43c396c6fc51d193965785d8a76c47e5fc6f4df97dffc"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Add review checks for layout shift, full hit areas, clipping and sticky intersections",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/14",
+      "body_sha256": "986a028b703cac10b34b11cf4f2a668804f6f68e7cd620a5c3e4386e898fc4a8",
+      "comments": [
+        {
+          "id": 6707281722,
+          "url": "https://github.com/drevendev/Silicon-Design/issues/14#issuecomment-6707281722",
+          "body_sha256": "870852033308dc3c4641b55490790e672d3a4c297b60560dab575dd8d0891e36"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Status encoding: keep semantic colour, explain every code, show the success state",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/13",
+      "body_sha256": "563dc0bbd2b16074532318c56dea8fa5bdae23c564f39d737f2bc2f61bac2c72",
+      "comments": [
+        {
+          "id": 6707281105,
+          "url": "https://github.com/drevendev/Silicon-Design/issues/13#issuecomment-6707281105",
+          "body_sha256": "d1265d9bca0d8ed64ccb66c786d0f24fe54c5e3a6666f67bc594a18ccf39e6ba"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Repeated-use operator screens: compact by default, and stop spending hierarchy on framing",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/12",
+      "body_sha256": "92a2a4961fb1382fe6fa81fbc5e338eabb1068190a7f11e6b844ae3916faeb05",
+      "comments": [
+        {
+          "id": 6707280477,
+          "url": "https://github.com/drevendev/Silicon-Design/issues/12#issuecomment-6707280477",
+          "body_sha256": "ff0e939fb30de462b1a206a73a606593a5990e5d2acbe890bb78beb88a861adf"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Completed: blind real-product trial on 10 operations screens. Silicon placed second, behind the no-skill baseline",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/11",
+      "body_sha256": "0b778adf551095396c6b8174a8265e9a4c59dc3c2c2d415e58a06853bce1732e",
+      "comments": [
+        {
+          "id": 6707279783,
+          "url": "https://github.com/drevendev/Silicon-Design/issues/11#issuecomment-6707279783",
+          "body_sha256": "2f5851440ae4c45bbe6ff0553232ecf14935dc2363e659a10b907d0215c03e82"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Close the visual craft gap exposed by the Anti Slop comparison",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/10",
+      "body_sha256": "a1d94c89188e5a9e97892226c2352f4bf6b0ecf5018060e00e65805159938792",
+      "comments": []
+    },
+    {
+      "number": 9,
+      "title": "Completed: first matched Silicon Design vs Anti Slop trial",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/9",
+      "body_sha256": "5531ee8562fd473d99bb93cf55cbf46430758152f678948de0cde41627e8c400",
+      "comments": []
+    },
+    {
+      "number": 8,
+      "title": "Research: 10 new AI-design repositories + 10 articles — why the gallery still feels generic",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/8",
+      "body_sha256": "4548be65c8af69128d5c0f3ed08e7891457b53444ce034f0458647598516300a",
+      "comments": [
+        {
+          "id": 6597680197,
+          "url": "https://github.com/drevendev/Silicon-Design/issues/8#issuecomment-6597680197",
+          "body_sha256": "817c0081968e12056a80cadc8cb05ef9c3cda6073aadc423184df3ca1b65a9cd"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Add a reusable offline EN/RU control and typography stress specimen, with separate native evidence",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/7",
+      "body_sha256": "4ab452832cfb9b97ca92daf9e7dffb9fb766a09c811c8f7f944bd4219a22c670",
+      "comments": []
+    },
+    {
+      "number": 6,
+      "title": "Add an asynchronous application specimen for progress, pause and finding the actual outcome",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/6",
+      "body_sha256": "87df5978702037fc4b6738bb7b41f8c0c9ecf9c81c7625ad20ba976bdd050f3a",
+      "comments": []
+    },
+    {
+      "number": 5,
+      "title": "Contribute Compost Club design practice: a quiet garden, compact reading and discoverable outcomes",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/5",
+      "body_sha256": "9fac28bca9b1a0a09605264f93569a42fd44364f92e8f5010fa85197e442db50",
+      "comments": []
+    },
+    {
+      "number": 3,
+      "title": "Add a controlled material comparison exercise with full-artifact cost and visual-state evidence",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/3",
+      "body_sha256": "7b287e9778bbb9cf37bfbeda9d3086e5f0db6c886f78e72c9f89133630bfde5d",
+      "comments": []
+    },
+    {
+      "number": 2,
+      "title": "Run a matched real-product trial of character, difficult states and returning use",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/2",
+      "body_sha256": "8a1581ca6cb9c4a15c8d868f37b86a820b1ac59429784893789449325804435f",
+      "comments": []
+    },
+    {
+      "number": 1,
+      "title": "Add an original interactive specimen for draft, stale confirmation and recovery contracts",
+      "url": "https://github.com/drevendev/Silicon-Design/issues/1",
+      "body_sha256": "e3dfaaeeace2ebd4122acfe521c8e25357242d078eddf2ae110a6af8c9c8fb23",
+      "comments": []
+    }
+  ],
+  "prior_pull_requests": [
+    {
+      "number": 22,
+      "url": "https://github.com/drevendev/Silicon-Design/pull/22",
+      "state": "closed",
+      "draft": false,
+      "merged": true,
+      "head_sha": "a0f244d1533784ca9bed7a0b5e18fe456f4957fb",
+      "merge_commit_sha": "1d0f408016f5761766ab7b0400fd0b03be625b53"
+    },
+    {
+      "number": 34,
+      "url": "https://github.com/drevendev/Silicon-Design/pull/34",
+      "state": "closed",
+      "draft": false,
+      "merged": true,
+      "head_sha": "f93915948ed442a8385bf140b80849373414c33a",
+      "merge_commit_sha": "75b7ba934f90b8655b8bfe047e6ac3bb1a80a7ed"
+    },
+    {
+      "number": 36,
+      "url": "https://github.com/drevendev/Silicon-Design/pull/36",
+      "state": "closed",
+      "draft": false,
+      "merged": true,
+      "head_sha": "700f088a4c4f353fe983cab09a22ec84c7143b9a",
+      "merge_commit_sha": "d455f4aad76657281f5ad7bc2308310e8f3b7d09"
+    },
+    {
+      "number": 38,
+      "url": "https://github.com/drevendev/Silicon-Design/pull/38",
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "head_sha": "ae219bfa06bf0298a7ae6e5869c3fa5e7ddaea4b",
+      "merge_commit_sha": "15d82a8b8a2408bb5048004d5df509d3c5fed4ef"
+    }
+  ],
+  "public_product_revisions_reported_by_sources": [
+    {
+      "source_issue": 5,
+      "repository": "drevendev/CompostClub",
+      "revision": "074a9206198e3f9cdc45d6a83590c354217b9526",
+      "scope": "Reported source revision in the public contribution; not re-audited here."
+    },
+    {
+      "source_issue": 25,
+      "repository": "drevendev/Silicon-Design",
+      "revision": "1d0f408016f5761766ab7b0400fd0b03be625b53",
+      "scope": "Silicon baseline reviewed by the historical product-practice contribution."
+    }
+  ]
+}

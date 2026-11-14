@@ -84,3 +84,11 @@ preference and model cost remain untested; no new comparative run was started.
 ## Owner blind-test observation, 14 November 2026
 
 Authorised owner review of IdleShop v6, pinned product f23a815 and Silicon d455f4a. Product follow-ups: https://github.com/drevendev/IdleShop/issues/662, https://github.com/drevendev/IdleShop/issues/663, https://github.com/drevendev/IdleShop/issues/664. Skill diagnosis: https://github.com/drevendev/Silicon-Design/issues/37. Single-owner relative preferences; no raw private votes/paid media reproduced. Runner corrections: Left/Tie/Right, comment before explicit Next, set exposure history. No external donor skill/code was copied.
+
+## Consolidated feedback revision, 2026-11-14
+
+The [feedback map](feedback-revision-2026-11-14.md) reconciles every returned public issue body/comment, including owner reports [#37](https://github.com/drevendev/Silicon-Design/issues/37) and [#39](https://github.com/drevendev/Silicon-Design/issues/39), with merged guidance at `d455f4aad76657281f5ad7bc2308310e8f3b7d09`. The [source ledger](feedback-revision-2026-11-14.sources.json) records retrieved text hashes and exact comment URLs; mutable issues are not commit-pinned sources. Earlier findings, negative controls and unmet acceptance retain their original scope.
+
+[Product practice](product-practice-2026-11-14.md) paraphrases the outstanding public [Compost Club #5](https://github.com/drevendev/Silicon-Design/issues/5) and [IdleShop #25](https://github.com/drevendev/Silicon-Design/issues/25) contributions, preserving historical implementation/branch/owner-observation limits. Their reported product checks were not repeated here. Newly authored copy/composition examples are teaching prose, not new native or human tests. No private material or third-party pixels/code are bundled.
+
+The locally bundled skill-creator informs lean, self-contained entrypoints and conditional detail. No external skill text is copied. Subtraction, object framing and the final craft pass are contextual conventions; this contribution adds no accessibility standard or palette/layout ban. Better generations, autonomous reference retrieval and owner acceptance require separate evidence.

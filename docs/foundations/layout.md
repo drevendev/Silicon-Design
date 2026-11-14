@@ -8,6 +8,8 @@ Write the content in priority order without cards or columns. Group things that 
 
 Choose a dominant area appropriate to the surface: a representative result on a site, an unresolved work queue in an app, the playfield and immediate resource decision in a game. Different parts of a page may have different rhythms, while sharing alignment and a spacing vocabulary.
 
+Make the object lead its framing. Prefer one enclosing boundary per object; extra frames need a functional grouping reason. Uniform records may share one divided container instead of separate decorated cards. Choose centring or comparison alignment deliberately and align corner actions with their owning header. Do not remove useful focus/input/selection boundaries to satisfy a border count. The [subtraction and craft pass](../subtraction-and-craft.md) keeps duplicate state words out without losing required explanations.
+
 Independently inspect relevant category/genre-and-task screens before selecting the reading model. Choose grid/rows through count, recognition, comparison and sorting needs; compactness alone does not prescribe rows. Budget the usable viewport after chrome and fit a bounded set intended together at base size. See [references and capacity](../references-and-capacity.md) for provenance, slot calculations and accessible fallbacks. Tiny text, hidden items or unnecessary pagination do not establish fit.
 
 ## Establish a spacing vocabulary
