@@ -18,27 +18,34 @@
     if(!s||s.schema_version!==1||s.study_id!==c.study_id||s.protocol_version!==c.protocol_version||s.corpus_id!==c.corpus_id)throw Error('Ответ относится к другому корпусу или протоколу.');
     if(typeof s.session_id!=='string'||typeof s.qa!=='boolean'||!['in_progress','complete','early_stopped'].includes(s.completion)||!Array.isArray(s.answers)||!Array.isArray(s.defects))throw Error('Некорректная сессия.');
     if(c.qa_fixture&&!s.qa)throw Error('Синтетический корпус требует QA-флаг.');
+    for(const key of ['pending_votes','drafts','seen_screens'])if(s[key]!==undefined&&(!s[key]||typeof s[key]!=='object'||Array.isArray(s[key])))throw Error('Некорректные черновики.');
     const tasks=new Map(schedule(c.artifacts.map(x=>x.id),c.seed,c.screens).map(t=>[t.pair_id,t])),seen=new Set();
+    if(s.cursor!==undefined&&(!Number.isInteger(s.cursor)||s.cursor<0||s.cursor>=tasks.size))throw Error('Некорректный курсор.');
+    if(s.preferences!==undefined&&(!s.preferences||(typeof s.preferences!=='object')||!(c.supported_locales??['ru','en']).includes(s.preferences.locale)||!(c.supported_views??['desktop','mobile','full']).includes(s.preferences.view)||!['fit','100','200'].includes(s.preferences.zoom)))throw Error('Некорректные настройки просмотра.');
     for(const a of s.answers){const t=tasks.get(a.pair_id);if(!t||seen.has(a.pair_id)||a.left_artifact_id!==t.left||a.right_artifact_id!==t.right||a.block!==t.block||a.screen!==t.screen||!['left','right','tie'].includes(a.winner)||typeof a.comment!=='string'||!Number.isFinite(Date.parse(a.timestamp))||!['ru','en'].includes(a.locale)||!['desktop','mobile','full'].includes(a.view)||!['fit','100','200'].includes(a.zoom))throw Error('Некорректный ответ или пара.');seen.add(a.pair_id);}
     if(s.completion==='complete'&&seen.size!==tasks.size)throw Error('Завершённая сессия содержит пропуски.');
     for(const [id,winner] of Object.entries(s.pending_votes??{}))if(!tasks.has(id)||!['left','tie','right'].includes(winner))throw Error('Некорректный черновик выбора.');
     for(const [id,comment] of Object.entries(s.drafts??{}))if(!tasks.has(id)||typeof comment!=='string')throw Error('Некорректный черновик комментария.');
     for(const [id,exposure] of Object.entries(s.seen_screens??{}))if(!tasks.has(id)||!['left','right'].every(side=>Array.isArray(exposure?.[side])&&exposure[side].every(x=>(c.screens??blocks.slice(0,3)).includes(x))))throw Error('Некорректная история просмотра.');
+    for(const a of s.answers)if(c.protocol_version>=2&&a.block==='set'&&!['left','right'].every(side=>(c.screens??blocks.slice(0,3)).every(screen=>s.seen_screens?.[a.pair_id]?.[side]?.includes(screen))))throw Error('Не подтверждён просмотр комплекта.');
     for(const d of s.defects)if(!tasks.has(d.pair_id)||!['left','right','both'].includes(d.side)||typeof d.comment!=='string')throw Error('Некорректная запись дефекта.');
     return s;
   }
   function validateCorpus(c){
     if(!c||c.schema_version!==1||typeof c.study_id!=='string'||!c.study_id||!Number.isInteger(c.protocol_version)||c.protocol_version<1||!Number.isInteger(c.seed)||typeof c.corpus_id!=='string'||!Array.isArray(c.artifacts)||c.artifacts.length<2)throw Error('Некорректный корпус.');
     if(new Set(c.artifacts.map(a=>a.id)).size!==c.artifacts.length)throw Error('Повтор ID.');
+    for(const [key,allowed] of [['supported_locales',['ru','en']],['supported_views',['desktop','mobile','full']]])if(c[key]!==undefined&&(!Array.isArray(c[key])||!c[key].length||new Set(c[key]).size!==c[key].length||c[key].some(x=>!allowed.includes(x))))throw Error('Некорректные доступные виды.');
+    if(c.corpus_hash_format!==undefined&&c.corpus_hash_format!=='typed-ieee754-v1')throw Error('Неизвестный формат хеша.');
     for(const a of c.artifacts){if(!/^[a-z0-9-]+$/.test(a.id)||(a.runtime_b64!==undefined&&typeof a.runtime_b64!=='string')||!a.captures)throw Error('Неполный вариант.');for(const screen of (c.screens??blocks.slice(0,3)))for(const locale of (c.supported_locales??['ru','en']))for(const view of (c.supported_views??['desktop','mobile','full']))if(!a.captures[screen+'/'+locale+'/'+view]?.startsWith('data:image/png;base64,'))throw Error('Не хватает снимков.');}
-    if(c.screens&&(!Array.isArray(c.screens)||!c.screens.length||new Set(c.screens).size!==c.screens.length||c.screens.includes('set')))throw Error('Invalid screens');
+    if(c.screens&&(!Array.isArray(c.screens)||!c.screens.length||c.screens.some(x=>typeof x!=='string'||!x||x==='set')||new Set(c.screens).size!==c.screens.length))throw Error('Invalid screens');
     return c;
   }
   async function verifyCorpus(c){
     validateCorpus(c);
     const canonical=x=>Array.isArray(x)?x.map(canonical):x&&typeof x==='object'?Object.fromEntries(Object.keys(x).sort().map(k=>[k,canonical(x[k])])):x;
     const {corpus_id,...payload}=c;
-    const digest=await root.crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(canonical(payload))));
+    function typed(x){if(x===null)return['null'];if(typeof x==='boolean')return['boolean',x];if(typeof x==='number'){if(!Number.isFinite(x))throw Error('Invalid number');const b=new ArrayBuffer(8);new DataView(b).setFloat64(0,x,false);return['number',[...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')];}if(typeof x==='string')return['string',x];if(Array.isArray(x))return['array',x.map(typed)];return['object',Object.keys(x).sort().map(k=>[k,typed(x[k])])];}
+    const digest=await root.crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(c.corpus_hash_format==='typed-ieee754-v1'?typed(payload):canonical(payload))));
     const actual=[...new Uint8Array(digest)].map(b=>b.toString(16).padStart(2,'0')).join('');
     if(actual!==corpus_id)throw Error('Хеш корпуса не совпадает: файл повреждён или изменён.');
     return c;
