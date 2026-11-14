@@ -85,3 +85,9 @@ Actual browser zoom/text-only enlargement, OS high contrast, live reduced-motion
 There is no backend, saved account, persistent game, shipping or printing integration. Fictional content is explicitly labelled. The completed painting has slight generated brush-detail drift. No matched Anti Slop baseline or blinded preference trial has run; see [protocol](../research/benchmark.md).
 
 [State sheet](STATE-SHEET.md) · [Located visual findings](REVIEW.md).
+
+## Blind-test runner — 14 November 2026
+
+This is runner verification, not new gallery/design acceptance. The bundled blind-test template was rendered in Chromium151.0.7922.34 at1280x900 and390x844. Model-facing captures masked every study image while preserving its box; wide/narrow wrapper control placement was inspected. Left/Tie/Right remains a single ordered row inside both viewports. Selection keeps the task visible and unsubmitted; its pending choice and a subsequently edited comment survive reload; only Next commits. A set vote cannot be confirmed before all member screens display on both sides; exposure history is exported and is not evidence of human attention. Synthetic test exports are qa:true. Original completed protocol1 votes were validated and retained unchanged; no new human result is claimed for protocol2.
+
+Repository checks and13 Python unit tests pass, including a different-product synthetic corpus build, seeded24-task balance, corpus verification and foreign-answer rejection. Skill quick validation passes using a task-local PyYAML installation; this is not a runtime dependency. Full screen-reader/device testing and a human retest of the corrected runner remain unperformed. No private corpus, raw human votes or purchased image bytes are committed.

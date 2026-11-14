@@ -79,3 +79,8 @@ private product artifacts, trial rankings or participant details are included.
 The fixture is original teaching material derived from the public task, not a
 reference discovered in a shipped game. Autonomous future retrieval, design
 preference and model cost remain untested; no new comparative run was started.
+
+
+## Owner blind-test observation, 14 November 2026
+
+Authorised owner review of IdleShop v6, pinned product f23a815 and Silicon d455f4a. Product follow-ups: https://github.com/drevendev/IdleShop/issues/662, https://github.com/drevendev/IdleShop/issues/663, https://github.com/drevendev/IdleShop/issues/664. Skill diagnosis: https://github.com/drevendev/Silicon-Design/issues/37. Single-owner relative preferences; no raw private votes/paid media reproduced. Runner corrections: Left/Tie/Right, comment before explicit Next, set exposure history. No external donor skill/code was copied.
