@@ -83,6 +83,13 @@
     "Codex configured model rejected before completion; original attempt retained, no substitution or retry.",
     "Personal/global installation, device/AT, design preference and billing remain untested."
   ],
+  "reviewed_head": "48f007b6e4ce8b19df7f9d1e9396413e8ba25833",
+  "review_corrections": [
+    "Bind Codex skill paths to full-read operands; mentions/ambiguous commands cannot pass.",
+    "Require exact Claude project directory and case-sensitive POSIX identity.",
+    "Reject vacuous positive and ill-typed activation cases before execution.",
+    "Compare release digests with pinned Git blobs, not only working files; fetch history in CI."
+  ],
   "all_six_skill_bodies_and_discovery_metadata_preserved_except_depth_urls": true,
   "unchanged_example_benchmark_and_blind_runner_files": 173,
   "native_discovery": {
@@ -135,6 +142,13 @@
     }
   },
   "retained_codex_input_manifest_sha256": "81ff065572e5f426aafb6e4a71d5332621b122c2dbbcaec56301391278a30b1f",
-  "frozen_attempt_source_inputs_still_match": true,
+  "frozen_attempt_task_inputs_still_match": true,
+  "frozen_attempt_non_task_input_changes": [],
+  "retained_native_trace_regrade": {
+    "adapter_sha256": "97602c5875916d7e11726058e9f9d4644ec6a4ba1714273c30af55ffa579d18c",
+    "trace_sha256": "93f25b2d9287fb6db55daf34245e27272aa88342e306ce65b46e0305ed9f5f17",
+    "status": "unobserved",
+    "new_native_calls": 0
+  },
   "all_deterministic_checks_passed": true
 }

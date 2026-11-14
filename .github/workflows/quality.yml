@@ -15,6 +15,7 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           persist-credentials: false
+          fetch-depth: 0 # Verify optional-depth digests against their actual pinned Git blobs.
       - name: Install verification dependencies
         run: python3 -m pip install -r requirements-dev.txt
       - name: Check handbook contracts

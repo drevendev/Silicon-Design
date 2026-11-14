@@ -21,6 +21,8 @@ PyYAML is a pinned development/checker dependency, not an installed-skill runtim
 
 Optional depth must match the release recorded in `skills-release.json`. After intentionally committing updated handbook material, run `python tools/skill_release.py --revision [commit] --version [new-version]` and review the generated URLs/digests. The helper validates all target documents before writing; it refuses a revision that differs from the working handbook. Do not replace immutable URLs with `master`.
 
+The checker compares each digest with both the working document and the Git blob at the declared commit. Keep that commit's history available locally; CI uses a full-history checkout. Editing a document and its manifest digest together cannot certify an unchanged old URL.
+
 The [routing corpus](evals/activation/README.md) is validated in normal CI without model calls. Native executions are explicit, bounded checks with retained traces and meaningful untested rows; their result is distinct from package validation and design preference.
 
 The checker covers repository-owned inline Markdown destinations without fragments, local HTML destinations and same-document HTML fragments, required skill metadata, source revision records and declared sRGB palette pairs. It does not render Markdown, validate external URLs or Markdown fragments, inspect every CSS color combination, or certify design quality. Review those boundaries manually.

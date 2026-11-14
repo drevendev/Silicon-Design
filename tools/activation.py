@@ -5,6 +5,7 @@ import hashlib
 import json
 import os
 import re
+import shlex
 import signal
 import shutil
 import subprocess
@@ -21,20 +22,31 @@ def load_corpus(root):
     corpus = json.loads(path.read_text(encoding='utf-8'))
     known = {p.name for p in (root / 'skills').iterdir() if p.is_dir()}
     seen = set()
-    if corpus.get('format') != 'silicon-activation-1' or not corpus.get('cases'):
+    if not isinstance(corpus, dict) or corpus.get('format') != 'silicon-activation-1' or not isinstance(corpus.get('cases'), list) or not corpus['cases']:
         raise ValueError('unsupported or empty activation corpus')
     for case in corpus['cases']:
-        identity = case['id']
-        if not re.fullmatch(r'[a-z0-9-]+', identity) or identity in seen:
+        if not isinstance(case, dict):
+            raise ValueError('activation case must be an object')
+        identity = case.get('id')
+        if not isinstance(identity, str) or not re.fullmatch(r'[a-z0-9-]+', identity) or identity in seen:
             raise ValueError('invalid or duplicate case identity')
         seen.add(identity)
+        for field in ('allowed', 'required_any'):
+            value = case.get(field)
+            if not isinstance(value, list) or not all(isinstance(name, str) for name in value) or len(set(value)) != len(value):
+                raise ValueError(f'{identity}: {field} must be a list of unique skill names')
         allowed, required = set(case['allowed']), set(case['required_any'])
-        if not allowed <= known or not required <= allowed or not case['prompt'].strip():
+        prompt = case.get('prompt')
+        if not allowed <= known or not required <= allowed or not isinstance(prompt, str) or not prompt.strip():
             raise ValueError(f'{identity}: unknown skill, invalid expectation or empty prompt')
-        if case['mode'] not in ('explicit', 'implicit', 'negative') or case['language'] not in ('en', 'ru'):
+        if case.get('mode') not in ('explicit', 'implicit', 'negative') or case.get('language') not in ('en', 'ru'):
             raise ValueError(f'{identity}: invalid mode/language')
         if case['mode'] == 'negative' and (allowed or required):
             raise ValueError(f'{identity}: negative control expects skills')
+        if case['mode'] != 'negative' and not required:
+            raise ValueError(f'{identity}: positive case needs a required skill family')
+        if case['mode'] == 'explicit' and len(required) != 1:
+            raise ValueError(f'{identity}: explicit invocation needs one target')
     return corpus
 
 
@@ -44,6 +56,80 @@ def read_trace(path):
         if line.strip():
             events.append(json.loads(line))
     return events
+
+
+def full_read_operands(command, depth=0):
+    """Recognise simple full-file reads; ambiguous shell syntax is unobserved.
+
+    A verb/path mentioned in an echo, grep, pipeline or script is not a read.
+    This deliberately supports a small grammar, not arbitrary shell execution.
+    """
+    if not isinstance(command, str) or depth > 2:
+        return None
+    command = command.replace('\\', '/')
+    try:
+        words = shlex.split(command, comments=True)
+    except ValueError:
+        return None
+    if not words:
+        return []
+    verb = words[0].rsplit('/', 1)[-1].lower().removesuffix('.exe')
+    if verb in ('powershell', 'pwsh'):
+        lowered = [word.lower() for word in words]
+        if '-command' in lowered:
+            index = lowered.index('-command')
+            if index + 2 == len(words) and all(word.lower() in ('-noprofile', '-noninteractive', '-nologo') for word in words[1:index]):
+                return full_read_operands(words[index + 1], depth + 1)
+        return None
+    if verb in ('bash', 'sh'):
+        return full_read_operands(words[2], depth + 1) if len(words) == 3 and words[1] in ('-c', '-lc') else None
+    # Reject compound/substituted commands instead of treating mentions as reads.
+    if any(char in command for char in ('|', ';', '&', '<', '>', '`', '$', '\n')):
+        return None
+    if verb in ('echo', 'printf', 'write-output', 'get-childitem', 'ls'):
+        return []
+    if verb == 'cat':
+        operands = words[1:]
+        if operands[:1] == ['--']:
+            operands = operands[1:]
+        return operands if operands and all(not word.startswith('-') for word in operands) else None
+    if verb == 'get-content':
+        operands, index = [], 1
+        while index < len(words):
+            word = words[index]
+            if word.lower() == '-raw':
+                index += 1
+                continue
+            if word.lower() in ('-literalpath', '-path'):
+                if index + 1 >= len(words) or words[index + 1].startswith('-'):
+                    return None
+                operands.append(words[index + 1])
+                index += 2
+                continue
+            if word.lower() == '-encoding' and index + 1 < len(words) and words[index + 1].lower() in ('utf8', 'utf8bom', 'utf8nobom'):
+                index += 2
+                continue
+            if word.startswith('-'):
+                return None  # partial reads and unknown options do not qualify
+            operands.append(word)
+            index += 1
+        return operands if len(operands) == 1 else None
+    return None
+
+
+def same_package_path(actual, expected, windows=False):
+    actual = actual.replace('\\', '/').removeprefix('./')
+    expected = expected.replace('\\', '/').removeprefix('./')
+    return actual.lower() == expected.lower() if windows else actual == expected
+
+
+def result_texts(content):
+    if isinstance(content, str):
+        yield content
+    elif isinstance(content, list):
+        for block in content:
+            if isinstance(block, dict) and block.get('type') == 'text' and isinstance(block.get('text'), str):
+                yield block['text']
 
 
 def observed_skills(host, events, package_paths):
@@ -58,13 +144,14 @@ def observed_skills(host, events, package_paths):
             unsupported_tool |= item.get('type') in ('mcp_tool_call', 'tool_call', 'function_call')
             if event.get('type') != 'item.completed' or item.get('type') != 'command_execution' or item.get('exit_code') != 0:
                 continue
-            command = item.get('command', '').replace('\\', '/').lower()
-            if not re.search(r'\b(cat|get-content|type|head|sed|read_text)\b', command):
+            command = item.get('command', '')
+            operands = full_read_operands(command)
+            if operands is None:
+                unsupported_tool |= 'skill.md' in command.lower()
                 continue
-            candidates = {next(part for part in match if part).removeprefix('./') for match in
-                          re.findall(r'"([^"\n]*skill\.md)"|\'([^\'\n]*skill\.md)\'|([^\s"\'`;]+skill\.md)', command)}
             for name, paths in package_paths.items():
-                if any(p.replace('\\', '/').lower().removeprefix('./') in candidates for p in paths):
+                windows = any(re.match(r'^[A-Za-z]:', path) for path in paths)
+                if any(same_package_path(operand, path, windows) for operand in operands for path in paths):
                     observed.add(name)
         if unsupported_tool:
             completed = False
@@ -83,14 +170,16 @@ def observed_skills(host, events, package_paths):
                 data = tool.get('input', {})
                 if tool.get('name') == 'Skill':
                     name = data.get('skill', '').split(':')[-1]
-                    result_text = json.dumps(block.get('content', ''), ensure_ascii=False).replace('\\\\', '/').lower()
-                    directories = [p.replace('\\', '/').lower().rsplit('/', 1)[0] for p in package_paths.get(name, []) if re.match(r'^(?:[A-Za-z]:|/)', p)]
-                    if name in package_paths and any(directory in result_text for directory in directories):
+                    reported = [line.removeprefix('Base directory for this skill: ').strip()
+                                for text in result_texts(block.get('content', '')) for line in text.splitlines()
+                                if line.startswith('Base directory for this skill: ')]
+                    directories = [p.replace('\\', '/').rsplit('/', 1)[0] for p in package_paths.get(name, []) if re.match(r'^(?:[A-Za-z]:|/)', p)]
+                    if any(same_package_path(actual, directory, bool(re.match(r'^[A-Za-z]:', directory))) for actual in reported for directory in directories):
                         observed.add(name)
                 if tool.get('name') == 'Read':
-                    path = data.get('file_path', '').replace('\\', '/').lower()
+                    path = data.get('file_path', '')
                     for name, paths in package_paths.items():
-                        if any(path == p.replace('\\', '/').lower() for p in paths):
+                        if any(same_package_path(path, p, bool(re.match(r'^[A-Za-z]:', p))) for p in paths):
                             observed.add(name)
     return observed, completed
 

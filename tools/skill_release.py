@@ -55,6 +55,7 @@ def check_release(root):
         return ['skills-release.json: depth revision must be an immutable commit']
     found = {(p.parent.name, m[2], m[0]) for p in (root / 'skills').glob('*/SKILL.md') for m in REFERENCE.finditer(p.read_text(encoding='utf-8'))}
     declared = set()
+    pinned_hashes = {}
     for row in manifest['optional_depth']:
         key = (row['skill'], row['document'], row['url'])
         if key in declared:
@@ -66,8 +67,21 @@ def check_release(root):
         target = (root / row['document']).resolve()
         if not target.is_relative_to(root.resolve()) or not target.is_file():
             issues.append(f'{row["skill"]}: missing/escaping depth source')
-        elif text_hash(target.read_text(encoding='utf-8')) != row['sha256_lf_utf8']:
+            continue
+        if text_hash(target.read_text(encoding='utf-8')) != row['sha256_lf_utf8']:
             issues.append(f'{row["document"]}: handbook changed; deliberately repin optional depth for a new release')
+        # A changed working file and a changed manifest digest cannot rewrite
+        # the content actually served by an old immutable URL.
+        document = row['document']
+        if document not in pinned_hashes:
+            try:
+                source = subprocess.check_output(['git', 'show', revision + ':' + document], cwd=root, stderr=subprocess.PIPE).decode('utf-8')
+                pinned_hashes[document] = text_hash(source)
+            except subprocess.CalledProcessError:
+                issues.append(f'{document}: pinned Git source unavailable; fetch the release history before checking')
+                pinned_hashes[document] = None
+        if pinned_hashes[document] is not None and pinned_hashes[document] != row['sha256_lf_utf8']:
+            issues.append(f'{document}: digest differs from the pinned Git source; deliberately repin the release')
     if not declared or found != declared:
         issues.append('skills-release.json: optional skill links and manifest differ')
     return issues
