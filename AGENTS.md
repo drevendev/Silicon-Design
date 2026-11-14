@@ -13,3 +13,5 @@ This repository maintains a design handbook and portable agent skills. Product-s
 - Do not claim accessibility compliance from static checks or screenshots. A review reports scope, findings, evidence and untested areas.
 
 Task routing: direction → skills/silicon-design-direction/SKILL.md; tokens and components → skills/silicon-design-system/SKILL.md; site/app implementation → skills/silicon-interface-build/SKILL.md; game UI → skills/silicon-game-ui/SKILL.md; review → skills/silicon-design-review/SKILL.md.
+
+Blind comparison conduct and analysis → skills/blind-test/SKILL.md.

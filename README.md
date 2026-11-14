@@ -52,6 +52,8 @@ Each folder is a self-contained skill; copy the entire folder. No paid service, 
 | [silicon-game-ui](skills/silicon-game-ui/SKILL.md) | Game interfaces and feedback | Scoped UI/state contracts, truthful resources and relevant runtime evidence |
 | [silicon-design-review](skills/silicon-design-review/SKILL.md) | Reviewing implementation | Located findings, expected correction and recapture |
 
+| [blind-test](skills/blind-test/SKILL.md) | Reproducible blind comparisons and feedback analysis | Offline explicit-confirmation runner, separate QA and private decode |
+
 ## Three small worlds
 
 **[Open the live gallery](https://drevendev.github.io/Silicon-Design/)** — try all three examples in your browser, with no setup.

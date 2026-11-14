@@ -1,0 +1,20 @@
+---
+name: blind-test
+description: Prepare and run reproducible blind pairwise comparisons of design variants, preserve votes and comments, and analyse owner feedback separately from technical QA. Use for an explicitly requested blind design test or its review; not ordinary design critique or user research recruitment.
+---
+
+# Blind test
+
+Freeze the product source, task, conditions, data, captures, budget and analysis rules before generation. See [protocol](references/protocol.md) for conduct and [the v6 case contract](references/idle-shop-v6.md) for the specific owner experiment; do not silently make case-specific models, dates or numbers universal.
+
+Give each designer the same verbatim brief, real product context, runtime, permitted assets and tools. Change only the assigned instruction package. Use clean contexts and separate copies; disclose instructional-only isolation. Keep competitor packages, previous results and coordinator design suggestions out. One attempt and one final coherent set per condition; iterations count against its budget. Retain failures. Do not repair aesthetics after handoff or choose the best independent run. Requested model/settings unavailable: disclose before generation, never substitute silently.
+
+Use genuine runtime/commands where the task requires them. Prepare deterministic shared saves and validated adverse-state fixtures before dispatch. Freeze time for static comparison, provide a separate controlled real-runtime reset for interaction checks. Never invent content or alter economy/state to improve one candidate. Respect asset licences; restricted images and containing screenshots never enter model inputs. Equal dimension-preserving masks are for model QA; owner-local incorporated previews retain permitted artwork.
+
+Keep identity/provider maps outside the voter UI and preview names. Explain limits from original recognition and file inspection. Pair every condition once per screen, with a separate set/coherence block. Seed the scheduler, balance sides and verify uniqueness. Never add set votes to screen scores. Require exposure to every member screen on both sides before recording a coherence answer; exposure logs prove display, not attention. In older exports lacking history, report coherence inspection as unverified.
+
+Answer buttons are **Left, Tie, Right** (RU: **Левая лучше, Ничья, Правая лучше**). Selecting only saves a draft and stays on the pair; keep the comment editable. Record and advance only on a separate **Next / Далее** action. Persist pending choice, comment, screen exposure and cursor, including across reload. Skip is missing, never tie. Keep technical defects separate. Support early stop, strict corpus-bound import/export and storage-unavailable export. Never infer a corrected vote from contradictory prose.
+
+The bundled viewer is an offline RU runner with configurable screen names and EN/RU artifact views. Build it with `python scripts/build_study.py corpus-input.json output-directory`. Its required corpus fields are documented in the protocol. Runtime HTML is optional and sandboxed; product-specific clock/command adapters must be prepared separately and shared equally. Do not present a generic preview as the real product. Run the synthetic scheduler/import/draft/explicit-next/coherence checks before the owner sees a study. Synthetic votes have `qa:true` and are excluded from human analysis.
+
+Validate study/protocol/corpus, pair sides, completeness and QA flag before analysis. Join the private map only after completion or explicit early disclosure. Retain raw exports byte-for-byte. Report per-screen and set results separately, comments with exact pair/side context, contradictions and sensitivity. One owner and one run per method are observations, not causal proof of skill superiority. Distinguish relative preference, absolute satisfaction, task success and accessibility. Turn authorised product feedback into traceable existing issues; do not invent mechanics from ambiguous comments. Separate runner faults from designer/skill failures. Do not publish private votes/media, merge, adopt prototypes or message others without authorisation.

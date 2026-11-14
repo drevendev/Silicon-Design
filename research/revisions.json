@@ -215,6 +215,18 @@
     "paths": [
       "README.md",
       "docs/design/release-0.14/ui-wireframes.md"
+    ],
+    "additional_reviews": [
+      {
+        "repository": "drevendev/IdleShop",
+        "revision": "f23a815147648dcd29405fc01ce813e0aab925a5",
+        "reviewed_at": "2026-11-14",
+        "paths": [
+          "AGENTS.md",
+          "docs/design/release-0.16/fix-patch-1.md"
+        ],
+        "review_scope": "Owner v6 task/outcome and runner protocol; raw votes and paid media remain private. Issue37 records bounded diagnosis."
+      }
     ]
   },
   {
