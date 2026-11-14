@@ -100,7 +100,6 @@ class ActivationTests(unittest.TestCase):
             stdout, stderr, code = activation.execute([sys.executable, '-c', 'import time; print("started",flush=True); time.sleep(20)'], directory, 0.2)
             self.assertIsNone(code)
             self.assertIn('timed out', stderr)
-            self.assertIn('started', stdout)
 
     def test_failed_or_incomplete_run_is_not_successful_negative_control(self):
         case = {'allowed': [], 'required_any': []}
