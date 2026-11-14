@@ -23,7 +23,7 @@ For charts identify quantity, unit, geography, period, scale and series. Keep vi
 
 Define content/growth limits, spacing/density, responsive/input behaviour and applicable focus, selected, pending, unavailable-with-reason, empty, error and success states. Distinguish zero, unknown and not applicable; retain exact values or reachable exact disclosure when consequential.
 
-Keep tokens authoritative; no unvalidated DTCG claim or needless duplicate exports. Bound row widths and group actions with their objects; compactness preserves necessary text and targets.
+Keep tokens authoritative; no unvalidated DTCG claim or duplicate exports. Bound component widths and group actions with objects; compactness preserves necessary text and targets.
 
 Inspect realistic content, long translations, large/live values and affected states across requested consumers. Keep icon meaning and edge/stroke/material coherence. Use sheets only for relevant reusable changes.
 

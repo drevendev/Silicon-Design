@@ -60,3 +60,22 @@ Public [#26](https://github.com/drevendev/Silicon-Design/issues/26) and its #27â
 The bundled skill-creator informs self-contained entrypoints, conditional depth and removal of repetitive process. [WAI labeling controls](https://www.w3.org/WAI/tutorials/forms/labels/) and the [button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/), read 8 November 2026, support retaining programmatic labels, contextual visible instructions, native button semantics and keyboard/focus behavior when simplifying presentation. [Non-text contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html), read the same day, distinguishes meaningful adjacent visual cues and applicable exceptions from unrelated palette calculations. These explanatory resources do not make this handbook a compliance certificate. No source prose or external implementation is copied.
 
 The [implementation record](critical-guidance-implementation-2026-11-08.md) maps changes and preserved requirements to actual authoring/package checks. No new comparative experiment is run by this contribution.
+
+## References and capacity, 2026-11-14
+
+Public [#35](https://github.com/drevendev/Silicon-Design/issues/35), with
+[#31](https://github.com/drevendev/Silicon-Design/issues/31) and
+[#32](https://github.com/drevendev/Silicon-Design/issues/32), supplies the owner
+requirements for proactive task/genre reference inspection, reading-model choice
+and current-content capacity. This is documented product judgment, not a
+standard or a claim that grids beat lists. The locally bundled skill-creator
+informs self-contained entrypoints and conditional depth; no foreign skill text
+is copied. Existing source-handling, input, contrast and reflow guidance remains.
+
+The [implementation record](reference-capacity-implementation-2026-11-14.md)
+separates source/package validation from rendered input/geometry checks in an
+original fictional fixture. No third-party screenshots, styles or game assets,
+private product artifacts, trial rankings or participant details are included.
+The fixture is original teaching material derived from the public task, not a
+reference discovered in a shipped game. Autonomous future retrieval, design
+preference and model cost remain untested; no new comparative run was started.
