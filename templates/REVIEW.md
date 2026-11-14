@@ -13,7 +13,7 @@ For a local fix, a concise finding and affected recheck may suffice. Keep only s
 - Operation/access: [readable information, task and input/recovery evidence].
 - Character/care: [specific composition, imagery, voice or behaviour; label taste and emotional-effect hypotheses].
 - Owner acceptance: [explicit decision / untested; relative preference and technical PASS are separate].
-- Craft pass: [same-state original/result, dominant object, removals or justified retentions, remaining judgment; correct within budget when fixes are authorized].
+- Craft pass: [same-state original/result where available, otherwise inspect the frame and disclose the missing baseline; dominant object, removals or justified retentions, remaining judgment; correct within budget when fixes are authorized].
 
 For a screenshot-only review, conclusions concern appearance. Compare character beyond the introduction or repeated use only where those surfaces/events are in scope and observable.
 

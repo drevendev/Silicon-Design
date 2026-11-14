@@ -57,7 +57,7 @@ A static frame does not need invented interactive states or a second screen.
 - Environment, state and changed scope: [viewport/resolution, theme, language, input].
 - Relevant checks and captures: [actual results and meaningful untested areas].
 - Character versus operation: [separate judgments; no invented audience effects].
-- Final craft pass and owner acceptance: [same-state original/result, corrections within budget, unresolved judgment; technical PASS and relative wins are not acceptance].
+- Final craft pass and owner acceptance: [same-state original/result where available, otherwise inspect the result and disclose the missing baseline; corrections within budget, unresolved judgment; technical PASS and relative wins are not acceptance].
 - Exceptions and review: [tradeoffs, unresolved issues, report link if useful].
 
 ## Reference detail — only when needed

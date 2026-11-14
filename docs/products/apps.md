@@ -36,6 +36,6 @@ For a scoped fix, verify affected states. For a flow, include relevant failure/r
 
 Identity can live in composition, voice, typography, selected assets and efficient, exact work while controls stay familiar. Let guidance recede with proficiency and use calm, specific failures. Extra framing is not proof of care.
 
-Before delivery perform a [subtraction and craft pass](../subtraction-and-craft.md): inspect object prominence, nested framing, duplicate labels and corner alignment against the same-state original. Retain necessary legends, instructions and blocked reasons. Technical checks, craft judgment and explicit owner acceptance are separate outcomes; include task-relevant shared defects outside edit scope as limitations.
+Before delivery perform a [subtraction and craft pass](../subtraction-and-craft.md): inspect object prominence, nested framing, duplicate labels and corner alignment against the same-state original when available; otherwise inspect the result and disclose the missing baseline. Retain necessary visible labels, legends, instructions and blocked reasons. Technical checks, craft judgment and explicit owner acceptance are separate outcomes; include task-relevant shared defects outside edit scope as limitations.
 
 Example: [Dispatch brief](../../examples/dispatch.DESIGN.md). Sources: [Vibe, Ant Design and Primer](../../research/sources.md), the [operations trial](https://github.com/drevendev/Silicon-Design/issues/11) and [consolidated specification](../../research/skill-improvement-spec-2026-11-07.md).

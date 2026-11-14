@@ -27,8 +27,8 @@ Extend the palette coherently or, within authorized redesign, remap surfaces, te
 
 Before expanding screens, share visual/component roles: equivalent headers, navigation, levels and controls reuse one contract, with task exceptions. Local fixes need no kit.
 
-Subtract redundant labels/help/frames within scope; retain useful context, state reasons and accessible meaning. Justify nested boundaries competing with the main object. Fixed-copy/DOM limits remain binding. Invent no fields, workflows, persistence or screens. Efficiency can carry identity; expressive detail must not obstruct repeated work.
+Subtract redundant labels/help/frames within scope only when meaning stays visually clear; otherwise keep visible labels/instructions. Retain state reasons, accessible names/context and fixed-copy/DOM constraints. Justify competing nested boundaries. Invent no fields, workflows, persistence or screens. Efficiency can carry identity; expressive detail must not obstruct repeated work.
 
-Compare original/selected composition for noise and hierarchy before delivery; record removals/justified retentions, changed roles and tradeoffs in DESIGN.md when needed. Sheets/states are conditional. Separate proposal/implementation, technical checks, craft judgment and owner acceptance. Invent no audience effects/checks; continue authorized reversible work without another approval sequence.
+Before delivery compare original/selected composition for noise and hierarchy when a baseline exists; otherwise inspect the selected frame and disclose the missing comparison. Record removals/justified retentions, changed roles and tradeoffs in DESIGN.md when needed. Sheets/states are conditional. Separate proposal/implementation, technical checks, craft judgment and owner acceptance. Invent no audience effects/checks; continue authorized reversible work without another approval sequence.
 
 Optional depth: [workflow](https://github.com/drevendev/Silicon-Design/blob/master/docs/workflow.md).

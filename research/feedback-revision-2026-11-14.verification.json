@@ -153,41 +153,41 @@
     {
       "name": "silicon-design-direction",
       "words_before": 332,
-      "words_after": 325,
+      "words_after": 341,
       "characters_before": 2801,
-      "characters_after": 2751,
+      "characters_after": 2890,
       "discovery_metadata_unchanged": true
     },
     {
       "name": "silicon-design-review",
       "words_before": 348,
-      "words_after": 355,
+      "words_after": 370,
       "characters_before": 3064,
-      "characters_after": 3272,
+      "characters_after": 3422,
       "discovery_metadata_unchanged": true
     },
     {
       "name": "silicon-design-system",
       "words_before": 372,
-      "words_after": 368,
+      "words_after": 380,
       "characters_before": 2940,
-      "characters_after": 3052,
+      "characters_after": 3160,
       "discovery_metadata_unchanged": true
     },
     {
       "name": "silicon-game-ui",
       "words_before": 377,
-      "words_after": 383,
+      "words_after": 409,
       "characters_before": 3342,
-      "characters_after": 3503,
+      "characters_after": 3745,
       "discovery_metadata_unchanged": true
     },
     {
       "name": "silicon-interface-build",
       "words_before": 408,
-      "words_after": 404,
+      "words_after": 422,
       "characters_before": 3589,
-      "characters_after": 3623,
+      "characters_after": 3797,
       "discovery_metadata_unchanged": true
     }
   ],
@@ -199,9 +199,20 @@
   ],
   "totals": {
     "words_before": 1837,
-    "words_after": 1835,
+    "words_after": 1922,
     "characters_before": 15736,
-    "characters_after": 16201
+    "characters_after": 17014
+  },
+  "review": {
+    "pull_request": 40,
+    "reviewed_head": "d3db44433249bc6b12cb1fd3bef24aaa56cae80d",
+    "method": "Manual source review against the base, optional handbook and counterexamples; no independent model or runtime exercise.",
+    "corrections": [
+      "Retain necessary visible labels/instructions, not only accessible names.",
+      "Keep palette and copy/DOM changes within authorized scope; review-only remains read-only.",
+      "Allow result-only craft inspection with a disclosed missing baseline.",
+      "Restore explicit SVG colour paths, supported game input and reachable secondary precision."
+    ]
   },
   "protected_base_files_byte_identical": 172,
   "conditional_interaction_reference_unchanged": true,

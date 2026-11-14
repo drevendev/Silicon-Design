@@ -10,7 +10,7 @@ Select applicable checks for the requested frame or flow; this is an inspection 
 - [ ] Inspected references match category/genre and task; provenance, useful transfers and unavailable evidence are explicit. Reading model follows actual count and decisions. Bounded-set capacity fits the usable base viewport without hiding/shrinking content; narrow/enlarged-text fallback remains usable.
 - [ ] Composition, imagery, voice and behaviour support subject-specific character without requiring decorative novelty.
 - [ ] Density, bounded widths and grouped actions support the task; quantities do not dwarf necessary costs/units. Authorized simplification removes redundant framing while preserving useful summaries, names, legends and state explanations.
-- [ ] A subtraction pass removes labels/badges/help already conveyed by values, meters, position or selection; accessible names, visible context, deficits, blocked reasons and reachable help survive. Effects stay by the affected choice.
+- [ ] Within authorized copy/DOM scope, a subtraction pass removes labels/badges/help already conveyed by values, meters, position or selection only when meaning stays visually clear; necessary visible labels/instructions, accessible names/context, deficits, blocked reasons and reachable help survive. Effects stay by the affected choice.
 - [ ] Actual wrapping, crops, small symbols, selected states and supported scripts remain understandable.
 - [ ] Palette roles are coherent, allowing an authorized whole-palette change. Actual text and glyph paths (SVG/mask/filter/image), adjacent surfaces, bounds/crops and applicable contrast pairs were inspected; selected swatches alone are insufficient.
 - [ ] For multiple screens/reusable changes, equivalent components share an authoritative contract and implementation across affected consumers; meaningful exceptions are explained. Local corrections do not require a new kit.
@@ -42,7 +42,7 @@ For detailed diagnostics use the review skill's [interactive procedure](../skill
 
 - [ ] Findings locate a state/region, consequence and bounded correction; affected rechecks distinguish resolution from coverage.
 - [ ] Operation/access and character/care conclusions are separate; preference and acceptance are not conflated.
-- [ ] Same-state original/result craft comparison and a critical correction pass occurred within budget; removals/justified retentions and unresolved craft are reported. Technical PASS does not finish design or establish owner acceptance.
+- [ ] Craft inspection and a critical correction pass occurred within budget, comparing same-state original/result when available or reporting a missing baseline. Removals/justified retentions and unresolved craft are reported. Technical PASS does not finish design or establish owner acceptance.
 - [ ] References actually show relevant task UI; unavailable inspection was disclosed before composition. Task-relevant shared defects outside edit scope are located as limitations.
 - [ ] Source assertions, screenshots and palette math are not presented as unperformed native-input, assistive-technology or audience tests.
 - [ ] Additional surfaces, sheets, workflows and documents are included only when requested or necessary for validation; no finding/test quota or new approval sequence.

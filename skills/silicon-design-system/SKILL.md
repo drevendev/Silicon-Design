@@ -11,7 +11,7 @@ Reuse current direction, token format and sound components. Across screens share
 
 Test scripts, long labels, quantities, weights, fallback/loading and licenses. Define reading, UI, display, supporting and numeric roles as needed. Inspect at use size/enlargement; oversized counts must not make important costs or units unreadable.
 
-Extend/remap surface, foreground, icon, action, status, boundary and focus roles coherently. No palette freeze or unrelated accents. Retain semantic colour plus meaningful text/shape; a value, meter or selected control can supply the other cue without another badge. Keep necessary legends and blocked reasons.
+Extend/remap surface, foreground, icon, action, status, boundary and focus roles coherently within scope. No palette freeze or unrelated accents. Retain semantic colour plus meaningful text/shape; a value, meter or selected control may replace a duplicate badge only when meaning stays visually clear. Keep necessary visible labels/instructions, legends and blocked reasons.
 
 Measure actual resolved pairs, including inheritance, transparency, overlays and changed themes. Trace SVG fill/stroke/currentColor, masks, filters and image glyphs onto their real surfaces. Check crops, viewBox, padding and overflow at use size. For web text use 4.5:1 ordinary and 3:1 qualifying-large thresholds; meaningful non-text cues use applicable 3:1 requirements/exceptions. Compare unrounded ratios. Selected swatch checks do not verify other glyphs or states.
 
@@ -23,7 +23,7 @@ For charts identify quantity/unit/geography/period/scale/series. Put units by va
 
 Define content/growth, density, responsive/input behaviour and relevant focus, selected, pending, unavailable-with-reason, empty, error and success states. Distinguish zero/unknown/not-applicable. Exact action totals stay visible at commitment; secondary precision may use reachable detail. Distinguish applied/possible effects, signed units and resource pools.
 
-Keep tokens authoritative; no unvalidated DTCG claim or duplicate exports. Bound widths; keep actions with objects and corner actions aligned. Prefer one enclosing boundary; justify nesting. Subtract duplicate labels/help while retaining names/context. Compactness preserves necessary text, readable glyphs and targets.
+Keep tokens authoritative; no unvalidated DTCG claim or duplicate exports. Bound widths; keep actions with objects and corner actions aligned. Prefer one enclosing boundary; justify nesting. Subtract duplicate labels/help within authorized copy/DOM scope while retaining accessible names/context. Compactness preserves necessary text, readable glyphs and targets.
 
 Inspect minimum width, long translations, large/live values and affected consumers/states. Reserve live-value geometry; keep icon meaning and edge/stroke/material coherence. Use sheets only for reusable changes.
 

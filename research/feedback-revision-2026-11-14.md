@@ -67,9 +67,19 @@ In #37 the owner prefers a good grid over the earlier list direction; #39 praise
 
 ## Verification and remaining work
 
-Performed authoring checks pass: repository destinations/metadata/revisions/palettes; 12 Python checker tests; nine existing Node state tests; the five source folders and five isolated copies through the bundled skill validator; local reference containment and diff whitespace. The inventory covers 33 issue bodies and 11 comments. All 172 protected example/benchmark/test/tool/CI files and the conditional interaction reference are byte-identical to the base.
+The review of PR #40 found and corrected three instruction defects before merge:
 
-Entrypoint bodies total 1,837 → 1,835 whitespace words and 15,736 → 16,201 characters; discovery metadata is unchanged. These are size proxies, not token/billing measurements. Manual source review retained game truth/knowledge, owned/required resources, motion/audio independence, shared contracts, actual glyph paths/contrast, input/focus/recovery, chart fidelity, landing craft, conditional exploration and negative controls. This is an authoring audit, not observed behavior by a fresh agent.
+| Finding | Correction and source-level counterexample |
+| --- | --- |
+| The standalone subtraction rules preserved accessible names but could still remove a visible label needed by a sighted user | Every skill now requires meaning to remain visually clear and keeps necessary visible labels/instructions. A recognizable selected named mode can lose its duplicate caption; an ambiguous `10/50` without a recognizable stock context cannot lose its label merely because it has an accessible name |
+| Compression removed explicit scope guards from palette/structure instructions | Palette changes and copy/DOM simplification now stay explicitly within authorized scope; review-only work explicitly avoids editing. A fixed-copy brief or small icon repair does not authorize removing labels or remapping the palette |
+| The standalone final-pass instructions assumed an original existed | With a baseline, compare matched states; for a new product or missing original, inspect the result and disclose the missing comparison. Do not invent a historical baseline or block delivery |
+
+The same review restored explicit SVG fill/stroke/currentColor tracing, supported game-input paths and reachable secondary precision in the game/build entrypoints. These are manual instruction/counterexample checks, not fresh model executions or native UI tests. The guardrails live in each relevant skill, without requiring the optional handbook or another skill.
+
+Performed authoring checks pass: repository destinations/metadata/revisions/palettes; 12 Python checker tests; nine existing Node state tests; the five source folders and five isolated copies through the bundled skill validator; local reference containment and diff whitespace. The inventory covers 33 issue bodies and 11 comments. All 172 protected files, including examples, benchmarks, tests, tools, CI and the conditional interaction reference, are byte-identical to the base.
+
+After review corrections, entrypoint bodies total 1,837 → 1,922 whitespace words and 15,736 → 17,014 characters; discovery metadata is unchanged. The initial PR commit had 1,835 words; restoring explicit standalone guardrails increases the final word proxy by 4.6% over the base. These are size proxies, not token/billing measurements. No mandatory reference was added. Manual source review retained game truth/knowledge, owned/required resources, motion/audio independence, shared contracts, actual glyph paths/contrast, input/focus/recovery, chart fidelity, landing craft, conditional exploration and negative controls. This is an authoring audit, not observed behavior by a fresh agent.
 
 See the [implementation receipt](feedback-revision-2026-11-14.verification.json) for actual authoring/package checks, context proxies and the unchanged-file audit. The prose/metadata checks cannot establish autonomous retrieval, subtraction by a fresh model, rendered precision/reflow, human usability, accessibility compliance, better output or lower billing. No new runtime fixture, benchmark, independent evaluator, blind vote or consuming-product adoption is claimed.
 

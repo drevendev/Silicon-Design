@@ -35,7 +35,7 @@ Within authorized scope, redesign structure and control representation rather th
 
 For interactive work, preserve useful input and task context through affected failures, close/removal/undo and return paths. Test persistence only when promised and affected. For static work, inspect the frame without adding interactive workflows.
 
-At use size, name the dominant object and inspect its action and decision-critical values. Perform a [subtraction and craft pass](subtraction-and-craft.md) against the same-state original: remove duplicate labels/help, justify nested boundaries, align corner actions and retain context, accessible meaning and blocked reasons. Make a critical correction within budget; record removals or justified retentions. Technical PASS alone does not finish design. Keep character coherent across states; fix structure before extra documentation.
+At use size, name the dominant object and inspect its action and decision-critical values. Perform a [subtraction and craft pass](subtraction-and-craft.md) against the same-state original when available; otherwise inspect the result and disclose the missing baseline. Within authorized copy/DOM scope, remove duplicate labels/help only when meaning stays visually clear; retain necessary visible labels/instructions, accessible meaning and blocked reasons. Justify nested boundaries and align corner actions. Make a critical correction within budget; record removals or justified retentions. Technical PASS alone does not finish design. Keep character coherent across states; fix structure before extra documentation.
 
 ## Verify the affected result
 
