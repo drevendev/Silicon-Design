@@ -54,6 +54,72 @@ class CheckTests(unittest.TestCase):
         self.write('skills/sample/SKILL.md', '---\nname: other\ndescription: Review a surface.\n---\nBody.\n')
         self.assertTrue(check.check_skills(self.root))
 
+    def test_quoted_yaml_and_optional_host_metadata(self):
+        self.write('skills/sample/SKILL.md', '''---
+name: "sample"
+description: 'Review: a particular surface.'
+metadata:
+  version: "1.0"
+  author: Example
+allowed-tools: Read
+---
+Body.
+''')
+        self.assertEqual(check.check_skills(self.root), [])
+
+    def test_folded_description_uses_parsed_length(self):
+        self.write('skills/sample/SKILL.md', '---\nname: sample\ndescription: >\n  Review a surface\n  with actual content.\n---\nBody.\n')
+        self.assertEqual(check.check_skills(self.root), [])
+        self.write('skills/sample/SKILL.md', '---\nname: sample\ndescription: >\n  ' + 'x' * 1025 + '\n---\nBody.\n')
+        self.assertIn('oversized', check.check_skills(self.root)[0])
+
+    def test_malformed_yaml_is_located(self):
+        for value in ('description: Design: use for tests', 'description: [unfinished', 'metadata: !unsupported value'):
+            with self.subTest(value=value):
+                self.write('skills/sample/SKILL.md', '---\nname: sample\n' + value + '\n---\nBody.\n')
+                issues = check.check_skills(self.root)
+                self.assertTrue(any('sample/SKILL.md: invalid YAML' in i for i in issues))
+
+    def test_frontmatter_mapping_and_field_types(self):
+        for value in ('[]', 'null', 'name: sample\ndescription: []', 'name: sample\ndescription: true', 'name: sample\ndescription: 123'):
+            with self.subTest(value=value):
+                self.write('skills/sample/SKILL.md', '---\n' + value + '\n---\nBody.\n')
+                self.assertTrue(check.check_skills(self.root))
+
+    def test_yaml_tags_cannot_execute_python(self):
+        self.write('skills/sample/SKILL.md', '---\nname: sample\ndescription: !!python/object/apply:builtins.str [danger]\n---\nBody.\n')
+        self.assertTrue(check.check_skills(self.root))
+
+    def test_repository_valid_reference_cannot_escape_package(self):
+        self.write('docs/guide.md', 'Surrounding handbook.\n')
+        self.write('skills/sample/SKILL.md', '---\nname: sample\ndescription: Review a surface.\n---\n[guide](../../docs/guide.md)\n')
+        self.assertEqual(check.check_markdown(self.root), [])
+        self.assertEqual(check.check_skills(self.root), [])
+        self.assertIn('escapes skill folder', check.check_portable_skills(self.root)[0])
+
+    def test_isolated_package_keeps_reference_and_ignores_optional_network(self):
+        self.write('skills/sample/SKILL.md', '---\nname: sample\ndescription: Review a surface.\n---\n[guide](references/guide.md)\n[reference directory](references/)\n[optional](https://invalid.example/depth.md)\n')
+        self.write('skills/sample/references/guide.md', '# Guide\n[entry](../SKILL.md)\n')
+        self.assertEqual(check.check_portable_skills(self.root), [])
+
+    def test_reference_style_and_encoded_paths_respect_package_boundary(self):
+        self.write('skills/sample/SKILL.md', '---\nname: sample\ndescription: Review a surface.\n---\n[guide][depth]\n[depth]: references/long%20name.md\n')
+        self.write('skills/sample/references/long name.md', '# Guide\n')
+        self.assertEqual(check.check_portable_skills(self.root), [])
+        self.write('docs/guide.md', '# External\n')
+        self.write('skills/sample/SKILL.md', '---\nname: sample\ndescription: Review a surface.\n---\n[guide][depth]\n[depth]: ../../docs/guide.md\n')
+        self.assertTrue(check.check_portable_skills(self.root))
+
+    def test_fenced_examples_do_not_create_package_dependencies(self):
+        self.write('skills/sample/SKILL.md', '---\nname: sample\ndescription: Review a surface.\n---\n```md\n[example](../../not-bundled.md)\n```\n~~~md\n[example](missing.md)\n~~~\n')
+        self.assertEqual(check.check_portable_skills(self.root), [])
+
+    def test_missing_bundled_file_and_absolute_local_path_fail(self):
+        for destination in ('references/missing.md', 'file:///tmp/local.md', 'C:/outside/guide.md'):
+            with self.subTest(destination=destination):
+                self.write('skills/sample/SKILL.md', '---\nname: sample\ndescription: Review a surface.\n---\n[guide](' + destination + ')\n')
+                self.assertTrue(check.check_portable_skills(self.root))
+
     def test_html_missing_fragment_and_file(self):
         self.write('page.html', '<main id="real"><a href="#real">OK</a><a href="#absent">Bad</a><img src="missing.png" alt=""></main>')
         self.assertEqual(len(check.check_html(self.root)), 2)

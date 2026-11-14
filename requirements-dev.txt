@@ -1,0 +1,2 @@
+# Repository verification only; portable instruction skills do not import this.
+PyYAML==6.0.3

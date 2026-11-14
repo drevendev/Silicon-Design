@@ -29,4 +29,4 @@ Compare same-state original/result for noise, hierarchy and action clarity when 
 
 Winners' criticism still matters: QA/preference is not acceptance. Separate input/asset/capture/adapter defects from implementation, source/native input, palette math/rendering, resize/zoom and screenshots/AT. Separate craft from operation/access; audience/compliance/superiority claims need evidence.
 
-Optional depth: [review template](https://github.com/drevendev/Silicon-Design/blob/master/templates/REVIEW.md).
+Optional depth: [review template](https://github.com/drevendev/Silicon-Design/blob/97f99ab4fb8ab753f1acab9e9363b0a840555a21/templates/REVIEW.md).

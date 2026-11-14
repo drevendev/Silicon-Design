@@ -22,14 +22,48 @@ Multi-screen work reuses or establishes one compact product kit before expansion
 
 Copy the entire selected folder, including supporting references. Its essential workflow works offline and does not require another skill, this checkout or a commercial tool. The handbook is reference material, not global configuration; do not copy its maintenance AGENTS.md into the consuming product.
 
-For an agent supporting project-local `.agents/skills`, with a Silicon-Design checkout next to the project:
+### Host discovery, documented on 14 November 2026
+
+| Host/scope | Destination | Explicit invocation | Performed verification |
+| --- | --- | --- | --- |
+| Codex project | `.agents/skills/[name]/SKILL.md` | `$silicon-design-review`; `/skills` lists skills | All six project packages discovered by codex-cli 0.146.1; model activation unavailable |
+| Codex personal | `~/.agents/skills/[name]/SKILL.md` | Same | Documented, not installed/tested globally |
+| Claude Code project | `.claude/skills/[name]/SKILL.md` | `/silicon-design-review` | CLI 2.1.259 present; activation untested because authentication expired |
+| Claude Code personal | `~/.claude/skills/[name]/SKILL.md` | Same | Documented, not installed/tested globally |
+
+Sources: [official Codex skills documentation](https://learn.chatgpt.com/docs/build-skills) and [Claude Code skills documentation](https://code.claude.com/docs/en/skills). The same portable folder works in either location. Host policy/session context can affect discovery; a copied folder or visible command does not establish implicit selection.
+
+From the consuming project in PowerShell, with a Silicon-Design checkout next to it:
 
 ```powershell
-New-Item -ItemType Directory -Force -Path .agents/skills
-Copy-Item -LiteralPath ../Silicon-Design/skills/silicon-design-review -Destination .agents/skills/ -Recurse
+$skillSource = (Resolve-Path '../Silicon-Design/skills/silicon-design-review').Path
+$skillDestination = '.agents/skills/silicon-design-review'
+if (Test-Path -LiteralPath $skillDestination) { throw 'Compare the installed revision before replacing it.' }
+New-Item -ItemType Directory -Force -Path '.agents/skills' | Out-Null
+Copy-Item -LiteralPath $skillSource -Destination $skillDestination -Recurse
+Test-Path -LiteralPath "$skillDestination/SKILL.md"
+Test-Path -LiteralPath "$skillDestination/references/interactive-checks.md"
 ```
 
-Inspect an existing destination and compare revisions before replacing it. Record the adopted revision so updates remain deliberate. Follow the host's discovery instructions for other locations. No installer or plugin manifest is required. A local path can also be used explicitly; automatic discovery depends on the host.
+For Claude Code, change the destination to `.claude/skills/silicon-design-review` and the parent to `.claude/skills`. Do not add another skill-name directory underneath that destination. Confirm the final `SKILL.md` and bundled reference paths, then start/restart the host if necessary and check the exact name/path in its list.
+
+For a POSIX project-local Codex copy:
+
+```sh
+skill_source=../Silicon-Design/skills/silicon-design-review
+skill_destination=.agents/skills/silicon-design-review
+if [ -e "$skill_destination" ]; then echo 'Compare the installed revision first.' >&2; exit 1; fi
+mkdir -p .agents/skills
+cp -R "$skill_source" "$skill_destination"
+test -f "$skill_destination/SKILL.md"
+test -f "$skill_destination/references/interactive-checks.md"
+```
+
+In codex-cli 0.146.1, `codex debug prompt-input` exposes native model-visible metadata without a model turn. Inspect it locally for project skill paths. Do not count a model's final claim as activation evidence; use [routing traces](../evals/activation/README.md).
+
+Record release `2026.11.14.1`, the adopted Git revision and deliberate changes. The [optional-depth manifest](../skills-release.json) records immutable commit URLs and content digests. Preserve these during copying. An intentional switch to latest online guidance must be labelled and its actual resource revision recorded when reproducibility matters. Unavailable online depth cannot block the essential offline workflow.
+
+Claude.ai, Cowork, cloud sessions and API distribution are distinct from local Claude Code folders and are not installation targets verified here. Follow their current account/upload documentation if needed. No installer, plugin manifest, global configuration overwrite or vendor-specific instruction fork is required.
 
 ## Useful project instruction
 

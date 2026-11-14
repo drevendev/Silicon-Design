@@ -29,4 +29,4 @@ Inspect minimum width, long translations, large/live values and affected consume
 
 Report contracts, measured pairs and checked/failed/untested. Readability defects remain unresolved; technical passes establish neither craft quality, owner acceptance nor compliance.
 
-Optional depth: [foundations](https://github.com/drevendev/Silicon-Design/blob/master/docs/foundations/color.md).
+Optional depth: [foundations](https://github.com/drevendev/Silicon-Design/blob/97f99ab4fb8ab753f1acab9e9363b0a840555a21/docs/foundations/color.md).
