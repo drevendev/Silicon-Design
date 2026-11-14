@@ -30,6 +30,8 @@ Removing clichés leaves space. The design work is deciding what belongs in it.
 
 ## Use it on a project
 
+**Skill release 2026.11.14.1:** safe YAML validation, isolated-folder CI checks, separate Claude Code/Codex setup, an EN/RU routing corpus and immutable optional-depth links. [Implementation and performed coverage](research/skills-tooling-2026-11-14.md) · [Adoption](docs/adoption.md) · [Release identity](skills-release.json). Native discovery and model activation are reported separately.
+
 **14 November feedback revision:** the five skills make subtraction, object hierarchy and the final craft correction explicit; exact action totals stay visible and reference inspection must show actual task UI. [Feedback, changes and remaining acceptance](research/feedback-revision-2026-11-14.md) · [Subtraction and craft](docs/subtraction-and-craft.md) · [Product practice](research/product-practice-2026-11-14.md). Technical passes and relative wins remain separate from owner acceptance.
 
 Choose the skill for the actual job from the table below. Preserve an existing direction for a small fix or established-brand screen; no rendered alternatives are needed by default. For open identity work, compare inexpensive same-content compositions and develop the selected one.
@@ -79,12 +81,14 @@ This is the initial handbook. The next step is to apply it to a real product and
 
 ## Check the repository
 
-With Python 3.11+ and Node.js 20+, without installing dependencies:
+With Python 3.11+ and Node.js 20+, install the pinned verification dependency in your development environment. Portable instruction skills do not require it; after setup these checks run without network access:
 
 ```sh
+python -m pip install -r requirements-dev.txt
 python tools/check.py
 python -m unittest discover -s tests -v
-node --test tests/specimen-model.test.cjs
+node --test tests/specimen-model.test.cjs tests/field-notes.test.js
+python tools/activation.py validate
 ```
 
 The handbook check validates local Markdown destinations, skill metadata, source revisions and declared palette pairs. Node tests cover the workshop and crafting state transitions. It does not judge visual quality, crawl external links, or certify accessibility. See [contributing](CONTRIBUTING.md) for manual review expectations.

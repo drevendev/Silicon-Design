@@ -356,6 +356,28 @@
       "record": "research/feedback-revision-2026-11-14.md",
       "source_manifest": "research/feedback-revision-2026-11-14.sources.json",
       "scope": "All returned issue feedback reconciled; guidance/practice integration only. Prior outcome acceptance and separate runner PR remain unclaimed."
+    },
+    "skill_tooling_implementation": {
+      "base_revision": "97f99ab4fb8ab753f1acab9e9363b0a840555a21",
+      "reviewed_at": "2026-11-14",
+      "issues": [
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "release": "2026.11.14.1",
+      "record": "research/skills-tooling-2026-11-14.md",
+      "scope": "Safe metadata/package/release validation and bounded routing tools; native discovery and unperformed activation kept separate.",
+      "guidance_sources": [
+        "https://learn.chatgpt.com/docs/build-skills",
+        "https://learn.chatgpt.com/docs/cli/reference",
+        "https://code.claude.com/docs/en/skills",
+        "https://code.claude.com/docs/en/cli-reference",
+        "https://developers.openai.com/blog/eval-skills",
+        "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices"
+      ]
     }
   }
 ]

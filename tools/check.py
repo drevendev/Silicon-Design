@@ -3,10 +3,45 @@
 
 import json
 import re
+import shutil
 import sys
+import tempfile
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
+
+try:
+    import yaml
+except ImportError:
+    yaml = None
+
+
+def skill_metadata(path):
+    """Read the host-facing YAML, preserving optional vendor metadata."""
+    if yaml is None:
+        raise ValueError('PyYAML is required: python -m pip install -r requirements-dev.txt')
+    source = path.read_text(encoding='utf-8')
+    frontmatter = re.match(r'\A---\n(.*?)\n---(?:\n|\Z)', source, re.S)
+    if not frontmatter:
+        raise ValueError('missing YAML frontmatter')
+    try:
+        fields = yaml.safe_load(frontmatter[1])
+    except yaml.YAMLError as error:
+        mark = getattr(error, 'problem_mark', None)
+        location = f' at line {mark.line + 2}' if mark else ''
+        raise ValueError(f'invalid YAML{location}: {getattr(error, "problem", str(error))}') from error
+    if not isinstance(fields, dict):
+        raise ValueError('frontmatter must be a YAML mapping')
+    return fields
+
+
+def markdown_destinations(source):
+    """Inline and reference-style destinations outside fenced examples."""
+    source = re.sub(r'^(`{3,}|~{3,})[^\n]*\n.*?^\1\s*$', '', source, flags=re.M | re.S)
+    for match in re.finditer(r'!?\[[^\]\n]*\]\((<[^>\n]+>|[^\s)\n]+)(?:\s+[\"\'][^\n]*?[\"\'])?\)', source):
+        yield match[1].strip('<>')
+    for match in re.finditer(r'^ {0,3}\[[^\]\n]+\]:\s*(<[^>\n]+>|\S+)', source, re.M):
+        yield match[1].strip('<>')
 
 
 def local_destination(root, owner, destination):
@@ -48,19 +83,61 @@ def check_skills(root):
         if not path.is_file():
             issues.append(f'{folder.name}: missing SKILL.md')
             continue
-        source = path.read_text(encoding='utf-8')
-        frontmatter = re.match(r'\A---\n(.*?)\n---\n', source, re.S)
-        if not frontmatter:
-            issues.append(f'{folder.name}: missing frontmatter')
+        try:
+            fields = skill_metadata(path)
+        except ValueError as error:
+            issues.append(f'{folder.name}/SKILL.md: {error}')
             continue
-        fields = dict(re.findall(r'^(name|description):\s*(.+)$', frontmatter[1], re.M))
         if fields.get('name') != folder.name or not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', folder.name) or len(folder.name) > 64:
             issues.append(f'{folder.name}: invalid or mismatched skill name')
-        description = fields.get('description', '').strip()
-        if not description or len(description) > 1024:
+        description = fields.get('description')
+        if not isinstance(description, str) or not description.strip() or len(description) > 1024:
             issues.append(f'{folder.name}: missing or oversized description')
+        source = path.read_text(encoding='utf-8')
         if '[TODO:' in source:
             issues.append(f'{folder.name}: unfinished scaffold')
+    return issues
+
+
+def check_skill_folder(folder):
+    """Check the advertised copy boundary, not the surrounding checkout."""
+    issues = []
+    if folder.is_symlink():
+        return [f'{folder.name}: package root is a symbolic link, not a copied portable folder']
+    for path in folder.rglob('*'):
+        if path.is_symlink():
+            issues.append(f'{folder.name}: symbolic link is not a portable bundled file: {path.relative_to(folder)}')
+    if issues:
+        return issues
+    for path in sorted(folder.rglob('*.md')):
+        for destination in markdown_destinations(path.read_text(encoding='utf-8')):
+            try:
+                parts = urlsplit(destination)
+                if '\\' in parts.path or (parts.scheme and parts.scheme not in ('http', 'https', 'mailto', 'data')):
+                    raise ValueError('nonportable local reference')
+                target = local_destination(folder, path, destination)
+                if target is not None and not target.exists():
+                    issues.append(f'{folder.name}/{path.relative_to(folder)}: missing bundled file {destination}')
+            except ValueError:
+                issues.append(f'{folder.name}/{path.relative_to(folder)}: reference escapes skill folder: {destination}')
+    return issues
+
+
+def check_portable_skills(root):
+    issues = []
+    for folder in sorted((root / 'skills').iterdir()):
+        if not folder.is_dir():
+            continue
+        source_issues = check_skill_folder(folder)
+        issues.extend(source_issues)
+        if source_issues:
+            continue
+        with tempfile.TemporaryDirectory(prefix='silicon-skill-') as directory:
+            isolated = Path(directory) / 'skills' / folder.name
+            isolated.parent.mkdir()
+            shutil.copytree(folder, isolated)
+            issues.extend(check_skills(Path(directory)))
+            issues.extend(check_skill_folder(isolated))
     return issues
 
 
@@ -175,9 +252,13 @@ def check_html(root):
 
 
 def main():
+    if __package__:
+        from .skill_release import check_release
+    else:
+        from skill_release import check_release
     root = Path(__file__).resolve().parents[1]
     issues = []
-    for check in (check_markdown, check_skills, check_revisions, check_html):
+    for check in (check_markdown, check_skills, check_portable_skills, check_release, check_revisions, check_html):
         try:
             issues.extend(check(root))
         except (OSError, ValueError, KeyError, TypeError) as error:
@@ -192,7 +273,7 @@ def main():
         print(f'ERROR: {issue}')
     if issues:
         return 1
-    print('OK: local links, skill metadata, source revisions and declared palette contracts')
+    print('OK: local links, YAML metadata, isolated skill packages, source revisions and declared palette contracts')
     return 0
 
 

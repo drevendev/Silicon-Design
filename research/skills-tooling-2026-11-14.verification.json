@@ -1,0 +1,154 @@
+{
+  "format": "silicon-tooling-verification-1",
+  "date": "2026-11-14",
+  "release": "2026.11.14.1",
+  "base_revision": "97f99ab4fb8ab753f1acab9e9363b0a840555a21",
+  "checks": [
+    {
+      "name": "repository-checker",
+      "command": [
+        "python",
+        "tools/check.py"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "python-tests",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "existing-node-tests",
+      "command": [
+        "node",
+        "--test",
+        "tests/specimen-model.test.cjs",
+        "tests/field-notes.test.js"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "activation-corpus",
+      "command": [
+        "python",
+        "tools/activation.py",
+        "validate"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "module-entrypoint",
+      "command": [
+        "python",
+        "-m",
+        "tools.check"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "diff-whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    }
+  ],
+  "package_source_sha256": {
+    "blind-test": "21bcc1caae56f091f28e5bf6a338df2a573012974e14a6221f682c63e55bebee",
+    "silicon-design-direction": "262f0f5ff01ec2e6a21ceea340fc7d2028a06152910e62f0a7736d20a8b539c6",
+    "silicon-design-review": "908e451804bbf97c18e246781426e6b40a3b0c47313a2a46be77850c7bd828da",
+    "silicon-design-system": "dda417107807d6f85902a7e01af95ec911b6849266a292c6f88e762e72a21c7f",
+    "silicon-game-ui": "62e6cbffa9a26b8b3d8008bc9f7b29942b9453d6e523e544ef7aa339e8add254",
+    "silicon-interface-build": "d404877722376b8037498e4aab267a8cd5ab8456bb6a94c52b56bf8035153d3e"
+  },
+  "limits": [
+    "No completed native model-activation result on either host.",
+    "Claude authentication expired; owner selected explicitly untested activation.",
+    "Codex configured model rejected before completion; original attempt retained, no substitution or retry.",
+    "Personal/global installation, device/AT, design preference and billing remain untested."
+  ],
+  "reviewed_head": "48f007b6e4ce8b19df7f9d1e9396413e8ba25833",
+  "review_corrections": [
+    "Bind Codex skill paths to full-read operands; mentions/ambiguous commands cannot pass.",
+    "Require exact Claude project directory and case-sensitive POSIX identity.",
+    "Reject vacuous positive and ill-typed activation cases before execution.",
+    "Compare release digests with pinned Git blobs, not only working files; fetch history in CI."
+  ],
+  "all_six_skill_bodies_and_discovery_metadata_preserved_except_depth_urls": true,
+  "unchanged_example_benchmark_and_blind_runner_files": 173,
+  "native_discovery": {
+    "host": "codex",
+    "cli_version": "0.146.1",
+    "scope": "project .agents/skills",
+    "model_turn_started": false,
+    "packages": [
+      "blind-test",
+      "silicon-design-direction",
+      "silicon-design-review",
+      "silicon-design-system",
+      "silicon-game-ui",
+      "silicon-interface-build"
+    ],
+    "result": "observed in native debug prompt input",
+    "evidence_sha256": "5ff3ac9043cf275b44062a546ff1e1d25ef5b75b008413b13522e756b0f5b43d"
+  },
+  "native_activation": {
+    "codex": {
+      "cli_version": "codex-cli 0.146.1",
+      "model": "gpt-6.1-sol, rejected by provider",
+      "cases": [
+        {
+          "id": "explicit-review-en",
+          "status": "unobserved",
+          "observed": [],
+          "exit_code": 1,
+          "trace_sha256": "93f25b2d9287fb6db55daf34245e27272aa88342e306ce65b46e0305ed9f5f17"
+        }
+      ],
+      "unrun_cases": [
+        "explicit-game-ru",
+        "direction-en",
+        "system-en",
+        "build-en",
+        "game-en",
+        "review-en",
+        "review-ru",
+        "build-ru",
+        "backend-en",
+        "docs-ru",
+        "blind-review-en"
+      ],
+      "result": "unobserved; model_not_found before completed turn"
+    },
+    "claude": {
+      "cli_version": "2.1.259",
+      "result": "untested; expired authentication, no request launched"
+    }
+  },
+  "retained_codex_input_manifest_sha256": "81ff065572e5f426aafb6e4a71d5332621b122c2dbbcaec56301391278a30b1f",
+  "frozen_attempt_task_inputs_still_match": true,
+  "frozen_attempt_non_task_input_changes": [],
+  "retained_native_trace_regrade": {
+    "adapter_sha256": "97602c5875916d7e11726058e9f9d4644ec6a4ba1714273c30af55ffa579d18c",
+    "trace_sha256": "93f25b2d9287fb6db55daf34245e27272aa88342e306ce65b46e0305ed9f5f17",
+    "status": "unobserved",
+    "new_native_calls": 0
+  },
+  "all_deterministic_checks_passed": true
+}
