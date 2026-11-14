@@ -6,9 +6,11 @@ Select applicable checks for the requested frame or flow; this is an inspection 
 
 - [ ] Current revision, accepted changes, explicit arrangement/capacity constraints and supplied growth plans are respected; speculation, fiction/prototypes and unavailable evidence are labelled.
 - [ ] Primary statement, useful action and decision-critical information have clear priority at use size.
+- [ ] Dominant object leads captions/frames; nested boundaries and per-row card chrome have a task reason. Corner actions align with their header, with readable glyphs and usable targets.
 - [ ] Inspected references match category/genre and task; provenance, useful transfers and unavailable evidence are explicit. Reading model follows actual count and decisions. Bounded-set capacity fits the usable base viewport without hiding/shrinking content; narrow/enlarged-text fallback remains usable.
 - [ ] Composition, imagery, voice and behaviour support subject-specific character without requiring decorative novelty.
 - [ ] Density, bounded widths and grouped actions support the task; quantities do not dwarf necessary costs/units. Authorized simplification removes redundant framing while preserving useful summaries, names, legends and state explanations.
+- [ ] A subtraction pass removes labels/badges/help already conveyed by values, meters, position or selection; accessible names, visible context, deficits, blocked reasons and reachable help survive. Effects stay by the affected choice.
 - [ ] Actual wrapping, crops, small symbols, selected states and supported scripts remain understandable.
 - [ ] Palette roles are coherent, allowing an authorized whole-palette change. Actual text and glyph paths (SVG/mask/filter/image), adjacent surfaces, bounds/crops and applicable contrast pairs were inspected; selected swatches alone are insufficient.
 - [ ] For multiple screens/reusable changes, equivalent components share an authoritative contract and implementation across affected consumers; meaningful exceptions are explained. Local corrections do not require a new kit.
@@ -19,6 +21,7 @@ Select applicable checks for the requested frame or flow; this is an inspection 
 - [ ] Changed decisions and relevant failure/recovery preserve useful input, state truth and context.
 - [ ] Composite controls activate from labels, icons and usable padding, with supported keyboard paths.
 - [ ] Important text and overlays are not accidentally clipped; necessary full values remain reachable.
+- [ ] Exact action totals are visible at commitment, not only in accessible names; long names/translations and large/live values work at minimum supported width.
 - [ ] Search/mode/inspector changes avoid disruptive unexpected movement; deliberate reflow or variable item height is not an automatic defect.
 - [ ] Sticky corner/header/identity-column intersections remain legible during two-axis scrolling where present.
 - [ ] Relevant close/removal/last-item undo restores useful context and connected, visible focus.
@@ -39,6 +42,8 @@ For detailed diagnostics use the review skill's [interactive procedure](../skill
 
 - [ ] Findings locate a state/region, consequence and bounded correction; affected rechecks distinguish resolution from coverage.
 - [ ] Operation/access and character/care conclusions are separate; preference and acceptance are not conflated.
+- [ ] Same-state original/result craft comparison and a critical correction pass occurred within budget; removals/justified retentions and unresolved craft are reported. Technical PASS does not finish design or establish owner acceptance.
+- [ ] References actually show relevant task UI; unavailable inspection was disclosed before composition. Task-relevant shared defects outside edit scope are located as limitations.
 - [ ] Source assertions, screenshots and palette math are not presented as unperformed native-input, assistive-technology or audience tests.
 - [ ] Additional surfaces, sheets, workflows and documents are included only when requested or necessary for validation; no finding/test quota or new approval sequence.
 - [ ] Remaining scoped readability defects are unresolved findings, not successful delivery. Comparison protocol, permission and failure handling follow the [separate gate](../docs/evaluation.md); no new experiment is inferred from an instruction update.

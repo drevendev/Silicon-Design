@@ -20,6 +20,10 @@ Show truthful complete/success examples alongside partial, unknown and blocked s
 
 Keep units and useful precision clear, with exact disclosure when compact formatting hides necessary information. Preserve useful input through recoverable failure and task context after close, removal or undo. Do not add notes or another workflow merely to demonstrate preservation.
 
+At commitment, show exact action totals visibly; a compact value with precision only in an accessible name is insufficient. Short source previews must open the selectable full original/provenance and return with context/focus. Preserve recorded material, a machine proposal, a human edit and explicit acceptance as distinct meanings.
+
+For asynchronous work, distinguish global scheduling, selected object, active worker and a manual attempt. A one-shot attempt does not silently resume paused scheduling. Stopping is not stopped until confirmed; stale replies/readiness checks cannot certify changed settings or produce a second result. On completion/failure, retain a visible outcome linked to the exact attempt even if the worker returns idle. Respect dismissal per attempt, while a new failed attempt gets its own outcome. Report real stages, not invented percentages; distinguish no inputs, no matches, unreviewed draft, processing failure and save failure. These are conditional flow contracts, not a requirement to add background work. [Practice and fictional copy](../../research/product-practice-2026-11-14.md).
+
 ## Verify affected interactions
 
 Check actual activation from composite controls' labels, icons and usable padding, plus supported keyboard paths. Inspect clipped important text and opened popovers in their real overflow context. Intended truncation needs reachable full necessary detail.
@@ -31,5 +35,7 @@ For a scoped fix, verify affected states. For a flow, include relevant failure/r
 ## Keep the product's character
 
 Identity can live in composition, voice, typography, selected assets and efficient, exact work while controls stay familiar. Let guidance recede with proficiency and use calm, specific failures. Extra framing is not proof of care.
+
+Before delivery perform a [subtraction and craft pass](../subtraction-and-craft.md): inspect object prominence, nested framing, duplicate labels and corner alignment against the same-state original. Retain necessary legends, instructions and blocked reasons. Technical checks, craft judgment and explicit owner acceptance are separate outcomes; include task-relevant shared defects outside edit scope as limitations.
 
 Example: [Dispatch brief](../../examples/dispatch.DESIGN.md). Sources: [Vibe, Ant Design and Primer](../../research/sources.md), the [operations trial](https://github.com/drevendev/Silicon-Design/issues/11) and [consolidated specification](../../research/skill-improvement-spec-2026-11-07.md).

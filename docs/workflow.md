@@ -35,7 +35,7 @@ Within authorized scope, redesign structure and control representation rather th
 
 For interactive work, preserve useful input and task context through affected failures, close/removal/undo and return paths. Test persistence only when promised and affected. For static work, inspect the frame without adding interactive workflows.
 
-At use size, inspect the main statement, primary action and decision-critical values first. Then fix observed grouping, wrapping, crop, symbol and label problems. Keep the recognizable idea coherent across requested states; efficiency can carry character in work screens. Fix structural problems before extra documentation.
+At use size, name the dominant object and inspect its action and decision-critical values. Perform a [subtraction and craft pass](subtraction-and-craft.md) against the same-state original: remove duplicate labels/help, justify nested boundaries, align corner actions and retain context, accessible meaning and blocked reasons. Make a critical correction within budget; record removals or justified retentions. Technical PASS alone does not finish design. Keep character coherent across states; fix structure before extra documentation.
 
 ## Verify the affected result
 
@@ -45,7 +45,7 @@ For interactive review involving controls, state transitions, overlays or sticky
 
 Locate a finding by state/viewport and selector or region; explain consequence and expected correction. Recheck the affected state and distinguish resolved/partial/unresolved findings from checked/failed/untested coverage. Source assertions, palette calculations and screenshots do not substitute for unperformed native input, focus or assistive-technology checks.
 
-Assess operation/access separately from character/care. Read comments on comparison winners; a relative win does not establish acceptance. Keep supplied input defects, unavailable assets, capture uncertainty and test-adapter mistakes separate from implementation failures.
+Assess operation/access, craft judgment and explicit owner acceptance separately. Read criticism on winners; a relative win does not establish acceptance. Report task-relevant shared defects even when editing them is outside scope. Keep input defects, unavailable assets, capture uncertainty and test-adapter mistakes separate from implementation failures.
 
 ## Deliver proportionally
 

@@ -1,0 +1,213 @@
+{
+  "format": "silicon-feedback-verification-1",
+  "date": "2026-11-14",
+  "base_revision": "d455f4aad76657281f5ad7bc2308310e8f3b7d09",
+  "scope": "Guidance and practice documentation; no runtime or new experiment.",
+  "checks": [
+    {
+      "name": "silicon-design-direction-source",
+      "command": [
+        "python",
+        "<skill-creator>/scripts/quick_validate.py",
+        "./skills/silicon-design-direction"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "silicon-design-direction-isolated",
+      "command": [
+        "python",
+        "<skill-creator>/scripts/quick_validate.py",
+        "<verification-workspace>/isolated/silicon-design-direction"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "silicon-design-review-source",
+      "command": [
+        "python",
+        "<skill-creator>/scripts/quick_validate.py",
+        "./skills/silicon-design-review"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "silicon-design-review-isolated",
+      "command": [
+        "python",
+        "<skill-creator>/scripts/quick_validate.py",
+        "<verification-workspace>/isolated/silicon-design-review"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "silicon-design-system-source",
+      "command": [
+        "python",
+        "<skill-creator>/scripts/quick_validate.py",
+        "./skills/silicon-design-system"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "silicon-design-system-isolated",
+      "command": [
+        "python",
+        "<skill-creator>/scripts/quick_validate.py",
+        "<verification-workspace>/isolated/silicon-design-system"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "silicon-game-ui-source",
+      "command": [
+        "python",
+        "<skill-creator>/scripts/quick_validate.py",
+        "./skills/silicon-game-ui"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "silicon-game-ui-isolated",
+      "command": [
+        "python",
+        "<skill-creator>/scripts/quick_validate.py",
+        "<verification-workspace>/isolated/silicon-game-ui"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "silicon-interface-build-source",
+      "command": [
+        "python",
+        "<skill-creator>/scripts/quick_validate.py",
+        "./skills/silicon-interface-build"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "silicon-interface-build-isolated",
+      "command": [
+        "python",
+        "<skill-creator>/scripts/quick_validate.py",
+        "<verification-workspace>/isolated/silicon-interface-build"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "repository-checker",
+      "command": [
+        "python",
+        "tools/check.py"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "checker-tests",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "existing-state-tests",
+      "command": [
+        "node",
+        "--test",
+        "tests/specimen-model.test.cjs",
+        "tests/field-notes.test.js"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "name": "diff-whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "result": "passed"
+    }
+  ],
+  "entrypoints": [
+    {
+      "name": "silicon-design-direction",
+      "words_before": 332,
+      "words_after": 325,
+      "characters_before": 2801,
+      "characters_after": 2751,
+      "discovery_metadata_unchanged": true
+    },
+    {
+      "name": "silicon-design-review",
+      "words_before": 348,
+      "words_after": 355,
+      "characters_before": 3064,
+      "characters_after": 3272,
+      "discovery_metadata_unchanged": true
+    },
+    {
+      "name": "silicon-design-system",
+      "words_before": 372,
+      "words_after": 368,
+      "characters_before": 2940,
+      "characters_after": 3052,
+      "discovery_metadata_unchanged": true
+    },
+    {
+      "name": "silicon-game-ui",
+      "words_before": 377,
+      "words_after": 383,
+      "characters_before": 3342,
+      "characters_after": 3503,
+      "discovery_metadata_unchanged": true
+    },
+    {
+      "name": "silicon-interface-build",
+      "words_before": 408,
+      "words_after": 404,
+      "characters_before": 3589,
+      "characters_after": 3623,
+      "discovery_metadata_unchanged": true
+    }
+  ],
+  "limits": [
+    "Word/character counts are context proxies, not token or billing measurements.",
+    "No fresh model/reference-retrieval exercise, human vote or preference/cost trial.",
+    "No new rendered runtime fixture, physical device, AT or consuming-product acceptance.",
+    "Passing tests of unchanged fixtures does not validate future generated designs."
+  ],
+  "totals": {
+    "words_before": 1837,
+    "words_after": 1835,
+    "characters_before": 15736,
+    "characters_after": 16201
+  },
+  "protected_base_files_byte_identical": 172,
+  "conditional_interaction_reference_unchanged": true,
+  "feedback_inventory": {
+    "issues": 33,
+    "comments": 11
+  },
+  "all_checks_passed": true
+}

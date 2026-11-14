@@ -16,9 +16,13 @@ Use the current revision, accepted changes, explicit layout/capacity constraints
 
 Use an expressive face for short world-building titles if desired; use a readable face for inventory, instructions and quantities. Check text against the darkest and brightest relevant scenes, with stable panels or outlines when necessary.
 
-For a purchase, show the effect, exact cost or accessible exact disclosure, owned/required amounts, and a plain reason it is unavailable. A deficit uses both text and color. Do not reveal hidden content through a tooltip, placeholder or accessible label before the game's knowledge rules allow it.
+For a purchase, show the effect, owned/required amounts and a plain unavailable reason. The exact payable total must be visible at commitment, including large amounts; an accessible name alone is insufficient. Secondary quotes/history may use reachable exact detail. Put price effects beside price; distinguish quote, unit price, quantity and total. A deficit uses both text and color. Do not reveal hidden content through a tooltip, placeholder or accessible label before the game's knowledge rules allow it.
 
-Separate presentation changes from game balance. Compact formatting, help expansion, focus or hover must not change resources, coefficients, unlocks or progression. Keep zero, unknown and not-applicable values distinct. These conventions are informed by [IdleShop's authoring wireframes](../../research/our-practice.md), which are specifications rather than proof of shipped UI.
+Separate presentation from balance: formatting, help, focus or hover cannot change resources, coefficients, unlocks or progression. Keep zero, unknown and not-applicable distinct. [Earlier wireframes](../../research/our-practice.md) remain specifications; the [later owner-playtested practice report](../../research/product-practice-2026-11-14.md) is separate evidence.
+
+Perform a [subtraction and craft pass](../subtraction-and-craft.md): goods, workers and play decisions lead captions/frames. Remove duplicate state words when count/meter/selection explains them; keep deficits, blocked reasons, accessible meaning and reachable help. Inspect Remove's glyph/target, corner alignment and physical object placement. Preserve useful backgrounds/alignment; uniform worker rows may need one divided list instead of decorated cards.
+
+Put signed effects by the choice against a clear neutral reference. Distinguish applied effects from possible future tiers, multiplicative percentages from additive probability points, and inventory/shelf/reserved/free quantities. Readiness means requirements and spendable resources permit action. A signed gauge uses a neutral origin, not a half-filled bar at zero. Dependency simplification preserves OR branches, legacy grants and unknown identities. Shared headings can explain genuine common comparison structure once.
 
 Inspect resource, weather, route and action symbols within their actual surroundings at the intended UI scale. Distinct meanings and the selected option must remain discernible; keep important names, costs and effects beside the decision. A top resource strip or particular snowflake is a contextual option, not a universal HUD rule.
 
@@ -28,7 +32,7 @@ Compare placed scenery, objects, icons and controls for edge, lighting, perspect
 
 Make focus visible on controller/keyboard paths and map navigation explicitly in spatial menus. Provide a suitable non-drag route for drag interactions when feasible. Address UI scaling, safe areas, subtitles and input remapping according to the game's platform and audience.
 
-Feedback should be immediate and truthful: an animation can celebrate an actual resource change but must not conceal an input failure. Offer reduced decorative motion, screen-shake adjustment and audio controls where relevant. Do not rely on sound or color alone for essential events.
+Feedback should be immediate and truthful: animate authoritative cycle/route progress without restarting easing on each sample; cancel/rebase for pause, new cycle or visibility changes. Presentation never advances simulation or RNG. Celebration cannot conceal failure. Keep readable timing and distinguish refresh, event end and next check where those differ. Offer reduced motion, screen-shake adjustment and audio controls where relevant; essential events need more than sound or color.
 
 Connect world identity to what the player does and what changes afterward. An object, mark, sound or transition can help express a game's character when it belongs to the event. Keep comparisons and costs precise while expressive feedback fits the moment. Inspect frequently repeated actions; celebration should not become an input delay. Do not change gameplay or invent a world response outside the authorized implementation scope.
 

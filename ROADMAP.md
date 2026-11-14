@@ -6,6 +6,8 @@ The first version contains principles, typography/color/layout/interaction/acces
 
 ## Next: apply it to a real product
 
+The [14 November feedback revision](research/feedback-revision-2026-11-14.md) consolidates the existing trials and both v6 owner reports. It implements instruction changes while keeping product adoption, fresh matched evaluation and teaching-specimen work separate. Use its complete feedback map for current implementation ownership; the original outcome criteria remain with their issues.
+
 The [specimen critique](research/specimen-critique.md) has now informed a [working redesign](examples/README.md): an observation journal, a repair desk and a lanternmaker's scene. Their [review](examples/REVIEW.md) distinguishes implemented changes from hypotheses about character. Applying the handbook to an existing real product remains the next validation.
 
 1. Choose one representative flow from an existing product and capture its actual current implementation.
