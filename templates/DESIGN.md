@@ -12,6 +12,7 @@ Use this record when actual direction decisions need documenting; reuse the exis
 - Inspected task/category references: [source/date/provenance, useful relationship, differences; reuse existing inspection or record unavailable evidence].
 - Reading model and capacity: [fixed/growing count, recognition/comparison/sorting, usable viewport after chrome, base-set fit and narrow/enlargement fallback].
 - Chosen hierarchy and useful action: [first attention, critical information, next step].
+- Subtraction and framing: [dominant object, duplicate labels/help removed or retained, nested-boundary reasons, corner-action alignment].
 - Character and intended feeling: [subject-specific choices; efficiency may carry character in operational work].
 - Rationale, tradeoff and unresolved questions: [brief, inspectable decisions].
 - Requested capabilities/fields: [record when needed to prevent scope drift; no invented additions].
@@ -56,6 +57,7 @@ A static frame does not need invented interactive states or a second screen.
 - Environment, state and changed scope: [viewport/resolution, theme, language, input].
 - Relevant checks and captures: [actual results and meaningful untested areas].
 - Character versus operation: [separate judgments; no invented audience effects].
+- Final craft pass and owner acceptance: [same-state original/result where available, otherwise inspect the result and disclose the missing baseline; corrections within budget, unresolved judgment; technical PASS and relative wins are not acceptance].
 - Exceptions and review: [tradeoffs, unresolved issues, report link if useful].
 
 ## Reference detail — only when needed

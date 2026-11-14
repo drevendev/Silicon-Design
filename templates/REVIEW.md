@@ -12,6 +12,8 @@ For a local fix, a concise finding and affected recheck may suffice. Keep only s
 
 - Operation/access: [readable information, task and input/recovery evidence].
 - Character/care: [specific composition, imagery, voice or behaviour; label taste and emotional-effect hypotheses].
+- Owner acceptance: [explicit decision / untested; relative preference and technical PASS are separate].
+- Craft pass: [same-state original/result where available, otherwise inspect the frame and disclose the missing baseline; dominant object, removals or justified retentions, remaining judgment; correct within budget when fixes are authorized].
 
 For a screenshot-only review, conclusions concern appearance. Compare character beyond the introduction or repeated use only where those surfaces/events are in scope and observable.
 
@@ -24,6 +26,8 @@ For a screenshot-only review, conclusions concern appearance. Compare character 
 Blocking prevents key task/access/truthful feedback; major materially harms comprehension, readability, efficiency or identity; polish is smaller craft. Do not inflate taste into a blocker.
 
 For visual fixes, retain state/viewport, expected correction and same-state recapture where possible. Track resolved/partial/unresolved independently of coverage. Separate geometry, brief interpretation and aesthetic judgment.
+
+Include task-relevant shared defects even outside edit scope. Check duplicate labels/badges/help, nested frames, corner alignment, glyph/target size, exact visible action totals and long text at minimum width. Retain necessary visible instructions, blocked reasons and accessible names; do not count a reference page without relevant UI as inspection.
 
 ## Relevant coverage
 

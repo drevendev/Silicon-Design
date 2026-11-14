@@ -30,6 +30,8 @@ Removing clichés leaves space. The design work is deciding what belongs in it.
 
 ## Use it on a project
 
+**14 November feedback revision:** the five skills make subtraction, object hierarchy and the final craft correction explicit; exact action totals stay visible and reference inspection must show actual task UI. [Feedback, changes and remaining acceptance](research/feedback-revision-2026-11-14.md) · [Subtraction and craft](docs/subtraction-and-craft.md) · [Product practice](research/product-practice-2026-11-14.md). Technical passes and relative wins remain separate from owner acceptance.
+
 Choose the skill for the actual job from the table below. Preserve an existing direction for a small fix or established-brand screen; no rendered alternatives are needed by default. For open identity work, compare inexpensive same-content compositions and develop the selected one.
 
 Read relevant foundations and product guidance only when they help the decision. Reuse DESIGN.md or [record changed decisions](templates/DESIGN.md) when necessary. Verify the requested frame or affected interactive flow; the [checklist](checklists/design-review.md) and [review template](templates/REVIEW.md) are optional aids, not required output bundles.
