@@ -1,7 +1,7 @@
 from pathlib import Path
 import sys,json,hashlib,struct,math,re
 def validate(c):
-    if c.get('schema_version') not in (1,2) or not isinstance(c.get('study_id'),str) or not c['study_id'] or type(c.get('protocol_version')) is not int or type(c.get('seed')) is not int:raise ValueError('Invalid study/protocol/seed')
+    if not isinstance(c,dict) or type(c.get('schema_version')) is not int or c['schema_version'] not in (1,2) or not isinstance(c.get('study_id'),str) or not c['study_id'] or type(c.get('protocol_version')) is not int or type(c.get('seed')) is not int:raise ValueError('Invalid study/protocol/seed')
     screens=c['screens']
     if not isinstance(screens,list) or not screens or any(not isinstance(s,str) or not s or s in ('set','whole_site') for s in screens) or len(set(screens))!=len(screens):raise ValueError('Invalid screen IDs')
     for key,allowed in [('supported_locales',{'ru','en'}),('supported_views',{'desktop','mobile','full'})]:
@@ -12,6 +12,7 @@ def validate(c):
     for a in c['artifacts']:
         if not isinstance(a,dict) or not isinstance(a.get('id'),str) or not re.fullmatch('[a-z0-9-]+',a['id']):raise ValueError('Invalid artifact ID')
         ids.append(a['id'])
+        if 'captures' in a and (not isinstance(a['captures'],dict) or any(not isinstance(value,str) or not value.startswith('data:image/png;base64,') for value in a['captures'].values())):raise ValueError('Invalid PNG captures')
         if c.get('evaluation_unit')!='whole_site' and not isinstance(a.get('captures'),dict):raise ValueError('Missing captures')
         for screen in ([] if c.get('evaluation_unit')=='whole_site' else screens):
             for locale in c['supported_locales']:
@@ -25,7 +26,7 @@ def validate(c):
     else:
         unit=c.get('evaluation_unit');p=c.get('comparison',{})
         if c['protocol_version']!=3 or unit not in ('whole_site','surface','multi_surface'):raise ValueError('Explicit evaluation contract required')
-        if p.get('format') not in ('round_robin','selected_pairs') or p.get('side_control') not in ('seeded','as_listed'):raise ValueError('Explicit comparison format and side control required')
+        if not isinstance(p,dict) or p.get('format') not in ('round_robin','selected_pairs') or p.get('side_control') not in ('seeded','as_listed'):raise ValueError('Explicit comparison format and side control required')
         if p['format']=='round_robin' and ('pairs' in p or p['side_control']!='seeded'):raise ValueError('Round robin uses seeded sides')
         if p['format']=='selected_pairs':
             if not isinstance(p.get('pairs'),list) or not p['pairs']:raise ValueError('Select at least one pair')
@@ -51,7 +52,12 @@ def canonical(value):
     raise ValueError('Unsupported JSON value')
 def build(config,destination,source_base=None):
     assets=Path(__file__).resolve().parent.parent/'assets'
-    c=dict(config);c.setdefault('schema_version',1);c.setdefault('screens',['market','management','shop']);c.setdefault('supported_locales',['ru','en']);c.setdefault('supported_views',['desktop','mobile','full'])
+    if not isinstance(config,dict):raise ValueError('Study configuration must be an object')
+    c=dict(config);c.setdefault('schema_version',1)
+    if c['schema_version']==2:
+        if any(key not in c for key in ('screens','supported_locales','supported_views')):raise ValueError('Schema 2 requires declared surfaces/routes, locales and views')
+    else:
+        c.setdefault('screens',['market','management','shop']);c.setdefault('supported_locales',['ru','en']);c.setdefault('supported_views',['desktop','mobile','full'])
     validate(c)
     # Stage all bytes before writing. Only original, trusted static sites belong here.
     site_files={}
@@ -62,8 +68,15 @@ def build(config,destination,source_base=None):
             if not isinstance(source_dir,str) or not source_dir:raise ValueError('site_dir required')
             root=(Path(source_base or Path.cwd())/source_dir).resolve()
             entry=a.pop('site_entry','index.html')
-            if not re.fullmatch(r'[a-zA-Z0-9_./-]+\.html',entry) or '..' in entry.split('/') or not (root/entry).is_file():raise ValueError('Invalid site entry')
             if not root.is_dir():raise ValueError('site_dir required')
+            entries=a.pop('site_entries',None)
+            if entries is None:
+                if len(c['supported_locales'])!=1:raise ValueError('Multi-locale websites require site_entries for every declared locale')
+                entries={c['supported_locales'][0]:entry}
+            if not isinstance(entries,dict) or set(entries)!=set(c['supported_locales']):raise ValueError('site_entries must match the declared locales')
+            for value in entries.values():
+                if not isinstance(value,str) or not re.fullmatch(r'[a-zA-Z0-9_./-]+\.html',value) or any(part in ('','.','..') for part in value.split('/')) or not (root/value).is_file():raise ValueError('Invalid site entry')
+            entry=entries[c['supported_locales'][0]]
             manifest={}
             for file in sorted(root.rglob('*')):
                 if file.is_symlink():raise ValueError('Site symlinks are not portable')
@@ -71,7 +84,8 @@ def build(config,destination,source_base=None):
                 relative=file.relative_to(root)
                 if any(part.startswith('.') or part=='node_modules' for part in relative.parts):raise ValueError('Package static output only, without hidden/source dependency directories')
                 name='sites/'+a['id']+'/'+relative.as_posix();data=file.read_bytes();site_files[name]=data;manifest[name]=hashlib.sha256(data).hexdigest()
-            a['site']={'entry':'sites/'+a['id']+'/'+entry,'files':manifest}
+            prefix='sites/'+a['id']+'/'
+            a['site']={'entry':prefix+entry,'entries':{locale:prefix+value for locale,value in entries.items()},'files':manifest}
         c['runtime_package_id']=hashlib.sha256(json.dumps({k:hashlib.sha256(v).hexdigest() for k,v in sorted(site_files.items())},sort_keys=True).encode()).hexdigest()
     c['runner_sha256']=hashlib.sha256(b''.join((assets/name).read_bytes() for name in ['viewer.template','study.css','study-core.js','study.js'])).hexdigest()
     if len(c.get('artifacts',[]))<2:raise ValueError('At least two artifacts required')

@@ -1,6 +1,9 @@
 (function(root){
   'use strict';
   const blocks=['market','management','shop','set'];
+  const record=x=>x!==null&&typeof x==='object'&&!Array.isArray(x);
+  const relativeRoute=x=>typeof x==='string'&&x.length<=8192&&!x.startsWith('/')&&!x.startsWith('\\')&&!/^[a-z][a-z0-9+.-]*:/i.test(x)&&!x.split(/[?#]/)[0].split('/').some(p=>p==='..');
+  const sitePath=(path,id)=>typeof path==='string'&&path.startsWith('sites/'+id+'/')&&!path.includes('\\')&&!path.split('/').some(p=>!p||p==='.'||p==='..');
   const rand=seed=>()=>{let t=seed+=0x6D2B79F5;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return((t^t>>>14)>>>0)/4294967296;};
   function shuffle(xs,r){xs=[...xs];for(let i=xs.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[xs[i],xs[j]]=[xs[j],xs[i]];}return xs;}
   function schedule(ids,seed=20261114,screens=blocks.slice(0,3)){
@@ -52,7 +55,8 @@
     for(const [id,winner] of Object.entries(s.pending_votes??{}))if(!tasks.has(id)||!['left','tie','right'].includes(winner))throw Error('Некорректный черновик выбора.');
     for(const [id,comment] of Object.entries(s.drafts??{}))if(!tasks.has(id)||typeof comment!=='string')throw Error('Некорректный черновик комментария.');
     for(const [id,exposure] of Object.entries(s.seen_screens??{}))if(!tasks.has(id)||!['left','right'].every(side=>Array.isArray(exposure?.[side])&&exposure[side].every(x=>(c.screens??blocks.slice(0,3)).includes(x))))throw Error('Некорректная история просмотра.');
-    if(s.seen_routes!==undefined){if(c.evaluation_unit!=='whole_site'||!s.seen_routes||typeof s.seen_routes!=='object'||Array.isArray(s.seen_routes))throw Error('Invalid route history.');for(const [id,log]of Object.entries(s.seen_routes))if(!tasks.has(id)||!['left','right'].every(side=>Array.isArray(log?.[side])&&log[side].every(x=>typeof x==='string'&&x.length<=2000&&!x.includes('://')&&!x.startsWith('/'))))throw Error('Invalid route history.');}
+    if(s.seen_routes!==undefined){if(c.evaluation_unit!=='whole_site'||!record(s.seen_routes))throw Error('Invalid route history.');for(const [id,log]of Object.entries(s.seen_routes))if(!tasks.has(id)||!['left','right'].every(side=>Array.isArray(log?.[side])&&log[side].every(relativeRoute)))throw Error('Invalid route history.');}
+    for(const a of s.answers)if(a.runtime_display!==undefined){if(c.evaluation_unit!=='whole_site'||!record(a.runtime_display)||!['left','right'].every(side=>{const d=a.runtime_display[side];return record(d)&&relativeRoute(d.route)&&Number.isInteger(d.width)&&d.width>0&&Number.isInteger(d.height)&&d.height>0&&typeof d.document_lang==='string';}))throw Error('Invalid runtime display evidence.');}
     for(const a of s.answers)if(c.protocol_version>=2&&a.block==='set'&&!['left','right'].every(side=>(c.screens??blocks.slice(0,3)).every(screen=>s.seen_screens?.[a.pair_id]?.[side]?.includes(screen))))throw Error('Не подтверждён просмотр комплекта.');
     for(const d of s.defects)if(!tasks.has(d.pair_id)||!['left','right','both'].includes(d.side)||typeof d.comment!=='string')throw Error('Некорректная запись дефекта.');
     return s;
@@ -63,14 +67,17 @@
     for(const [key,allowed] of [['supported_locales',['ru','en']],['supported_views',['desktop','mobile','full']]])if(c[key]!==undefined&&(!Array.isArray(c[key])||!c[key].length||new Set(c[key]).size!==c[key].length||c[key].some(x=>!allowed.includes(x))))throw Error('Некорректные доступные виды.');
     if(c.corpus_hash_format!==undefined&&c.corpus_hash_format!=='typed-ieee754-v1')throw Error('Неизвестный формат хеша.');
     if(c.screens&&(!Array.isArray(c.screens)||!c.screens.length||c.screens.some(x=>typeof x!=='string'||!x||['set','whole_site'].includes(x))||new Set(c.screens).size!==c.screens.length))throw Error('Invalid screens');
-    if(c.schema_version===2&&!c.screens)throw Error('Declare surfaces/routes.');
+    if(c.schema_version===2&&(!c.screens||!c.supported_locales||!c.supported_views))throw Error('Declare surfaces/routes, locales and views.');
     validateEvaluation(c);
     if(c.evaluation_unit==='whole_site'&&!/^[a-f0-9]{64}$/.test(c.runtime_package_id))throw Error('Runtime package identity required.');
     for(const a of c.artifacts){
       if(typeof a.id!=='string'||!/^[a-z0-9-]+$/.test(a.id)||(a.runtime_b64!==undefined&&typeof a.runtime_b64!=='string'))throw Error('Неполный вариант.');
       if(c.evaluation_unit==='whole_site'){
-        if(!a.site||!new RegExp('^sites/'+a.id+'/[a-zA-Z0-9_./-]+\\.html$').test(a.site.entry)||a.site.entry.includes('..')||!a.site.files||!a.site.files[a.site.entry]||Object.entries(a.site.files).some(([p,h])=>!p.startsWith('sites/'+a.id+'/')||p.includes('..')||!/^[a-f0-9]{64}$/.test(h)))throw Error('Whole-site runtime package required.');
-        if(a.captures&&Object.values(a.captures).some(x=>typeof x!=='string'||!x.startsWith('data:image/png;base64,')))throw Error('Invalid supplementary capture.');
+        const entryOK=path=>sitePath(path,a.id)&&/^[a-zA-Z0-9_./-]+\.html$/.test(path)&&Boolean(a.site.files[path]);
+        if(!record(a.site)||!record(a.site.files)||!entryOK(a.site.entry)||Object.entries(a.site.files).some(([p,h])=>!sitePath(p,a.id)||!/^[a-f0-9]{64}$/.test(h)))throw Error('Whole-site runtime package required.');
+        if(a.site.entries!==undefined){if(!record(a.site.entries)||Object.keys(a.site.entries).length!==c.supported_locales.length||!c.supported_locales.every(locale=>entryOK(a.site.entries[locale]))||a.site.entry!==a.site.entries[c.supported_locales[0]])throw Error('Invalid locale entry pages.');}
+        else if(c.supported_locales.length!==1)throw Error('Multi-locale websites require explicit entry pages.');
+        if(a.captures!==undefined&&(!record(a.captures)||Object.values(a.captures).some(x=>typeof x!=='string'||!x.startsWith('data:image/png;base64,'))))throw Error('Invalid supplementary capture.');
       }else {if(!a.captures)throw Error('Не хватает снимков.');for(const screen of (c.screens??blocks.slice(0,3)))for(const locale of (c.supported_locales??['ru','en']))for(const view of (c.supported_views??['desktop','mobile','full']))if(!a.captures[screen+'/'+locale+'/'+view]?.startsWith('data:image/png;base64,'))throw Error('Не хватает снимков.');}
     }
     return c;

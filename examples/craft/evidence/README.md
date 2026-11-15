@@ -1,5 +1,7 @@
 # Fresh fictional evidence
 
+The [PR #50 follow-up receipts](pr50-review/) describe the corrected runner and actual inner-frame conditions. Root-level JSON receipts below describe the initial implementation at their named revision; they are not relabeled as current runner validation.
+
 The JSON receipts identify the implementation revision and actual browser conditions. Source contracts, observed input/rendering, author craft judgment and owner acceptance are separate. Captures here contain only original fictional material. No Scriptorium/private-product images or human votes are published.
 
 - `craft-browser.json`: matched original/corrected rendering plus actual input, focus, exact totals, stale refusal, source values and sticky/overlay checks.

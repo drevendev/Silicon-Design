@@ -3,3 +3,5 @@
 .site-scroll{overflow:auto;background:#fff}.site-frame{display:block;min-width:320px;max-width:none;border:0}.supplement{padding:.6rem}.supplement img{max-width:100%} .site-scroll:focus-within{outline:2px solid #2264b7;outline-offset:-2px}
 
 @media(max-width:760px){.whole-sites .pair{grid-template-columns:1fr}}
+
+.runtime-metrics{font-size:.85rem;padding:0 .6rem;margin:.3rem 0 .7rem;color:#505d53;overflow-wrap:anywhere}

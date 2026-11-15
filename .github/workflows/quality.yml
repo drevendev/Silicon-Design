@@ -46,10 +46,12 @@ jobs:
         run: |
           python3 tests/prepare_blind_runner_fixture.py "$RUNNER_TEMP/blind-legacy"
           python3 tests/prepare_whole_site_fixture.py "$RUNNER_TEMP/blind-whole"
+          python3 tests/prepare_runner_review_fixture.py "$RUNNER_TEMP/blind-protocols"
       - name: Exercise legacy and whole-site runner contracts
         run: |
           node tests/blind_runner_browser.mjs "$RUNNER_TEMP/blind-legacy/good/Blind-Test.html" "$RUNNER_TEMP/blind-legacy/broken/Blind-Test.html" "$RUNNER_TEMP/legacy-evidence"
           node tests/blind_whole_site.browser.mjs "$RUNNER_TEMP/blind-whole" "$RUNNER_TEMP/whole-evidence"
+          node tests/blind_protocols.browser.mjs "$RUNNER_TEMP/blind-protocols" "$RUNNER_TEMP/protocol-evidence"
       - name: Exercise craft and capacity fixtures
         run: |
           node tests/craft.browser.mjs "$RUNNER_TEMP/craft-evidence"

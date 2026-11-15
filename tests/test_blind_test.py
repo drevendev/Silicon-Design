@@ -2,6 +2,26 @@ import unittest,importlib.util,json,subprocess,tempfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 class BlindTest(unittest.TestCase):
+ def test_schema_two_requires_explicit_conditions_and_valid_locale_entries(self):
+  import copy
+  spec=importlib.util.spec_from_file_location('blind_builder',ROOT/'skills/blind-test/scripts/build_study.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+  with tempfile.TemporaryDirectory() as tmp:
+   root=Path(tmp);source=root/'source';source.mkdir();(source/'en.html').write_text('<html lang="en">English</html>');(source/'ru.html').write_text('<html lang="ru">Russian</html>')
+   c={'schema_version':2,'study_id':'synthetic-locale-contract','protocol_version':3,'seed':3,'evaluation_unit':'whole_site','comparison':{'format':'round_robin','side_control':'seeded'},'screens':['home'],'supported_locales':['en','ru'],'supported_views':['desktop'],'artifacts':[{'id':x,'site_dir':'source','site_entries':{'en':'en.html','ru':'ru.html'}} for x in ['a','b']]}
+   result=m.build(c,root/'good',root);self.assertEqual(result['artifacts'][0]['site']['entries'],{'en':'sites/a/en.html','ru':'sites/a/ru.html'});self.assertNotIn('site_entries',result['artifacts'][0]);self.assertEqual(result['artifacts'][0]['site']['entry'],'sites/a/en.html')
+   variants=[]
+   for key in ['screens','supported_locales','supported_views']:
+    broken=copy.deepcopy(c);del broken[key];variants.append(broken)
+   for value in [None,[],{'home/en/desktop':'not-a-png'}]:
+    broken=copy.deepcopy(c);broken['artifacts'][0]['captures']=value;variants.append(broken)
+   for value in [None,{'en':'en.html'},{'en':'en.html','ru':'../outside.html'}]:
+    broken=copy.deepcopy(c);broken['artifacts'][0]['site_entries']=value;variants.append(broken)
+   variants.extend([{**c,'schema_version':True},{**c,'comparison':None}])
+   for index,broken in enumerate(variants):
+    destination=root/('bad'+str(index))
+    with self.assertRaises(ValueError):m.build(broken,destination,root)
+    self.assertFalse(destination.exists())
+
  def test_whole_site_package_manifest_and_invalid_contracts(self):
   import hashlib,copy
   spec=importlib.util.spec_from_file_location('blind_builder',ROOT/'skills/blind-test/scripts/build_study.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)

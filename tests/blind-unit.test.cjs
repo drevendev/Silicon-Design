@@ -25,3 +25,20 @@ test('legacy schedules and protocol/session identity are immutable',()=>{
  assert.throws(()=>C.validateEvaluation({...c,evaluation_unit:'whole_site'}));assert.throws(()=>C.validateEvaluation({...c,protocol_version:3}));
  assert.throws(()=>C.validateSession(C.newSession(c),base()));
 });
+test('whole-site route queries and measured display survive valid imports; corrupt metadata is rejected',()=>{
+ const c=base(),t=C.scheduleCorpus(c)[0],s=C.newSession(c),display={route:'guide.html?source=https://example.invalid/a',width:680,height:720,document_lang:'en'};
+ s.seen_routes={[t.pair_id]:{left:[display.route],right:['index.html']}};
+ s.answers=[{...t,left_artifact_id:t.left,right_artifact_id:t.right,winner:'tie',comment:'synthetic',timestamp:new Date().toISOString(),locale:'en',view:'desktop',zoom:'fit',left_screen:null,right_screen:null,runtime_display:{left:display,right:display}}];
+ C.validateSession(s,c);
+ for(const route of ['https://elsewhere.invalid/','/outside.html','../outside.html'])assert.throws(()=>C.validateSession({...s,seen_routes:{[t.pair_id]:{left:[route],right:[]}}},c));
+ assert.throws(()=>C.validateSession({...s,answers:[{...s.answers[0],runtime_display:{left:{...display,width:0},right:display}}]},c));
+ const old={...s,answers:s.answers.map(({runtime_display,...a})=>a)};C.validateSession(old,c);
+ const humanCorpus={...c,qa_fixture:false},human={...s,qa:false};assert.equal(C.humanSessions([s,human],humanCorpus).length,1);
+});
+test('old single-locale whole-site packages remain readable; unsupported multilingual declarations fail explicitly',()=>{
+ const c={...base(),runtime_package_id:'0'.repeat(64)};
+ c.artifacts=c.artifacts.map(a=>({...a,site:{entry:'sites/'+a.id+'/index.html',files:{['sites/'+a.id+'/index.html']:'0'.repeat(64)}}}));
+ C.validateCorpus(c);
+ assert.throws(()=>C.validateCorpus({...c,supported_locales:['en','ru']}));
+ for(const captures of [[],null,{'home/en/desktop':'not-a-png'}])assert.throws(()=>C.validateCorpus({...c,artifacts:c.artifacts.map(a=>({...a,captures}))}));
+});
