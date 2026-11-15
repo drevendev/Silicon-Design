@@ -31,4 +31,4 @@ Subtract redundant labels/help/frames within scope only when meaning stays visua
 
 Before delivery compare original/selected composition for noise and hierarchy when a baseline exists; otherwise inspect the selected frame and disclose the missing comparison. Record removals/justified retentions, changed roles and tradeoffs in DESIGN.md when needed. Sheets/states are conditional. Separate proposal/implementation, technical checks, craft judgment and owner acceptance. Invent no audience effects/checks; continue authorized reversible work without another approval sequence.
 
-Optional depth: [workflow](https://github.com/drevendev/Silicon-Design/blob/cd7f1f7adf58c318c9cbff6046f9ec5f87d15dfc/docs/workflow.md).
+Optional depth: [workflow](https://github.com/drevendev/Silicon-Design/blob/ac944d4b7d2893d6442c858fad1c3d58edd3a7f5/docs/workflow.md).

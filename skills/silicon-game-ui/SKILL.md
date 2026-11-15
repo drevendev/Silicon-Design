@@ -31,4 +31,4 @@ Exercise normal/adverse states, long translations at minimum supported width, la
 
 Before delivery compare same-state original/result for noise, hierarchy and action clarity when available; otherwise inspect the result and disclose the missing baseline. Correct within budget; record removals/justified retentions. QA passes neither finish design nor establish owner acceptance. Report checked/failed/untested, unresolved craft/readability and task-relevant shared defects outside edit scope. Simulations prove neither native input/saves nor comprehension/compliance.
 
-Optional depth: [games](https://github.com/drevendev/Silicon-Design/blob/cd7f1f7adf58c318c9cbff6046f9ec5f87d15dfc/docs/products/games.md).
+Optional depth: [games](https://github.com/drevendev/Silicon-Design/blob/ac944d4b7d2893d6442c858fad1c3d58edd3a7f5/docs/products/games.md).
