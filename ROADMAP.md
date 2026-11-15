@@ -6,7 +6,7 @@ The first version contains principles, typography/color/layout/interaction/acces
 
 ## 2026.11.15.1: working teaching cases and explicit evaluation units
 
-The [release record](research/release-2026-11-15.md) distinguishes already-merged guidance from working corrections and acceptance still unverified. [Fictional before/after cases](examples/craft/README.md) now exercise composition, actual controls, exact totals, glyphs, charts and contextual link preferences. The [synthetic runner](examples/blind-test-demo/README.md) supports whole websites without route ballots, selected pairs and early stopping. PR #4’s missing contracts and PR #24’s attributed fixtures are incorporated without merging/closing those PRs. Better future generations, cost, learning and real-product/owner acceptance remain open; no new model or human study was launched.
+The [release record](research/release-2026-11-15.md) distinguishes already-merged guidance from working corrections and acceptance still unverified. [Fictional before/after cases](examples/craft/README.md) now exercise composition, actual controls, exact totals, glyphs, charts and contextual link preferences. The [synthetic runner](examples/blind-test-demo/README.md) supports whole websites without route ballots, selected pairs and early stopping. PR #4’s missing contracts and PR #24’s attributed fixtures were incorporated through PR #50; the [reconciliation audit](research/pr4-pr24-reconciliation-2026-11-15.md) checks the remaining differences. Better future generations, cost, learning and real-product/owner acceptance remain open; no new model or human study was launched.
 
 ## Next: apply it to a real product
 
@@ -31,3 +31,11 @@ This application is future work. The fictional specimens are not its before/afte
 - A plugin or installer if maintaining copied skill folders becomes a demonstrated problem.
 
 No automatic redesigns, scheduled work, tool installation or cross-product migration is enabled by this repository.
+
+## Tracked practice follow-ups
+
+- [#1: interactive transition and recovery specimen](https://github.com/drevendev/Silicon-Design/issues/1).
+- [#2: matched real-product character and returning-use trial](https://github.com/drevendev/Silicon-Design/issues/2).
+- [#3: controlled material comparison with artifact and visual-state evidence](https://github.com/drevendev/Silicon-Design/issues/3).
+
+These remain separate deliverables from the [bounded practice contribution](research/platform-practice.md). Incorporating that documentation does not establish adoption, learning or completion of these tasks.

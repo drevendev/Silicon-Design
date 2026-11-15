@@ -1,6 +1,6 @@
 # Principles
 
-A good interface can still be interchangeable. Our standard includes usefulness, access and honest behavior, together with a character that belongs to this product. The 24 principles below are working decision rules. They are not a recipe for affection or a style blacklist.
+A good interface can still be interchangeable. Our standard includes usefulness, access and honest behavior, together with a character that belongs to this product. The 28 principles below are working decision rules. They are not a recipe for affection or a style blacklist.
 
 Each has an implementation consequence and a review question. [Character & attachment](character.md) explains the expressive work; the [deeper source analysis](../research/deep-read.md) connects these principles to inspected material and separates borrowed methods from our synthesis. Accessibility requirements remain in the [accessibility guide](foundations/accessibility.md).
 
