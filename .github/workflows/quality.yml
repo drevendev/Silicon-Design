@@ -30,10 +30,6 @@ jobs:
   browser-fixtures:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    env:
-      SILICON_BROWSER_PACKAGE: ${{ runner.temp }}/silicon-browser/node_modules/@playwright/test
-      BLIND_TEST_PLAYWRIGHT: ${{ runner.temp }}/silicon-browser/node_modules/@playwright/test/index.mjs
-      SILICON_BROWSER_OUTPUT: ${{ runner.temp }}/capacity-evidence
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -43,6 +39,9 @@ jobs:
         run: |
           npm install --prefix "$RUNNER_TEMP/silicon-browser" --no-save --ignore-scripts @playwright/test@1.62.1
           "$RUNNER_TEMP/silicon-browser/node_modules/.bin/playwright" install --with-deps chromium
+          echo "SILICON_BROWSER_PACKAGE=$RUNNER_TEMP/silicon-browser/node_modules/@playwright/test" >> "$GITHUB_ENV"
+          echo "BLIND_TEST_PLAYWRIGHT=$RUNNER_TEMP/silicon-browser/node_modules/@playwright/test/index.mjs" >> "$GITHUB_ENV"
+          echo "SILICON_BROWSER_OUTPUT=$RUNNER_TEMP/capacity-evidence" >> "$GITHUB_ENV"
       - name: Build original synthetic corpora
         run: |
           python3 tests/prepare_blind_runner_fixture.py "$RUNNER_TEMP/blind-legacy"
