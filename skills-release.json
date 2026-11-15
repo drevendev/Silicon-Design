@@ -1,42 +1,42 @@
 {
   "format": "silicon-skill-release-1",
-  "version": "2026.11.14.1",
-  "depth_revision": "97f99ab4fb8ab753f1acab9e9363b0a840555a21",
+  "version": "2026.11.15.1",
+  "depth_revision": "cd7f1f7adf58c318c9cbff6046f9ec5f87d15dfc",
   "optional_depth": [
     {
       "skill": "silicon-design-direction",
       "document": "docs/workflow.md",
-      "revision": "97f99ab4fb8ab753f1acab9e9363b0a840555a21",
-      "sha256_lf_utf8": "295527e036d238ddf917006d7bc2625f657ab25e3682143a91fcb4533c6f8096",
-      "url": "https://github.com/drevendev/Silicon-Design/blob/97f99ab4fb8ab753f1acab9e9363b0a840555a21/docs/workflow.md"
+      "revision": "cd7f1f7adf58c318c9cbff6046f9ec5f87d15dfc",
+      "sha256_lf_utf8": "89a1a068bb74354ec170f4c43f1c7c10da54ff1455a9e90207e99f28d802fcef",
+      "url": "https://github.com/drevendev/Silicon-Design/blob/cd7f1f7adf58c318c9cbff6046f9ec5f87d15dfc/docs/workflow.md"
     },
     {
       "skill": "silicon-design-review",
       "document": "templates/REVIEW.md",
-      "revision": "97f99ab4fb8ab753f1acab9e9363b0a840555a21",
-      "sha256_lf_utf8": "b945ba1f732941670fa3d69d060f694dd6d52926597ef2f8e0f0e2ac8a8676a1",
-      "url": "https://github.com/drevendev/Silicon-Design/blob/97f99ab4fb8ab753f1acab9e9363b0a840555a21/templates/REVIEW.md"
+      "revision": "cd7f1f7adf58c318c9cbff6046f9ec5f87d15dfc",
+      "sha256_lf_utf8": "48e46124be69c3358441cf52998fdb2a0c7524f3e5adff9d656a410be75d4151",
+      "url": "https://github.com/drevendev/Silicon-Design/blob/cd7f1f7adf58c318c9cbff6046f9ec5f87d15dfc/templates/REVIEW.md"
     },
     {
       "skill": "silicon-design-system",
       "document": "docs/foundations/color.md",
-      "revision": "97f99ab4fb8ab753f1acab9e9363b0a840555a21",
+      "revision": "cd7f1f7adf58c318c9cbff6046f9ec5f87d15dfc",
       "sha256_lf_utf8": "d149ccbd5cf9b701fa7e80c75498a014e91903f5186078642d7e0e0b37ff48fa",
-      "url": "https://github.com/drevendev/Silicon-Design/blob/97f99ab4fb8ab753f1acab9e9363b0a840555a21/docs/foundations/color.md"
+      "url": "https://github.com/drevendev/Silicon-Design/blob/cd7f1f7adf58c318c9cbff6046f9ec5f87d15dfc/docs/foundations/color.md"
     },
     {
       "skill": "silicon-game-ui",
       "document": "docs/products/games.md",
-      "revision": "97f99ab4fb8ab753f1acab9e9363b0a840555a21",
-      "sha256_lf_utf8": "66c3f6450bda8d2e38dcaecea7cb11ca0f34bf883ee39f43423d9c357d10cf24",
-      "url": "https://github.com/drevendev/Silicon-Design/blob/97f99ab4fb8ab753f1acab9e9363b0a840555a21/docs/products/games.md"
+      "revision": "cd7f1f7adf58c318c9cbff6046f9ec5f87d15dfc",
+      "sha256_lf_utf8": "1c75c31364e90c4d6271174bae01945468a5fdd981b9aae5b3687cf08285b756",
+      "url": "https://github.com/drevendev/Silicon-Design/blob/cd7f1f7adf58c318c9cbff6046f9ec5f87d15dfc/docs/products/games.md"
     },
     {
       "skill": "silicon-interface-build",
       "document": "checklists/design-review.md",
-      "revision": "97f99ab4fb8ab753f1acab9e9363b0a840555a21",
-      "sha256_lf_utf8": "1c99cf77e427c473979d05d6ea8415f930f11121480d4b5accc99bae992cc64b",
-      "url": "https://github.com/drevendev/Silicon-Design/blob/97f99ab4fb8ab753f1acab9e9363b0a840555a21/checklists/design-review.md"
+      "revision": "cd7f1f7adf58c318c9cbff6046f9ec5f87d15dfc",
+      "sha256_lf_utf8": "cbf8094ce877ef079ab504a92e416ae1ed4a7f4c58e3164ce93023f57909e3c5",
+      "url": "https://github.com/drevendev/Silicon-Design/blob/cd7f1f7adf58c318c9cbff6046f9ec5f87d15dfc/checklists/design-review.md"
     }
   ]
 }

@@ -23,6 +23,35 @@ jobs:
       - name: Test checker behavior
         run: python3 -m unittest discover -s tests -v
       - name: Test specimen state transitions
-        run: node --test tests/specimen-model.test.cjs tests/field-notes.test.js
+        run: node --test tests/specimen-model.test.cjs tests/field-notes.test.js tests/blind-unit.test.cjs
       - name: Validate activation corpus without model calls
         run: python3 tools/activation.py validate
+
+  browser-fixtures:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      SILICON_BROWSER_PACKAGE: ${{ runner.temp }}/silicon-browser/node_modules/@playwright/test
+      BLIND_TEST_PLAYWRIGHT: ${{ runner.temp }}/silicon-browser/node_modules/@playwright/test/index.mjs
+      SILICON_BROWSER_OUTPUT: ${{ runner.temp }}/capacity-evidence
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Install pinned browser QA dependency
+        run: |
+          npm install --prefix "$RUNNER_TEMP/silicon-browser" --no-save --ignore-scripts @playwright/test@1.62.1
+          "$RUNNER_TEMP/silicon-browser/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Build original synthetic corpora
+        run: |
+          python3 tests/prepare_blind_runner_fixture.py "$RUNNER_TEMP/blind-legacy"
+          python3 tests/prepare_whole_site_fixture.py "$RUNNER_TEMP/blind-whole"
+      - name: Exercise legacy and whole-site runner contracts
+        run: |
+          node tests/blind_runner_browser.mjs "$RUNNER_TEMP/blind-legacy/good/Blind-Test.html" "$RUNNER_TEMP/blind-legacy/broken/Blind-Test.html" "$RUNNER_TEMP/legacy-evidence"
+          node tests/blind_whole_site.browser.mjs "$RUNNER_TEMP/blind-whole" "$RUNNER_TEMP/whole-evidence"
+      - name: Exercise craft and capacity fixtures
+        run: |
+          node tests/craft.browser.mjs "$RUNNER_TEMP/craft-evidence"
+          node tests/capacity.browser.mjs

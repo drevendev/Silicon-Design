@@ -5,7 +5,7 @@ description: Define typography, semantic roles, tokens and component contracts f
 
 # Silicon design system
 
-Reuse current direction, token format and sound components. Across screens share semantic roles, type/numbers, icons, density, chrome and control/state implementations; explain task exceptions. Local fixes need no kit/framework/specimen.
+Reuse current direction, token format and sound components, including explicit brief/DESIGN.md owner preferences in shared roles and states. Across screens share semantic roles, type/numbers, icons, density, chrome and control/state implementations; explain task exceptions. Local fixes need no kit/framework/specimen.
 
 ## Meaning and roles
 
@@ -29,4 +29,4 @@ Inspect minimum width, long translations, large/live values and affected consume
 
 Report contracts, measured pairs and checked/failed/untested. Readability defects remain unresolved; technical passes establish neither craft quality, owner acceptance nor compliance.
 
-Optional depth: [foundations](https://github.com/drevendev/Silicon-Design/blob/97f99ab4fb8ab753f1acab9e9363b0a840555a21/docs/foundations/color.md).
+Optional depth: [foundations](https://github.com/drevendev/Silicon-Design/blob/cd7f1f7adf58c318c9cbff6046f9ec5f87d15dfc/docs/foundations/color.md).
