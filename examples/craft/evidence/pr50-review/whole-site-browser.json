@@ -1,0 +1,64 @@
+{
+  "qa": true,
+  "status": "PASS",
+  "browser": "151.0.7922.34",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "narrow": [
+    390,
+    844
+  ],
+  "dpr": 1,
+  "zoom": "100% browser; fit iframe widths, side-by-side wide, stacked narrow; deliberate per-side scrolling when needed",
+  "input": "Playwright mouse and text input; no physical device/AT",
+  "runtime": "actual HTTP static files on loopback",
+  "frameConditions": {
+    "wide": [
+      {
+        "width": 694,
+        "height": 720,
+        "document_lang": "en"
+      },
+      {
+        "width": 694,
+        "height": 720,
+        "document_lang": "en"
+      }
+    ],
+    "narrow": [
+      {
+        "width": 369,
+        "height": 720,
+        "document_lang": "en"
+      },
+      {
+        "width": 369,
+        "height": 720,
+        "document_lang": "en"
+      }
+    ]
+  },
+  "checks": [
+    "independent real routes, nested relative CSS/SVG/JSON, interaction, pair and draft retained; route visits add no ballots",
+    "reload/resume preserves draft, separate Next commits exactly once",
+    "export/import round trip; incompatible protocol/corpus, corrupt cursor and duplicate answers preserve answers, defects, drafts and cursor",
+    "early stopping and resumed review retain missing answers",
+    "selected two-pair study imports under distinct identity, historical answers isolated; skip remains missing",
+    "storage denied: unfinished choice/comment can be exported without losing current task"
+  ],
+  "implementation_revision": "548ea0bbde09e9f77445f7b80286fa61a0d71778",
+  "source_sha256": {
+    "skills/blind-test/assets/study-core.js": "6370ae23c85ffd64963279650e45c2560b3f03a235c319289ac7f39184edc330",
+    "skills/blind-test/assets/study.css": "718a2fb672a78efdeb8744163ee36289e4a09d93b791cfbda961e919e71d83eb",
+    "skills/blind-test/assets/study.js": "fba5c5373a105fc26fe82776a041e3dc05383da9777eb7f222df234ef50bd44b",
+    "skills/blind-test/assets/viewer.template": "c4337e3dfba22d5f904c93adab97a4523daf371f2e22e0430e98d345cc7ae8cc",
+    "skills/blind-test/scripts/build_study.py": "977e906c1ffc2ef4bb816ba22a8802e76851012570a39607dd7393f56b089a62",
+    "tests/blind_whole_site.browser.mjs": "d6f5e8b39dec64cbae735171d7c3d674d2ed038f3422740fd8503d8c042b2037",
+    "tests/prepare_whole_site_fixture.py": "cdd3f77c80bec0250247bb9115f99228698456df2e1c166bce8ce54b065b8999"
+  },
+  "tracked_source_dirty": false,
+  "recorded_at": "2026-11-15",
+  "evidence_category": "Synthetic source/input/rendering verification; not owner acceptance"
+}

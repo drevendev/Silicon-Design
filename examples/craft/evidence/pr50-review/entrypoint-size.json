@@ -1,0 +1,41 @@
+{
+  "implementation_revision": "548ea0bbde09e9f77445f7b80286fa61a0d71778",
+  "rows": [
+    {
+      "skill": "blind-test",
+      "base_words": 509,
+      "reviewed_words": 593,
+      "metadata_unchanged": true
+    },
+    {
+      "skill": "silicon-design-direction",
+      "base_words": 341,
+      "reviewed_words": 359,
+      "metadata_unchanged": true
+    },
+    {
+      "skill": "silicon-design-review",
+      "base_words": 370,
+      "reviewed_words": 409,
+      "metadata_unchanged": true
+    },
+    {
+      "skill": "silicon-design-system",
+      "base_words": 380,
+      "reviewed_words": 390,
+      "metadata_unchanged": true
+    },
+    {
+      "skill": "silicon-game-ui",
+      "base_words": 409,
+      "reviewed_words": 449,
+      "metadata_unchanged": true
+    },
+    {
+      "skill": "silicon-interface-build",
+      "base_words": 422,
+      "reviewed_words": 463,
+      "metadata_unchanged": true
+    }
+  ]
+}

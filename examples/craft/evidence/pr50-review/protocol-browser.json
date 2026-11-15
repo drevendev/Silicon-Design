@@ -1,0 +1,65 @@
+{
+  "qa": true,
+  "status": "PASS",
+  "revision": "548ea0bbde09e9f77445f7b80286fa61a0d71778",
+  "browser": "151.0.7922.34",
+  "outer_viewport": [
+    1440,
+    1000
+  ],
+  "dpr": 1,
+  "browser_zoom": "100% default; width controls resize actual frame viewport, not native browser zoom",
+  "frames": {
+    "desktop-100-left": {
+      "width": 1280,
+      "height": 720,
+      "document_lang": "ru"
+    },
+    "desktop-100-right": {
+      "width": 1280,
+      "height": 720,
+      "document_lang": "ru"
+    },
+    "mobile-100-left": {
+      "width": 390,
+      "height": 844,
+      "document_lang": "ru"
+    },
+    "mobile-100-right": {
+      "width": 390,
+      "height": 844,
+      "document_lang": "ru"
+    },
+    "mobile-200-left": {
+      "width": 780,
+      "height": 844,
+      "document_lang": "ru"
+    },
+    "mobile-200-right": {
+      "width": 780,
+      "height": 844,
+      "document_lang": "ru"
+    }
+  },
+  "checks": [
+    "Whole-site locale selects actual EN/RU entry pages on both sides; navigation and view changes preserve draft; measured site viewport/language and URL-valued query strings remain exportable",
+    "Schema-2 single surface: actual workload 21; declared surface only; draft/Next creates a valid surface answer",
+    "Schema-2 five surfaces plus explicitly selected coherence: 126 ballots; confirmation blocked until both sides display all five; valid set answer survives reload",
+    "Schema-2 multi-surface without coherence: 105 ballots and a distinct empty session, with no added set ballot",
+    "Malformed initial corpus displays a useful error with Start disabled, rather than throwing before the error handler"
+  ],
+  "implementation_revision": "548ea0bbde09e9f77445f7b80286fa61a0d71778",
+  "source_sha256": {
+    "skills/blind-test/assets/study-core.js": "6370ae23c85ffd64963279650e45c2560b3f03a235c319289ac7f39184edc330",
+    "skills/blind-test/assets/study.css": "718a2fb672a78efdeb8744163ee36289e4a09d93b791cfbda961e919e71d83eb",
+    "skills/blind-test/assets/study.js": "fba5c5373a105fc26fe82776a041e3dc05383da9777eb7f222df234ef50bd44b",
+    "skills/blind-test/assets/viewer.template": "c4337e3dfba22d5f904c93adab97a4523daf371f2e22e0430e98d345cc7ae8cc",
+    "skills/blind-test/scripts/build_study.py": "977e906c1ffc2ef4bb816ba22a8802e76851012570a39607dd7393f56b089a62",
+    "tests/blind_protocols.browser.mjs": "e277e837d1d1852f605f4b0a31225e01a68e80fde5629b6fb3ba089151936a77",
+    "tests/prepare_runner_review_fixture.py": "16d5f7bee322e5b8fe1f83d70810defcc12e9eb8c6e662d72f32d42d55381300",
+    "tests/prepare_blind_runner_fixture.py": "80101a73aa33cbd4a31581ffb1a720d758b9633beaef817f38322fa8a9e6e555"
+  },
+  "tracked_source_dirty": false,
+  "recorded_at": "2026-11-15",
+  "evidence_category": "Synthetic source/input/rendering verification; not owner acceptance"
+}

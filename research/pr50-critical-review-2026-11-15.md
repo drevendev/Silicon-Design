@@ -31,3 +31,20 @@ The five design entrypoints remain 2,070 whitespace words. This review adds 16 e
 Fresh source-bound results and captures are retained in [the review evidence directory](../examples/craft/evidence/pr50-review/). The initial release receipts remain under their original names. Final-head checks and CI status are also summarized in PR #50.
 
 Remaining limits: trusted static-site output over local HTTP; backends, absolute deployment-root paths and shared saved state need equal explicit adapters/origin isolation. HTML language metadata is not proof of translation quality. No native browser zoom, physical device, AT/controller, human learning, general generation effectiveness, cost or explicit owner acceptance is established. The PR remains open without merging, tagging or publishing.
+
+## Executed verification
+
+Corrected implementation commit: `548ea0bbde09e9f77445f7b80286fa61a0d71778`. New receipt source hashes were compared with that Git commit before publication. Later evidence prose does not change these runtime bytes.
+
+| Scope | Actual result | Receipt |
+| --- | --- | --- |
+| Source/contracts/portability | 43 Python tests and 15 Node tests pass; handbook/isolated-folder/pinned-blob checks pass; 12 activation-corpus cases valid; whitespace checks pass | [Entrypoint measurement](../examples/craft/evidence/pr50-review/entrypoint-size.json); final-head CI in the PR |
+| New protocol/condition suite | Five browser scenarios pass: real EN/RU entries and frame conditions, single surface, explicit coherence, no coherence, malformed startup | [Protocol observations](../examples/craft/evidence/pr50-review/protocol-browser.json) |
+| Seven-site runner | Navigation, drafts/Next, defects, imports/exports, resume, selected pairs, early stop and unavailable-storage fallback pass again | [Whole-site observations](../examples/craft/evidence/pr50-review/whole-site-browser.json) |
+| Legacy runner | Existing four grouped browser scenarios pass again without schedule reinterpretation | [Legacy observations](../examples/craft/evidence/pr50-review/legacy-browser.json) |
+| Craft examples | All ten recorded scenarios pass again; example source values/capabilities remain unchanged | [Craft observations](../examples/craft/evidence/pr50-review/craft-browser.json) |
+| Capacity | All ten existing EN/RU scenarios pass again | [Capacity observations](../examples/craft/evidence/pr50-review/capacity-browser.json) |
+
+Actual local environment: Windows, Python 3.14.7, Node 24.19.0, Playwright 1.62.1 and Chromium 151.0.7922.34. Browser default zoom and DPR are 100% and 1. New protocol viewport is 1440×1000; site widths are tested at 1280, 390 and 780 CSS px with 720/844 px height. In the seven-site default Fit case the 1440×1000 wrapper contains two **694×720** site viewports; the 390×844 wrapper stacks two **369×720** site viewports. These measured values are in the new receipts and screenshots, not inferred from the wrapper size. Declared HTML language and frame dimensions are observed metadata, not a translation/attention/accessibility claim.
+
+Both failure reproductions occurred before correction: the browser observed English under a selected RU condition, and the builder emitted a malformed supplementary-capture corpus. The new regressions pass after correction. No old receipt is used as verification of these new paths, and no new design generation or owner evaluation occurred.
