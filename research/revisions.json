@@ -262,6 +262,19 @@
       "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
       "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
     ],
+    "forward_validation": {
+      "revision": "1d0f408016f5761766ab7b0400fd0b03be625b53",
+      "reviewed_at": "2026-11-07",
+      "paths": [
+        "skills/silicon-design-direction/SKILL.md",
+        "skills/silicon-design-system/SKILL.md",
+        "skills/silicon-interface-build/SKILL.md",
+        "skills/silicon-design-review/SKILL.md",
+        "skills/silicon-game-ui/SKILL.md"
+      ],
+      "review_scope": "Bounded fictional-fixture authoring and actual browser checks for issue23. No product experiment data, comparative preference result or cost claim. Installed instructions and context size unchanged.",
+      "validation_record": "research/skill-forward-validation-2026-11-07.json"
+    },
     "reference_capacity_implementation": {
       "base_revision": "75b7ba934f90b8655b8bfe047e6ac3bb1a80a7ed",
       "reviewed_at": "2026-11-14",
@@ -379,6 +392,7 @@
         "24": "18fa2c6aa56b9119453ad0874415cb9a62e7d47e"
       },
       "record": "research/release-2026-11-15.md",
+      "reconciliation_record": "research/pr4-pr24-reconciliation-2026-11-15.md",
       "scope": "Separate fictional examples and protocol implementation; historical results immutable, no new model/human study.",
       "base_revision": "0cbd622ae4e5348b9442a367dd3933e683fc36f8",
       "reviewed_at": "2026-11-15"
