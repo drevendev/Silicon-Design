@@ -1,0 +1,158 @@
+[
+  {
+    "case": "operator",
+    "wide": {
+      "documentHeight": 727,
+      "documentWidth": 1265,
+      "heading": "Workboard",
+      "headingHeight": 33.59375,
+      "headingLineHeight": "33.6px",
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    "narrow": {
+      "headingHeight": 33.59375,
+      "headingLineHeight": "33.6px",
+      "layoutWidth": 375,
+      "scrollWidth": 375,
+      "iframeViewport": [
+        390,
+        844
+      ],
+      "previewScale": 0.8,
+      "captureScope": "Full 1280x720 host screenshot of 80% iframe preview; supplementary layout evidence only"
+    }
+  },
+  {
+    "case": "exploration",
+    "wide": {
+      "documentHeight": 916,
+      "documentWidth": 1265,
+      "heading": "Three inexpensive composition proposals",
+      "headingHeight": 36,
+      "headingLineHeight": "36px",
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    "narrow": {
+      "headingHeight": 72,
+      "headingLineHeight": "36px",
+      "layoutWidth": 375,
+      "scrollWidth": 375,
+      "iframeViewport": [
+        390,
+        844
+      ],
+      "previewScale": 0.8,
+      "captureScope": "Full 1280x720 host screenshot of 80% iframe preview; supplementary layout evidence only"
+    }
+  },
+  {
+    "case": "landing",
+    "wide": {
+      "documentHeight": 720,
+      "documentWidth": 1280,
+      "heading": "A second life for everyday things",
+      "headingHeight": 159.7291717529297,
+      "headingLineHeight": "79.872px",
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    "narrow": {
+      "headingHeight": 91.5,
+      "headingLineHeight": "45.76px",
+      "layoutWidth": 390,
+      "scrollWidth": 390,
+      "iframeViewport": [
+        390,
+        844
+      ],
+      "previewScale": 0.8,
+      "captureScope": "Full 1280x720 host screenshot of 80% iframe preview; supplementary layout evidence only"
+    }
+  },
+  {
+    "case": "matrix",
+    "wide": {
+      "documentHeight": 720,
+      "documentWidth": 1280,
+      "heading": "Fictional archive transfer",
+      "headingHeight": 40.79166793823242,
+      "headingLineHeight": "40.8px",
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    "narrow": {
+      "headingHeight": 33.59375,
+      "headingLineHeight": "33.6px",
+      "layoutWidth": 390,
+      "scrollWidth": 390,
+      "iframeViewport": [
+        390,
+        844
+      ],
+      "previewScale": 0.8,
+      "captureScope": "Full 1280x720 host screenshot of 80% iframe preview; supplementary layout evidence only"
+    }
+  },
+  {
+    "case": "chart",
+    "wide": {
+      "documentHeight": 720,
+      "documentWidth": 1280,
+      "heading": "Holloway repair co-op",
+      "headingHeight": 38.39583587646485,
+      "headingLineHeight": "38.4px",
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    "narrow": {
+      "headingHeight": 33.59375,
+      "headingLineHeight": "33.6px",
+      "layoutWidth": 390,
+      "scrollWidth": 390,
+      "iframeViewport": [
+        390,
+        844
+      ],
+      "previewScale": 0.8,
+      "captureScope": "Full 1280x720 host screenshot of 80% iframe preview; supplementary layout evidence only"
+    }
+  },
+  {
+    "case": "icon",
+    "wide": {
+      "documentHeight": 720,
+      "documentWidth": 1280,
+      "heading": "Static cue comparison",
+      "headingHeight": 36,
+      "headingLineHeight": "36px",
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    "narrow": {
+      "headingHeight": 36,
+      "headingLineHeight": "36px",
+      "layoutWidth": 390,
+      "scrollWidth": 390,
+      "iframeViewport": [
+        390,
+        844
+      ],
+      "previewScale": 0.8,
+      "captureScope": "Full 1280x720 host screenshot of 80% iframe preview; supplementary layout evidence only"
+    }
+  }
+]

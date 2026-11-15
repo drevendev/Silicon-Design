@@ -1,0 +1,1112 @@
+{
+  "browser": "Chromium 151.0.7922.34",
+  "checks": [
+    {
+      "name": "en: nine complete usable offers fit base viewport",
+      "passed": true,
+      "geometry": {
+        "viewport": [
+          1080,
+          800
+        ],
+        "dpr": 1,
+        "body": {
+          "width": 1080,
+          "height": 800
+        },
+        "main": {
+          "box": {
+            "x": 0,
+            "y": 57,
+            "width": 1080,
+            "height": 743,
+            "top": 57,
+            "right": 1080,
+            "bottom": 800,
+            "left": 0
+          },
+          "width": 1080,
+          "height": 743,
+          "scrollWidth": 1080,
+          "scrollHeight": 743
+        },
+        "offers": [
+          {
+            "box": {
+              "x": 20,
+              "y": 176.78125,
+              "width": 340,
+              "height": 197.0625,
+              "top": 176.78125,
+              "right": 360,
+              "bottom": 373.84375,
+              "left": 20
+            },
+            "name": {
+              "x": 31,
+              "y": 187.78125,
+              "width": 318,
+              "height": 69.875,
+              "top": 187.78125,
+              "right": 349,
+              "bottom": 257.65625,
+              "left": 31
+            },
+            "price": {
+              "x": 31,
+              "y": 265.65625,
+              "width": 95.953125,
+              "height": 21.59375,
+              "top": 265.65625,
+              "right": 126.953125,
+              "bottom": 287.25,
+              "left": 31
+            },
+            "buy": {
+              "x": 111,
+              "y": 318.84375,
+              "width": 238,
+              "height": 44,
+              "top": 318.84375,
+              "right": 349,
+              "bottom": 362.84375,
+              "left": 111
+            },
+            "input": {
+              "x": 31,
+              "y": 318.84375,
+              "width": 72,
+              "height": 44,
+              "top": 318.84375,
+              "right": 103,
+              "bottom": 362.84375,
+              "left": 31
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          },
+          {
+            "box": {
+              "x": 370,
+              "y": 176.78125,
+              "width": 340,
+              "height": 197.0625,
+              "top": 176.78125,
+              "right": 710,
+              "bottom": 373.84375,
+              "left": 370
+            },
+            "name": {
+              "x": 381,
+              "y": 187.78125,
+              "width": 318,
+              "height": 69.875,
+              "top": 187.78125,
+              "right": 699,
+              "bottom": 257.65625,
+              "left": 381
+            },
+            "price": {
+              "x": 381,
+              "y": 265.65625,
+              "width": 95.953125,
+              "height": 21.59375,
+              "top": 265.65625,
+              "right": 476.953125,
+              "bottom": 287.25,
+              "left": 381
+            },
+            "buy": {
+              "x": 461,
+              "y": 318.84375,
+              "width": 238,
+              "height": 44,
+              "top": 318.84375,
+              "right": 699,
+              "bottom": 362.84375,
+              "left": 461
+            },
+            "input": {
+              "x": 381,
+              "y": 318.84375,
+              "width": 72,
+              "height": 44,
+              "top": 318.84375,
+              "right": 453,
+              "bottom": 362.84375,
+              "left": 381
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          },
+          {
+            "box": {
+              "x": 720,
+              "y": 176.78125,
+              "width": 340,
+              "height": 197.0625,
+              "top": 176.78125,
+              "right": 1060,
+              "bottom": 373.84375,
+              "left": 720
+            },
+            "name": {
+              "x": 731,
+              "y": 187.78125,
+              "width": 318,
+              "height": 69.875,
+              "top": 187.78125,
+              "right": 1049,
+              "bottom": 257.65625,
+              "left": 731
+            },
+            "price": {
+              "x": 731,
+              "y": 265.65625,
+              "width": 95.953125,
+              "height": 21.59375,
+              "top": 265.65625,
+              "right": 826.953125,
+              "bottom": 287.25,
+              "left": 731
+            },
+            "buy": {
+              "x": 811,
+              "y": 318.84375,
+              "width": 238,
+              "height": 44,
+              "top": 318.84375,
+              "right": 1049,
+              "bottom": 362.84375,
+              "left": 811
+            },
+            "input": {
+              "x": 731,
+              "y": 318.84375,
+              "width": 72,
+              "height": 44,
+              "top": 318.84375,
+              "right": 803,
+              "bottom": 362.84375,
+              "left": 731
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          },
+          {
+            "box": {
+              "x": 20,
+              "y": 383.84375,
+              "width": 340,
+              "height": 197.078125,
+              "top": 383.84375,
+              "right": 360,
+              "bottom": 580.921875,
+              "left": 20
+            },
+            "name": {
+              "x": 31,
+              "y": 394.84375,
+              "width": 318,
+              "height": 69.890625,
+              "top": 394.84375,
+              "right": 349,
+              "bottom": 464.734375,
+              "left": 31
+            },
+            "price": {
+              "x": 31,
+              "y": 472.734375,
+              "width": 95.953125,
+              "height": 21.59375,
+              "top": 472.734375,
+              "right": 126.953125,
+              "bottom": 494.328125,
+              "left": 31
+            },
+            "buy": {
+              "x": 111,
+              "y": 525.921875,
+              "width": 238,
+              "height": 44,
+              "top": 525.921875,
+              "right": 349,
+              "bottom": 569.921875,
+              "left": 111
+            },
+            "input": {
+              "x": 31,
+              "y": 525.921875,
+              "width": 72,
+              "height": 44,
+              "top": 525.921875,
+              "right": 103,
+              "bottom": 569.921875,
+              "left": 31
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          },
+          {
+            "box": {
+              "x": 370,
+              "y": 383.84375,
+              "width": 340,
+              "height": 197.078125,
+              "top": 383.84375,
+              "right": 710,
+              "bottom": 580.921875,
+              "left": 370
+            },
+            "name": {
+              "x": 381,
+              "y": 394.84375,
+              "width": 318,
+              "height": 69.890625,
+              "top": 394.84375,
+              "right": 699,
+              "bottom": 464.734375,
+              "left": 381
+            },
+            "price": {
+              "x": 381,
+              "y": 472.734375,
+              "width": 95.953125,
+              "height": 21.59375,
+              "top": 472.734375,
+              "right": 476.953125,
+              "bottom": 494.328125,
+              "left": 381
+            },
+            "buy": {
+              "x": 461,
+              "y": 525.921875,
+              "width": 238,
+              "height": 44,
+              "top": 525.921875,
+              "right": 699,
+              "bottom": 569.921875,
+              "left": 461
+            },
+            "input": {
+              "x": 381,
+              "y": 525.921875,
+              "width": 72,
+              "height": 44,
+              "top": 525.921875,
+              "right": 453,
+              "bottom": 569.921875,
+              "left": 381
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          },
+          {
+            "box": {
+              "x": 720,
+              "y": 383.84375,
+              "width": 340,
+              "height": 197.078125,
+              "top": 383.84375,
+              "right": 1060,
+              "bottom": 580.921875,
+              "left": 720
+            },
+            "name": {
+              "x": 731,
+              "y": 394.84375,
+              "width": 318,
+              "height": 69.890625,
+              "top": 394.84375,
+              "right": 1049,
+              "bottom": 464.734375,
+              "left": 731
+            },
+            "price": {
+              "x": 731,
+              "y": 472.734375,
+              "width": 95.953125,
+              "height": 21.59375,
+              "top": 472.734375,
+              "right": 826.953125,
+              "bottom": 494.328125,
+              "left": 731
+            },
+            "buy": {
+              "x": 811,
+              "y": 525.921875,
+              "width": 238,
+              "height": 44,
+              "top": 525.921875,
+              "right": 1049,
+              "bottom": 569.921875,
+              "left": 811
+            },
+            "input": {
+              "x": 731,
+              "y": 525.921875,
+              "width": 72,
+              "height": 44,
+              "top": 525.921875,
+              "right": 803,
+              "bottom": 569.921875,
+              "left": 731
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          },
+          {
+            "box": {
+              "x": 20,
+              "y": 590.921875,
+              "width": 340,
+              "height": 197.078125,
+              "top": 590.921875,
+              "right": 360,
+              "bottom": 788,
+              "left": 20
+            },
+            "name": {
+              "x": 31,
+              "y": 601.921875,
+              "width": 318,
+              "height": 69.890625,
+              "top": 601.921875,
+              "right": 349,
+              "bottom": 671.8125,
+              "left": 31
+            },
+            "price": {
+              "x": 31,
+              "y": 679.8125,
+              "width": 95.953125,
+              "height": 21.59375,
+              "top": 679.8125,
+              "right": 126.953125,
+              "bottom": 701.40625,
+              "left": 31
+            },
+            "buy": {
+              "x": 111,
+              "y": 733,
+              "width": 238,
+              "height": 44,
+              "top": 733,
+              "right": 349,
+              "bottom": 777,
+              "left": 111
+            },
+            "input": {
+              "x": 31,
+              "y": 733,
+              "width": 72,
+              "height": 44,
+              "top": 733,
+              "right": 103,
+              "bottom": 777,
+              "left": 31
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          },
+          {
+            "box": {
+              "x": 370,
+              "y": 590.921875,
+              "width": 340,
+              "height": 197.078125,
+              "top": 590.921875,
+              "right": 710,
+              "bottom": 788,
+              "left": 370
+            },
+            "name": {
+              "x": 381,
+              "y": 601.921875,
+              "width": 318,
+              "height": 69.890625,
+              "top": 601.921875,
+              "right": 699,
+              "bottom": 671.8125,
+              "left": 381
+            },
+            "price": {
+              "x": 381,
+              "y": 679.8125,
+              "width": 95.953125,
+              "height": 21.59375,
+              "top": 679.8125,
+              "right": 476.953125,
+              "bottom": 701.40625,
+              "left": 381
+            },
+            "buy": {
+              "x": 461,
+              "y": 733,
+              "width": 238,
+              "height": 44,
+              "top": 733,
+              "right": 699,
+              "bottom": 777,
+              "left": 461
+            },
+            "input": {
+              "x": 381,
+              "y": 733,
+              "width": 72,
+              "height": 44,
+              "top": 733,
+              "right": 453,
+              "bottom": 777,
+              "left": 381
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          },
+          {
+            "box": {
+              "x": 720,
+              "y": 590.921875,
+              "width": 340,
+              "height": 197.078125,
+              "top": 590.921875,
+              "right": 1060,
+              "bottom": 788,
+              "left": 720
+            },
+            "name": {
+              "x": 731,
+              "y": 601.921875,
+              "width": 318,
+              "height": 69.890625,
+              "top": 601.921875,
+              "right": 1049,
+              "bottom": 671.8125,
+              "left": 731
+            },
+            "price": {
+              "x": 731,
+              "y": 679.8125,
+              "width": 95.953125,
+              "height": 21.59375,
+              "top": 679.8125,
+              "right": 826.953125,
+              "bottom": 701.40625,
+              "left": 731
+            },
+            "buy": {
+              "x": 811,
+              "y": 733,
+              "width": 238,
+              "height": 44,
+              "top": 733,
+              "right": 1049,
+              "bottom": 777,
+              "left": 811
+            },
+            "input": {
+              "x": 731,
+              "y": 733,
+              "width": 72,
+              "height": 44,
+              "top": 733,
+              "right": 803,
+              "bottom": 777,
+              "left": 731
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          }
+        ]
+      }
+    },
+    {
+      "name": "en: purchase truth, input limits, exact detail and keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "en: no gold has a truthful blocked action",
+      "passed": true
+    },
+    {
+      "name": "en: narrow and enlarged text deliberately reflow without horizontal loss",
+      "passed": true
+    },
+    {
+      "name": "en: large catalog can search, sort, retain drafts and buy",
+      "passed": true
+    },
+    {
+      "name": "ru: nine complete usable offers fit base viewport",
+      "passed": true,
+      "geometry": {
+        "viewport": [
+          1080,
+          800
+        ],
+        "dpr": 1,
+        "body": {
+          "width": 1080,
+          "height": 800
+        },
+        "main": {
+          "box": {
+            "x": 0,
+            "y": 57,
+            "width": 1080,
+            "height": 743,
+            "top": 57,
+            "right": 1080,
+            "bottom": 800,
+            "left": 0
+          },
+          "width": 1080,
+          "height": 743,
+          "scrollWidth": 1080,
+          "scrollHeight": 743
+        },
+        "offers": [
+          {
+            "box": {
+              "x": 20,
+              "y": 176.78125,
+              "width": 340,
+              "height": 197.0625,
+              "top": 176.78125,
+              "right": 360,
+              "bottom": 373.84375,
+              "left": 20
+            },
+            "name": {
+              "x": 31,
+              "y": 187.78125,
+              "width": 318,
+              "height": 69.875,
+              "top": 187.78125,
+              "right": 349,
+              "bottom": 257.65625,
+              "left": 31
+            },
+            "price": {
+              "x": 31,
+              "y": 265.65625,
+              "width": 116.1875,
+              "height": 21.59375,
+              "top": 265.65625,
+              "right": 147.1875,
+              "bottom": 287.25,
+              "left": 31
+            },
+            "buy": {
+              "x": 111,
+              "y": 318.84375,
+              "width": 238,
+              "height": 44,
+              "top": 318.84375,
+              "right": 349,
+              "bottom": 362.84375,
+              "left": 111
+            },
+            "input": {
+              "x": 31,
+              "y": 318.84375,
+              "width": 72,
+              "height": 44,
+              "top": 318.84375,
+              "right": 103,
+              "bottom": 362.84375,
+              "left": 31
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          },
+          {
+            "box": {
+              "x": 370,
+              "y": 176.78125,
+              "width": 340,
+              "height": 197.0625,
+              "top": 176.78125,
+              "right": 710,
+              "bottom": 373.84375,
+              "left": 370
+            },
+            "name": {
+              "x": 381,
+              "y": 187.78125,
+              "width": 318,
+              "height": 69.875,
+              "top": 187.78125,
+              "right": 699,
+              "bottom": 257.65625,
+              "left": 381
+            },
+            "price": {
+              "x": 381,
+              "y": 265.65625,
+              "width": 116.1875,
+              "height": 21.59375,
+              "top": 265.65625,
+              "right": 497.1875,
+              "bottom": 287.25,
+              "left": 381
+            },
+            "buy": {
+              "x": 461,
+              "y": 318.84375,
+              "width": 238,
+              "height": 44,
+              "top": 318.84375,
+              "right": 699,
+              "bottom": 362.84375,
+              "left": 461
+            },
+            "input": {
+              "x": 381,
+              "y": 318.84375,
+              "width": 72,
+              "height": 44,
+              "top": 318.84375,
+              "right": 453,
+              "bottom": 362.84375,
+              "left": 381
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          },
+          {
+            "box": {
+              "x": 720,
+              "y": 176.78125,
+              "width": 340,
+              "height": 197.0625,
+              "top": 176.78125,
+              "right": 1060,
+              "bottom": 373.84375,
+              "left": 720
+            },
+            "name": {
+              "x": 731,
+              "y": 187.78125,
+              "width": 318,
+              "height": 69.875,
+              "top": 187.78125,
+              "right": 1049,
+              "bottom": 257.65625,
+              "left": 731
+            },
+            "price": {
+              "x": 731,
+              "y": 265.65625,
+              "width": 116.1875,
+              "height": 21.59375,
+              "top": 265.65625,
+              "right": 847.1875,
+              "bottom": 287.25,
+              "left": 731
+            },
+            "buy": {
+              "x": 811,
+              "y": 318.84375,
+              "width": 238,
+              "height": 44,
+              "top": 318.84375,
+              "right": 1049,
+              "bottom": 362.84375,
+              "left": 811
+            },
+            "input": {
+              "x": 731,
+              "y": 318.84375,
+              "width": 72,
+              "height": 44,
+              "top": 318.84375,
+              "right": 803,
+              "bottom": 362.84375,
+              "left": 731
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          },
+          {
+            "box": {
+              "x": 20,
+              "y": 383.84375,
+              "width": 340,
+              "height": 197.078125,
+              "top": 383.84375,
+              "right": 360,
+              "bottom": 580.921875,
+              "left": 20
+            },
+            "name": {
+              "x": 31,
+              "y": 394.84375,
+              "width": 318,
+              "height": 69.890625,
+              "top": 394.84375,
+              "right": 349,
+              "bottom": 464.734375,
+              "left": 31
+            },
+            "price": {
+              "x": 31,
+              "y": 472.734375,
+              "width": 116.1875,
+              "height": 21.59375,
+              "top": 472.734375,
+              "right": 147.1875,
+              "bottom": 494.328125,
+              "left": 31
+            },
+            "buy": {
+              "x": 111,
+              "y": 525.921875,
+              "width": 238,
+              "height": 44,
+              "top": 525.921875,
+              "right": 349,
+              "bottom": 569.921875,
+              "left": 111
+            },
+            "input": {
+              "x": 31,
+              "y": 525.921875,
+              "width": 72,
+              "height": 44,
+              "top": 525.921875,
+              "right": 103,
+              "bottom": 569.921875,
+              "left": 31
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          },
+          {
+            "box": {
+              "x": 370,
+              "y": 383.84375,
+              "width": 340,
+              "height": 197.078125,
+              "top": 383.84375,
+              "right": 710,
+              "bottom": 580.921875,
+              "left": 370
+            },
+            "name": {
+              "x": 381,
+              "y": 394.84375,
+              "width": 318,
+              "height": 69.890625,
+              "top": 394.84375,
+              "right": 699,
+              "bottom": 464.734375,
+              "left": 381
+            },
+            "price": {
+              "x": 381,
+              "y": 472.734375,
+              "width": 116.1875,
+              "height": 21.59375,
+              "top": 472.734375,
+              "right": 497.1875,
+              "bottom": 494.328125,
+              "left": 381
+            },
+            "buy": {
+              "x": 461,
+              "y": 525.921875,
+              "width": 238,
+              "height": 44,
+              "top": 525.921875,
+              "right": 699,
+              "bottom": 569.921875,
+              "left": 461
+            },
+            "input": {
+              "x": 381,
+              "y": 525.921875,
+              "width": 72,
+              "height": 44,
+              "top": 525.921875,
+              "right": 453,
+              "bottom": 569.921875,
+              "left": 381
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          },
+          {
+            "box": {
+              "x": 720,
+              "y": 383.84375,
+              "width": 340,
+              "height": 197.078125,
+              "top": 383.84375,
+              "right": 1060,
+              "bottom": 580.921875,
+              "left": 720
+            },
+            "name": {
+              "x": 731,
+              "y": 394.84375,
+              "width": 318,
+              "height": 69.890625,
+              "top": 394.84375,
+              "right": 1049,
+              "bottom": 464.734375,
+              "left": 731
+            },
+            "price": {
+              "x": 731,
+              "y": 472.734375,
+              "width": 116.1875,
+              "height": 21.59375,
+              "top": 472.734375,
+              "right": 847.1875,
+              "bottom": 494.328125,
+              "left": 731
+            },
+            "buy": {
+              "x": 811,
+              "y": 525.921875,
+              "width": 238,
+              "height": 44,
+              "top": 525.921875,
+              "right": 1049,
+              "bottom": 569.921875,
+              "left": 811
+            },
+            "input": {
+              "x": 731,
+              "y": 525.921875,
+              "width": 72,
+              "height": 44,
+              "top": 525.921875,
+              "right": 803,
+              "bottom": 569.921875,
+              "left": 731
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          },
+          {
+            "box": {
+              "x": 20,
+              "y": 590.921875,
+              "width": 340,
+              "height": 197.078125,
+              "top": 590.921875,
+              "right": 360,
+              "bottom": 788,
+              "left": 20
+            },
+            "name": {
+              "x": 31,
+              "y": 601.921875,
+              "width": 318,
+              "height": 69.890625,
+              "top": 601.921875,
+              "right": 349,
+              "bottom": 671.8125,
+              "left": 31
+            },
+            "price": {
+              "x": 31,
+              "y": 679.8125,
+              "width": 116.1875,
+              "height": 21.59375,
+              "top": 679.8125,
+              "right": 147.1875,
+              "bottom": 701.40625,
+              "left": 31
+            },
+            "buy": {
+              "x": 111,
+              "y": 733,
+              "width": 238,
+              "height": 44,
+              "top": 733,
+              "right": 349,
+              "bottom": 777,
+              "left": 111
+            },
+            "input": {
+              "x": 31,
+              "y": 733,
+              "width": 72,
+              "height": 44,
+              "top": 733,
+              "right": 103,
+              "bottom": 777,
+              "left": 31
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          },
+          {
+            "box": {
+              "x": 370,
+              "y": 590.921875,
+              "width": 340,
+              "height": 197.078125,
+              "top": 590.921875,
+              "right": 710,
+              "bottom": 788,
+              "left": 370
+            },
+            "name": {
+              "x": 381,
+              "y": 601.921875,
+              "width": 318,
+              "height": 69.890625,
+              "top": 601.921875,
+              "right": 699,
+              "bottom": 671.8125,
+              "left": 381
+            },
+            "price": {
+              "x": 381,
+              "y": 679.8125,
+              "width": 116.1875,
+              "height": 21.59375,
+              "top": 679.8125,
+              "right": 497.1875,
+              "bottom": 701.40625,
+              "left": 381
+            },
+            "buy": {
+              "x": 461,
+              "y": 733,
+              "width": 238,
+              "height": 44,
+              "top": 733,
+              "right": 699,
+              "bottom": 777,
+              "left": 461
+            },
+            "input": {
+              "x": 381,
+              "y": 733,
+              "width": 72,
+              "height": 44,
+              "top": 733,
+              "right": 453,
+              "bottom": 777,
+              "left": 381
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          },
+          {
+            "box": {
+              "x": 720,
+              "y": 590.921875,
+              "width": 340,
+              "height": 197.078125,
+              "top": 590.921875,
+              "right": 1060,
+              "bottom": 788,
+              "left": 720
+            },
+            "name": {
+              "x": 731,
+              "y": 601.921875,
+              "width": 318,
+              "height": 69.890625,
+              "top": 601.921875,
+              "right": 1049,
+              "bottom": 671.8125,
+              "left": 731
+            },
+            "price": {
+              "x": 731,
+              "y": 679.8125,
+              "width": 116.1875,
+              "height": 21.59375,
+              "top": 679.8125,
+              "right": 847.1875,
+              "bottom": 701.40625,
+              "left": 731
+            },
+            "buy": {
+              "x": 811,
+              "y": 733,
+              "width": 238,
+              "height": 44,
+              "top": 733,
+              "right": 1049,
+              "bottom": 777,
+              "left": 811
+            },
+            "input": {
+              "x": 731,
+              "y": 733,
+              "width": 72,
+              "height": 44,
+              "top": 733,
+              "right": 803,
+              "bottom": 777,
+              "left": 731
+            },
+            "font": 16,
+            "scrollWidth": 338,
+            "clientWidth": 338
+          }
+        ]
+      }
+    },
+    {
+      "name": "ru: purchase truth, input limits, exact detail and keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "ru: no gold has a truthful blocked action",
+      "passed": true
+    },
+    {
+      "name": "ru: narrow and enlarged text deliberately reflow without horizontal loss",
+      "passed": true
+    },
+    {
+      "name": "ru: large catalog can search, sort, retain drafts and buy",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "requests": [
+    "https://capacity-check.invalid/"
+  ],
+  "model_generations": 0,
+  "comparative_experiments": 0,
+  "limits": [
+    "Original fictional fixture only, not a private consuming game.",
+    "200% text enlargement is not native browser zoom.",
+    "No physical device, assistive technology, preference, billing or compliance certification."
+  ],
+  "implementation_revision": "548ea0bbde09e9f77445f7b80286fa61a0d71778",
+  "source_sha256": {
+    "examples/capacity.html": "04271e445c6bd2eabb84b7ab26c8d3180cf8dee55a5069021b1d8b037bc3a657",
+    "tests/capacity.browser.mjs": "c12fe69b6871dd31f0b1c34986dd3ee893cb81b7acba35ba237dd3468ef89333"
+  },
+  "tracked_source_dirty": false,
+  "recorded_at": "2026-11-15",
+  "evidence_category": "Synthetic source/input/rendering verification; not owner acceptance"
+}

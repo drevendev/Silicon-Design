@@ -7,6 +7,7 @@ Use this record when actual direction decisions need documenting; reuse the exis
 - Person, task and use environment: [specific situation].
 - Scope and product truth: [requested surface/flow; what exists or is a prototype].
 - Current source/revision and accepted changes: [authoritative component/content source; separate historical captures].
+- Explicit owner preferences: [brief or DESIGN.md source, product/scope, implemented shared treatment and review evidence; preferences do not change skill routing or become universal bans].
 - Existing direction, components and constraints: [what to preserve; platforms, languages, assets, time].
 - Explicit arrangement/capacity and supplied growth: [current requirement / authorized plan / speculation; permitted DOM/copy/control changes].
 - Inspected task/category references: [source/date/provenance, useful relationship, differences; reuse existing inspection or record unavailable evidence].
@@ -46,6 +47,7 @@ Develop the selected direction. No rendered alternatives are required by default
 - Relevant states and recovery: [pending, unavailable, empty, error, success as applicable].
 - Input and focus: [supported paths; close/removal/undo destination].
 - Interruption/return/persistence: [actual promise, including reload only where affected].
+- Consequential flows if present: [authoritative facts/knowledge; draft/preview/commit and stale refusal; achievable teaching with state-evidenced resume; accepted-event feedback; original/backup/diagnostic and actual transport].
 - Voice and repeated use: [actual copy/events, recurring costs].
 - Secondary surface or component/asset sheet: [only when needed to demonstrate a reusable change or requested flow].
 - Games: [exact resource/knowledge rules, UI scale, safe areas, playfield].

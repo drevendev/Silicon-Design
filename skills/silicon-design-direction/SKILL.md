@@ -5,7 +5,7 @@ description: Establish or change a product's visual direction. Use for new ident
 
 # Silicon design direction
 
-Respect scope, brand and useful decisions. A local fix needs one direction.
+Respect scope, brand and useful decisions. Carry explicit brief/DESIGN.md owner preferences into the chosen hierarchy, shared treatments and acceptance context; distinguish them from standards. A local fix needs one direction.
 
 ## Choose the work
 
@@ -31,4 +31,4 @@ Subtract redundant labels/help/frames within scope only when meaning stays visua
 
 Before delivery compare original/selected composition for noise and hierarchy when a baseline exists; otherwise inspect the selected frame and disclose the missing comparison. Record removals/justified retentions, changed roles and tradeoffs in DESIGN.md when needed. Sheets/states are conditional. Separate proposal/implementation, technical checks, craft judgment and owner acceptance. Invent no audience effects/checks; continue authorized reversible work without another approval sequence.
 
-Optional depth: [workflow](https://github.com/drevendev/Silicon-Design/blob/97f99ab4fb8ab753f1acab9e9363b0a840555a21/docs/workflow.md).
+Optional depth: [workflow](https://github.com/drevendev/Silicon-Design/blob/ac944d4b7d2893d6442c858fad1c3d58edd3a7f5/docs/workflow.md).

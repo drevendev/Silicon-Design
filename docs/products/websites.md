@@ -25,3 +25,7 @@ Check relevant narrow/wide layouts, real headline wrapping, comparable groups, l
 Choose a specific feeling and subject-grounded idea and keep it coherent across requested surfaces. Review [character](../character.md) separately from navigation, readability and loading. A quiet working layer can coexist with a distinctive opening.
 
 Example: [Field Notes brief](../../examples/field-notes.DESIGN.md). Method sources: [BeautifulRepo](../../research/our-practice.md) and the [landing craft findings](https://github.com/drevendev/Silicon-Design/issues/19).
+
+## Contextual preferences across a website
+
+Carry explicit brief/DESIGN.md preferences through linked branding, navigation, content links and shared CSS, then review all affected pages. Scriptorium’s rejection of decorative diagonal link markers is an owner/product preference (#48), not an accessibility rule or a ban on arrows that explain sorting, chart direction or disclosure. Use clear labels and real destinations; explain new-window or download behavior honestly. See the [bounded link example](../../examples/craft/links.html).

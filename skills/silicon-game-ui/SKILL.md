@@ -5,7 +5,7 @@ description: Design or refine game HUDs, menus and feedback where playfield hier
 
 # Silicon game UI
 
-Inspect revision, loop/world, contracts, text/assets, accepted changes and capacity/growth. Separate speculation; static work needs no invented flows/saves.
+Inspect revision, loop/world, contracts, text/assets, accepted changes and capacity/growth. Carry explicit brief/DESIGN.md owner preferences into composition and shared controls. Separate speculation; static work needs no invented flows/saves.
 
 ## Compose the play decision
 
@@ -23,7 +23,7 @@ Use expressive material/type with readable operational text; inspect symbols/sel
 
 ## Preserve game truth
 
-Show owned/required amounts and exact payable totals visibly at commitment, not solely in accessible names; secondary precision may use reachable detail. Distinguish zero/unknown/not-applicable; preserve knowledge/unlocks including accessible text. Presentation never changes economy/inventory/progression/simulation. Feedback/motion follows authoritative pending/failed/interrupted/completed state; no duplicate purchases, invented events or repeated-input delays.
+Show owned/required amounts and exact payable totals visibly at commitment, not solely in accessible names; secondary precision may use reachable detail. Distinguish zero/unknown/not-applicable; preserve knowledge/unlocks including accessible text. Presentation never changes economy/inventory/progression/simulation. Consequential drafts preview before commitment; stale confirmation preserves input without partial effects. Existing teaching advances/resumes from lasting completion evidence with reachable prerequisites. Recovery distinguishes original, backup, diagnostic and actual transport. Feedback/motion follows authoritative pending/failed/interrupted/completed state; no duplicate purchases, invented events or repeated-input delays.
 
 ## Verify within scope
 
@@ -31,4 +31,4 @@ Exercise normal/adverse states, long translations at minimum supported width, la
 
 Before delivery compare same-state original/result for noise, hierarchy and action clarity when available; otherwise inspect the result and disclose the missing baseline. Correct within budget; record removals/justified retentions. QA passes neither finish design nor establish owner acceptance. Report checked/failed/untested, unresolved craft/readability and task-relevant shared defects outside edit scope. Simulations prove neither native input/saves nor comprehension/compliance.
 
-Optional depth: [games](https://github.com/drevendev/Silicon-Design/blob/97f99ab4fb8ab753f1acab9e9363b0a840555a21/docs/products/games.md).
+Optional depth: [games](https://github.com/drevendev/Silicon-Design/blob/ac944d4b7d2893d6442c858fad1c3d58edd3a7f5/docs/products/games.md).

@@ -33,4 +33,6 @@ Report operation/access, unresolved craft judgment, relative preference and expl
 
 Inspect task-relevant shared elements along the path. Fix a clipped event chip or clashing icon when authorized; otherwise locate it as an unresolved limitation. Do not silently expand scope or claim a clean result because a defect lives in another component.
 
+For a worked correction see [the fictional workshop](../examples/craft/README.md). It shows the same data and capabilities with edited hierarchy, exact totals and recovery. Its intentionally defective teaching baseline is not a historical generation. Scriptorium’s owner rejected decorative diagonal link arrows: carry that product preference through linked branding, navigation, content and pseudo-elements. Preserve meaningful chart/sort/direction arrows and truthful destination/download/disclosure cues in their own contexts.
+
 Sources: [#25](https://github.com/drevendev/Silicon-Design/issues/25), [#37](https://github.com/drevendev/Silicon-Design/issues/37), [#39](https://github.com/drevendev/Silicon-Design/issues/39). The [feedback record](../research/feedback-revision-2026-11-14.md) separates preferences, hypotheses and unperformed acceptance. These explanations are not new rendered/human-tested fixtures.

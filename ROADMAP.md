@@ -4,6 +4,10 @@
 
 The first version contains principles, typography/color/layout/interaction/accessibility foundations, separate website/app/game guidance, five portable skills, project/review templates, a source register and three fictional visual specimens. Static checks cover the declared repository contracts; the verification note records the narrower rendered checks.
 
+## 2026.11.15.1: working teaching cases and explicit evaluation units
+
+The [release record](research/release-2026-11-15.md) distinguishes already-merged guidance from working corrections and acceptance still unverified. [Fictional before/after cases](examples/craft/README.md) now exercise composition, actual controls, exact totals, glyphs, charts and contextual link preferences. The [synthetic runner](examples/blind-test-demo/README.md) supports whole websites without route ballots, selected pairs and early stopping. PR #4’s missing contracts and PR #24’s attributed fixtures are incorporated without merging/closing those PRs. Better future generations, cost, learning and real-product/owner acceptance remain open; no new model or human study was launched.
+
 ## Next: apply it to a real product
 
 The [14 November feedback revision](research/feedback-revision-2026-11-14.md) consolidates the existing trials and both v6 owner reports. It implements instruction changes while keeping product adoption, fresh matched evaluation and teaching-specimen work separate. Use its complete feedback map for current implementation ownership; the original outcome criteria remain with their issues.

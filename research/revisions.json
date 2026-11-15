@@ -209,27 +209,6 @@
     "review_scope": "Selected design-relevant sections; see research/deep-read.md for extracts, transfers and boundaries."
   },
   {
-    "repository": "drevendev/IdleShop",
-    "revision": "a29ba05efdd3c1a1a0a3c3a34f361e5590953bc7",
-    "reviewed_at": "2026-11-02",
-    "paths": [
-      "README.md",
-      "docs/design/release-0.14/ui-wireframes.md"
-    ],
-    "additional_reviews": [
-      {
-        "repository": "drevendev/IdleShop",
-        "revision": "f23a815147648dcd29405fc01ce813e0aab925a5",
-        "reviewed_at": "2026-11-14",
-        "paths": [
-          "AGENTS.md",
-          "docs/design/release-0.16/fix-patch-1.md"
-        ],
-        "review_scope": "Owner v6 task/outcome and runner protocol; raw votes and paid media remain private. Issue37 records bounded diagnosis."
-      }
-    ]
-  },
-  {
     "repository": "drevendev/BeautifulRepo",
     "revision": "a692491a7a973032d90545bc6f428ba6b77f706f",
     "reviewed_at": "2026-11-02",
@@ -378,6 +357,31 @@
         "https://developers.openai.com/blog/eval-skills",
         "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices"
       ]
+    },
+    "release_integration": {
+      "issues": [
+        47,
+        48,
+        49,
+        10,
+        14,
+        18,
+        19,
+        28,
+        30,
+        31,
+        35,
+        37,
+        39
+      ],
+      "pull_requests": {
+        "4": "a6aa5413f706bb36e3a3ab578dd0c18eb3c9f023",
+        "24": "18fa2c6aa56b9119453ad0874415cb9a62e7d47e"
+      },
+      "record": "research/release-2026-11-15.md",
+      "scope": "Separate fictional examples and protocol implementation; historical results immutable, no new model/human study.",
+      "base_revision": "0cbd622ae4e5348b9442a367dd3933e683fc36f8",
+      "reviewed_at": "2026-11-15"
     }
   }
 ]

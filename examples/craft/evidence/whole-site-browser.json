@@ -1,0 +1,44 @@
+{
+  "qa": true,
+  "status": "PASS",
+  "browser": "151.0.7922.34",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "narrow": [
+    390,
+    844
+  ],
+  "dpr": 1,
+  "zoom": "100% browser; fit iframe widths, side-by-side wide, stacked narrow; deliberate per-side scrolling when needed",
+  "input": "Playwright mouse and text input; no physical device/AT",
+  "runtime": "actual HTTP static files on loopback",
+  "checks": [
+    "independent real routes, nested relative CSS/SVG/JSON, interaction, pair and draft retained; route visits add no ballots",
+    "reload/resume preserves draft, separate Next commits exactly once",
+    "export/import round trip; incompatible protocol/corpus, corrupt cursor and duplicate answers preserve answers, defects, drafts and cursor",
+    "early stopping and resumed review retain missing answers",
+    "selected two-pair study imports under distinct identity, historical answers isolated; skip remains missing",
+    "storage denied: unfinished choice/comment can be exported without losing current task"
+  ],
+  "implementation_revision": "ac944d4b7d2893d6442c858fad1c3d58edd3a7f5",
+  "tracked_source_dirty": false,
+  "source_sha256": {
+    "examples/craft/workshop.js": "1ea566bc9e0bfbe76aa7ccc3784fe9e0d011eafc0a1243a6fd1da8c9afe13b9b",
+    "examples/craft/workshop.css": "06274af187255f6a316fca70aa5ce633c29dbf1b19d31b601e0792d405c5b8bf",
+    "examples/craft/links.js": "271576463a2a78c5ca45453995eee7930a2de108fd469a2963d21dc775982125",
+    "examples/craft/links.css": "25fe7ec849b83190ae9d113a8f38d89f1c0a471f72aa208217253ff281ade464",
+    "examples/craft/chart.js": "fc0d7a3fab99692cba78d1122538e1ba5cbebd11c9ae68b13fcf544d042f32f2",
+    "examples/craft/chart-data.json": "596aefaf284e727e34cf3715376f666477c7369a038c27792f836c153dd1774b",
+    "skills/blind-test/assets/study-core.js": "9a8209436748dcaa68e443f7875d8fc3cf9710c8a5315d4fe155ff254bee5df0",
+    "skills/blind-test/assets/study.js": "41f1a20d48e5c028875db88d1a15d24005fc29334181455c5c91fe0050c25a25",
+    "skills/blind-test/assets/study.css": "696147fe49e94720c1914461ca5fc3bbd86e672cf380ef0d033ba8ba9ec5f28e",
+    "skills/blind-test/assets/viewer.template": "3ec8ff99c3cdbaee9db6d1cc7988de84441ddd4b4c9c40b1e8b9e0f3a9bd884f",
+    "skills/blind-test/scripts/build_study.py": "13792041d42e2ff3ff2b3439ae7795203b97cd77a92c6fca922a4c4927ade27c",
+    "tests/craft.browser.mjs": "1dc53e7de15250fe2b64237a9adfc7276fe7c5e6426ba2a2fccf66ba697a2070",
+    "tests/blind_whole_site.browser.mjs": "b7f637002dcd298f9bd1730c3c01b6060bef63b6a0a606eff78dc14f42fb5163"
+  },
+  "recorded_at": "2026-11-15",
+  "evidence_category": "Observed fictional rendering/input; not owner acceptance or generation effectiveness"
+}

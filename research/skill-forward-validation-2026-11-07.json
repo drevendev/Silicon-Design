@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-07",
+  "tested_silicon_commit": "1d0f408016f5761766ab7b0400fd0b03be625b53",
+  "scope": "Published fictional fixtures only; no product experiment data.",
+  "native_browser": "CUA browser; measured wide viewport1280x720, reported DPR1.5",
+  "published_scenarios": [
+    "established operator",
+    "open direction and fixed-copy landing",
+    "coded status matrix",
+    "fixed-data chart",
+    "isolated game cue"
+  ],
+  "actual_observations": {
+    "activation": "Label, icon, padding, Enter and Space toggle the corrected whole-button control. Seeded original label/Enter fail while icon works.",
+    "clipping": "Seeded owner menu exceeds overflow:hidden panel; corrected menu permits visible overflow.",
+    "sticky": "At horizontal365.33px / vertical311.33px scroll, original corner is covered by Customer; corrected corner shows Job.",
+    "recovery": "Close/removal/undo preserve search and restore connected visible focus to inspect/undo/inspect. Keyboard outline observed.",
+    "negative_controls": "Natural card heights retained (operator83.84px /117.04px); deliberate mode reflow is not a defect.",
+    "status_matrix": "Semantic color plus symbols/codes and near legend; exact complete12/12, partial7/12, unknownNot received. Native Enter/Space details open/close verified.",
+    "chart": "Visible Repaired items unit, source/cohort/2026, attached values12+8,16+9,18+12; radios below lamps; observed heights120/80,160/90,180/120px.",
+    "landing": "Fixed copy, main action and source footer retained; actual headline/reflow inspected at wide and narrow layout. Booking remains a static prototype.",
+    "icon": "Both original/corrected cue boxes20x20px; exact12 timber+3 iron and selectedNorth pass unchanged."
+  },
+  "diagnostic_capture_rasters": {
+    "chart-wide-final.jpg": [
+      1280,
+      720
+    ],
+    "exploration-lower.jpg": [
+      1265,
+      712
+    ],
+    "exploration-wide-final.jpg": [
+      1265,
+      712
+    ],
+    "icon-wide-final.jpg": [
+      1280,
+      720
+    ],
+    "landing-narrow-host.jpg": [
+      1280,
+      720
+    ],
+    "landing-wide-final.jpg": [
+      1280,
+      720
+    ],
+    "matrix-wide-final.jpg": [
+      1280,
+      720
+    ],
+    "operator-wide-final.jpg": [
+      1265,
+      712
+    ],
+    "original-controls.jpg": [
+      1265,
+      712
+    ],
+    "sticky-fixed.jpg": [
+      1265,
+      712
+    ],
+    "sticky-original.jpg": [
+      1265,
+      712
+    ]
+  },
+  "narrow_scope": "390x844 iframe layout, previewed at80%; not native phone, zoom or AT certification",
+  "limits": [
+    "These bounded fictional cases do not establish general generation quality, user preference or cost parity.",
+    "Other products and environments require their own authorized acceptance reruns.",
+    "Static frames do not establish native input, accessibility compliance, player understanding or attachment.",
+    "Installed instructions and their context size are unchanged by this evidence record."
+  ]
+}

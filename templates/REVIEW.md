@@ -4,6 +4,7 @@ For a local fix, a concise finding and affected recheck may suffice. Keep only s
 
 - Revision, reviewed surface/state and direction: [exact scope; existing DESIGN.md if relevant].
 - Environment: [browser/runtime, viewport/resolution/scale, theme, language, input].
+- Explicit owner preferences: [source/context, affected shared components and actual result; keep separate from standards].
 - Evidence: [actual captures, implementation paths and checks].
 
 ## Outcome
@@ -35,6 +36,7 @@ Retain meaningful untested areas; omit clearly inapplicable rows instead of perf
 
 | Check | Checked / failed / untested / inapplicable | Evidence or reason |
 | --- | --- | --- |
+| Consequential flow, when present | [result] | [cross-surface facts/knowledge; draft/commit/stale refusal; existing teaching/resume; feedback and recovery truth] |
 | Changed frame or interactive decision/recovery | [result] | [scope] |
 | Hierarchy, type, units, status and data meaning | [result] | [visible roles and source checks] |
 | Subject-specific character in requested states | [result] | [judgment or real observations] |

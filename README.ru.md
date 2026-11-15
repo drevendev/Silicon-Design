@@ -30,3 +30,5 @@
 
 
 [Слепой тест](skills/blind-test/SKILL.md): автономные попарные сравнения, отдельное подтверждение после комментария и честный разбор результатов.
+
+**Release 2026.11.15.1:** [whole-site comparisons, working craft examples, performed checks and remaining acceptance](research/release-2026-11-15.md). The synthetic demonstration is QA only; historical votes and owner results are unchanged.

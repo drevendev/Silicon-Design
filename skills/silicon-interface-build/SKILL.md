@@ -5,7 +5,7 @@ description: Implement or refine website and application interfaces within their
 
 # Silicon interface build
 
-Inspect revision/UI, DESIGN.md, content/components, accepted changes and supplied arrangement/capacity/growth. Separate requirements from speculation; preserve scope/brand. Local fixes need one direction.
+Inspect revision/UI, DESIGN.md, content/components, accepted changes and supplied arrangement/capacity/growth. Separate requirements from speculation; preserve scope/brand and explicit brief/DESIGN.md owner preferences across shared branding, navigation, content and pseudo-elements. Local fixes need one direction.
 
 ## Compose the work
 
@@ -21,7 +21,7 @@ On websites inspect headline breaks, navigation, comparable choices and destinat
 
 ## Implement and inspect
 
-Complete static frames; interactive work preserves input through affected blocked/failure/recovery. Add flows/surfaces/persistence checks only when needed/promised. Distinguish global/selected-object work, stopping/stopped and stale readiness; retain discoverable asynchronous outcomes after idle.
+Complete static frames; interactive work preserves input through affected blocked/failure/recovery. For consequential flows keep authoritative facts/knowledge consistent across surfaces; separate draft/preview/commit, refuse stale confirmation without partial effects, and retain required choices. Recovery distinguishes original, backup, diagnostic and actual transport. Add flows/surfaces/persistence checks only when needed/promised. Distinguish global/selected-object work, stopping/stopped and stale readiness; retain discoverable asynchronous outcomes after idle.
 
 Exercise labels/icons/padding activation and keyboard paths. Check unexpected movement, clipping/overlays, sticky intersections and connected visible focus/context after close/removal/last-item undo. Deliberate reflow, reachable truncation detail and variable heights may be valid; stubs/hit-tests do not prove activation/focus.
 
@@ -29,4 +29,4 @@ Extend/remap colours coherently within scope. Trace text/icon SVG fill/stroke/cu
 
 Check capacity, minimum width/long translations, themes, growth/live values, actual zoom and reduced motion; recheck consumers. Before delivery compare same-state original/result for noise, hierarchy and action clarity when available; otherwise inspect the result and disclose the missing baseline. Correct within budget; record removals/justified retentions. Report task-relevant shared defects outside edit scope. Separate technical coverage, unresolved craft and owner acceptance; source checks prove neither rendering/input nor compliance/audience effects.
 
-Optional depth: [review checklist](https://github.com/drevendev/Silicon-Design/blob/97f99ab4fb8ab753f1acab9e9363b0a840555a21/checklists/design-review.md).
+Optional depth: [review checklist](https://github.com/drevendev/Silicon-Design/blob/ac944d4b7d2893d6442c858fad1c3d58edd3a7f5/checklists/design-review.md).

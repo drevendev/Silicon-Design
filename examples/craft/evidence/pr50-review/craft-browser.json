@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "revision": "548ea0bbde09e9f77445f7b80286fa61a0d71778",
+  "worktree_dirty": true,
+  "browser": "151.0.7922.34",
+  "dpr": 1,
+  "scale": "100% browser default; separate CSS text enlargement 200%, not native browser zoom",
+  "input": "Playwright mouse and Enter/Space/Tab keyboard events",
+  "checks": [
+    {
+      "source": "#31/#39 + workshop-original",
+      "change": "visible exact quote; one authoritative pricing/stock calculation",
+      "property": "12 × 1,040 = 12,480; one commit; rendering is not a reward",
+      "observation": "50,000 → 37,520 gold; 50 → 38 stock; repeated draw leaves one purchase"
+    },
+    {
+      "source": "PR #4",
+      "change": "draft/preview/current-state refusal",
+      "property": "stale confirmation cannot partially charge; useful selection survives",
+      "observation": "stock changed to 1 while preview open; 50,000 gold, zero commits, quantity 12 retained"
+    },
+    {
+      "source": "#14/#30/#37 + workshop-original",
+      "change": "native buttons, retained search/draft and explicit focus return",
+      "property": "search geometry, mode draft, unassignment/Undo/help keyboard and visible focus",
+      "observation": "offer top unchanged; quantity 12/search precision retained; Undo and restored Unassign actually focused; target >=44 px"
+    },
+    {
+      "source": "#14/#31",
+      "change": "actual availability filter and invoking-control focus",
+      "property": "filter/search/quantity context and inspector close",
+      "observation": "blocked filter returns empty matching set without clearing search; All restores quantity 12; inspector returns actual focus to its item"
+    },
+    {
+      "source": "#31/#39 + workshop-original",
+      "change": "wrapping/min-width and full event text, no overflow hiding",
+      "property": "320 px EN/RU populated/blocked/empty and CSS 200% at 390 px",
+      "observation": "no page-wide horizontal overflow; long names/event status readable; all offers retained; root font measured 32px; vertical scrolling/reflow allowed"
+    },
+    {
+      "source": "#28 + workshop-original",
+      "change": "currentColor and full viewBox/bounds; actual state surfaces",
+      "property": "default, selected, disabled, hover and focus",
+      "observation": "glyph/surface contrast ratios 11.83, 9.20, 5.72, 7.45; no clip-path; 3px focus ring; pixels separately inspected"
+    },
+    {
+      "source": "#19/#48 + links-original",
+      "change": "shared link policy and edited headline/comparison group",
+      "property": "same content; no decorative arrows in brand/nav/content/CSS; truthful destination/disclosure/download",
+      "observation": "wide/narrow rendering; compare anchor navigates; keyboard disclosure opens; JSON download succeeds; external new-tab label retained"
+    },
+    {
+      "source": "#18 + chart-original; PR #24 source values",
+      "change": "near units/labels; visible source table",
+      "property": "12/8, 16/9, 18/12; totals 20/25/30; denominator 75; radios below lamps",
+      "observation": "bar heights match values; units visible beside totals; label/mark association retained at 390 px; independent source sum 75"
+    },
+    {
+      "source": "#14 + PR24 board-original",
+      "change": "native composite button, unclipped overflow and sticky corner stacking",
+      "property": "text/icon/padding/Enter/Space actually toggle; owner menu anchored; both-axis scroll",
+      "observation": "all five activation paths open; last menu option hit remains visible; corner fixed and topmost after scrollTop 120 / scrollLeft 200"
+    },
+    {
+      "source": "PR #24",
+      "change": "fresh inspection of ported operator/matrix/chart/icon/landing/exploration/recovery",
+      "property": "wide/narrow rendering; keyboard details and last-item recovery",
+      "observation": "1280×844 and 390×844 at 100% browser scale; recovery focus and search retained; natural card heights retained; no native-device/AT claim"
+    }
+  ],
+  "implementation_revision": "548ea0bbde09e9f77445f7b80286fa61a0d71778",
+  "source_sha256": {
+    "benchmarks/2026-11-07-forward/fictional/board-fixed.html": "8985124f01c27219c5d3f71b1a7b8f94be8cd81f4280240bad2dd82cc6517851",
+    "benchmarks/2026-11-07-forward/fictional/board-original.html": "13e23dd4d6a7fcb3ce0c261eaf469c1fa44a8398a0c0750a4be78af274efcdb7",
+    "benchmarks/2026-11-07-forward/fictional/chart.html": "64f39fcb561585cc5e8167ec0898bfc0034cdfd4be867ab2f38bc8b0e2941496",
+    "benchmarks/2026-11-07-forward/fictional/exploration.html": "20b8b1a04834b13b04a2200dbf9bc3524a391af5bd46795bd2d6924d135c09dc",
+    "benchmarks/2026-11-07-forward/fictional/icon.html": "50f0903fb7a754c8bbedd8b9edb53176b55314c36f777832ab50b992189b62a1",
+    "benchmarks/2026-11-07-forward/fictional/landing.html": "5b71ae3e4cc83679292ea43f1d87a258de1b8ed0fd473131f27ca25ce794979e",
+    "benchmarks/2026-11-07-forward/fictional/matrix.html": "f56bdc73104f3aa45c5fa61e56784df8a979af7914cd3d11afe1c7a786b68ec9",
+    "benchmarks/2026-11-07-forward/fictional/operator.html": "875878b73886b8b53a6f0739526ada42d7f3b3026638bb98ce9f7a5f7b5e901e",
+    "benchmarks/2026-11-07-forward/fictional/recovery.html": "9c0b062f6e543429494831dc182cc815b0df363bda9f3ed07c124b70ac2f07d1",
+    "examples/craft/chart-data.json": "596aefaf284e727e34cf3715376f666477c7369a038c27792f836c153dd1774b",
+    "examples/craft/chart-original.html": "eddef3fb3b3fb016e56dab2b0b907dff3801b3504a52eb160688ee1fc3417308",
+    "examples/craft/chart.css": "4194854892f35a854218fb8da04047536840689a3a4cc59a8a3a26a9b27a5452",
+    "examples/craft/chart.html": "1c6be9ef5774d437952ff1d8902703b188c5f2acabe32c0a250efcd247c79ab6",
+    "examples/craft/chart.js": "fc0d7a3fab99692cba78d1122538e1ba5cbebd11c9ae68b13fcf544d042f32f2",
+    "examples/craft/link-data.json": "e968c4700fdec9ae02f903850678c39bb00e933fb936f3a051643852897938c9",
+    "examples/craft/links-original.html": "da5bf5e309547c1a43f5b1ce51898437b8fba03705986b75bb8248cc0ee58ee9",
+    "examples/craft/links.css": "25fe7ec849b83190ae9d113a8f38d89f1c0a471f72aa208217253ff281ade464",
+    "examples/craft/links.html": "9296855e175f2cec6531117d9beb996e30ae5f3f40c7db80ed220d4b585de0ed",
+    "examples/craft/links.js": "271576463a2a78c5ca45453995eee7930a2de108fd469a2963d21dc775982125",
+    "examples/craft/workshop-original.html": "5194835e10a4ae8921934940f6e50aa5f9ad6a5c4ed4da618cf0c873a7ce2c02",
+    "examples/craft/workshop.css": "06274af187255f6a316fca70aa5ce633c29dbf1b19d31b601e0792d405c5b8bf",
+    "examples/craft/workshop.html": "eab10541e98cb23590b889961d82045ca76cc2af3854d7848605585c7c1e8c57",
+    "examples/craft/workshop.js": "1ea566bc9e0bfbe76aa7ccc3784fe9e0d011eafc0a1243a6fd1da8c9afe13b9b",
+    "tests/craft.browser.mjs": "1dc53e7de15250fe2b64237a9adfc7276fe7c5e6426ba2a2fccf66ba697a2070"
+  },
+  "tracked_source_dirty": false,
+  "recorded_at": "2026-11-15",
+  "evidence_category": "Synthetic source/input/rendering verification; not owner acceptance",
+  "worktree_note": "Tracked source matches the named commit; the browser created only an untracked debug.log."
+}

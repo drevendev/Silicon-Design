@@ -28,6 +28,8 @@ Inspect resource, weather, route and action symbols within their actual surround
 
 Compare placed scenery, objects, icons and controls for edge, lighting, perspective and material coherence. An asset sheet helps a reusable-family change; it is not required for an isolated icon fix. Resolve and measure actual foreground/background roles in changed themes and overlays, especially quantities.
 
+For consequential flows use the [behavioral contracts](../behavioral-contracts.md): cards, help and semantic/search surfaces agree on facts and knowledge; drafts preview before commitment, stale confirmation refuses without partial effects, and required choices remain required. Where teaching exists, targets must be achievable and completion/resume follows lasting product evidence. Expressive feedback consumes accepted outcomes; recovery distinguishes original evidence, valid backup, diagnostic and observed transport. Apply only the relevant contracts; no universal tutorial, undo or command runtime.
+
 ## Input, motion and audio
 
 Make focus visible on controller/keyboard paths and map navigation explicitly in spatial menus. Provide a suitable non-drag route for drag interactions when feasible. Address UI scaling, safe areas, subtitles and input remapping according to the game's platform and audience.

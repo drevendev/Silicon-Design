@@ -1,0 +1,45 @@
+[
+  {
+    "case": "label",
+    "expanded": "true"
+  },
+  {
+    "case": "enter",
+    "expanded": "false"
+  },
+  {
+    "case": "space",
+    "expanded": "true"
+  },
+  {
+    "case": "icon",
+    "expanded": "false"
+  },
+  {
+    "case": "padding",
+    "expanded": "true"
+  },
+  {
+    "case": "overlay-placement",
+    "geometry": {
+      "menuTop": 187.4375,
+      "menuX": 395.1041870117187,
+      "ownerMenuBelowPanel": true,
+      "ownerOverflow": "visible",
+      "stageBottom": 185.4375,
+      "stageX": 395.1041870117187
+    }
+  },
+  {
+    "case": "search",
+    "status": "1 jobs"
+  },
+  {
+    "case": "sticky",
+    "observed": {
+      "scrollLeft": 0,
+      "scrollTop": 0,
+      "topmost": "Job"
+    }
+  }
+]

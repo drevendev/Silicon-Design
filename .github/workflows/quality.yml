@@ -23,6 +23,36 @@ jobs:
       - name: Test checker behavior
         run: python3 -m unittest discover -s tests -v
       - name: Test specimen state transitions
-        run: node --test tests/specimen-model.test.cjs tests/field-notes.test.js
+        run: node --test tests/specimen-model.test.cjs tests/field-notes.test.js tests/blind-unit.test.cjs
       - name: Validate activation corpus without model calls
         run: python3 tools/activation.py validate
+
+  browser-fixtures:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Install pinned browser QA dependency
+        run: |
+          npm install --prefix "$RUNNER_TEMP/silicon-browser" --no-save --ignore-scripts @playwright/test@1.62.1
+          "$RUNNER_TEMP/silicon-browser/node_modules/.bin/playwright" install --with-deps chromium
+          echo "SILICON_BROWSER_PACKAGE=$RUNNER_TEMP/silicon-browser/node_modules/@playwright/test" >> "$GITHUB_ENV"
+          echo "BLIND_TEST_PLAYWRIGHT=$RUNNER_TEMP/silicon-browser/node_modules/@playwright/test/index.mjs" >> "$GITHUB_ENV"
+          echo "SILICON_BROWSER_OUTPUT=$RUNNER_TEMP/capacity-evidence" >> "$GITHUB_ENV"
+      - name: Build original synthetic corpora
+        run: |
+          python3 tests/prepare_blind_runner_fixture.py "$RUNNER_TEMP/blind-legacy"
+          python3 tests/prepare_whole_site_fixture.py "$RUNNER_TEMP/blind-whole"
+          python3 tests/prepare_runner_review_fixture.py "$RUNNER_TEMP/blind-protocols"
+      - name: Exercise legacy and whole-site runner contracts
+        run: |
+          node tests/blind_runner_browser.mjs "$RUNNER_TEMP/blind-legacy/good/Blind-Test.html" "$RUNNER_TEMP/blind-legacy/broken/Blind-Test.html" "$RUNNER_TEMP/legacy-evidence"
+          node tests/blind_whole_site.browser.mjs "$RUNNER_TEMP/blind-whole" "$RUNNER_TEMP/whole-evidence"
+          node tests/blind_protocols.browser.mjs "$RUNNER_TEMP/blind-protocols" "$RUNNER_TEMP/protocol-evidence"
+      - name: Exercise craft and capacity fixtures
+        run: |
+          node tests/craft.browser.mjs "$RUNNER_TEMP/craft-evidence"
+          node tests/capacity.browser.mjs

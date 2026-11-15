@@ -61,7 +61,7 @@ test -f "$skill_destination/references/interactive-checks.md"
 
 In codex-cli 0.146.1, `codex debug prompt-input` exposes native model-visible metadata without a model turn. Inspect it locally for project skill paths. Do not count a model's final claim as activation evidence; use [routing traces](../evals/activation/README.md).
 
-Record release `2026.11.14.1`, the adopted Git revision and deliberate changes. The [optional-depth manifest](../skills-release.json) records immutable commit URLs and content digests. Preserve these during copying. An intentional switch to latest online guidance must be labelled and its actual resource revision recorded when reproducibility matters. Unavailable online depth cannot block the essential offline workflow.
+Record release `2026.11.15.1`, the adopted Git revision and deliberate changes. The [optional-depth manifest](../skills-release.json) records immutable commit URLs and content digests. Preserve these during copying. An intentional switch to latest online guidance must be labelled and its actual resource revision recorded when reproducibility matters. Unavailable online depth cannot block the essential offline workflow.
 
 Claude.ai, Cowork, cloud sessions and API distribution are distinct from local Claude Code folders and are not installation targets verified here. Follow their current account/upload documentation if needed. No installer, plugin manifest, global configuration overwrite or vendor-specific instruction fork is required.
 
@@ -81,3 +81,5 @@ For example, ask build to refine an existing-brand screen without alternatives, 
 ## Keep useful feedback
 
 Record concrete failures, successful decisions and context. Report loaded material and available cost separately; shorter entrypoints do not guarantee every specialised review is cheaper. A local preference should not become a global font, colour or layout ban.
+
+Share interaction methods while each product owns its character, content and state rules. Similar appearance does not justify a common runtime; pin adopted guidance and record migration/rollback costs when proposing shared implementation. See [the bounded historical practice](../research/platform-practice.md).
