@@ -16,13 +16,15 @@ The [README](https://github.com/drevendev/FrankenRepo/blob/26da6d02e59df7a3374b5
 
 **Evidence boundary:** this observation uses repository documentation and linked artifact descriptions. Silicon Design has not independently repeated FrankenRepo's runtime or user testing.
 
-## IdleShop: dense UI needs semantic precision
+## Private game authoring observation: dense UI needs semantic precision
 
-The [0.14 authoring wireframes](https://github.com/drevendev/IdleShop/blob/a29ba05efdd3c1a1a0a3c3a34f361e5590953bc7/docs/design/release-0.14/ui-wireframes.md) specify units on resolved values, owned/required costs, unavailable-action reasons, exact disclosure for compact numbers, and EN/RU input constraints. They distinguish signed values, unknown knowledge and exact zero. They also require presentation interactions to leave the economy untouched.
+An owner-provided authoring specification (verified private on 2 November 2026; direct source omitted) specifies units on resolved values, owned/required costs, unavailable-action reasons, exact disclosure for compact numbers, and EN/RU input constraints. They distinguish signed values, unknown knowledge and exact zero. They also require presentation interactions to leave the economy untouched.
 
 **Transfer:** design around the decision a number supports. Keep details available without duplicating every explanation. Blocked actions need discoverable reasons; tooltip and accessibility text must respect knowledge rules.
 
 **Evidence boundary:** these are authoring specifications, not screenshots or proof that every described check passed in the shipped game.
+
+The [bounded browser-game practice contribution](platform-practice.md), incorporated from PR #4, adds explicit draft/commit, state-evidenced guidance, accepted-outcome feedback and recovery contracts. Its documentation review and historical CI do not establish adoption, human learning or completion of follow-ups #1–#3.
 
 ## Shared working method
 

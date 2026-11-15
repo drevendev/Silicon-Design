@@ -47,3 +47,5 @@ For detailed diagnostics use the review skill's [interactive procedure](../skill
 - [ ] Source assertions, screenshots and palette math are not presented as unperformed native-input, assistive-technology or audience tests.
 - [ ] Additional surfaces, sheets, workflows and documents are included only when requested or necessary for validation; no finding/test quota or new approval sequence.
 - [ ] Remaining scoped readability defects are unresolved findings, not successful delivery. Comparison protocol, permission and failure handling follow the [separate gate](../docs/evaluation.md); no new experiment is inferred from an instruction update.
+
+For consequential flows only, apply the [behavioral contract](../docs/behavioral-contracts.md): authoritative facts/knowledge across surfaces, draft/commit and stale refusal, achievable existing teaching with state-evidenced resume, accepted-outcome feedback and honest recovery/transport. Retain only relevant checks; this does not require a tutorial, undo or backup system. Review explicit brief/DESIGN.md owner preferences across affected shared treatments separately from standards.

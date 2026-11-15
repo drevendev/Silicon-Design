@@ -48,6 +48,17 @@ Each has an implementation consequence and a review question. [Character & attac
 | P23 | Ground claims and respect time | Show real evidence, avoid artificial waits and inspect actual performance | Is the product earning trust through what it does? |
 | P24 | Review usefulness and character separately | Inspect the complete artifact; attach findings to a region or selector, expected correction and recapture | What changed visibly, what remains unresolved, and what is only our judgment? |
 
+## Coherence through consequential transitions
+
+These additions generalize [recorded browser-game practice](../research/platform-practice.md). The [behavioral contracts](behavioral-contracts.md) provide fictional examples, exceptions and concrete inspection steps.
+
+| ID | Principle | Consequence | Review question |
+| --- | --- | --- | --- |
+| P25 | Keep one authoritative meaning across surfaces | Derive cards, details, help, search and accessible descriptions from the same facts and knowledge rules | Can two routes disagree about a cost, a reset or what the person may know? |
+| P26 | Let people explore before they commit | Distinguish draft, preview, confirmation and required choice; revalidate changed conditions without partial effects | Can someone predict the consequence, cancel the draft and understand a stale confirmation? |
+| P27 | Teach through achievable actions and lasting evidence | Advance an action step from actual completion; make its target reachable and resume from durable progress | Did the person perform the action, and can they return without repeating completed work? |
+| P28 | Make recovery a complete product journey | Preserve useful work; distinguish a current session, original evidence, validated backup and actual transport outcome | What survived, what can this next action recover, and what has really succeeded? |
+
 ## Resolve conflicts without erasing the product
 
 Preserve access, the person's task and truthful feedback. Choose among valid expressions using emotional intent, brand fit, clarity and implementation constraints. Reliability can express care; a distinctive detail can make a reliable product recognizable. Both deserve review.

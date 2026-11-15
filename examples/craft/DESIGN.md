@@ -1,0 +1,9 @@
+# Fictional teaching cases — bounded direction
+
+The workshop’s primary objects are six assigned bench supplies; the useful action is choosing a quantity and reviewing its exact purchase. Preserve source price, stock, assignment and funds. Show actual material before state/mode repetition. System fonts and original inline SVG keep this portable without paid imagery or fonts.
+
+The literary link example carries a specific brief preference from Scriptorium issue #48: **ordinary links must not receive decorative diagonal arrows**. Scope: linked brand, navigation, content links, downloads and shared pseudo-elements in this example. This preference travels through direction → shared markup/CSS → browser review. It does not alter skill routing, prohibit meaningful chart/sort/direction arrows or claim an accessibility standard. Keep visible labels, programmatic names, truthful destinations, real disclosure, JSON download and explicit new-tab meaning.
+
+Subtraction removes repeated state/mode names, general permanent help and the inner object frame. It retains visible search, Qty, Stock, unit price, exact consequential total, empty/blocked/unknown reasons and supported actions. A visible Unassign label plus a 20 px glyph in a 44 px target distinguishes assignment from deleting inventory. Useful background, alignment and the green price-adjacent modifier remain; no universal style ban follows.
+
+Working components share fixed data and behavior across original/corrected wrappers. The baseline CSS and shortened-confirmation branch deliberately reproduce failures. They are not historical owner builds. No tutorial/save/backup/runtime infrastructure is added merely to illustrate a contract. The purchase demonstrates draft/preview/commit and atomic stale refusal; repeat rendering cannot claim a fresh accepted result. The [review and evidence](README.md) distinguish functional checks, rendered observations, author craft judgment and owner acceptance.

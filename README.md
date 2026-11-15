@@ -30,7 +30,7 @@ Removing clichés leaves space. The design work is deciding what belongs in it.
 
 ## Use it on a project
 
-**Skill release 2026.11.14.1:** safe YAML validation, isolated-folder CI checks, separate Claude Code/Codex setup, an EN/RU routing corpus and immutable optional-depth links. [Implementation and performed coverage](research/skills-tooling-2026-11-14.md) · [Adoption](docs/adoption.md) · [Release identity](skills-release.json). Native discovery and model activation are reported separately.
+**Skill release 2026.11.15.1:** explicit whole-site/surface/multi-surface blind comparisons, independent working-site navigation, selected pair sets and verified fictional craft corrections. [Release changes, evidence and limits](research/release-2026-11-15.md) · [Working before/after cases](examples/craft/README.md) · [Synthetic seven-site runner](examples/blind-test-demo/README.md). Portable validation, host routing and immutable optional-depth links from 2026.11.14.1 are retained. [Implementation and performed coverage](research/skills-tooling-2026-11-14.md) · [Adoption](docs/adoption.md) · [Release identity](skills-release.json). Native discovery and model activation are reported separately.
 
 **14 November feedback revision:** the five skills make subtraction, object hierarchy and the final craft correction explicit; exact action totals stay visible and reference inspection must show actual task UI. [Feedback, changes and remaining acceptance](research/feedback-revision-2026-11-14.md) · [Subtraction and craft](docs/subtraction-and-craft.md) · [Product practice](research/product-practice-2026-11-14.md). Technical passes and relative wins remain separate from owner acceptance.
 
@@ -54,7 +54,7 @@ Each folder is a self-contained skill; copy the entire folder. No paid service, 
 | [silicon-game-ui](skills/silicon-game-ui/SKILL.md) | Game interfaces and feedback | Scoped UI/state contracts, truthful resources and relevant runtime evidence |
 | [silicon-design-review](skills/silicon-design-review/SKILL.md) | Reviewing implementation | Located findings, expected correction and recapture |
 
-| [blind-test](skills/blind-test/SKILL.md) | Reproducible blind comparisons and feedback analysis | Offline explicit-confirmation runner, separate QA and private decode |
+| [blind-test](skills/blind-test/SKILL.md) | Reproducible blind comparisons and feedback analysis | Explicit evaluation unit, workload, independent sites, draft/Next and separate QA |
 
 ## Three small worlds
 
@@ -71,6 +71,7 @@ The [redesigned examples](examples/README.md) carry different ideas through actu
 ## What belongs here
 
 - Principles with observable consequences, rather than a universal visual style.
+- [Behavioral contracts](docs/behavioral-contracts.md) for facts/knowledge, draft/preview/commit, achievable teaching, accepted feedback and honest recovery; [historical practice](research/platform-practice.md) remains distinct from this release’s checks.
 - [Character, voice and attachment](docs/character.md), including how a product feels after repeated use.
 - Foundations with starting values, exceptions and review procedures.
 - Reusable workflows and skills that preserve a product's own direction.
@@ -87,7 +88,7 @@ With Python 3.11+ and Node.js 20+, install the pinned verification dependency in
 python -m pip install -r requirements-dev.txt
 python tools/check.py
 python -m unittest discover -s tests -v
-node --test tests/specimen-model.test.cjs tests/field-notes.test.js
+node --test tests/specimen-model.test.cjs tests/field-notes.test.js tests/blind-unit.test.cjs
 python tools/activation.py validate
 ```
 

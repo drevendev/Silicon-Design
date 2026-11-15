@@ -62,3 +62,7 @@ Real browser captures of the implementation:
 ![Mosslight completed](previews/mosslight.jpg)
 
 [Use-size/state sheet](STATE-SHEET.md) · [Review](REVIEW.md) · [Checks and limits](VERIFICATION.md) · [Anti Slop benchmark target](../research/benchmark.md). A comparative victory and reader attachment remain untested.
+
+## Working corrections — 2026.11.15.1
+
+[Matched fictional craft cases](craft/README.md) preserve deliberate failures beside corrections for composition, exact totals, glyphs, long content, input/recovery, chart reading and an owner-scoped link preference. [Seven complete synthetic websites](blind-test-demo/README.md) demonstrate independent navigation and explicit whole-site workload; they are runner QA, not evaluated designs. See [performed checks and limits](VERIFICATION.md).
