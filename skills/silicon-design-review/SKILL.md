@@ -21,6 +21,8 @@ Perform a subtraction pass: question labels/badges/help already conveyed by valu
 
 For consequential flows check cross-surface facts/knowledge, draft/commit and stale refusal; existing teaching needs achievable targets and state-evidenced resume, feedback accepted outcomes, and recovery honest original/backup/diagnostic/transport distinctions.
 
+Include affected Inspect, recovery and secondary settings in the craft pass. Compact readers retain revision/timing/physical-use facts. Animated artwork keeps native targets stationary; overlays leave actual commands usable across affected layouts. Technical fit remains separate from material, motion and copy quality.
+
 For controls, transitions, overlays or sticky/scroll regions, read [interactive checks](references/interactive-checks.md); skip for static/screenshot-only work. Full-area activation, deliberate reflow and variable heights are not automatic defects. Check matched content/narrow priority of in-scope alternatives; extra workflows/persistence/sheets remain conditional.
 
 ## Report and resolve

@@ -16,6 +16,8 @@ For undiscovered content, decide which facts are intentionally public. Apply tha
 
 **Inspect:** follow one fact through its actual surfaces, then change the underlying state. Check both the permitted reveal and what must remain undisclosed. An absence-only assertion cannot establish that the successful transition works.
 
+Compact wording needs a time model. Name saved revision, trigger, capture time and physical remaining uses when they change the meaning. A later resource tier must not rewrite an already captured bonus; a public keyword must not bypass current limits. Use one product fact projection for face, Inspect, help, glossary/search and accessible text. It can omit redundant prefixes on a face while retaining exact conditions in reachable detail; avoid a duplicate resolver or text-number patches. Inspect identifies the selected physical record, not merely its template. Return restores the mounted caller, unresolved choice, reading position and focus; locale/settings must not silently exchange a reward.
+
 ## Separate a draft, a preview and a commitment
 
 Explain whether someone is editing a local plan, viewing an estimate, confirming an action or resolving an already required choice. Canceling a pre-action draft should leave committed state intact. Closing a required-choice panel must not silently resolve or discard the choice.
@@ -45,6 +47,8 @@ Show an immediate acknowledgment of input, but reserve result claims for accepte
 If a result is replayed during hydration or rendering, avoid replaying its celebration as a new event. Define what happens when a new action interrupts an old effect. Reduced motion, silence and unavailable audio must preserve the outcome and its semantic explanation.
 
 **Inspect:** repeat the same meaningful actions with normal effects, instant/reduced effects and unavailable audio. Compare the authoritative results, not just screenshots. Check a rejected action and a repeated render as negative controls. This extends P15–P16 rather than requiring a universal animation implementation.
+
+Material and motion have an interaction cost. Move artwork inside a stationary native hit rectangle; repeated edge clicks must not alternate hover or miss the target. An in-viewport preview can still cover an in-flow action while a fixed-dock check passes. Check the actual command region in affected layouts, long locale and real unforced input. The [original Nightjar example](../examples/decisions/README.md) demonstrates this distinction; it does not validate the source game's aesthetics.
 
 ## Complete the recovery journey
 

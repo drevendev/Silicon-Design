@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-17",
+  "host": "codex-cli 0.169.0",
+  "scope": "project metadata discovery, no model request or activation; separate task-local full-folder copies",
+  "exit_code": 1,
+  "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "packages": [
+    {
+      "skill": "blind-test",
+      "project_path_observed": null,
+      "source_sha256": "5889942c9ab58c71f935c76a5e6e5ee1bc68d32f97a13fe23b9763d083c7fd0f"
+    },
+    {
+      "skill": "silicon-design-direction",
+      "project_path_observed": null,
+      "source_sha256": "af39fa17a1849c45aaf583226b49704aa321fb54442ac755475c009a79694275"
+    },
+    {
+      "skill": "silicon-design-review",
+      "project_path_observed": null,
+      "source_sha256": "92e56b8f13d39bf2c5d3c7be39ccaac1d3539d82e85c32fa92ec8c378710fba1"
+    },
+    {
+      "skill": "silicon-design-system",
+      "project_path_observed": null,
+      "source_sha256": "d8293fbadab02d4312feb670b1d46232fe7cd1c5c0756c105e01455f925106fd"
+    },
+    {
+      "skill": "silicon-game-ui",
+      "project_path_observed": null,
+      "source_sha256": "853e36c70b42a2719f23064ae3d760ba061de9b33f55402871a3cf4193e7378d"
+    },
+    {
+      "skill": "silicon-interface-build",
+      "project_path_observed": null,
+      "source_sha256": "3c15cca440d68af39edb09b2dcfcb66b8cdfd6c2bd0760f33ad1cc94498d4e29"
+    }
+  ],
+  "untested": [
+    "Claude Code",
+    "Codex personal/global discovery",
+    "native model activation"
+  ],
+  "stderr_limit": "Host access denied before a catalogue was returned; no global configuration changed.",
+  "status": "unobserved: metadata command denied before catalogue"
+}

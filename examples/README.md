@@ -66,3 +66,7 @@ Real browser captures of the implementation:
 ## Working corrections — 2026.11.15.1
 
 [Matched fictional craft cases](craft/README.md) preserve deliberate failures beside corrections for composition, exact totals, glyphs, long content, input/recovery, chart reading and an owner-scoped link preference. [Seven complete synthetic websites](blind-test-demo/README.md) demonstrate independent navigation and explicit whole-site workload; they are runner QA, not evaluated designs. See [performed checks and limits](VERIFICATION.md).
+
+## Decision and difficult-state examples — 17 November 2026
+
+The original [Nightjar exchange, simulated document desk and offline controls](decisions/README.md) add draft/stale/refusal/recovery, physical-copy Inspect/return, stationary targets, asynchronous ownership/outcomes and matched material comparisons. [Performed checks and limits](decisions/VERIFICATION.md) are separate from the historical specimens.

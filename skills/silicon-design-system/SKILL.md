@@ -27,6 +27,8 @@ Keep tokens authoritative; no unvalidated DTCG claim or duplicate exports. Bound
 
 Inspect minimum width, long translations, large/live values and affected consumers/states. Reserve live-value geometry; keep icon meaning and edge/stroke/material coherence. Use sheets only for reusable changes.
 
+Compact interactive glyphs may use larger unframed hit areas; interaction need not enlarge their visible object. Distinguish classification, mechanism and effect scope instead of styling every fact as a peer chip. Carry the same kit into secondary controls. Simplify settings only within the product's chosen needs; preserve required reduced-motion behavior and notices.
+
 Report contracts, measured pairs and checked/failed/untested. Readability defects remain unresolved; technical passes establish neither craft quality, owner acceptance nor compliance.
 
 Optional depth: [foundations](https://github.com/drevendev/Silicon-Design/blob/ac944d4b7d2893d6442c858fad1c3d58edd3a7f5/docs/foundations/color.md).

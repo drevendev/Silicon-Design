@@ -28,8 +28,10 @@ Copy the entire selected folder, including supporting references. Its essential 
 | --- | --- | --- | --- |
 | Codex project | `.agents/skills/[name]/SKILL.md` | `$silicon-design-review`; `/skills` lists skills | All six project packages discovered by codex-cli 0.146.1; model activation unavailable |
 | Codex personal | `~/.agents/skills/[name]/SKILL.md` | Same | Documented, not installed/tested globally |
-| Claude Code project | `.claude/skills/[name]/SKILL.md` | `/silicon-design-review` | CLI 2.1.259 present; activation untested because authentication expired |
+| Claude Code project | `.claude/skills/[name]/SKILL.md` | `/silicon-design-review` | CLI 2.1.259 present; discovery/activation untested because authentication expired |
 | Claude Code personal | `~/.claude/skills/[name]/SKILL.md` | Same | Documented, not installed/tested globally |
+
+On 17 November, a separate full-folder project copy was prepared for Codex CLI 0.169.0. Its metadata-only command exited with host access denied before returning a catalogue; current discovery is unobserved. The dated 0.146.1 observation above remains historical. No model call, global installation or configuration change was made. See [the release verification](../research/release-2026-11-17.md).
 
 Sources: [official Codex skills documentation](https://learn.chatgpt.com/docs/build-skills) and [Claude Code skills documentation](https://code.claude.com/docs/en/skills). The same portable folder works in either location. Host policy/session context can affect discovery; a copied folder or visible command does not establish implicit selection.
 
@@ -61,7 +63,7 @@ test -f "$skill_destination/references/interactive-checks.md"
 
 In codex-cli 0.146.1, `codex debug prompt-input` exposes native model-visible metadata without a model turn. Inspect it locally for project skill paths. Do not count a model's final claim as activation evidence; use [routing traces](../evals/activation/README.md).
 
-Record release `2026.11.15.1`, the adopted Git revision and deliberate changes. The [optional-depth manifest](../skills-release.json) records immutable commit URLs and content digests. Preserve these during copying. An intentional switch to latest online guidance must be labelled and its actual resource revision recorded when reproducibility matters. Unavailable online depth cannot block the essential offline workflow.
+Record release `2026.11.17.1`, the adopted Git revision and deliberate changes. The [optional-depth manifest](../skills-release.json) records immutable commit URLs and content digests. Preserve these during copying. An intentional switch to latest online guidance must be labelled and its actual resource revision recorded when reproducibility matters. Unavailable online depth cannot block the essential offline workflow.
 
 Claude.ai, Cowork, cloud sessions and API distribution are distinct from local Claude Code folders and are not installation targets verified here. Follow their current account/upload documentation if needed. No installer, plugin manifest, global configuration overwrite or vendor-specific instruction fork is required.
 

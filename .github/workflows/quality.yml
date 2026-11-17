@@ -23,7 +23,11 @@ jobs:
       - name: Test checker behavior
         run: python3 -m unittest discover -s tests -v
       - name: Test specimen state transitions
-        run: node --test tests/specimen-model.test.cjs tests/field-notes.test.js tests/blind-unit.test.cjs
+        run: node --test tests/specimen-model.test.cjs tests/field-notes.test.js tests/blind-unit.test.cjs tests/decisions-model.test.cjs
+      - name: Verify complete material artifacts are reproducible
+        run: |
+          node tools/build_decision_materials.mjs
+          git diff --exit-code -- examples/decisions
       - name: Validate activation corpus without model calls
         run: python3 tools/activation.py validate
 
@@ -56,3 +60,4 @@ jobs:
         run: |
           node tests/craft.browser.mjs "$RUNNER_TEMP/craft-evidence"
           node tests/capacity.browser.mjs
+          node tests/decisions.browser.mjs "$RUNNER_TEMP/decision-evidence"
