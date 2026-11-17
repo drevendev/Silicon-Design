@@ -29,4 +29,4 @@ Extend/remap colours coherently within scope. Trace text/icon SVG fill/stroke/cu
 
 Check capacity, minimum width/long translations, themes, growth/live values, actual zoom and reduced motion; recheck consumers. Before delivery compare same-state original/result for noise, hierarchy and action clarity when available; otherwise inspect the result and disclose the missing baseline. Correct within budget; record removals/justified retentions. Report task-relevant shared defects outside edit scope. Separate technical coverage, unresolved craft and owner acceptance; source checks prove neither rendering/input nor compliance/audience effects.
 
-Optional depth: [review checklist](https://github.com/drevendev/Silicon-Design/blob/ac944d4b7d2893d6442c858fad1c3d58edd3a7f5/checklists/design-review.md).
+Optional depth: [review checklist](https://github.com/drevendev/Silicon-Design/blob/a5245988effc870b5ae7d72afd2181b9d82d7255/checklists/design-review.md).

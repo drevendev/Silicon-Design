@@ -31,4 +31,4 @@ Compact interactive glyphs may use larger unframed hit areas; interaction need n
 
 Report contracts, measured pairs and checked/failed/untested. Readability defects remain unresolved; technical passes establish neither craft quality, owner acceptance nor compliance.
 
-Optional depth: [foundations](https://github.com/drevendev/Silicon-Design/blob/ac944d4b7d2893d6442c858fad1c3d58edd3a7f5/docs/foundations/color.md).
+Optional depth: [foundations](https://github.com/drevendev/Silicon-Design/blob/a5245988effc870b5ae7d72afd2181b9d82d7255/docs/foundations/color.md).

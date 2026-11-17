@@ -1,42 +1,42 @@
 {
   "format": "silicon-skill-release-1",
-  "version": "2026.11.15.1",
-  "depth_revision": "ac944d4b7d2893d6442c858fad1c3d58edd3a7f5",
+  "version": "2026.11.17.1",
+  "depth_revision": "a5245988effc870b5ae7d72afd2181b9d82d7255",
   "optional_depth": [
     {
       "skill": "silicon-design-direction",
       "document": "docs/workflow.md",
-      "revision": "ac944d4b7d2893d6442c858fad1c3d58edd3a7f5",
+      "revision": "a5245988effc870b5ae7d72afd2181b9d82d7255",
       "sha256_lf_utf8": "89a1a068bb74354ec170f4c43f1c7c10da54ff1455a9e90207e99f28d802fcef",
-      "url": "https://github.com/drevendev/Silicon-Design/blob/ac944d4b7d2893d6442c858fad1c3d58edd3a7f5/docs/workflow.md"
+      "url": "https://github.com/drevendev/Silicon-Design/blob/a5245988effc870b5ae7d72afd2181b9d82d7255/docs/workflow.md"
     },
     {
       "skill": "silicon-design-review",
       "document": "templates/REVIEW.md",
-      "revision": "ac944d4b7d2893d6442c858fad1c3d58edd3a7f5",
+      "revision": "a5245988effc870b5ae7d72afd2181b9d82d7255",
       "sha256_lf_utf8": "48e46124be69c3358441cf52998fdb2a0c7524f3e5adff9d656a410be75d4151",
-      "url": "https://github.com/drevendev/Silicon-Design/blob/ac944d4b7d2893d6442c858fad1c3d58edd3a7f5/templates/REVIEW.md"
+      "url": "https://github.com/drevendev/Silicon-Design/blob/a5245988effc870b5ae7d72afd2181b9d82d7255/templates/REVIEW.md"
     },
     {
       "skill": "silicon-design-system",
       "document": "docs/foundations/color.md",
-      "revision": "ac944d4b7d2893d6442c858fad1c3d58edd3a7f5",
+      "revision": "a5245988effc870b5ae7d72afd2181b9d82d7255",
       "sha256_lf_utf8": "d149ccbd5cf9b701fa7e80c75498a014e91903f5186078642d7e0e0b37ff48fa",
-      "url": "https://github.com/drevendev/Silicon-Design/blob/ac944d4b7d2893d6442c858fad1c3d58edd3a7f5/docs/foundations/color.md"
+      "url": "https://github.com/drevendev/Silicon-Design/blob/a5245988effc870b5ae7d72afd2181b9d82d7255/docs/foundations/color.md"
     },
     {
       "skill": "silicon-game-ui",
       "document": "docs/products/games.md",
-      "revision": "ac944d4b7d2893d6442c858fad1c3d58edd3a7f5",
-      "sha256_lf_utf8": "1c75c31364e90c4d6271174bae01945468a5fdd981b9aae5b3687cf08285b756",
-      "url": "https://github.com/drevendev/Silicon-Design/blob/ac944d4b7d2893d6442c858fad1c3d58edd3a7f5/docs/products/games.md"
+      "revision": "a5245988effc870b5ae7d72afd2181b9d82d7255",
+      "sha256_lf_utf8": "cfd443c5935d9044bf6491c0c0552e6b4ebd02456b69e64fd7a367b1f11153e0",
+      "url": "https://github.com/drevendev/Silicon-Design/blob/a5245988effc870b5ae7d72afd2181b9d82d7255/docs/products/games.md"
     },
     {
       "skill": "silicon-interface-build",
       "document": "checklists/design-review.md",
-      "revision": "ac944d4b7d2893d6442c858fad1c3d58edd3a7f5",
-      "sha256_lf_utf8": "cbf8094ce877ef079ab504a92e416ae1ed4a7f4c58e3164ce93023f57909e3c5",
-      "url": "https://github.com/drevendev/Silicon-Design/blob/ac944d4b7d2893d6442c858fad1c3d58edd3a7f5/checklists/design-review.md"
+      "revision": "a5245988effc870b5ae7d72afd2181b9d82d7255",
+      "sha256_lf_utf8": "aca05eb4ed31f8c1d0201dfe94f2724dc684bc65cb838c4b3b81e18889ee5a91",
+      "url": "https://github.com/drevendev/Silicon-Design/blob/a5245988effc870b5ae7d72afd2181b9d82d7255/checklists/design-review.md"
     }
   ]
 }

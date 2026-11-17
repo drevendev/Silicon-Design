@@ -35,4 +35,4 @@ Inspect minimum supported viewport with long locale as a delivery check, not pro
 
 Compare same-state original/result where available; disclose a missing baseline. Correct within budget; record removals/justified retentions and shared defects outside scope. Report checked/failed/untested separately from visual craft, owner preference, comprehension and listening. QA passes do not finish the design or prove improved generations/compliance.
 
-Optional depth: [games](https://github.com/drevendev/Silicon-Design/blob/ac944d4b7d2893d6442c858fad1c3d58edd3a7f5/docs/products/games.md).
+Optional depth: [games](https://github.com/drevendev/Silicon-Design/blob/a5245988effc870b5ae7d72afd2181b9d82d7255/docs/products/games.md).
