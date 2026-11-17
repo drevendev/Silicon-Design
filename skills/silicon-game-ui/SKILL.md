@@ -5,30 +5,34 @@ description: Design or refine game HUDs, menus and feedback where playfield hier
 
 # Silicon game UI
 
-Inspect revision, loop/world, contracts, text/assets, accepted changes and capacity/growth. Carry explicit brief/DESIGN.md owner preferences into composition and shared controls. Separate speculation; static work needs no invented flows/saves.
+Inspect current revision, loop/world, contracts, accepted changes, text/assets and capacity/growth. Carry brief/DESIGN.md owner preferences through shared controls. Separate speculation; static work needs no invented flows/saves.
 
 ## Compose the play decision
 
-Before composing, find and visually inspect comparable genre/task UI; prefer first-party. An article without that screen is not inspection: replace it or disclose the gap before using product evidence. Distinguish shipped/promotion/concept/unknown provenance. Reuse inspected references for local fixes; transfer grouping/density/action relationships, not skins/features.
+Before substantive composition, visually inspect a comparable genre/task screen; prefer first-party shipped UI. Bound research to the task and budget, reusing suitable inspected references for local fixes. An article header is not inspection. If unavailable, disclose the specific gap before composing; do not discover the omission only in the final report. Transfer grouping, density and action relationships, not skins/features. Distinguish shipped, promotion, concept and unknown provenance.
 
-Identify input, resolution, viewing distance, scale, safe areas/languages. Choose grid/rows from count/growth, recognition/comparison/sorting. Budget space after chrome/status; fit small fixed assortments without scrolling at base size. Sketch against the reading model before replacing it. Reflow/zoom may scroll; tiny text, clipped/hidden offers or needless pagination do not establish fit.
+Identify input, resolution, distance, UI scale, languages and safe areas. Choose grid/rows from actual count/growth and recognition/comparison/sorting. Budget usable space after chrome/status. Fit bounded assortments at base size; narrow/enlarged reflow may scroll. Tiny text, hidden offers or needless pagination do not establish fit.
 
-Across screens share semantic colours, type/numbers, icons, density, chrome and component/state implementations. Explain task exceptions; local fixes need no kit.
+When structural redesign is authorized, decide per affected screen what stays or is recomposed and why before styling. Across screens share semantic colours, typography/numbers, icons, density, chrome and component/state implementations; explain exceptions. Local repairs need no new kit or alternatives.
 
-Name the dominant object/decision. Let shelf goods lead competing frames. Prefer one enclosing boundary; justify nesting. Align corner actions with headers; choose centring/alignment deliberately. Try shared dividers for uniform rows. Retain useful backgrounds/alignment.
+Name the dominant object/decision. Shelf goods lead their frames; actions stay near costs. Prefer one enclosing boundary, deliberate alignment and dividers for uniform rows. Preserve useful backgrounds. Question each added read-out: would its absence lose a decision, or is it already on an existing control? Spend saved effort on composition, material and feedback rather than extra sentences. Subtract redundant labels/help within authorized scope, keeping necessary visible instructions, legends, deficits, accessible meaning and safeguards.
 
-Within authorized copy/DOM scope, subtract labels/badges/help already conveyed by counts, meters, position or selection only when meaning stays visually clear; otherwise keep visible labels/instructions. Retain accessible names/context, legends, deficits/blocked reasons and safeguards. Put effects by the affected choice; distinguish applied/possible effects, resource pools and signed units. Familiar remove/search controls need readable glyphs and usable targets. Report fixed-copy/DOM limits.
+Entry/resume needs deliberate scene/type and a clear returning-run object when applicable. Inspect unreadable-save/storage failure states too. Edit weak copy when authorized; otherwise locate the limit. A short visual explanation can teach the loop without another paragraph. Offers need concise faces and discoverable, deliberately designed Inspect; per-offer disclosures need a decision benefit. Keep exact conditions reachable without enlarging every face.
 
-Use expressive material/type with readable operational text; inspect symbols/selection at use size and scene/object/control edge, lighting, perspective and material coherence. Extend/remap colours coherently within scope. Trace text/glyph SVG fill/stroke/currentColor, masks/filters, surfaces and crops; dark-on-dark fails despite passing swatches.
+## Material and feedback
 
-## Preserve game truth
+Use available cleared art deliberately; identify the object carrying a screen's identity and verify imported files actually exist and render. Disclose missing material instead of claiming a CSS fallback completed the pass. Inspect scene/object/control edges, light, perspective, glyph bounds and SVG fill/stroke/currentColor on actual surfaces; swatches cannot pass dark-on-dark symbols. Preserve semantic status colours plus other cues. Compact interactive glyphs need usable targets without automatically gaining large visible frames. Include secondary settings in the product kit.
 
-Show owned/required amounts and exact payable totals visibly at commitment, not solely in accessible names; secondary precision may use reachable detail. Distinguish zero/unknown/not-applicable; preserve knowledge/unlocks including accessible text. Presentation never changes economy/inventory/progression/simulation. Consequential drafts preview before commitment; stale confirmation preserves input without partial effects. Existing teaching advances/resumes from lasting completion evidence with reachable prerequisites. Recovery distinguishes original, backup, diagnostic and actual transport. Feedback/motion follows authoritative pending/failed/interrupted/completed state; no duplicate purchases, invented events or repeated-input delays.
+For affected expressive work, consider offered-object entrance, card/button hover and focus, committed-action feedback and an appropriate outcome accent; choose what fits the loop. Animate artwork within stationary native hit rectangles. Feedback cannot delay legal input, intercept actions, replay on reload or advance simulation. Inspect actual motion, pause/cycle/hidden/reduced/off states. Silence preserves outcomes; playback/file names do not establish listening acceptance. Keep required credits; optional provenance stays outside player copy when the brief requires that.
 
-## Verify within scope
+## Preserve truth and verify
 
-Exercise normal/adverse states, long translations at minimum supported width, large/live values, capacity/detail. Check supported keyboard/controller/pointer/touch, focus/restoration, scaling, non-drag/remapping, motion/audio independence and non-colour critical cues. Check interruption/return/removal and promised cross-surface/reload/restart persistence. Recheck consumers.
+Show exact payable totals visibly at commitment; secondary precision may use reachable detail. Preserve economy, knowledge/unlocks and distinct zero/unknown/not-applicable. Draft/preview/commit stay separate; stale refusal retains input without partial effects. Existing teaching follows lasting completion evidence; recovery distinguishes original, backup, diagnostic and observed transport.
 
-Before delivery compare same-state original/result for noise, hierarchy and action clarity when available; otherwise inspect the result and disclose the missing baseline. Correct within budget; record removals/justified retentions. QA passes neither finish design nor establish owner acceptance. Report checked/failed/untested, unresolved craft/readability and task-relevant shared defects outside edit scope. Simulations prove neither native input/saves nor comprehension/compliance.
+Compact/full/help/accessible readers share authoritative revision, trigger, capture time and physical remaining uses; do not invent a second resolver or omit conditions to fit. Inspect identifies the selected physical copy. Back/Escape restores a mounted caller, choice, reading position and visible focus.
 
-Optional depth: [games](https://github.com/drevendev/Silicon-Design/blob/ac944d4b7d2893d6442c858fad1c3d58edd3a7f5/docs/products/games.md).
+Inspect minimum supported viewport with long locale as a delivery check, not proof of craft. Exercise relevant normal/adverse states, large/live values, capacity/detail, supported native input, real unforced clicks, focus, scaling and non-colour cues. Popups must leave the actual command reachable in fixed, sticky and in-flow modes. Check promised reload/interruption contracts and affected consumers.
+
+Compare same-state original/result where available; disclose a missing baseline. Correct within budget; record removals/justified retentions and shared defects outside scope. Report checked/failed/untested separately from visual craft, owner preference, comprehension and listening. QA passes do not finish the design or prove improved generations/compliance.
+
+Optional depth: [games](https://github.com/drevendev/Silicon-Design/blob/a5245988effc870b5ae7d72afd2181b9d82d7255/docs/products/games.md).

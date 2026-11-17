@@ -1,0 +1,41 @@
+{
+  "measure": "whitespace words, not model tokens/cost",
+  "skills": [
+    {
+      "skill": "blind-test",
+      "before_words": 593,
+      "after_words": 593,
+      "discovery_unchanged": true
+    },
+    {
+      "skill": "silicon-design-direction",
+      "before_words": 359,
+      "after_words": 359,
+      "discovery_unchanged": true
+    },
+    {
+      "skill": "silicon-design-review",
+      "before_words": 409,
+      "after_words": 449,
+      "discovery_unchanged": true
+    },
+    {
+      "skill": "silicon-design-system",
+      "before_words": 390,
+      "after_words": 442,
+      "discovery_unchanged": true
+    },
+    {
+      "skill": "silicon-game-ui",
+      "before_words": 449,
+      "after_words": 653,
+      "discovery_unchanged": true
+    },
+    {
+      "skill": "silicon-interface-build",
+      "before_words": 463,
+      "after_words": 463,
+      "discovery_unchanged": true
+    }
+  ]
+}

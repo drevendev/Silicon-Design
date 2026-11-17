@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-17",
+  "environment": {
+    "platform": "win32",
+    "node": "v24.19.0",
+    "chromium": "151.0.7922.34",
+    "transport": "file URLs",
+    "dpr": 1,
+    "scale": "100% default browser scale; viewport resize; separately measured CSS text 200%"
+  },
+  "checks": [
+    {
+      "name": "draft/refusal/reload",
+      "details": "Native edit, Escape and preview focus; exact note survives reload. Changed stock refuses with 30 tokens and no result."
+    },
+    {
+      "name": "accepted event and required choice",
+      "details": "One charge, no automatic hanging, durable unmet guide, one physical use consumed; reload/render do not replay feedback; explicit skip persists."
+    },
+    {
+      "name": "stationary native targets and changing action layout",
+      "details": "Both native edge clicks open exact legacy physical copy after artwork hover. With coaching shown, unforced Preview/Confirm/Hang work in flow and fixed modes; Escape returns to mounted caller."
+    },
+    {
+      "name": "exact Inspect return across locale",
+      "details": "An accepted physical legacy copy keeps its choice and revision while locale changes; native Escape restores its still-mounted history button."
+    },
+    {
+      "name": "recovery and denied storage",
+      "details": "Malformed structured original renders intact. Simulated blocked download preserves it; an actual browser download has exact bytes. UI only claims requested transport. Denied storage preserves current draft with failure status."
+    },
+    {
+      "name": "complete material artifacts",
+      "details": "All three inline HTML files operate with identical state/costs; keyboard focus actually set before capture. Matched 800 and 320 CSS px/RU captures retained."
+    },
+    {
+      "name": "workspace/stages/exact outcome/resume",
+      "details": "A owns work while B is selected; command unavailable with reason. Stage resumes after reload. Manual completion leaves scheduling paused. Exact notice opens A/1 and restores focus; dismissed notice stays dismissed when new save-failed attempt appears."
+    },
+    {
+      "name": "stop/late replies/outcome distinctions/readiness",
+      "details": "Stopping waits for acknowledgement; late duplicate creates no result. Changed configuration rejects pending success; a current check succeeds. All six adverse outcomes retain distinct data/copy."
+    },
+    {
+      "name": "native controls/reflow/text/motion/forced colors",
+      "details": "Real select arrows/Enter, checkbox Space, editor entry, dialog Escape/return and glyph Enter. All pages at 1280/640/320; CSS text enlargement measured 32px separately from zoom. Running forced-colors and reduced-motion emulation; semantic outcomes unchanged and animation none; explicit Motion off also preserves the purchase. Physical devices/AT/actual browser zoom not observed."
+    },
+    {
+      "name": "resolved role pairs",
+      "details": "Ten scoped unrounded foreground/substrate checks, including actual SVG stroke inheritance and gradient endpoint; separate from pixel inspection and compliance."
+    }
+  ],
+  "source_sha256": {
+    "model.js": "814d4d9c466b347d897b48ea807b1091621f5900ebc602996df2ddcb0e11a5b5",
+    "exchange.html": "558aa647e5091fa4c20db0c9f9f8571e9a7d66a97a81a5d03233e9462691b959",
+    "exchange.js": "b72fbfee3ca4cdb3f0ff16bbb3835f9da831a77438a520802ec646202486ee76",
+    "desk.html": "4d0174bfa8563ec3afb7744a5c042f9c5c785f8905b838cbb405d084875b244b",
+    "desk.js": "45ff50bd32bb02d66101836ddfc1189f215362d05cbe2469226eaebe79614864",
+    "controls.html": "680b1c01519322b20114d93c9b84d69b95497c2558f3902cbf8c29f02f26fc62",
+    "decisions.css": "9582d49d80b9e60547698a8e39b09166af1e886ecaabcc06a8bce71cf7b58786",
+    "exchange-plain.html": "eec7994c1f7181451faaec63344679960f68e926ecb6e8c2545a39f47a3f9022",
+    "exchange-engraved.html": "3072a238fa075ee472a9f1dd5d273bf04ff14c7a7cce0be5fc385d28ade4c424",
+    "exchange-luminous.html": "fedaa8790470f7c2c55df2c8bd78cbf68efd02d36266031b275581017c70c4d1"
+  },
+  "page_errors": [],
+  "untested": [
+    "actual browser zoom",
+    "native devices/touch/controller",
+    "screen reader/AT",
+    "audio/listening",
+    "human preference/comprehension/attachment",
+    "fresh model generation/activation/cost"
+  ]
+}

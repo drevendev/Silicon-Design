@@ -21,6 +21,8 @@ Perform a subtraction pass: question labels/badges/help already conveyed by valu
 
 For consequential flows check cross-surface facts/knowledge, draft/commit and stale refusal; existing teaching needs achievable targets and state-evidenced resume, feedback accepted outcomes, and recovery honest original/backup/diagnostic/transport distinctions.
 
+Include affected Inspect, recovery and secondary settings in the craft pass. Compact readers retain revision/timing/physical-use facts. Animated artwork keeps native targets stationary; overlays leave actual commands usable across affected layouts. Technical fit remains separate from material, motion and copy quality.
+
 For controls, transitions, overlays or sticky/scroll regions, read [interactive checks](references/interactive-checks.md); skip for static/screenshot-only work. Full-area activation, deliberate reflow and variable heights are not automatic defects. Check matched content/narrow priority of in-scope alternatives; extra workflows/persistence/sheets remain conditional.
 
 ## Report and resolve
@@ -31,4 +33,4 @@ Compare same-state original/result for noise, hierarchy and action clarity when 
 
 Winners' criticism still matters: QA/preference is not acceptance. Separate input/asset/capture/adapter defects from implementation, source/native input, palette math/rendering, resize/zoom and screenshots/AT. Separate craft from operation/access; audience/compliance/superiority claims need evidence.
 
-Optional depth: [review template](https://github.com/drevendev/Silicon-Design/blob/ac944d4b7d2893d6442c858fad1c3d58edd3a7f5/templates/REVIEW.md).
+Optional depth: [review template](https://github.com/drevendev/Silicon-Design/blob/a5245988effc870b5ae7d72afd2181b9d82d7255/templates/REVIEW.md).

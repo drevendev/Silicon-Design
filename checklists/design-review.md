@@ -49,3 +49,7 @@ For detailed diagnostics use the review skill's [interactive procedure](../skill
 - [ ] Remaining scoped readability defects are unresolved findings, not successful delivery. Comparison protocol, permission and failure handling follow the [separate gate](../docs/evaluation.md); no new experiment is inferred from an instruction update.
 
 For consequential flows only, apply the [behavioral contract](../docs/behavioral-contracts.md): authoritative facts/knowledge across surfaces, draft/commit and stale refusal, achievable existing teaching with state-evidenced resume, accepted-outcome feedback and honest recovery/transport. Retain only relevant checks; this does not require a tutorial, undo or backup system. Review explicit brief/DESIGN.md owner preferences across affected shared treatments separately from standards.
+
+## Later game and control cases
+
+For affected expressive/game work, inspect material imports, hover/focus skins and committed feedback in time. Keep native hit rectangles stationary; real unforced input must reach the command beside previews in each affected fixed, sticky or in-flow layout. Include Inspect, recovery and secondary settings in the craft scope. Compact/full readers share revision, timing, physical-use and knowledge facts; Back/Escape restores a mounted owner, choice, reading position and focus. Fit at the minimum frame/long locale is operational evidence, separate from material/copy quality, owner preference and listening. See the [original decision examples](../examples/decisions/README.md).

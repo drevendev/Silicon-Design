@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-17",
+  "checked_revision": "b999fd5924fe5b843dbe7dc2f9159717af5e066e",
+  "release": "2026.11.17.1",
+  "checks": [
+    {
+      "name": "repository-checker",
+      "command": [
+        "python",
+        "tools/check.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "python-tests",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "node-tests",
+      "command": [
+        "node",
+        "--test",
+        "tests/specimen-model.test.cjs",
+        "tests/field-notes.test.js",
+        "tests/blind-unit.test.cjs",
+        "tests/decisions-model.test.cjs"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "activation-corpus",
+      "command": [
+        "python",
+        "tools/activation.py",
+        "validate"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "materials",
+      "command": [
+        "node",
+        "tools/build_decision_materials.mjs"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "material-reproducibility",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "--",
+        "examples/decisions"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "skill-validate-blind-test",
+      "exit_code": 0,
+      "encoding": "UTF-8 explicit"
+    },
+    {
+      "name": "skill-validate-silicon-design-direction",
+      "exit_code": 0,
+      "encoding": "UTF-8 explicit"
+    },
+    {
+      "name": "skill-validate-silicon-design-review",
+      "exit_code": 0,
+      "encoding": "UTF-8 explicit"
+    },
+    {
+      "name": "skill-validate-silicon-design-system",
+      "exit_code": 0,
+      "encoding": "UTF-8 explicit"
+    },
+    {
+      "name": "skill-validate-silicon-game-ui",
+      "exit_code": 0,
+      "encoding": "UTF-8 explicit"
+    },
+    {
+      "name": "skill-validate-silicon-interface-build",
+      "exit_code": 0,
+      "encoding": "UTF-8 explicit"
+    }
+  ],
+  "test_counts": {
+    "python": 43,
+    "node": 25,
+    "browser_scenario_groups": 10,
+    "resolved_role_pairs": 10,
+    "routing_cases_validated_without_models": 12
+  },
+  "archive": {
+    "release": "2026.11.17.1",
+    "source_revision": "b999fd5924fe5b843dbe7dc2f9159717af5e066e",
+    "archive": "silicon-design-skills-2026.11.17.1.zip",
+    "sha256": "2370d7b9c967b519754e30797d2998c463839389da2e582137d5aadc26f1acfa",
+    "bytes": 46589,
+    "file_count": 17,
+    "complete_skill_folders": 6,
+    "roundtrip_and_isolated_validation": "passed"
+  },
+  "archive_checks": [
+    "ZIP integrity",
+    "every archived file matches source bytes",
+    "all six extracted metadata packages validate with explicit UTF-8",
+    "all extracted local references stay within their complete skill folder"
+  ],
+  "browser_source_match": true,
+  "limits": [
+    "Browser receipt remains attributed to unchanged a524598 implementation source hashes.",
+    "No new comparative/model/activation/human trial.",
+    "Native current Codex metadata discovery remains unobserved; actual browser zoom/devices/AT/listening remain untested."
+  ],
+  "adapter_note": "One unchanged blind-test validation initially failed under Windows cp1252. Explicit UTF-8 passed; skill source was not changed."
+}

@@ -14,11 +14,15 @@ Exercise labels, icons and usable padding of a composite control and supported k
 
 Use hit-testing to diagnose interception, not certify behaviour: an elementFromPoint result does not prove an event handler or state transition. A covered label or non-activating padding is a located finding. Do not assume the whole bounding box of a group is one control.
 
+For animated controls, repeat real unforced edge clicks while artwork enters, hovers and settles. Keep native hit rectangles stationary; child artwork may move inside them. Check affected button skins; a bitmap plate need not respond like a flat fill. Reduced/off feedback preserves the accepted result and available next command.
+
 ## Clipping and overlays
 
 Inspect important labels, opened menus and popovers in their actual scrolling and overflow context. Width/height checks suggest candidates but cannot settle deliberate truncation, multiline text or available detail.
 
 Necessary full values must be reachable through the supported input paths. A labelled detail view may suffice; do not require a tooltip on every item. Verify overlay placement and focus with long content, including relevant narrow sizes.
+
+Protect the actual command region in each affected fixed, sticky and in-flow layout, including coaching, locale, resizing and scroll changes. An in-viewport overlay can still intercept the primary action. Observe real unforced activation while it is open; geometry or forced clicks cannot pass this case.
 
 ## Sticky intersections
 
@@ -29,6 +33,8 @@ For a table with sticky headers and an identity column, scroll both axes. Observ
 For affected close/removal/undo paths, exercise the real controls, including last-item removal from a secondary surface when relevant. Check restored object/input, useful destination and active focus. The focused node must be connected, visible and reveal the task; BODY focus or a destroyed node is not successful restoration.
 
 Check repeated input and declared switching/reload persistence only where that contract is affected. Do not invent a notes field or save mechanism to supply a recovery example. Inspect pending/blocked/error/success states as applicable, without treating unknown data as zero or a partial result as success.
+
+Inspect/zoom is an authored screen. Verify selected physical record/copy, saved revision, trigger/capture time and remaining uses across compact, full, help/search and accessible readers. Back/Escape restores a mounted owner, unresolved choice, reading position and visible focus; a destroyed popup button cannot own return. Settings/locale must not replace a chosen reward. Reuse authoritative facts instead of a second resolver or regex number patches.
 
 ## Evidence and stopping
 

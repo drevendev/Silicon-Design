@@ -1,5 +1,7 @@
 # Specimen verification — 3 November 2026
 
+New original decision examples have a separate [17 November verification record](decisions/VERIFICATION.md) and source hashes. They do not alter historical trial artifacts or the checks below.
+
 ## Capacity fixture — 14 November 2026
 
 This section concerns only the new original `capacity.html`; the earlier

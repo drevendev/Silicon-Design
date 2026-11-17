@@ -1,0 +1,75 @@
+{
+  "scope": "Actual computed text/control/vector colours. Gradient endpoint is a conservative declared substrate, not a painted-pixel measurement. Disabled opacity, every gradient pixel and forced-colours system mappings are not certified.",
+  "pairs": [
+    {
+      "name": "body",
+      "foreground": "rgb(244, 238, 220)",
+      "background": "rgb(10, 25, 29)",
+      "minimum": 4.5,
+      "ratio": 15.482513279707893
+    },
+    {
+      "name": "offer supporting text against lightest gradient endpoint",
+      "foreground": "rgb(182, 199, 187)",
+      "background": "rgb(37, 67, 71)",
+      "minimum": 4.5,
+      "ratio": 6.020729699872126
+    },
+    {
+      "name": "offer price against lightest gradient endpoint",
+      "foreground": "rgb(239, 209, 141)",
+      "background": "rgb(37, 67, 71)",
+      "minimum": 4.5,
+      "ratio": 7.1862439947574694
+    },
+    {
+      "name": "enabled primary",
+      "foreground": "rgb(10, 25, 29)",
+      "background": "rgb(239, 209, 141)",
+      "minimum": 4.5,
+      "ratio": 12.118447693994868
+    },
+    {
+      "name": "error",
+      "foreground": "rgb(255, 181, 165)",
+      "background": "rgb(10, 25, 29)",
+      "minimum": 4.5,
+      "ratio": 10.605174359842193
+    },
+    {
+      "name": "vector outline 0",
+      "foreground": "rgb(215, 186, 142)",
+      "background": "rgb(37, 67, 71)",
+      "minimum": 3,
+      "ratio": 5.730550438258021
+    },
+    {
+      "name": "vector outline 1",
+      "foreground": "rgb(142, 215, 201)",
+      "background": "rgb(37, 67, 71)",
+      "minimum": 3,
+      "ratio": 6.445459237300285
+    },
+    {
+      "name": "vector outline 2",
+      "foreground": "rgb(215, 201, 142)",
+      "background": "rgb(37, 67, 71)",
+      "minimum": 3,
+      "ratio": 6.405373156724561
+    },
+    {
+      "name": "vector outline 3",
+      "foreground": "rgb(193, 215, 142)",
+      "background": "rgb(37, 67, 71)",
+      "minimum": 3,
+      "ratio": 6.782351720225604
+    },
+    {
+      "name": "vector outline 4",
+      "foreground": "rgb(142, 188, 215)",
+      "background": "rgb(37, 67, 71)",
+      "minimum": 3,
+      "ratio": 5.234293820309115
+    }
+  ]
+}

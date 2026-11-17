@@ -23,6 +23,12 @@ For each visible caption, badge, title or repeated sentence, ask what is lost if
 
 Accessible names cannot replace visible instructions sighted users need. Keep legends, field labels, deficits, lock conditions, recovery and meaningful empty states. Secondary help needs keyboard/touch access and useful focus return; a disabled control cannot be its only entry. Respect fixed-copy/DOM limits.
 
+Question new information as carefully as existing labels: a deck count on its control may replace a repeated deck-size sentence. Compact interaction does not automatically require a visible button frame: a small preference glyph can keep its footprint within a usable native target. Review occupied task area, vertical alignment and both width and height; widening a progress bar and moving its controls below can waste a compact row without overflowing it.
+
+Hierarchy is semantic. Classification may title a region while material tags remain subordinate. A recipe can use ingredients → result without obvious Inputs/Output captions, preserving quantities and accessible names; that meaningful transformation is different from decorative link arrows. Hide genuinely empty headings; give a useful collapsed list a discoverable disclosure. Differentiate effect mechanism, source and scope instead of reusing one ambiguous glyph. The [control stress example](../examples/decisions/controls.html) retains original positive/negative cases.
+
+Apply the product kit to Settings, audio and secondary commands as well as the main loop. Native semantics can retain deliberate styling. The owner's binary setting choice and removal of an unhelpful feature are contextual: research interest is not permission to restore it. Keep mandatory license notices and internal provenance; do not add optional asset/process prose to player UI against the brief. Check live motion across cycle, pause, repeat and reduced/off/hidden states; correct numbers do not establish smooth presentation or listening acceptance.
+
 Place modifiers beside what they change: a price bonus beside price, not stock. Distinguish quote, unit price, quantity and total. The exact total must be visible at commitment: `12,480` cannot become only `12.5K` with precision solely in an accessible name. Secondary history may use reachable detail. Check long names and large/live values at minimum width; reflow without accidental page-wide overflow. Reserve geometry where live values should not move adjacent controls.
 
 ## Finish the visual work

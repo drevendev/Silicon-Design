@@ -396,6 +396,48 @@
       "scope": "Separate fictional examples and protocol implementation; historical results immutable, no new model/human study.",
       "base_revision": "0cbd622ae4e5348b9442a367dd3933e683fc36f8",
       "reviewed_at": "2026-11-15"
+    },
+    "decision_release_implementation": {
+      "base_revision": "4fa336923180aa7df3626df17cfe14964c336b73",
+      "reviewed_at": "2026-11-17",
+      "release": "2026.11.17.1",
+      "issues": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        10,
+        12,
+        13,
+        14,
+        15,
+        18,
+        19,
+        20,
+        23,
+        27,
+        28,
+        29,
+        31,
+        32,
+        33,
+        35,
+        37,
+        43,
+        44,
+        47,
+        48,
+        52,
+        53,
+        54,
+        55
+      ],
+      "record": "research/release-2026-11-17.md",
+      "source_manifest": "research/release-2026-11-17.sources.json",
+      "practice_record": "research/game-practice-2026-11-17.md",
+      "scope": "All open issues/comments reconciled; original teaching/runtime examples and bounded portable changes. No consumer redesign, model activation/generation or new human comparison; prior results unchanged."
     }
   }
 ]

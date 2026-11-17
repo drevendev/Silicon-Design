@@ -31,4 +31,4 @@
 
 [Слепой тест](skills/blind-test/SKILL.md): автономные попарные сравнения, отдельное подтверждение после комментария и честный разбор результатов.
 
-**Release 2026.11.15.1:** [whole-site comparisons, working craft examples, performed checks and remaining acceptance](research/release-2026-11-15.md). The synthetic demonstration is QA only; historical votes and owner results are unchanged.
+**Версия 2026.11.17.1.** Обновлены игровой скилл, дизайн-система и ревью: композиция, материалы и отклик, компактные элементы, точный Inspect и возврат к выбранному экземпляру. [Спека и карта 31 открытого ишью](research/release-2026-11-17.md), [новые работающие примеры](examples/decisions/README.md) и [разбор свежих наблюдений владельца](research/game-practice-2026-11-17.md). Проверки примеров отделены от качества будущих генераций; новые сравнительные эксперименты не запускались.

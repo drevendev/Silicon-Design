@@ -1,0 +1,192 @@
+<!--
+MIT License
+
+Copyright (c) 2026 drevendev
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nightjar — Lantern exchange</title><style>:root{font-family:system-ui,sans-serif;color-scheme:dark;--paper:#122b2c;--deep:#0a191d;--ink:#f4eedc;--muted:#b6c7bb;--line:#416062;--gold:#efd18d;--focus:#a4e8ff;--good:#a5e2b6;--bad:#ffb5a5;background:var(--deep);color:var(--ink);line-height:1.45}
+.form-grid{min-width:0}.form-grid>label{min-width:0}.form-grid input,.form-grid select{width:100%;min-width:0}
+*{box-sizing:border-box}body{margin:0}a{color:var(--gold);text-underline-offset:.2em}button,input,select,textarea{font:inherit;color:inherit}button,select,input[type=number],input[type=text],textarea{border:1px solid var(--line);background:var(--paper);border-radius:.4rem}button{min-height:44px;padding:.45rem .8rem;cursor:pointer}button:hover{border-color:var(--gold);background:#244346}button:active{background:#345456}button:disabled{opacity:.65;cursor:default}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}button.primary{color:var(--deep);background:var(--gold);border-color:var(--gold);font-weight:650}button.primary:hover{background:#ffe8b5}input[type=checkbox]{width:1.2rem;height:1.2rem;accent-color:var(--gold)}input,select{min-height:44px;padding:.4rem;max-width:100%}textarea{padding:.6rem;min-height:6rem;resize:vertical;width:100%}label{display:block}label.inline{display:flex;align-items:center;gap:.55rem;min-height:44px}p{margin:.5rem 0 1rem}h1,h2,h3{line-height:1.15;overflow-wrap:break-word}h1{font:500 clamp(1.8rem,4vw,3rem)/1.1 Georgia,serif;margin:.3rem 0}h2{font-size:1.35rem;margin:.4rem 0 .8rem}h3{font-size:1.05rem}small,.muted{color:var(--muted)}header.site{max-width:1100px;margin:auto;padding:1rem 1.5rem;display:flex;gap:1rem;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}nav{display:flex;gap:1rem;flex-wrap:wrap}main{max-width:1000px;margin:auto;padding:1.25rem 1.5rem 2rem}footer{max-width:1000px;margin:auto;padding:1rem 1.5rem 3rem;color:var(--muted)}.intro{display:flex;justify-content:space-between;gap:1rem;align-items:center;margin-bottom:1rem}.intro p{margin:.3rem 0}.toolbar{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}.balance{font-size:1.2rem;color:var(--gold);font-variant-numeric:tabular-nums;white-space:nowrap}.offers{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.7rem}.offer{min-width:0;padding:0;background:linear-gradient(160deg,#254347,#122a2e);border:1px solid #668081;border-radius:.7rem;position:relative}.offer[aria-pressed=true]{border:2px solid var(--gold);background:#294340}.offer>button{width:100%;border:0;background:none;text-align:left;display:block;padding:.8rem;min-height:100%;border-radius:.6rem}.offer>button:hover{background:#29494a}.offer .art{display:block;width:100%;height:125px;filter:drop-shadow(0 8px 8px #0007);transition:filter .18s,transform .18s}.offer>button:hover .art,.offer>button:focus-visible .art{transform:translateY(-4px);filter:drop-shadow(0 0 9px #efd18d88)}.offer strong,.offer .effect,.offer .price{display:block}.offer strong{margin:.5rem 0}.effect{font-size:.9rem;color:var(--muted)}.price{margin-top:.5rem;color:var(--gold);font-weight:650}.offer .preference{position:absolute;right:.2rem;top:.2rem;width:44px;min-height:44px;background:transparent;border:0;padding:12px;display:grid;place-items:center}.preference svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;color:var(--gold)}.offer>button.inspect{min-height:0}.offer.chosen::after{content:'✓';position:absolute;left:.4rem;top:.2rem;pointer-events:none;color:var(--gold)}.dock{margin-top:1rem;padding:1rem;background:var(--paper);border:1px solid var(--line);border-radius:.6rem;display:grid;grid-template-columns:1fr auto;gap:.6rem;align-items:center;z-index:2}.dock p{margin:0}.dock.fixed{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(952px,calc(100% - 2rem));box-shadow:0 -8px 32px #0007}.hint{grid-column:1/-1;padding:.6rem;border-left:3px solid var(--gold);background:#203d3d}.hint[hidden]{display:none}.status{min-height:1.5rem;margin:.8rem 0;color:var(--good)}.status.error,.error{color:var(--bad)}.path{display:flex;align-items:center;gap:.6rem}.path svg{width:38px;height:52px;color:var(--gold)}.path[data-lit=true] svg{filter:drop-shadow(0 0 12px #efcf78)}details{margin-top:1rem}summary{cursor:pointer;padding:.6rem 0;min-height:44px;color:var(--gold)}.lab{padding:1rem 0;border-top:1px solid var(--line)}.lab .toolbar{margin-bottom:.7rem}.lab p{max-width:70ch}.bad-example{border:3px solid white!important;padding:1.3rem!important;min-width:80px!important;min-height:80px!important}.comparison{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}.compact-example{width:44px;height:44px;border:0;background:transparent;padding:12px}.compact-example svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2}.category{border:1px solid var(--line);border-radius:.5rem;padding:1rem}.category h3{margin:0 0 .5rem}.recipe{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;font-variant-numeric:tabular-nums}.tag{color:var(--muted)}dialog{color:var(--ink);background:var(--paper);border:1px solid var(--gold);border-radius:.8rem;padding:1.3rem;width:min(560px,calc(100% - 2rem));max-height:calc(100dvh - 2rem);overflow:auto}dialog::backdrop{background:#020b10cf}dialog .art{height:120px;width:100%}dialog pre{white-space:pre-wrap;overflow-wrap:anywhere}dialog .toolbar{margin-top:1rem}dialog input{width:100%}.desk-layout{display:grid;grid-template-columns:170px minmax(0,1fr);gap:1.5rem}.workspaces{display:flex;flex-direction:column;gap:.5rem}.workspaces [aria-pressed=true]{border-color:var(--gold);color:var(--gold)}.attempt{padding:.8rem 0;border-bottom:1px solid var(--line)}.attempt p{margin:0 0 .4rem}.notice{border-left:3px solid var(--gold);padding:.6rem 1rem;background:var(--paper);margin:1rem 0}.notice button{margin:.3rem .4rem .3rem 0}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.scroll-nav{max-height:12rem;overflow:auto;scrollbar-color:var(--gold) var(--deep);scrollbar-width:auto}.scroll-nav a{display:block;padding:.5rem;overflow-wrap:anywhere}.record{overflow-wrap:anywhere}.result{padding:1rem 0;border-bottom:1px solid var(--line)}.pulse{animation:glow .6s ease-out}.material-plain .offer{background:var(--paper);border-color:var(--line)}.material-plain .art{filter:none}.material-engraved .offer{box-shadow:inset 0 0 0 4px #182c30,inset 0 0 0 5px #b2986170}.material-luminous .offer{background:radial-gradient(ellipse at 50% 20%,#87744655,transparent 70%),linear-gradient(160deg,#254347,#122a2e);box-shadow:inset 0 0 0 1px #d4bc8a60}.material-luminous .art{filter:drop-shadow(0 0 12px #efc97355)}@keyframes glow{50%{filter:drop-shadow(0 0 14px #fff0b0);opacity:.65}}
+html.motion-off *,html.motion-off *::before,html.motion-off *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.offer>button:hover .art,.offer>button:focus-visible .art{transform:none}}
+@media(max-width:650px){header.site{align-items:flex-start;flex-direction:column;padding:1rem}main{padding:1rem}.intro{align-items:flex-start;flex-direction:column}.offers{grid-template-columns:repeat(2,minmax(0,1fr))}.offer .art{height:100px}.dock{grid-template-columns:1fr}.desk-layout{grid-template-columns:1fr}.workspaces{flex-direction:row}.form-grid{grid-template-columns:1fr}}
+@media(max-width:360px){.offers{grid-template-columns:1fr}.offer>button{display:grid;grid-template-columns:78px 1fr;column-gap:.6rem}.offer .art{height:90px;grid-row:1/4}.offer strong{margin:0}.offer .price{margin:.1rem 0}.toolbar>*{max-width:100%}}
+@media(forced-colors:active){.offer,.dock,.notice,dialog{border:1px solid CanvasText;background:Canvas}.offer[aria-pressed=true]{border:3px solid Highlight}.art{forced-color-adjust:auto}.price,.balance,.status,.error{color:CanvasText}button.primary{background:ButtonFace;color:ButtonText}.preference svg{color:ButtonText}}
+</style>
+<body class="material-luminous"><header class="site"><a href="exchange.html">Nightjar / local workshop</a><nav aria-label="Examples"><a href="desk.html">Document desk</a><a href="controls.html">Control stress</a></nav><label>Language <select id="lang"><option value="en">English</option><option value="ru">Русский</option></select></label></header>
+<main><div class="intro"><div><h1 id="title">A light for the way home</h1><p id="subtitle">Choose a lantern. Keep its light on the path.</p></div><div class="balance" id="funds"></div></div>
+<div class="offers" id="offers" aria-label="Lantern offers"></div><p class="status" id="status" role="status"></p><p id="storage-status" class="status error" role="status" hidden></p>
+<section class="dock" id="dock" aria-label="Workshop action"><div class="hint" id="hint" hidden></div><div><strong id="guide"></strong><p id="draft-summary" class="muted"></p></div><div class="toolbar"><button id="preview" class="primary">Preview</button><button id="hang">Hang lantern</button></div></section>
+<div class="path" id="path" data-lit="false"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M23 17V8h14v9M16 25h28l-3 38H19zM13 25h34M16 63h28M30 29v28" fill="none" stroke="currentColor" stroke-width="3"/></svg><p id="path-text"></p></div>
+<details><summary id="settings-label">Settings</summary><label class="inline"><input id="motion" type="checkbox" checked><span id="motion-label">Motion on</span></label><p id="audio-note" class="muted">No audio is included. All outcomes remain visible.</p></details>
+<details id="lab"><summary>Scenario controls · fictional offline teaching example</summary><div class="lab"><p>No service, purchase or real saved game. All values and scenarios are synthetic. These controls deliberately create difficult states.</p><div class="toolbar"><button id="stale">Change stock before confirm</button><button id="rerender">Render again</button><button id="hint-toggle" aria-pressed="false">Show coaching hint</button><label>Action layout <select id="layout"><option value="flow">In flow</option><option value="fixed">Fixed dock</option></select></label></div><div class="toolbar"><button id="skip">Skip guide</button><button id="broken">Unreadable original</button><label class="inline"><input id="deny" type="checkbox">Deny local storage (simulation)</label><button id="reset">Reset synthetic session</button></div><details><summary>Decision record</summary><ol id="history"></ol></details></div></details>
+<section id="recovery" hidden class="category"><h2 id="recovery-title">The original cannot be read</h2><p id="recovery-copy">The exact original remains below. This is evidence, not a validated backup.</p><pre class="record" id="raw"></pre><div class="toolbar"><button id="diagnostic">Request diagnostic download</button><button id="deny-download">Simulate blocked download</button></div><p role="status" id="download-status"></p></section>
+</main><footer>Original fictional example · MIT · system fonts · no third-party art · <a href="README.md">Brief and evidence</a></footer>
+<dialog id="reader" aria-labelledby="reader-title"><h2 id="reader-title"></h2><div id="reader-art"></div><p id="reader-rule"></p><p id="reader-note"></p><div id="draft-fields" hidden><label id="note-label" for="note">Workshop note</label><input id="note" type="text" maxlength="300"><p id="quote"></p></div><p class="error" id="refusal" role="status"></p><div class="toolbar"><button id="choose" class="primary">Choose</button><button id="confirm" class="primary" hidden>Confirm</button><button id="close-reader">Back</button></div></dialog>
+<script>/* Original deterministic teaching models. No network, timers or presentation authority. */
+(function (root) {
+  'use strict';
+  const names = [
+    ['Copper wren', 'Медный крапивник'], ['Glass moth', 'Стеклянный мотылёк'],
+    ['Paper moon', 'Бумажная луна'], ['Reed star', 'Тростниковая звезда'],
+    ['Winter seed', 'Зимнее семечко']
+  ];
+  const clone = value => JSON.parse(JSON.stringify(value));
+  function game() {
+    return {format: 1, funds: 30, epoch: 0, offers: names.map((_, i) => ({id: 'copy-' + i, kind: i, revision: i === 1 ? 1 : 2, stock: 1, remaining: i === 1 ? 1 : 2})), draft: null, preview: null, accepted: [], hung: [], skipped: false};
+  }
+  function fact(copy, lang = 'en') {
+    const ru = lang === 'ru', cost = 6 + copy.kind;
+    const effect = copy.revision === 1 ? 2 : 3;
+    return {id: copy.id, revision: copy.revision, cost, effect, remaining: copy.remaining,
+      name: names[copy.kind][ru ? 1 : 0],
+      short: ru ? `При подвешивании: +${effect} света · ${copy.remaining} примен.` : `When hung: +${effect} light · ${copy.remaining} uses`,
+      full: ru ? `Редакция ${copy.revision}. Эффект +${effect} света фиксируется при принятии заказа и срабатывает при подвешивании. Осталось применений у этого экземпляра: ${copy.remaining}. Цена: ${cost}.` : `Revision ${copy.revision}. The +${effect} light effect is captured when this order is accepted and triggers when hung. This physical copy has ${copy.remaining} uses remaining. Price: ${cost}.`};
+  }
+  function restoreGame(raw) {
+    try {
+      const s = JSON.parse(raw), base = game();
+      if (s?.format !== 1 || !Number.isInteger(s.funds) || s.funds < 0 || !Number.isInteger(s.epoch) || s.epoch < 0 || typeof s.skipped !== 'boolean') return null;
+      if (!Array.isArray(s.offers) || s.offers.length !== base.offers.length || !Array.isArray(s.accepted) || !Array.isArray(s.hung)) return null;
+      if (!s.offers.every((x, i) => x.id === base.offers[i].id && x.kind === i && [1,2].includes(x.revision) && Number.isInteger(x.stock) && x.stock >= 0 && Number.isInteger(x.remaining) && x.remaining >= 0)) return null;
+      if (s.draft !== null && (!s.offers.some(x => x.id === s.draft?.id) || typeof s.draft.note !== 'string')) return null;
+      if (s.preview !== null && (!s.draft || s.preview.id !== s.draft.id || !Number.isInteger(s.preview.epoch) || !Number.isInteger(s.preview.cost))) return null;
+      if (!s.accepted.every((x, i) => x.id === 'accepted-' + (i+1) && x.copy && x.fact && x.copy.id === x.fact.id && x.fact.cost === fact(x.copy).cost && typeof x.note === 'string')) return null;
+      if (!s.hung.every(id => s.accepted.some(x => x.id === id)) || new Set(s.hung).size !== s.hung.length) return null;
+      return s;
+    } catch { return null; }
+  }
+  function guide(s) { return s.skipped ? 'skipped' : s.hung.length ? 'done' : s.accepted.length ? 'hang' : s.preview ? 'confirm' : s.draft ? 'preview' : 'choose'; }
+  function command(state, action) {
+    const s = clone(state); let outcome = 'unchanged', event = null, reason = null;
+    if (action.type === 'choose' && s.offers.some(x => x.id === action.id)) { s.draft = {id: action.id, note: action.note || ''}; s.preview = null; outcome = 'draft'; }
+    if (action.type === 'note' && s.draft) s.draft.note = action.note;
+    if (action.type === 'preview' && s.draft) { const f = fact(s.offers.find(x => x.id === s.draft.id)); s.preview = {epoch: s.epoch, id: s.draft.id, cost: f.cost}; outcome = 'preview'; }
+    if (action.type === 'cancel') { s.preview = null; outcome = 'cancelled'; }
+    if (action.type === 'stock') { s.offers.find(x => x.id === action.id).stock = action.stock; s.epoch++; }
+    if (action.type === 'commit' && s.preview && s.draft) {
+      const item = s.offers.find(x => x.id === s.draft.id), f = fact(item);
+      if (s.preview.epoch !== s.epoch || item.stock < 1 || s.funds < f.cost) { outcome = 'refused';reason=item.stock<1?'stock':s.funds<f.cost?'funds':'stale'; }
+      else {
+        s.funds -= f.cost; item.stock--; s.epoch++;
+        event = {id: 'accepted-' + (s.accepted.length + 1), copy: clone(item), fact: f, note: s.draft.note};
+        s.accepted.push(event); s.preview = null; s.draft = null; outcome = 'accepted';
+      }
+    }
+    if (action.type === 'hang') {
+      const next = s.accepted.find(x => !s.hung.includes(x.id));
+      if (next) { s.hung.push(next.id); next.copy.remaining--; s.offers.find(x=>x.id===next.copy.id).remaining=next.copy.remaining; outcome = 'hung'; event = {id: 'hung-' + next.id}; }
+    }
+    if (action.type === 'skip') s.skipped = true;
+    return {state: s, outcome, event, reason};
+  }
+  function desk() { return {format: 1, selected: 'A', scheduling: false, serial: 0, job: null, attempts: [], dismissed: [], config: 0, check: null, ready: false}; }
+  const stages = ['preparing', 'processing', 'checking', 'saving'];
+  function work(state, action) {
+    const s = clone(state); let outcome = 'unchanged';
+    if (action.type === 'select') s.selected = action.id;
+    if (action.type === 'schedule') s.scheduling = action.enabled;
+    if (action.type === 'start' && !s.job) { const scenario=action.scenario||'success';s.job = {id: ++s.serial, workspace: s.selected, stage: 'preparing', scenario, input:scenario==='no_inputs'?'':`Source ${s.selected}: Ёжик / river letter / ${s.serial}`}; outcome = 'started'; }
+    if (action.type === 'pause' && s.job && s.job.stage !== 'stopping') { s.job.stage = 'stopping'; outcome = 'stopping'; }
+    if (action.type === 'reply' && s.job && action.id === s.job.id) {
+      if (s.job.stage === 'stopping') {
+        if (action.stopped) { s.attempts.push({...s.job, result: 'stopped'}); s.job = null; outcome = 'stopped'; }
+      } else if (action.stopped) { /* An unsolicited stop acknowledgement is not a stage reply. */
+      } else if (s.job.stage === 'saving' || s.job.scenario === 'no_inputs') {
+        const hasDraft=['success','draft','save_error'].includes(s.job.scenario);
+        s.attempts.push({...s.job, result: s.job.scenario, draft:hasDraft?s.job.input+'\nReading copy · synthetic / Копия для чтения · симуляция':null, saved:s.job.scenario==='success'}); s.job = null; outcome = 'finished';
+      } else s.job.stage = stages[stages.indexOf(s.job.stage) + 1];
+    }
+    if (action.type === 'dismiss' && !s.dismissed.includes(action.id)) s.dismissed.push(action.id);
+    if (action.type === 'config') { s.config++; s.ready = false; }
+    if (action.type === 'check') { s.check = {id: s.config, pending: true}; s.ready = false; }
+    if (action.type === 'checked' && s.check?.pending) { s.ready = s.check.id === s.config; s.check.pending = false; outcome = s.ready ? 'ready' : 'stale'; }
+    return {state: s, outcome};
+  }
+  const api = {game, restoreGame, fact, guide, command, desk, work};
+  if (typeof module !== 'undefined') module.exports = api; else root.Decisions = api;
+})(typeof window === 'undefined' ? globalThis : window);
+</script><script>'use strict';
+const $ = id => document.getElementById(id), key = 'silicon-nightjar-1';
+let state = Decisions.game(), language = new URLSearchParams(location.search).get('lang') === 'ru' ? 'ru' : 'en', reader = null, returnOwner = null, returnY = 0, effects = 0, storageDenied = false;
+const historyNodes=new Map();
+const words = {
+  title:['A light for the way home','Огонёк для дороги домой'], subtitle:['Choose a lantern. Keep its light on the path.','Выберите фонарик. Пусть он освещает дорогу.'],
+  preview:['Preview','Предпросмотр'],hang:['Hang lantern','Подвесить фонарь'],choose:['Choose this copy','Выбрать экземпляр'],confirm:['Accept for','Принять за'],back:['Back','Назад'],cancel:['Cancel · retain draft','Отмена · сохранить черновик'],
+  chooseGuide:['Choose a lantern to inspect','Выберите фонарь и рассмотрите его'],previewGuide:['Your draft is ready to preview','Черновик готов к просмотру'],confirmGuide:['Review the exact price, then accept','Проверьте точную цену и примите заказ'],hangGuide:['Your lantern is ready. Hang it on the path.','Ваш фонарь готов. Подвесьте его на тропе.'],doneGuide:['A light stays on the path','На тропе остался огонёк'],skippedGuide:['Guide skipped; workshop remains available','Подсказки пропущены; мастерская доступна'],
+  accepted:['Accepted. Nothing hangs until you choose Hang.','Заказ принят. Фонарь появится на тропе после подвешивания.'],hung:['The lantern is hanging.','Фонарь подвешен.'],refused:['Conditions changed. Draft retained; nothing charged. Preview again.','Условия изменились. Черновик сохранён; ничего не списано. Проверьте заново.'],stock:['This physical copy is unavailable. Draft retained; nothing charged.','Этот экземпляр недоступен. Черновик сохранён; ничего не списано.'],funds:['Not enough tokens. Draft retained; nothing charged.','Недостаточно жетонов. Черновик сохранён; ничего не списано.'],
+  idle:['No lantern hangs yet.','На тропе пока нет фонарей.'],lit:['lantern(s) on the path','фонарей на тропе'],available:['available','доступно'],tokens:['tokens','жетонов'],settings:['Settings','Настройки'],motion:['Motion on','Движение включено'],audio:['No audio is included. All outcomes remain visible.','Звука нет. Все результаты видны без него.'],note:['Workshop note','Записка мастеру'],hint:['Inspect keeps your choice. Preview does not spend tokens. The action below remains available.','Просмотр не меняет выбор. Предпросмотр не тратит жетоны. Кнопка действия ниже остаётся доступной.']
+};
+const t = id => words[id][language === 'ru' ? 1 : 0];
+function art(kind) { const hue = [36,168,48,78,202][kind]; return `<svg class="art" viewBox="0 0 120 150" aria-hidden="true"><g stroke="hsl(${hue} 48% 70%)" stroke-width="3" fill="none"><path d="M43 28V14q17-18 34 0v14M29 40h62l-7 78H36zM22 40h76M31 118h58M41 128h38"/><path d="M45 48l15 55 15-55M35 77h50" opacity=".55"/><path d="M60 54q-22 35 0 43 22-8 0-43" fill="hsl(${hue} 65% 72%)" stroke="none"/><path d="M52 103h16"/></g></svg>`; }
+let original = null;
+try { original = localStorage.getItem(key); } catch { storageDenied = true; }
+if (original) { const saved=Decisions.restoreGame(original);if(saved)state=saved;else{$('recovery').hidden=false;$('raw').textContent=original;} }
+try{const preserved=localStorage.getItem(key+'-original');if(preserved&&$('recovery').hidden){$('recovery').hidden=false;$('recovery-title').textContent='Preserved unreadable original';$('raw').textContent=preserved;}}catch{}
+function persist() { try { if (storageDenied) throw Error();if(original&&!Decisions.restoreGame(original)){const previous=localStorage.getItem(key+'-original');if(previous&&previous!==original)throw Error();localStorage.setItem(key+'-original',original);original=null;}localStorage.setItem(key, JSON.stringify(state));$('storage-status').hidden=true;return true; } catch { $('storage-status').hidden=false;$('storage-status').textContent = language === 'ru' ? 'Сеанс остаётся открыт, но локальное сохранение недоступно.' : 'Session retained here; local saving is unavailable.'; return false; } }
+function feedback(event) { if (!event) return; effects++; $('path').classList.remove('pulse'); void $('path').offsetWidth; $('path').classList.add('pulse'); }
+function send(action) { const result = Decisions.command(state,action); state = result.state; render(); persist(); if (result.event) feedback(result.event); return result; }
+for (const item of state.offers) {
+  const offer = document.createElement('article'); offer.className = 'offer'; offer.id = item.id;
+  const button = document.createElement('button'); button.id = 'inspect-' + item.id; button.className = 'inspect';
+  button.innerHTML = art(item.kind) + '<strong></strong><span class="effect"></span><span class="price"></span>';
+  button.addEventListener('click',()=>openReader('inspect',item.id,button)); offer.append(button); $('offers').append(offer);
+}
+function render() {
+  document.documentElement.lang = language; $('lang').value = language;
+  $('title').textContent=t('title'); $('subtitle').textContent=t('subtitle'); $('funds').textContent=`${state.funds} ${t('tokens')}`;
+  for (const item of state.offers) { const f=Decisions.fact(item,language), el=$('inspect-'+item.id); el.querySelector('strong').textContent=f.name;el.querySelector('.effect').textContent=f.short;el.querySelector('.price').textContent=`${f.cost} · ${item.stock} ${t('available')}`;el.setAttribute('aria-label',f.name+'. '+f.short+'. '+f.cost+' '+t('tokens'));$(item.id).classList.toggle('chosen',state.draft?.id===item.id); }
+  const step=Decisions.guide(state);$('guide').textContent=t(step+'Guide');$('draft-summary').textContent=state.draft?Decisions.fact(state.offers.find(x=>x.id===state.draft.id),language).name:'';
+  $('preview').textContent=t('preview');$('preview').disabled=!state.draft;$('hang').textContent=t('hang');$('hang').disabled=state.accepted.length===state.hung.length;
+  $('path-text').textContent=state.hung.length?state.hung.length+' '+t('lit'):t('idle');$('path').dataset.lit=String(state.hung.length>0);
+  $('settings-label').textContent=t('settings');$('motion-label').textContent=t('motion');$('audio-note').textContent=t('audio');$('hint').textContent=t('hint');
+  for(const x of state.accepted){if(!historyNodes.has(x.id)){const li=document.createElement('li'),line=document.createElement('span'),button=document.createElement('button');button.id='accepted-'+x.copy.id;button.onclick=()=>openReader('inspect',x.copy.id,button);li.append(line,button);historyNodes.set(x.id,li);$('history').append(li);}const li=historyNodes.get(x.id);li.querySelector('span').textContent=`${x.id}: ${Decisions.fact(x.copy,language).name} · ${x.fact.cost} · ${x.note} `;li.querySelector('button').textContent=language==='ru'?'Рассмотреть экземпляр':'Inspect physical copy';}
+  if (reader) fillReader();
+}
+function fillReader() {
+  const copy=state.offers.find(x=>x.id===reader.id), f=Decisions.fact(copy,language);
+  $('reader-title').textContent=f.name;$('reader-rule').textContent=f.full;$('reader-art').innerHTML=art(copy.kind);$('reader-note').textContent=`${f.id} · ${t('available')}: ${copy.stock}`;
+  const quote=reader.mode==='preview';$('draft-fields').hidden=!quote;$('choose').hidden=quote;$('confirm').hidden=!quote;$('choose').textContent=t('choose');$('close-reader').textContent=t(quote?'cancel':'back');$('note-label').textContent=t('note');
+  $('confirm').textContent=t('confirm')+' '+(state.preview?.cost??f.cost)+' '+t('tokens');$('quote').textContent=(language==='ru'?'Точная сумма: ':'Exact total: ')+(state.preview?.cost??f.cost)+' '+t('tokens');
+}
+function openReader(mode,id,owner) { reader={mode,id};returnOwner=owner;returnY=scrollY;$('refusal').textContent='';fillReader();$('note').value=state.draft?.note||'';$('reader').showModal();$('close-reader').focus(); }
+function closeReader(){const closed=reader;reader=null;if(closed?.mode==='preview')send({type:'cancel'});$('reader').close();returnOwner?.isConnected?returnOwner.focus({preventScroll:true}):$('preview').focus();scrollTo(0,returnY);}
+$('reader').addEventListener('cancel',event=>{event.preventDefault();closeReader();});
+$('close-reader').onclick=closeReader;
+$('choose').onclick=()=>{send({type:'choose',id:reader.id});closeReader();$('preview').focus();};
+$('preview').onclick=()=>{send({type:'preview'});openReader('preview',state.draft.id,$('preview'));};
+$('note').oninput=()=>send({type:'note',note:$('note').value});
+$('confirm').onclick=()=>{const r=send({type:'commit'});if(r.outcome==='refused'){$('refusal').textContent=t(r.reason==='stale'?'refused':r.reason);}else if(r.outcome==='accepted'){closeReader();$('status').textContent=t('accepted');$('hang').focus();}};
+$('hang').onclick=()=>{const r=send({type:'hang'});if(r.event)$('status').textContent=t('hung');};
+$('lang').onchange=()=>{language=$('lang').value;render();};
+$('motion').onchange=()=>document.documentElement.classList.toggle('motion-off',!$('motion').checked);
+$('stale').onclick=()=>send({type:'stock',id:state.draft?.id||state.offers[0].id,stock:0});
+$('rerender').onclick=render;$('skip').onclick=()=>send({type:'skip'});
+$('hint-toggle').onclick=()=>{const visible=$('hint').hidden;$('hint').hidden=!visible;$('hint-toggle').setAttribute('aria-pressed',String(visible));};
+$('layout').onchange=()=>{$('dock').classList.toggle('fixed',$('layout').value==='fixed');reserveDock();};
+function reserveDock(){document.body.style.paddingBottom=$('dock').classList.contains('fixed')?($('dock').getBoundingClientRect().height+20)+'px':'0px';}new ResizeObserver(reserveDock).observe($('dock'));
+$('deny').onchange=()=>storageDenied=$('deny').checked;
+$('broken').onclick=()=>{$('recovery').hidden=false;$('raw').textContent='{"format":1,"original":"Ёж / unreadable';};
+$('diagnostic').onclick=()=>{const a=document.createElement('a');const url=URL.createObjectURL(new Blob([$ ('raw').textContent],{type:'text/plain'}));a.href=url;a.download='nightjar-original-diagnostic.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$('download-status').textContent='Diagnostic download requested; file saving is not observed.';};
+$('deny-download').onclick=()=>$('download-status').textContent='Download blocked in this simulation. The exact original remains selectable above.';
+$('reset').onclick=()=>{localStorage.removeItem(key);localStorage.removeItem(key+'-original');location.reload();};
+window.exchangeQA={state:()=>JSON.parse(JSON.stringify(state)),effects:()=>effects,send,art};
+render();
+</script></body></html>

@@ -1,0 +1,47 @@
+{
+  "format": 1,
+  "compression": "Node zlib gzip level 9; Brotli quality 11; UTF-8 full artifact",
+  "cost_scope": "Each HTML includes the entire shared CSS, original vector generator and models/UI. Same payload family; no remote assets. Navigation destinations are optional sibling examples, not required for this flow.",
+  "rights": "All added code/vector material original, repository MIT; system fonts. No purchased media or external-service exposure.",
+  "variants": [
+    {
+      "variant": "plain",
+      "file": "exchange-plain.html",
+      "sha256": "eec7994c1f7181451faaec63344679960f68e926ecb6e8c2545a39f47a3f9022",
+      "raw_bytes": 31496,
+      "gzip_bytes": 11477,
+      "brotli_bytes": 9568,
+      "net_vs_plain": {
+        "raw_bytes": 0,
+        "gzip_bytes": 0,
+        "brotli_bytes": 0
+      }
+    },
+    {
+      "variant": "engraved",
+      "file": "exchange-engraved.html",
+      "sha256": "3072a238fa075ee472a9f1dd5d273bf04ff14c7a7cce0be5fc385d28ade4c424",
+      "raw_bytes": 31499,
+      "gzip_bytes": 11477,
+      "brotli_bytes": 9572,
+      "net_vs_plain": {
+        "raw_bytes": 3,
+        "gzip_bytes": 0,
+        "brotli_bytes": 4
+      }
+    },
+    {
+      "variant": "luminous",
+      "file": "exchange-luminous.html",
+      "sha256": "fedaa8790470f7c2c55df2c8bd78cbf68efd02d36266031b275581017c70c4d1",
+      "raw_bytes": 31499,
+      "gzip_bytes": 11477,
+      "brotli_bytes": 9570,
+      "net_vs_plain": {
+        "raw_bytes": 3,
+        "gzip_bytes": 0,
+        "brotli_bytes": 2
+      }
+    }
+  ]
+}

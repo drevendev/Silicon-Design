@@ -14,6 +14,10 @@ Use the current revision, accepted changes, explicit layout/capacity constraints
 
 ## Build readable decisions
 
+For an authorized structural redesign, decide what to keep or recompose on each affected screen before applying a new skin. Bound reference inspection to a useful comparable screen and the budget; if it fails, record the gap before composition rather than only at delivery. Do not count an article header as task UI. A local repair reuses suitable evidence and needs no fresh identity exercise.
+
+Entry screens are not spare operational dashboards. Deliberately compose scene, display type and the returning-run object when applicable. Use authorized copy changes where weak wording limits the result; a short visual loop can work better than a paragraph, context permitting. Include unreadable-save and storage-unavailable states in the screen's design scope. Offers lead with concise effect/condition faces and an authored Inspect/zoom path; repeated inline disclosures need a decision benefit. A count on an existing Deck control may remove the need for another sentence. Every new read-out spends visual attention: compare its decision value with the material or feedback work displaced.
+
 Use an expressive face for short world-building titles if desired; use a readable face for inventory, instructions and quantities. Check text against the darkest and brightest relevant scenes, with stable panels or outlines when necessary.
 
 For a purchase, show the effect, owned/required amounts and a plain unavailable reason. The exact payable total must be visible at commitment, including large amounts; an accessible name alone is insufficient. Secondary quotes/history may use reachable exact detail. Put price effects beside price; distinguish quote, unit price, quantity and total. A deficit uses both text and color. Do not reveal hidden content through a tooltip, placeholder or accessible label before the game's knowledge rules allow it.
@@ -31,6 +35,10 @@ Compare placed scenery, objects, icons and controls for edge, lighting, perspect
 For consequential flows use the [behavioral contracts](../behavioral-contracts.md): cards, help and semantic/search surfaces agree on facts and knowledge; drafts preview before commitment, stale confirmation refuses without partial effects, and required choices remain required. Where teaching exists, targets must be achievable and completion/resume follows lasting product evidence. Expressive feedback consumes accepted outcomes; recovery distinguishes original evidence, valid backup, diagnostic and observed transport. Apply only the relevant contracts; no universal tutorial, undo or command runtime.
 
 ## Input, motion and audio
+
+For substantial expressive work, choose useful object entrance, hover/focus on every affected skin, feedback for committed actions and a suitable outcome accent. These are craft decisions, not an animation quota for each game. Animate artwork within stationary native targets. Review resting and interacting states with repeated edge clicks, including long text and changed action-panel layout. Popups must protect the actual command in fixed, sticky and in-flow modes, not merely stay inside the viewport. Inspect returns to the selected physical copy's mounted caller with choice, reading position and focus.
+
+When cleared art is available, choose the identity-bearing object rather than treating every panel as a CSS border. Verify imported files exist, load and appear at use size; disclose a missing import and fallback. Product-use, redistribution and external-service permissions remain separate. Keep required notices and internal rights records; optional provenance/process details need not invade player copy. File names and playback tests do not prove that anyone heard or accepted audio.
 
 Make focus visible on controller/keyboard paths and map navigation explicitly in spatial menus. Provide a suitable non-drag route for drag interactions when feasible. Address UI scaling, safe areas, subtitles and input remapping according to the game's platform and audience.
 
