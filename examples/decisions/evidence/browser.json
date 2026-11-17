@@ -51,16 +51,16 @@
     }
   ],
   "source_sha256": {
-    "model.js": "3ce4edd4d5591471493e9051e88728d908cc95270c17645ea1bf67f16717e5e7",
+    "model.js": "814d4d9c466b347d897b48ea807b1091621f5900ebc602996df2ddcb0e11a5b5",
     "exchange.html": "558aa647e5091fa4c20db0c9f9f8571e9a7d66a97a81a5d03233e9462691b959",
-    "exchange.js": "44fff31d04f1ccf856f310399c871a7a9104ef6c269ac17b2c5cd59f79604350",
+    "exchange.js": "b72fbfee3ca4cdb3f0ff16bbb3835f9da831a77438a520802ec646202486ee76",
     "desk.html": "4d0174bfa8563ec3afb7744a5c042f9c5c785f8905b838cbb405d084875b244b",
     "desk.js": "45ff50bd32bb02d66101836ddfc1189f215362d05cbe2469226eaebe79614864",
     "controls.html": "680b1c01519322b20114d93c9b84d69b95497c2558f3902cbf8c29f02f26fc62",
     "decisions.css": "9582d49d80b9e60547698a8e39b09166af1e886ecaabcc06a8bce71cf7b58786",
-    "exchange-plain.html": "ec0422fdf3556603e03ef98040b2eed0e8a44f6b6ad2888126f4d14aabc928de",
-    "exchange-engraved.html": "a861f188179a70b77b289fa53e08955615af51c72811d842079f841bbbd36317",
-    "exchange-luminous.html": "9e3fc4240aedf6c5d2172cad2c453e2086f62ba06c82fbd88569474d3f95dd0e"
+    "exchange-plain.html": "eec7994c1f7181451faaec63344679960f68e926ecb6e8c2545a39f47a3f9022",
+    "exchange-engraved.html": "3072a238fa075ee472a9f1dd5d273bf04ff14c7a7cce0be5fc385d28ade4c424",
+    "exchange-luminous.html": "fedaa8790470f7c2c55df2c8bd78cbf68efd02d36266031b275581017c70c4d1"
   },
   "page_errors": [],
   "untested": [

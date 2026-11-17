@@ -6,8 +6,8 @@ const words = {
   title:['A light for the way home','Огонёк для дороги домой'], subtitle:['Choose a lantern. Keep its light on the path.','Выберите фонарик. Пусть он освещает дорогу.'],
   preview:['Preview','Предпросмотр'],hang:['Hang lantern','Подвесить фонарь'],choose:['Choose this copy','Выбрать экземпляр'],confirm:['Accept for','Принять за'],back:['Back','Назад'],cancel:['Cancel · retain draft','Отмена · сохранить черновик'],
   chooseGuide:['Choose a lantern to inspect','Выберите фонарь и рассмотрите его'],previewGuide:['Your draft is ready to preview','Черновик готов к просмотру'],confirmGuide:['Review the exact price, then accept','Проверьте точную цену и примите заказ'],hangGuide:['Your lantern is ready. Hang it on the path.','Ваш фонарь готов. Подвесьте его на тропе.'],doneGuide:['A light stays on the path','На тропе остался огонёк'],skippedGuide:['Guide skipped; workshop remains available','Подсказки пропущены; мастерская доступна'],
-  accepted:['Accepted. Nothing hangs until you choose Hang.','Заказ принят. Фонарь появится на тропе после подвешивания.'],hung:['The lantern is hanging.','Фонарь подвешен.'],refused:['Conditions changed. Draft retained; nothing charged. Preview again.','Условия изменились. Черновик сохранён; ничего не списано. Проверьте заново.'],
-  idle:['No lantern hangs yet.','На тропе пока нет фонарей.'],lit:['lantern(s) on the path','фонарей на тропе'],stock:['available','доступно'],tokens:['tokens','жетонов'],settings:['Settings','Настройки'],motion:['Motion on','Движение включено'],audio:['No audio is included. All outcomes remain visible.','Звука нет. Все результаты видны без него.'],note:['Workshop note','Записка мастеру'],hint:['Inspect keeps your choice. Preview does not spend tokens. The action below remains available.','Просмотр не меняет выбор. Предпросмотр не тратит жетоны. Кнопка действия ниже остаётся доступной.']
+  accepted:['Accepted. Nothing hangs until you choose Hang.','Заказ принят. Фонарь появится на тропе после подвешивания.'],hung:['The lantern is hanging.','Фонарь подвешен.'],refused:['Conditions changed. Draft retained; nothing charged. Preview again.','Условия изменились. Черновик сохранён; ничего не списано. Проверьте заново.'],stock:['This physical copy is unavailable. Draft retained; nothing charged.','Этот экземпляр недоступен. Черновик сохранён; ничего не списано.'],funds:['Not enough tokens. Draft retained; nothing charged.','Недостаточно жетонов. Черновик сохранён; ничего не списано.'],
+  idle:['No lantern hangs yet.','На тропе пока нет фонарей.'],lit:['lantern(s) on the path','фонарей на тропе'],available:['available','доступно'],tokens:['tokens','жетонов'],settings:['Settings','Настройки'],motion:['Motion on','Движение включено'],audio:['No audio is included. All outcomes remain visible.','Звука нет. Все результаты видны без него.'],note:['Workshop note','Записка мастеру'],hint:['Inspect keeps your choice. Preview does not spend tokens. The action below remains available.','Просмотр не меняет выбор. Предпросмотр не тратит жетоны. Кнопка действия ниже остаётся доступной.']
 };
 const t = id => words[id][language === 'ru' ? 1 : 0];
 function art(kind) { const hue = [36,168,48,78,202][kind]; return `<svg class="art" viewBox="0 0 120 150" aria-hidden="true"><g stroke="hsl(${hue} 48% 70%)" stroke-width="3" fill="none"><path d="M43 28V14q17-18 34 0v14M29 40h62l-7 78H36zM22 40h76M31 118h58M41 128h38"/><path d="M45 48l15 55 15-55M35 77h50" opacity=".55"/><path d="M60 54q-22 35 0 43 22-8 0-43" fill="hsl(${hue} 65% 72%)" stroke="none"/><path d="M52 103h16"/></g></svg>`; }
@@ -27,7 +27,7 @@ for (const item of state.offers) {
 function render() {
   document.documentElement.lang = language; $('lang').value = language;
   $('title').textContent=t('title'); $('subtitle').textContent=t('subtitle'); $('funds').textContent=`${state.funds} ${t('tokens')}`;
-  for (const item of state.offers) { const f=Decisions.fact(item,language), el=$('inspect-'+item.id); el.querySelector('strong').textContent=f.name;el.querySelector('.effect').textContent=f.short;el.querySelector('.price').textContent=`${f.cost} · ${item.stock} ${t('stock')}`;el.setAttribute('aria-label',f.name+'. '+f.short+'. '+f.cost+' '+t('tokens'));$(item.id).classList.toggle('chosen',state.draft?.id===item.id); }
+  for (const item of state.offers) { const f=Decisions.fact(item,language), el=$('inspect-'+item.id); el.querySelector('strong').textContent=f.name;el.querySelector('.effect').textContent=f.short;el.querySelector('.price').textContent=`${f.cost} · ${item.stock} ${t('available')}`;el.setAttribute('aria-label',f.name+'. '+f.short+'. '+f.cost+' '+t('tokens'));$(item.id).classList.toggle('chosen',state.draft?.id===item.id); }
   const step=Decisions.guide(state);$('guide').textContent=t(step+'Guide');$('draft-summary').textContent=state.draft?Decisions.fact(state.offers.find(x=>x.id===state.draft.id),language).name:'';
   $('preview').textContent=t('preview');$('preview').disabled=!state.draft;$('hang').textContent=t('hang');$('hang').disabled=state.accepted.length===state.hung.length;
   $('path-text').textContent=state.hung.length?state.hung.length+' '+t('lit'):t('idle');$('path').dataset.lit=String(state.hung.length>0);
@@ -37,7 +37,7 @@ function render() {
 }
 function fillReader() {
   const copy=state.offers.find(x=>x.id===reader.id), f=Decisions.fact(copy,language);
-  $('reader-title').textContent=f.name;$('reader-rule').textContent=f.full;$('reader-art').innerHTML=art(copy.kind);$('reader-note').textContent=`${f.id} · ${t('stock')}: ${copy.stock}`;
+  $('reader-title').textContent=f.name;$('reader-rule').textContent=f.full;$('reader-art').innerHTML=art(copy.kind);$('reader-note').textContent=`${f.id} · ${t('available')}: ${copy.stock}`;
   const quote=reader.mode==='preview';$('draft-fields').hidden=!quote;$('choose').hidden=quote;$('confirm').hidden=!quote;$('choose').textContent=t('choose');$('close-reader').textContent=t(quote?'cancel':'back');$('note-label').textContent=t('note');
   $('confirm').textContent=t('confirm')+' '+(state.preview?.cost??f.cost)+' '+t('tokens');$('quote').textContent=(language==='ru'?'Точная сумма: ':'Exact total: ')+(state.preview?.cost??f.cost)+' '+t('tokens');
 }
@@ -48,7 +48,7 @@ $('close-reader').onclick=closeReader;
 $('choose').onclick=()=>{send({type:'choose',id:reader.id});closeReader();$('preview').focus();};
 $('preview').onclick=()=>{send({type:'preview'});openReader('preview',state.draft.id,$('preview'));};
 $('note').oninput=()=>send({type:'note',note:$('note').value});
-$('confirm').onclick=()=>{const r=send({type:'commit'});if(r.outcome==='refused'){$('refusal').textContent=t('refused');}else if(r.outcome==='accepted'){closeReader();$('status').textContent=t('accepted');$('hang').focus();}};
+$('confirm').onclick=()=>{const r=send({type:'commit'});if(r.outcome==='refused'){$('refusal').textContent=t(r.reason==='stale'?'refused':r.reason);}else if(r.outcome==='accepted'){closeReader();$('status').textContent=t('accepted');$('hang').focus();}};
 $('hang').onclick=()=>{const r=send({type:'hang'});if(r.event)$('status').textContent=t('hung');};
 $('lang').onchange=()=>{language=$('lang').value;render();};
 $('motion').onchange=()=>document.documentElement.classList.toggle('motion-off',!$('motion').checked);

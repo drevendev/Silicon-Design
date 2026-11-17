@@ -33,7 +33,7 @@
   }
   function guide(s) { return s.skipped ? 'skipped' : s.hung.length ? 'done' : s.accepted.length ? 'hang' : s.preview ? 'confirm' : s.draft ? 'preview' : 'choose'; }
   function command(state, action) {
-    const s = clone(state); let outcome = 'unchanged', event = null;
+    const s = clone(state); let outcome = 'unchanged', event = null, reason = null;
     if (action.type === 'choose' && s.offers.some(x => x.id === action.id)) { s.draft = {id: action.id, note: action.note || ''}; s.preview = null; outcome = 'draft'; }
     if (action.type === 'note' && s.draft) s.draft.note = action.note;
     if (action.type === 'preview' && s.draft) { const f = fact(s.offers.find(x => x.id === s.draft.id)); s.preview = {epoch: s.epoch, id: s.draft.id, cost: f.cost}; outcome = 'preview'; }
@@ -41,7 +41,7 @@
     if (action.type === 'stock') { s.offers.find(x => x.id === action.id).stock = action.stock; s.epoch++; }
     if (action.type === 'commit' && s.preview && s.draft) {
       const item = s.offers.find(x => x.id === s.draft.id), f = fact(item);
-      if (s.preview.epoch !== s.epoch || item.stock < 1 || s.funds < f.cost) outcome = 'refused';
+      if (s.preview.epoch !== s.epoch || item.stock < 1 || s.funds < f.cost) { outcome = 'refused';reason=item.stock<1?'stock':s.funds<f.cost?'funds':'stale'; }
       else {
         s.funds -= f.cost; item.stock--; s.epoch++;
         event = {id: 'accepted-' + (s.accepted.length + 1), copy: clone(item), fact: f, note: s.draft.note};
@@ -53,7 +53,7 @@
       if (next) { s.hung.push(next.id); next.copy.remaining--; s.offers.find(x=>x.id===next.copy.id).remaining=next.copy.remaining; outcome = 'hung'; event = {id: 'hung-' + next.id}; }
     }
     if (action.type === 'skip') s.skipped = true;
-    return {state: s, outcome, event};
+    return {state: s, outcome, event, reason};
   }
   function desk() { return {format: 1, selected: 'A', scheduling: false, serial: 0, job: null, attempts: [], dismissed: [], config: 0, check: null, ready: false}; }
   const stages = ['preparing', 'processing', 'checking', 'saving'];

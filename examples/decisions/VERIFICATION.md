@@ -6,7 +6,7 @@ Environment: Windows, Node 24.19.0, Playwright 1.62.1 / Chromium 151.0.7922.34, 
 
 | Evidence | Observed result |
 | --- | --- |
-| Deterministic authority | Nine Node tests: cancel retains draft; stale refusal is atomic; one accepted charge; required hanging/guide survives restoration; legacy physical facts; corrupt-state refusal; workspace ownership; stop/late/duplicate replies; seven distinct outcomes; notice IDs and stale readiness |
+| Deterministic authority | Ten Node tests: cancel retains draft; stale refusal is atomic; one accepted charge; required hanging/guide survives restoration; legacy physical facts; corrupt-state refusal; workspace ownership; stop/late/duplicate replies; seven distinct outcomes; notice IDs and stale readiness |
 | Browser input | Ten grouped scenarios, not nine independent trials: native edit/Escape/return, actual unforced edge activation after hover, real Preview/Confirm/Hang with coaching in flow/fixed layouts at 800 EN and 320 RU; no forced clicks |
 | Transaction/recovery | Retained exact note across reload; changed stock charges nothing; one hanging consumes one physical use; rendering/reload does not replay feedback; separate preserved unreadable original survives a fresh session; denied storage keeps the current draft; blocked diagnostic simulation and actual exact-byte browser download distinguished |
 | Temporal readers | Same legacy physical ID/revision/current uses through face, full reader and accepted-history Inspect; changing locale preserves choice and mounted return owner |
@@ -21,6 +21,7 @@ Actual pixel inspection covered the retained matched material frames, RU 320 exc
 
 ## Corrections and diagnostic boundaries
 
+- Refusals distinguish unavailable physical stock, insufficient funds and a stale snapshot instead of claiming every refusal followed a change. Persistence errors remain visible separately from action feedback.
 - A real close/reopen race let an old asynchronous dialog-close event cancel the next preview. Closure now updates the session synchronously; native Escape follows the same path.
 - Long native select intrinsic width pushed the narrow control grid; bounded grid children and controls now reflow. An enlarged-text handoff sentence used an unbreakable slash sequence; plain-word separation removes its overflow.
 - Desk notices and always-open history duplicated results. The latest outcome per workspace stays primary; the full exact history is a deliberate disclosure.

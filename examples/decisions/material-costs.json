@@ -7,10 +7,10 @@
     {
       "variant": "plain",
       "file": "exchange-plain.html",
-      "sha256": "ec0422fdf3556603e03ef98040b2eed0e8a44f6b6ad2888126f4d14aabc928de",
-      "raw_bytes": 30997,
-      "gzip_bytes": 11357,
-      "brotli_bytes": 9481,
+      "sha256": "eec7994c1f7181451faaec63344679960f68e926ecb6e8c2545a39f47a3f9022",
+      "raw_bytes": 31496,
+      "gzip_bytes": 11477,
+      "brotli_bytes": 9568,
       "net_vs_plain": {
         "raw_bytes": 0,
         "gzip_bytes": 0,
@@ -20,27 +20,27 @@
     {
       "variant": "engraved",
       "file": "exchange-engraved.html",
-      "sha256": "a861f188179a70b77b289fa53e08955615af51c72811d842079f841bbbd36317",
-      "raw_bytes": 31000,
-      "gzip_bytes": 11358,
-      "brotli_bytes": 9479,
+      "sha256": "3072a238fa075ee472a9f1dd5d273bf04ff14c7a7cce0be5fc385d28ade4c424",
+      "raw_bytes": 31499,
+      "gzip_bytes": 11477,
+      "brotli_bytes": 9572,
       "net_vs_plain": {
         "raw_bytes": 3,
-        "gzip_bytes": 1,
-        "brotli_bytes": -2
+        "gzip_bytes": 0,
+        "brotli_bytes": 4
       }
     },
     {
       "variant": "luminous",
       "file": "exchange-luminous.html",
-      "sha256": "9e3fc4240aedf6c5d2172cad2c453e2086f62ba06c82fbd88569474d3f95dd0e",
-      "raw_bytes": 31000,
-      "gzip_bytes": 11358,
-      "brotli_bytes": 9481,
+      "sha256": "fedaa8790470f7c2c55df2c8bd78cbf68efd02d36266031b275581017c70c4d1",
+      "raw_bytes": 31499,
+      "gzip_bytes": 11477,
+      "brotli_bytes": 9570,
       "net_vs_plain": {
         "raw_bytes": 3,
-        "gzip_bytes": 1,
-        "brotli_bytes": 0
+        "gzip_bytes": 0,
+        "brotli_bytes": 2
       }
     }
   ]
